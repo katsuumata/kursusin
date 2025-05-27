@@ -1,0 +1,424 @@
+/* Inherits general styles from style.css */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  /* Added top/bottom margin */
+  padding: 1rem;
+  /* Consistent padding */
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  /* Fixed sidebar width, main content takes rest */
+  gap: 1.5rem;
+  /* height: 100vh; Removed, let content define height */
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-content {
+  /* Added class for the right column */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Space between cards in main content */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.25rem;
+  /* Slightly increased padding */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-link {
+  /* For cards that are links */
+  text-decoration: none;
+  color: #333;
+  display: block;
+  /* Make the whole card clickable */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-upgrade {
+  background-color: #efbf7e;
+  color: #375a60;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-upgrade:hover {
+  background-color: #e0b070;
+}
+
+.coming-soon-badge {
+  font-size: 0.7em;
+  background-color: #6c757d;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+.section-title {
+  font-size: 1.5em;
+  color: #375a60;
+  margin-bottom: 0.5rem;
+  /* Reduced margin if cards follow directly */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #efbf7e;
+  display: inline-block;
+}
+
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  /* Increased gap */
+  /* margin-top: 10px; Removed, main-content gap handles this */
+}
+
+.course-card {
+  /* Styles for course cards within the dashboard grid */
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img.course-thumbnail {
+  /* Specific class for dashboard course images */
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.course-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  /* Allow content to fill space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Pushes progress to bottom */
+}
+
+.course-card-content h4 {
+  /* Title of the course */
+  font-size: 1em;
+  color: #375a60;
+  margin: 0 0 0.3rem 0;
+  font-weight: 600;
+  /* Line clamping for title */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.4em;
+  /* Approx 2 lines */
+}
+
+.course-card-content small {
+  /* Author */
+  font-size: 0.8em;
+  color: #777;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.course-card-content p.course-participants-dash {
+  /* Participants */
+  font-size: 0.75em;
+  color: #555;
+  margin: 0 0 0.5rem 0;
+}
+
+.progress-bars {
+  /* Using the class from style.css */
+  width: 100%;
+  height: 8px;
+  /* Slimmer progress bar */
+  background-color: #e9ecef;
+  /* Lighter background */
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+  /* Adjusted margin */
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  /* JS will set this */
+  background: linear-gradient(90deg, #efbf7e, #f39c12);
+  /* Theme orange gradient */
+  border-radius: 4px;
+  /* Match parent */
+  transition: width 0.5s ease-in-out;
+}
+
+.course-card-content .progress-text {
+  /* Text like "Progress: 75%" */
+  font-size: 0.75em;
+  color: #555;
+  margin-top: 0.25rem;
+  text-align: right;
+}
+
+
+.see-more {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  /* Removed padding, margin handles spacing */
+  margin-top: 1.5rem;
+  /* Consistent spacing */
+}
+
+.see {
+  /* "Lihat Lainnya" button */
+  padding: 10px 30px;
+  border: 1px solid #375a60;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #375a60;
+  background-color: white;
+  border-bottom-width: 3px;
+  border-right-width: 2px;
+  transform: scale(1);
+  transition: 0.3s all ease;
+}
+
+.see:hover {
+  background-color: #375a60;
+  border-color: #2c484d;
+  color: white;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-card .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #efbf7e;
+  /* Theme accent border */
+}
+
+.profile-card div {
+  /* Container for name and email */
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card strong {
+  /* User name */
+  font-size: 1.1em;
+  color: #375a60;
+  margin-bottom: 0.1rem;
+}
+
+.profile-card p {
+  /* User email */
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.performa-card h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  /* Increased margin */
+  color: #375a60;
+  font-size: 1.2em;
+}
+
+.performa-charts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  /* Reduced gap */
+}
+
+.progress-circle {
+  --size: 120px;
+  /* Adjusted size */
+  --thickness: 12px;
+  --value: 0;
+  /* Default value, JS will update */
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(currentColor calc(var(--value) * 1%), #e9ecef 0);
+  /* Lighter track color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fcdc58;
+  /* Default color, can be overridden */
+  position: relative;
+  margin: 0 auto;
+  /* Center charts if they wrap */
+}
+
+.chart.kuning .progress-circle {
+  color: #fcdc58;
+  /* Yellowish */
+}
+
+.chart.biru .progress-circle {
+  color: #5fa8f5;
+  /* Bluish */
+}
+
+.progress-circle::before {
+  /* Inner circle to create donut effect */
+  content: '';
+  position: absolute;
+  width: calc(var(--size) - var(--thickness) * 2);
+  /* Adjusted calculation */
+  height: calc(var(--size) - var(--thickness) * 2);
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 4px;
+  line-height: 1.2;
+}
+
+.circle-text strong {
+  font-size: 1.2em;
+  /* Slightly larger for emphasis */
+  font-weight: 700;
+  color: #333;
+  display: block;
+}
+
+.circle-text p {
+  font-size: 0.7em;
+  /* Adjusted size */
+  color: #444;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .dashboard-container {
+    grid-template-columns: 220px 1fr;
+    /* Smaller sidebar */
+  }
+
+  .progress-circle {
+    --size: 100px;
+    --thickness: 10px;
+  }
+
+  .circle-text strong {
+    font-size: 1em;
+  }
+
+  .circle-text p {
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    /* Stack sidebar and main content */
+  }
+
+  .sidebar {
+    order: 1;
+    /* Optionally move sidebar below main content on mobile */
+  }
+
+  .main-content {
+    order: 0;
+  }
+
+  .performa-charts {
+    gap: 1rem;
+    /* Adjust gap if needed */
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .performa-charts {
+    flex-direction: column;
+    /* Stack charts */
+    gap: 1.5rem;
+  }
+
+  .progress-circle {
+    --size: 110px;
+    /* Adjust for very small screens */
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+    /* Single column for courses */
+  }
+
+  .main-content .card {
+    /* Welcome/Sertifikat card */
+    padding: 1rem;
+  }
+
+  .main-content .card strong {
+    font-size: 1em;
+  }
+
+  .main-content .card p {
+    font-size: 0.85em;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "review_id": "rev001_01",
+        "course_id": "course001",
+        "user_id": "user101",
+        "rating": 4.5,
+        "comment": "Hanupis, sangat membantu!",
+        "timestamp": "2025-05-23T14:30:00Z"
+    },
+    {
+        "review_id": "rev001_02",
+        "course_id": "course001",
+        "user_id": "user102",
+        "rating": 4.0,
+        "comment": "Luar biasa sekali!! Saya jadi sadar betapa pentingnya gestur sederhana yang tidak memerlukan biaya. Konten investasi!",
+        "timestamp": "2025-05-23T12:30:00Z"
+    },
+    {
+        "review_id": "rev001_03",
+        "course_id": "course001",
+        "user_id": "user103",
+        "rating": 5.0,
+        "comment": "Mindblowing! Istri jadi makin sayang.",
+        "timestamp": "2025-05-23T11:30:00Z"
+    },
+    {
+        "review_id": "rev009_01",
+        "course_id": "course009",
+        "user_id": "user102",
+        "rating": 4.0,
+        "comment": "Tekniknya mantap, langsung strike!",
+        "timestamp": "2025-05-24T09:15:00Z"
+    },
+    {
+        "review_id": "rev009_02",
+        "course_id": "course009",
+        "user_id": "user105",
+        "rating": 5.0,
+        "comment": "Penjelasan spotnya detail, akhirnya gak boncos lagi. Terima kasih Kursusin!",
+        "timestamp": "2025-05-22T18:00:00Z"
+    }
+]

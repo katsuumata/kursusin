@@ -1,0 +1,58 @@
+[
+    {
+        "enrollment_id": "enr001",
+        "user_id": "user102",
+        "course_id": "course001",
+        "enrollment_date": "2025-01-15T09:00:00Z",
+        "progress_percentage": 100,
+        "completion_date": "2025-02-10T11:00:00Z"
+    },
+    {
+        "enrollment_id": "enr002",
+        "user_id": "user102",
+        "course_id": "course002",
+        "enrollment_date": "2025-02-11T09:00:00Z",
+        "progress_percentage": 100,
+        "completion_date": "2025-03-01T15:00:00Z"
+    },
+    {
+        "enrollment_id": "enr003",
+        "user_id": "user102",
+        "course_id": "course003",
+        "enrollment_date": "2025-03-02T09:00:00Z",
+        "progress_percentage": 100,
+        "completion_date": "2025-04-15T10:00:00Z"
+    },
+    {
+        "enrollment_id": "enr004",
+        "user_id": "user102",
+        "course_id": "course004",
+        "enrollment_date": "2025-04-16T09:00:00Z",
+        "progress_percentage": 100,
+        "completion_date": "2025-05-20T16:00:00Z"
+    },
+    {
+        "enrollment_id": "enr005",
+        "user_id": "user102",
+        "course_id": "course005",
+        "enrollment_date": "2025-05-21T09:00:00Z",
+        "progress_percentage": 75,
+        "completion_date": null
+    },
+    {
+        "enrollment_id": "enr006",
+        "user_id": "user102",
+        "course_id": "course006",
+        "enrollment_date": "2025-05-22T09:00:00Z",
+        "progress_percentage": 50,
+        "completion_date": null
+    },
+    {
+        "enrollment_id": "enr007",
+        "user_id": "user102",
+        "course_id": "course009",
+        "enrollment_date": "2025-05-23T10:00:00Z",
+        "progress_percentage": 25,
+        "completion_date": null
+    }
+]

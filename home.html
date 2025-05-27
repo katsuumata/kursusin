@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KURSUSIN</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(assets/background.avif);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section class="navbar">
+            <nav class="top-nav">
+                <a class="page-tittle" href="home.html"> <img src="assets/logo.png" alt="logo.png">
+                </a>
+            </nav>
+            <nav class="menu">
+                <a href="home.html" class="Home"><img src="assets/nav-home.png" alt="Beranda">Beranda</a>
+                <a href="course.html" class="Course"><img src="assets/nav-course.png" alt="Pelatihan">Pelatihan</a>
+                <a href="pricing.html" class="pricing"><img src="assets/nav-article.png" alt="Pricing">Pricing</a>
+                <div class="vertical-line"></div>
+
+                <a href="login.html" class="masuk" id="auth-link"> MASUK </a>
+
+                <div class="dropdown" id="user-dropdown-container" style="display: none;">
+                    <a href="#" class="masuk" id="user-nav-trigger"> <img src="assets/default_profile_nav.png"
+                            alt="User Avatar" id="user-nav-avatar"
+                            style="width:20px; height:20px; border-radius:50%; margin-right:5px;">
+                        <span id="user-nav-name">Nama User</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="dashboard.html" id="dashboard-link-nav">Dashboad</a>
+                        <a href="#" id="logout-link">Logout</a>
+                    </div>
+                </div>
+            </nav>
+            <a href="#" class="tombol" aria-label="Toggle menu">&#9776;</a>
+        </section>
+        <nav class="line-nav"></nav>
+    </header>
+
+    <section class="part-top">
+        <section class="banner-slideshow">
+            <a class="prev" role="button" aria-label="Previous slide">&#10094;</a>
+            <div class="banner">
+                <img src="assets/Banner.png" alt="Promotional Banner" id="main-banner-image">
+            </div>
+            <a class="next" role="button" aria-label="Next slide">&#10095;</a>
+        </section>
+
+        <section class="ads" id="ads-container">
+            <div class="ads-content">
+                <div class="ads-icon">
+                    <img src="assets/banner-icon1.png" alt="icon">
+                </div>
+                <div class="ads-text">
+                    <h4>Forum Pelatihan Jadi 'SuperDad'!</h4>
+                    <p>Yok pilih pelatihannya pak</p>
+                </div>
+            </div>
+            <div class="ads-content">
+                <div class="ads-icon">
+                    <img src="assets/banner-icon2.png" alt="icon">
+                </div>
+                <div class="ads-text">
+                    <h4>Tips dan Trik beberes Rumah</h4>
+                    <p>Dipilih yang bener-bener ya</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="part-info">
+        <div class="info">
+            <img src="https://www.picsum.photos/400/300/?random=1" alt="Tentang Kursusin" id="what-is-image">
+        </div>
+        <div class="what-is">
+            <h1>Apa itu Kursusin?</h1>
+            <button aria-label="Info lebih lanjut" id="what-is-button"></button>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eos quaerat accusantium nihil nesciunt
+                laborum aperiam dolorem sed magni tempora explicabo illo doloremque, illum doloribus. Accusantium,
+                perferendis! Tempore explicabo in quas provident quo vel distinctio voluptatum exercitationem commodi,
+                sit voluptatibus ullam deleniti ex reprehenderit corporis fuga velit sed alias veniam.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <div class="category-tittle">
+            <h1>Kategori</h1>
+        </div>
+        <div class="category-list" id="category-list-container">
+        </div>
+    </section>
+
+    <section class="category-card" id="category-card-container">
+    </section>
+
+    <section class="pelatihan-baru">
+        <div class="category-tittle">
+            <h1>Pelatihan Terbaru</h1>
+        </div>
+        <section class="course-new">
+            <a class="kekiri" role="button" aria-label="Previous course set">&#10094;</a>
+            <div class="list-new-course" id="new-courses-list">
+            </div>
+            <a class="kekanan" role="button" aria-label="Next course set">&#10095;</a>
+        </section>
+    </section>
+
+    <section class="pelatihan-populer">
+        <div class="category-tittle">
+            <h1>Pelatihan Terpopuler</h1>
+        </div>
+        <section class="course-new">
+            <a class="kekiri" role="button" aria-label="Previous course set">&#10094;</a>
+            <div class="list-new-course" id="popular-courses-list">
+            </div>
+            <a class="kekanan" role="button" aria-label="Next course set">&#10095;</a>
+        </section>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-title">
+                    <span>KURSUS</span><span class="orange"> IN AJA!</span>
+                </div>
+                <p class="footer-text">
+                    Platform pembelajaran online interaktif untuk bapak-bapak,<br>
+                    dengan kursus pertukangan, pertamanan, bengkel, dan lainnya.
+                </p>
+                <p class="footer-copy">&copy; 2025 Kursusin. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="home.html">Beranda</a></li>
+                    <li><a href="course.html">Pelatihan</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Kenalan dengan kami</h4>
+                <ul class="social-links">
+                    <li><a href="#"><img src="assets/gmail.png" alt="Gmail">Gmail</a></li>
+                    <li><a href="#"><img src="assets/instagram.png" alt="Instagram">Instagram</a></li>
+                    <li><a href="#"><img src="assets/facebook.png" alt="Facebook">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Pop Up -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div id="popup-box" class="popup-box">
+            <img id="popup-image" class="popup-icon" alt="Popup Icon">
+            <h2 id="popup-title">Status</h2>
+            <p id="popup-message">Pesan akan tampil di sini.</p>
+            <p id="popup-redirect-message" class="redirect-message" style="display: none;"></p>
+            <div id="popup-loader" class="popup-loader" style="display: none;"></div>
+            <button id="popup-ok-btn" style="display: none;">OK</button>
+        </div>
+    </div>
+
+
+    <script src="./js/global.js" defer></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+[
+    {
+        "lesson_id": "lesson001_01_01",
+        "module_id": "mod001_01",
+        "lesson_title": "Video Pembuka: Pentingnya Romantisme",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "y2kGvFh9D4o",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson001_01_02",
+        "module_id": "mod001_01",
+        "lesson_title": "Kuis: Seberapa Romantis Anda Saat Ini?",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Jawablah pertanyaan berikut dengan jujur untuk mengetahui tingkat keromantisan Anda..."
+    },
+    {
+        "lesson_id": "lesson001_02_01",
+        "module_id": "mod001_02",
+        "lesson_title": "Materi: Mengenal Lima Bahasa Cinta Pasangan",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Lima bahasa cinta adalah Words of Affirmation, Acts of Service, Receiving Gifts, Quality Time, dan Physical Touch. Memahami bahasa cinta pasangan adalah kunci."
+    },
+    {
+        "lesson_id": "lesson001_02_02",
+        "module_id": "mod001_02",
+        "lesson_title": "Video: Cara Sederhana Mengenali Preferensi Istri",
+        "order": 2,
+        "lesson_type": "video",
+        "content_url": "H4c2SBC41iE",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson001_03_01",
+        "module_id": "mod001_03",
+        "lesson_title": "Artikel: 10 Ide Kejutan Spontan di Tengah Kesibukan",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "1. Tinggalkan catatan manis di tempat tak terduga. 2. Kirim pesan suara romantis. 3. Bawakan makanan atau minuman favoritnya tanpa diminta..."
+    },
+    {
+        "lesson_id": "lesson001_03_02",
+        "module_id": "mod001_03",
+        "lesson_title": "Studi Kasus: Kejutan yang Berhasil",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Simak kisah sukses Bapak Andi yang memberikan kejutan sederhana namun berkesan bagi istrinya."
+    },
+    {
+        "lesson_id": "lesson001_04_01",
+        "module_id": "mod001_04",
+        "lesson_title": "Video Tutorial: Membuat Kotak Kenangan Romantis",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "exampleDIYvideoID1",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson001_04_02",
+        "module_id": "mod001_04",
+        "lesson_title": "Tips: Memilih Bahan DIY yang Mudah Ditemukan",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Gunakan bahan-bahan sederhana seperti karton, foto lama, pita, dan spidol warna untuk membuat hadiah DIY yang personal."
+    },
+    {
+        "lesson_id": "lesson001_05_01",
+        "module_id": "mod001_05",
+        "lesson_title": "Panduan: Menyusun Rencana Mini-Date di Rumah",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Fokus pada detail kecil yang personal dan berarti bagi pasangan Anda. Ciptakan suasana yang berbeda dari biasanya."
+    },
+    {
+        "lesson_id": "lesson001_05_02",
+        "module_id": "mod001_05",
+        "lesson_title": "Checklist: Persiapan Momen Berkesan",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "1. Siapkan playlist musik favorit berdua. 2. Atur pencahayaan ruangan menjadi lebih temaram. 3. Singkirkan semua gangguan seperti gadget untuk sementara waktu."
+    },
+    {
+        "lesson_id": "lesson002_01_01",
+        "module_id": "mod002_01",
+        "lesson_title": "Video: Apa Itu Pegal Linu dan Penyebabnya?",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "pegalLinuIntroVideoID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson002_01_02",
+        "module_id": "mod002_01",
+        "lesson_title": "Artikel: Mitos dan Fakta Seputar Pegal Linu",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Banyak mitos beredar tentang pegal linu. Mari kita bedah fakta ilmiahnya agar tidak salah kaprah."
+    },
+    {
+        "lesson_id": "lesson002_02_01",
+        "module_id": "mod002_02",
+        "lesson_title": "Video Tutorial: Pijat Punggung Bawah Sendiri",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "pijatPunggungVideoID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson002_02_02",
+        "module_id": "mod002_02",
+        "lesson_title": "Infografis: Titik Pijat Akupresur untuk Kaki Lelah",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Gambar titik-titik akupresur pada kaki yang bisa Anda tekan untuk meredakan kelelahan dan pegal."
+    },
+    {
+        "lesson_id": "lesson002_03_01",
+        "module_id": "mod002_03",
+        "lesson_title": "Resep: Membuat Minyak Urut Jahe Hangat",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Bahan: Jahe merah, minyak kelapa, sereh. Cara membuat: ... (langkah-langkah)"
+    },
+    {
+        "lesson_id": "lesson002_03_02",
+        "module_id": "mod002_03",
+        "lesson_title": "Video: Demo Pembuatan Kompres Daun Sirih",
+        "order": 2,
+        "lesson_type": "video",
+        "content_url": "kompresDaunSirihVideoID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson002_04_01",
+        "module_id": "mod002_04",
+        "lesson_title": "Gerakan Peregangan Pagi Hari Anti Pegal",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "pereganganPagiVideoID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson002_04_02",
+        "module_id": "mod002_04",
+        "lesson_title": "Tips: Posisi Tidur yang Baik untuk Mencegah Sakit Punggung",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Hindari tidur tengkurap. Posisi tidur miring dengan bantal di antara lutut dapat membantu."
+    },
+    {
+        "lesson_id": "lesson009_01_01",
+        "module_id": "mod009_01",
+        "lesson_title": "Video: Memilih Joran dan Reel yang Tepat",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "videoIDJoranReel",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson009_01_02",
+        "module_id": "mod009_01",
+        "lesson_title": "Artikel: Panduan Lengkap Senar dan Kail",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Pemilihan senar (PE, mono, fluoro) dan kail (ukuran, bentuk) sangat penting. Perhatikan kekuatan (lbs) senar dan ukuran kail yang sesuai dengan target ikan dan teknik mancing."
+    },
+    {
+        "lesson_id": "lesson009_01_03",
+        "module_id": "mod009_01",
+        "lesson_title": "Aksesoris Pancing Tambahan",
+        "order": 3,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Pelampung, timah pemberat, swivel, dan snap adalah beberapa aksesoris yang akan membantu Anda."
+    },
+    {
+        "lesson_id": "lesson009_02_01",
+        "module_id": "mod009_02",
+        "lesson_title": "Video Tutorial: Teknik Casting (Melempar Umpan) untuk Pemula",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "videoIDCasting",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson009_02_02",
+        "module_id": "mod009_02",
+        "lesson_title": "Tips: Variasi Teknik Retrieving (Menggulung Senar)",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Variasi kecepatan retrieve bisa memicu sambaran ikan. Coba retrieve cepat, lambat, atau dengan jeda (stop and go) untuk meniru gerakan mangsa alami."
+    },
+    {
+        "lesson_id": "lesson009_03_01",
+        "module_id": "mod009_03",
+        "lesson_title": "Video: Kelebihan & Kekurangan Umpan Alami vs Buatan",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "videoIDUmpan",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson009_03_02",
+        "module_id": "mod009_03",
+        "lesson_title": "Resep Rahasia: Meracik Umpan Galatama Sendiri",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Beberapa bahan alami yang bisa diracik untuk umpan antara lain cacing, jangkrik, udang, atau pelet yang dicampur dengan essen aroma tertentu untuk meningkatkan daya tarik."
+    },
+    {
+        "lesson_id": "lesson009_04_01",
+        "module_id": "mod009_04",
+        "lesson_title": "Membaca Tanda-Tanda Alam untuk Spot Potensial",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Perhatikan arus air, vegetasi, dan aktivitas ikan kecil sebagai indikator keberadaan ikan target."
+    },
+    {
+        "lesson_id": "lesson009_04_02",
+        "module_id": "mod009_04",
+        "lesson_title": "Video: Etika dan Keselamatan Saat Memancing",
+        "order": 2,
+        "lesson_type": "video",
+        "content_url": "videoIDMancingSafety",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson004_01_01",
+        "module_id": "mod004_01",
+        "lesson_title": "Video: Apa itu Smart Home?",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "smartHomeIntroID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson004_01_02",
+        "module_id": "mod004_01",
+        "lesson_title": "Perangkat Wajib untuk Memulai",
+        "order": 2,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Router Wi-Fi yang stabil, smartphone, dan perangkat pintar pertama Anda (misal, lampu pintar)."
+    },
+    {
+        "lesson_id": "lesson004_02_01",
+        "module_id": "mod004_02",
+        "lesson_title": "Tutorial: Pasang Lampu Pintar",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "pasangLampuPintarID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson006_01_01",
+        "module_id": "mod006_01",
+        "lesson_title": "Video: Kenapa Perawatan Rutin Itu Penting?",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "rawatKendaraanIntroID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson006_02_01",
+        "module_id": "mod006_02",
+        "lesson_title": "Cek Oli Mesin & Air Radiator",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Pastikan level oli dan air radiator selalu dalam batas aman. Ganti oli secara berkala."
+    },
+    {
+        "lesson_id": "lesson011_01_01",
+        "module_id": "mod011_01",
+        "lesson_title": "Video: Alat Tukang Wajib Punya",
+        "order": 1,
+        "lesson_type": "video",
+        "content_url": "alatTukangVideoID",
+        "text_content": null
+    },
+    {
+        "lesson_id": "lesson011_02_01",
+        "module_id": "mod011_02",
+        "lesson_title": "Teknik Memotong Kayu Lurus",
+        "order": 1,
+        "lesson_type": "text",
+        "content_url": null,
+        "text_content": "Gunakan gergaji yang tepat dan pastikan kayu terkunci dengan baik sebelum memotong."
+    }
+]

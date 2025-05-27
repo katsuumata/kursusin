@@ -1,0 +1,26 @@
+[
+    {
+        "user_badge_id": "ub001",
+        "user_id": "user102",
+        "badge_id": "badge01",
+        "date_earned": "2025-02-10T11:00:00Z"
+    },
+    {
+        "user_badge_id": "ub002",
+        "user_id": "user102",
+        "badge_id": "badge02",
+        "date_earned": "2025-02-10T11:00:00Z"
+    },
+    {
+        "user_badge_id": "ub003",
+        "user_id": "user102",
+        "badge_id": "badge04",
+        "date_earned": "2025-04-15T10:00:00Z"
+    },
+    {
+        "user_badge_id": "ub004",
+        "user_id": "user102",
+        "badge_id": "badge03",
+        "date_earned": "2025-05-20T16:00:00Z"
+    }
+]

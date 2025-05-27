@@ -1,0 +1,149 @@
+[
+    {
+        "id": "paket-3bln",
+        "name": "Paket Akses 3 Bulan",
+        "price": 599000,
+        "originalPrice": null,
+        "period": "/3 bln",
+        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "features": [
+            {
+                "text": "Tutorial bersih-bersih & perawatan rumah",
+                "type": "included"
+            },
+            {
+                "text": "Akses modul selama 3 bulan",
+                "type": "included"
+            },
+            {
+                "text": "64+ video pelatihan",
+                "type": "included"
+            },
+            {
+                "text": "8 Jalur Pembelajaran <i>(Learning Path)</i> Rumah Tangga",
+                "type": "included"
+            },
+            {
+                "text": "Sertifikat penyelesaian",
+                "type": "included"
+            },
+            {
+                "text": "4 Sesi Live Webinar",
+                "type": "excluded"
+            },
+            {
+                "text": "E-book panduan",
+                "type": "excluded"
+            },
+            {
+                "text": "Kelas pelatihan onsite gratis",
+                "type": "excluded"
+            }
+        ],
+        "popular": false,
+        "discountBadge": null,
+        "ctaLink": "./cart.html"
+    },
+    {
+        "id": "paket-6bln",
+        "name": "Paket Akses 6 Bulan",
+        "price": 999000,
+        "originalPrice": 1198000,
+        "period": "/6 bln",
+        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "features": [
+            {
+                "text": "Tutorial bersih-bersih & perawatan rumah",
+                "type": "included"
+            },
+            {
+                "text": "Pendampingan mentor rumah tangga",
+                "type": "included"
+            },
+            {
+                "text": "Akses konten selama 6 bulan",
+                "type": "included"
+            },
+            {
+                "text": "72+ video pelatihan",
+                "type": "included"
+            },
+            {
+                "text": "12 Jalur Pembelajaran <i>(Learning Path)</i> Rumah Tangga",
+                "type": "included"
+            },
+            {
+                "text": "Sertifikat penyelesaian",
+                "type": "included"
+            },
+            {
+                "text": "4 Sesi Live Webinar",
+                "type": "included"
+            },
+            {
+                "text": "E-book panduan",
+                "type": "included"
+            },
+            {
+                "text": "Kelas pelatihan onsite gratis",
+                "type": "excluded"
+            }
+        ],
+        "popular": true,
+        "discountBadge": "Hemat 17%",
+        "ctaLink": "./cart.html"
+    },
+    {
+        "id": "paket-12bln",
+        "name": "Paket Akses 12 Bulan",
+        "price": 1299000,
+        "originalPrice": 2396000,
+        "period": "/thn",
+        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "features": [
+            {
+                "text": "Tutorial bersih-bersih & perawatan rumah",
+                "type": "included"
+            },
+            {
+                "text": "Akses modul belajar kapan saja",
+                "type": "included"
+            },
+            {
+                "text": "Pendampingan mentor rumah tangga",
+                "type": "included"
+            },
+            {
+                "text": "Akses konten selama 12 bulan",
+                "type": "included"
+            },
+            {
+                "text": "84+ video pelatihan",
+                "type": "included"
+            },
+            {
+                "text": "15 Jalur Pembelajaran <i>(Learning Path)</i> Rumah Tangga",
+                "type": "included"
+            },
+            {
+                "text": "Sertifikat penyelesaian",
+                "type": "included"
+            },
+            {
+                "text": "12 Sesi Live Webinar",
+                "type": "included"
+            },
+            {
+                "text": "E-book panduan",
+                "type": "included"
+            },
+            {
+                "text": "Kelas pelatihan onsite gratis",
+                "type": "included"
+            }
+        ],
+        "popular": false,
+        "discountBadge": "Hemat 45%",
+        "ctaLink": "./cart.html"
+    }
+]

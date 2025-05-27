@@ -1,0 +1,571 @@
+/* General body and search part styling from user */
+.part-pencarian {
+    margin-top: 0.2rem;
+    /* Applied directly after header */
+    height: auto;
+    /* Let content define height */
+    min-height: 280px;
+    /* Minimum height for visual consistency */
+    color: white;
+    padding-bottom: 20px;
+    /* Add some padding at the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.course-judul {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 20px 15px 20px;
+    /* Adjusted padding */
+    line-height: 1.4em;
+}
+
+.course-pencarian {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 0 20px;
+    /* Adjusted padding */
+    gap: 0.7em;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    /* Max width for search area */
+    box-sizing: border-box;
+}
+
+.search-box {
+    flex-grow: 1;
+    /* Allow search box to take available space */
+    min-width: 300px;
+    /* Minimum width for search box */
+    /* margin-right: 20px; Removed, gap handles spacing */
+}
+
+.search-wrap {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    /* Padding for icon and input */
+    gap: 10px;
+    /* Gap between icon and input */
+    height: 60px;
+    /* Adjusted height */
+    box-sizing: border-box;
+}
+
+.search-wrap img {
+    width: 24px;
+    /* Adjusted icon size */
+    height: auto;
+}
+
+.search-wrap input[type="text"] {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    outline: none;
+    height: 100%;
+}
+
+.search-wrap input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1em;
+    /* Placeholder size relative to input */
+}
+
+
+.filter-box,
+.reset-box {
+    min-width: 90px;
+    height: 60px;
+    /* Match search wrap height */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-box img,
+/* Targeting img inside buttons */
+.reset-box img {
+    width: 1rem;
+    /* Consistent icon size */
+    height: auto;
+}
+
+
+.info-pelatihan {
+    text-align: center;
+    margin-top: 20px;
+    /* Increased margin */
+    font-size: 1em;
+    color: white;
+}
+
+.filter-box:hover,
+.reset-box:hover {
+    background-color: white;
+    color: rgb(55, 90, 96);
+    transform: scale(1.05);
+}
+
+/* Filter Popup Styles */
+.filter-options-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    /* Above header */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.filter-options-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.filter-popup-content {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.filter-options-popup.visible .filter-popup-content {
+    transform: scale(1);
+}
+
+.filter-popup-content h3 {
+    color: #375a60;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.filter-group {
+    margin-bottom: 18px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+#apply-filters-button {
+    background-color: #375a60;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#apply-filters-button:hover {
+    background-color: #2c484d;
+}
+
+.close-filter-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.8em;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-filter-popup:hover {
+    color: #333;
+}
+
+
+/* LIST-COURSE */
+.listcourse {
+    padding: 30px 20px;
+    /* Adjusted padding */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    /* Responsive grid */
+    gap: 25px;
+    /* Slightly increased gap */
+    max-width: 1200px;
+    /* Limit overall width */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+/* Course item styles from home.css, assuming they are similar or should be merged */
+/* If styles are identical, they can be in style.css or a shared component CSS */
+.course-item {
+    /* width: 235px; Let grid handle width */
+    height: fit-content;
+    /* Or set a fixed height for uniformity if desired */
+    padding-bottom: 0.8rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    /* Lift and slightly scale on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+}
+
+.course-pict img {
+    width: 100%;
+    height: 132px;
+    /* Maintain aspect ratio or set fixed height */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.course-content {
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-tittle {
+    color: rgb(55, 90, 96);
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    min-height: 2.4em;
+    /* Approx 2 lines */
+    margin-bottom: 5px;
+    font-weight: 600;
+    /* Make title a bit bolder */
+}
+
+.course-author {
+    padding: 0 0 5px 0;
+    color: #777;
+    font-size: 0.8em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 0 5px 0;
+}
+
+.course-star img {
+    width: 12px;
+    height: auto;
+}
+
+.course-point {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #555;
+}
+
+.course-participant {
+    color: #333;
+    font-size: 0.8em;
+    padding: 0 0 10px 0;
+}
+
+.lihat {
+    padding: 8px 12px;
+    align-self: flex-end;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 3px solid #d98200;
+    background-color: #efbf7e;
+    color: #375a60;
+    font-size: 0.8em;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.lihat:hover {
+    background-color: #375a60;
+    border-bottom-color: #22a047;
+    color: white;
+}
+
+
+/* SEE MORE */
+.see-more {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    /* Adjusted padding */
+}
+
+.see {
+    /* This is the "Lihat Lainnya" button */
+    padding: 10px 30px;
+    border: 1px solid #375a60;
+    /* Changed to match color scheme */
+    border-radius: 10px;
+    font-size: 1.1em;
+    /* Adjusted size */
+    font-weight: bold;
+    color: #375a60;
+    background-color: white;
+    border-bottom-width: 3px;
+    /* Thicker bottom border for depth */
+    border-right-width: 2px;
+    /* Thicker right border for depth */
+    transform: scale(1);
+    transition: 0.3s all ease;
+    /* Smoother transition */
+}
+
+.see:hover {
+    background-color: #375a60;
+    border-color: #2c484d;
+    /* Darker border on hover */
+    color: white;
+    transform: scale(1.03);
+    /* Slightly smaller hover scale */
+    cursor: pointer;
+}
+
+/* Responsive classes from home.css - check if they are still needed or how they apply here */
+.responsive {
+    /* display: block; */
+    /* By default, items are block or flex/grid items */
+    /* If this was for hiding certain items on desktop, it needs specific context */
+}
+
+
+@media(max-width: 992px) {
+    .search-box {
+        min-width: 250px;
+        /* Adjust min-width */
+    }
+
+    .listcourse {
+        padding: 30px 15px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .course-pencarian {
+        flex-direction: column;
+        /* Stack search and buttons */
+        gap: 15px;
+        padding: 10px 15px;
+    }
+
+    .search-box {
+        width: 100%;
+        /* Full width for search box */
+        margin-right: 0;
+    }
+
+    .search-wrap {
+        height: 50px;
+    }
+
+    .search-wrap input[type="text"]::placeholder {
+        font-size: 0.9em;
+    }
+
+    .filter-box,
+    .reset-box {
+        width: 48%;
+        /* Make buttons take roughly half width */
+        min-width: auto;
+        height: 50px;
+        font-size: 0.9em;
+    }
+
+    .course-pencarian>button:nth-of-type(1) {
+        /* Target filter button */
+        margin-right: 2%;
+    }
+
+    .course-pencarian>button:nth-of-type(2) {
+        /* Target reset button */
+        margin-left: 2%;
+    }
+
+
+    .info-pelatihan {
+        font-size: 0.9em;
+        margin-top: 15px;
+    }
+
+    .listcourse {
+        padding: 30px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Smaller min item width */
+        gap: 15px;
+    }
+
+    .course-item {
+        /* min-width: 280px; Let grid handle it */
+    }
+
+    .course-pict img {
+        /* min-width: 280px; Let it be 100% of parent */
+    }
+
+    .course-content {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .course-star img {
+        width: 10px;
+    }
+}
+
+@media(max-width:480px) {
+    .part-pencarian {
+        min-height: auto;
+        /* Adjust height */
+    }
+
+    .course-judul {
+        font-size: 1.2em;
+        padding: 20px 15px 10px 15px;
+    }
+
+    .search-wrap {
+        height: 45px;
+    }
+
+    .search-wrap input[type="text"]::placeholder {
+        font-size: 0.8em;
+    }
+
+    .search-wrap img {
+        width: 20px;
+    }
+
+    .filter-box,
+    .reset-box {
+        width: 100%;
+        /* Stack buttons fully */
+        height: 45px;
+        margin: 5px 0;
+    }
+
+    .course-pencarian>button:nth-of-type(1),
+    .course-pencarian>button:nth-of-type(2) {
+        margin: 5px 0;
+    }
+
+    .filter-box span,
+    /* Hide text on very small screens for icon buttons */
+    .reset-box span {
+        display: none;
+    }
+
+    .filter-box,
+    .reset-box {
+        min-width: 45px;
+        /* Just enough for icon */
+        padding: 0 10px;
+    }
+
+    .info-pelatihan {
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+
+    .listcourse {
+        padding: 20px 10px;
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 15px;
+    }
+
+    .course-item {
+        /* min-width: 250px; */
+    }
+
+    .course-pict img {
+        /* min-width: 250px; */
+    }
+
+    .course-content {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .course-star img {
+        width: 10px;
+    }
+}

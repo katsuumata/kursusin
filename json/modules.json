@@ -1,0 +1,260 @@
+[
+    {
+        "module_id": "mod001_01",
+        "course_id": "course001",
+        "module_title": "Pretest: Seberapa Romantis Anda?",
+        "order": 1
+    },
+    {
+        "module_id": "mod001_02",
+        "course_id": "course001",
+        "module_title": "Modul 1 - Memahami Makna Romantisme Sehari-hari",
+        "order": 2
+    },
+    {
+        "module_id": "mod001_03",
+        "course_id": "course001",
+        "module_title": "Modul 2 - Ide Kejutan Sederhana yang Bermakna",
+        "order": 3
+    },
+    {
+        "module_id": "mod001_04",
+        "course_id": "course001",
+        "module_title": "Modul 3 - Tutorial: Hadiah DIY Spesial untuk Istri",
+        "order": 4
+    },
+    {
+        "module_id": "mod001_05",
+        "course_id": "course001",
+        "module_title": "Modul 4 - Merencanakan Momen Kecil Tapi Berkesan",
+        "order": 5
+    },
+    {
+        "module_id": "mod002_01",
+        "course_id": "course002",
+        "module_title": "Pengantar: Mengenal Pegal Linu",
+        "order": 1
+    },
+    {
+        "module_id": "mod002_02",
+        "course_id": "course002",
+        "module_title": "Modul 1 - Teknik Pijat Mandiri",
+        "order": 2
+    },
+    {
+        "module_id": "mod002_03",
+        "course_id": "course002",
+        "module_title": "Modul 2 - Ramuan Herbal Tradisional",
+        "order": 3
+    },
+    {
+        "module_id": "mod002_04",
+        "course_id": "course002",
+        "module_title": "Modul 3 - Peregangan & Pencegahan",
+        "order": 4
+    },
+    {
+        "module_id": "mod003_01",
+        "course_id": "course003",
+        "module_title": "Pendahuluan: Pentingnya MPASI Berkualitas",
+        "order": 1
+    },
+    {
+        "module_id": "mod003_02",
+        "course_id": "course003",
+        "module_title": "Modul 1 - Gizi Seimbang untuk Bayi",
+        "order": 2
+    },
+    {
+        "module_id": "mod003_03",
+        "course_id": "course003",
+        "module_title": "Modul 2 - Kumpulan Resep MPASI 6-8 Bulan",
+        "order": 3
+    },
+    {
+        "module_id": "mod003_04",
+        "course_id": "course003",
+        "module_title": "Modul 3 - Tips & Trik Anti GTM",
+        "order": 4
+    },
+    {
+        "module_id": "mod004_01",
+        "course_id": "course004",
+        "module_title": "Dasar-Dasar Smart Home",
+        "order": 1
+    },
+    {
+        "module_id": "mod004_02",
+        "course_id": "course004",
+        "module_title": "Modul 1 - Instalasi Lampu & Stop Kontak Pintar",
+        "order": 2
+    },
+    {
+        "module_id": "mod004_03",
+        "course_id": "course004",
+        "module_title": "Modul 2 - Sensor Keamanan & Otomatisasi",
+        "order": 3
+    },
+    {
+        "module_id": "mod004_04",
+        "course_id": "course004",
+        "module_title": "Modul 3 - Integrasi dengan Asisten Suara",
+        "order": 4
+    },
+    {
+        "module_id": "mod005_01",
+        "course_id": "course005",
+        "module_title": "Mengapa Investasi Emas?",
+        "order": 1
+    },
+    {
+        "module_id": "mod005_02",
+        "course_id": "course005",
+        "module_title": "Modul 1 - Jenis Emas & Cara Membeli",
+        "order": 2
+    },
+    {
+        "module_id": "mod005_03",
+        "course_id": "course005",
+        "module_title": "Modul 2 - Strategi & Risiko Investasi Emas",
+        "order": 3
+    },
+    {
+        "module_id": "mod006_01",
+        "course_id": "course006",
+        "module_title": "Pentingnya Perawatan Kendaraan Rutin",
+        "order": 1
+    },
+    {
+        "module_id": "mod006_02",
+        "course_id": "course006",
+        "module_title": "Modul 1 - Pemeriksaan Cairan & Oli",
+        "order": 2
+    },
+    {
+        "module_id": "mod006_03",
+        "course_id": "course006",
+        "module_title": "Modul 2 - Perawatan Ban & Aki",
+        "order": 3
+    },
+    {
+        "module_id": "mod006_04",
+        "course_id": "course006",
+        "module_title": "Modul 3 - Troubleshooting Masalah Umum",
+        "order": 4
+    },
+    {
+        "module_id": "mod007_01",
+        "course_id": "course007",
+        "module_title": "Konsep & Riset Pasar Kuliner",
+        "order": 1
+    },
+    {
+        "module_id": "mod007_02",
+        "course_id": "course007",
+        "module_title": "Modul 1 - Branding & Inovasi Menu",
+        "order": 2
+    },
+    {
+        "module_id": "mod007_03",
+        "course_id": "course007",
+        "module_title": "Modul 2 - Pemasaran Digital & Operasional",
+        "order": 3
+    },
+    {
+        "module_id": "mod008_01",
+        "course_id": "course008",
+        "module_title": "Memahami Sistem Reproduksi Pria",
+        "order": 1
+    },
+    {
+        "module_id": "mod008_02",
+        "course_id": "course008",
+        "module_title": "Modul 1 - Kesuburan & Faktor Pengaruh",
+        "order": 2
+    },
+    {
+        "module_id": "mod008_03",
+        "course_id": "course008",
+        "module_title": "Modul 2 - Pencegahan & Gaya Hidup Sehat",
+        "order": 3
+    },
+    {
+        "module_id": "mod009_01",
+        "course_id": "course009",
+        "module_title": "Pengenalan Alat Pancing",
+        "order": 1
+    },
+    {
+        "module_id": "mod009_02",
+        "course_id": "course009",
+        "module_title": "Teknik Dasar Memancing",
+        "order": 2
+    },
+    {
+        "module_id": "mod009_03",
+        "course_id": "course009",
+        "module_title": "Memilih Umpan Jitu",
+        "order": 3
+    },
+    {
+        "module_id": "mod009_04",
+        "course_id": "course009",
+        "module_title": "Strategi Spot & Keselamatan",
+        "order": 4
+    },
+    {
+        "module_id": "mod010_01",
+        "course_id": "course010",
+        "module_title": "Dasar Sistem Air Bersih Rumah",
+        "order": 1
+    },
+    {
+        "module_id": "mod010_02",
+        "course_id": "course010",
+        "module_title": "Modul 1 - Mengatasi Kebocoran Pipa",
+        "order": 2
+    },
+    {
+        "module_id": "mod010_03",
+        "course_id": "course010",
+        "module_title": "Modul 2 - Perawatan Pompa & Filter Air",
+        "order": 3
+    },
+    {
+        "module_id": "mod011_01",
+        "course_id": "course011",
+        "module_title": "Pengenalan Alat Tukang Esensial",
+        "order": 1
+    },
+    {
+        "module_id": "mod011_02",
+        "course_id": "course011",
+        "module_title": "Modul 1 - Teknik Dasar Kayu",
+        "order": 2
+    },
+    {
+        "module_id": "mod011_03",
+        "course_id": "course011",
+        "module_title": "Modul 2 - Proyek DIY Sederhana",
+        "order": 3
+    },
+    {
+        "module_id": "mod012_01",
+        "course_id": "course012",
+        "module_title": "Persiapan Lahan & Media Tanam",
+        "order": 1
+    },
+    {
+        "module_id": "mod012_02",
+        "course_id": "course012",
+        "module_title": "Modul 1 - Pemilihan Bibit & Penyemaian",
+        "order": 2
+    },
+    {
+        "module_id": "mod012_03",
+        "course_id": "course012",
+        "module_title": "Modul 2 - Perawatan Organik & Panen",
+        "order": 3
+    }
+]

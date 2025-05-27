@@ -1,0 +1,22 @@
+[
+    {
+        "order_id": "ord123",
+        "user_id": "user102",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-01-10T10:00:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord124",
+        "user_id": "user101",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-05-20T11:00:00Z",
+        "total_amount": 599000,
+        "status": "pending",
+        "coupon_code": null
+    }
+]

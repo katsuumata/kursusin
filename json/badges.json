@@ -1,0 +1,32 @@
+[
+    {
+        "badge_id": "badge01",
+        "name": "Bapak Pembelajar",
+        "description": "Menyelesaikan kursus pertama.",
+        "image_url": "assets/badges/pembelajar.png"
+    },
+    {
+        "badge_id": "badge02",
+        "name": "Bapak Romantis",
+        "description": "Menyelesaikan kursus 'Romantisme Ala Bapak'.",
+        "image_url": "assets/badges/romantis.png"
+    },
+    {
+        "badge_id": "badge03",
+        "name": "Bapak Sehat",
+        "description": "Menyelesaikan 2 kursus Kesehatan.",
+        "image_url": "assets/badges/sehat.png"
+    },
+    {
+        "badge_id": "badge04",
+        "name": "Bapak Mekanik",
+        "description": "Menyelesaikan kursus Otomotif.",
+        "image_url": "assets/badges/mekanik.png"
+    },
+    {
+        "badge_id": "badge05",
+        "name": "Master Pancing",
+        "description": "Menyelesaikan kursus Mancing.",
+        "image_url": "assets/badges/mancing.png"
+    }
+]

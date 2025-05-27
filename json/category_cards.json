@@ -1,0 +1,26 @@
+[
+    {
+        "id": "cc001",
+        "title": "Belajar Mudah \"Open Access\"",
+        "description": "Ada 262 materi e-learning dan microlearning yang terbuka untuk siapa saja, termasuk Anda!",
+        "image_url": "assets/cat-card1.jpg",
+        "arrow_icon_url": "assets/right-arrow.png",
+        "link_url": "course.html?filter=open-access"
+    },
+    {
+        "id": "cc002",
+        "title": "Lifehack Hidup Kepala Keluarga",
+        "description": "Terdapat 20 materi e-learning dan microlearning yang dirancang khusus untuk membantu menjadi professional daddy.",
+        "image_url": "assets/cat-card2.jpg",
+        "arrow_icon_url": "assets/right-arrow.png",
+        "link_url": "course.html?filter=lifehacks"
+    },
+    {
+        "id": "cc003",
+        "title": "Kiat Sukses Dicintai Keluarga",
+        "description": "Terdapat materi yang berisi tips dan ide-ide agar Anda lebih dicintai istri dan anak-anak.",
+        "image_url": "assets/cat-card3.jpg",
+        "arrow_icon_url": "assets/right-arrow.png",
+        "link_url": "course.html?filter=family-love"
+    }
+]

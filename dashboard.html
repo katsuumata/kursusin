@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasbor Pengguna - KURSUSIN</title>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(assets/background.avif);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <section class="navbar">
+      <nav class="top-nav">
+        <a class="page-tittle" href="home.html">
+          <img src="assets/logo.png" alt="Logo Kursusin">
+        </a>
+      </nav>
+      <nav class="menu">
+        <a href="home.html" class="Home"><img src="assets/nav-home.png" alt="Beranda">Beranda</a>
+        <a href="course.html" class="Course"><img src="assets/nav-course.png" alt="Pelatihan">Pelatihan</a>
+        <a href="pricing.html" class="pricing"><img src="assets/nav-article.png" alt="Pricing">Pricing</a>
+        <div class="vertical-line"></div>
+
+        <a href="login.html" class="masuk" id="auth-link"> MASUK </a>
+        <div class="dropdown" id="user-dropdown-container" style="display: none;">
+          <a href="#" class="masuk" id="user-nav-trigger">
+            <img src="assets/default_profile_nav.png" alt="User Avatar" id="user-nav-avatar"
+              style="width:20px; height:20px; border-radius:50%; margin-right:5px;">
+            <span id="user-nav-name">Nama User</span>
+          </a>
+          <div class="dropdown-content">
+            <a href="dashboard.html" id="dashboard-link-nav">Dasbor</a>
+            <a href="#" id="logout-link">Logout</a>
+          </div>
+        </div>
+      </nav>
+      <a href="#" class="tombol" aria-label="Toggle Menu">&#9776;</a>
+    </section>
+    <nav class="line-nav"></nav>
+  </header>
+
+  <main class="dashboard-container">
+    <aside class="sidebar">
+      <div class="card profile-card">
+        <img class="avatar" src="assets/default_profile.png" alt="Foto Profil Pengguna" id="profile-avatar">
+        <div>
+          <strong id="profile-name">Nama Pengguna</strong>
+          <p id="profile-email">email@example.com</p>
+        </div>
+      </div>
+
+      <div class="card performa-card">
+        <h3>PERFORMA</h3>
+        <div class="performa-charts">
+          <div class="chart kuning">
+            <div class="progress-circle" id="pelatihan-selesai-circle" style="--value: 0;">
+              <div class="circle-text">
+                <strong id="pelatihan-selesai-text">0/0</strong>
+                <p>Pelatihan Selesai</p>
+              </div>
+            </div>
+          </div>
+          <div class="chart biru">
+            <div class="progress-circle" id="lencana-circle" style="--value: 0;">
+              <div class="circle-text">
+                <strong id="lencana-count-text">0</strong>
+                <p>Lencana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="card-link card" id="diskusi-link">
+        DISKUSI <span class="coming-soon-badge">(Segera Hadir)</span>
+      </a>
+      <a href="#" class="card-link card" id="bantuan-link">
+        TIKET BANTUAN <span class="coming-soon-badge">(Segera Hadir)</span>
+      </a>
+      <a href="pricing.html" class="card-link card card-upgrade" id="upgrade-plan-link" style="display:none;">
+        PILIH PAKET ATAU UPGRADE
+      </a>
+    </aside>
+
+    <section class="main-content">
+      <div class="card" id="welcome-sertifikat-card">
+        <strong id="welcome-message">Selamat Datang di Dasbor Anda!</strong>
+        <p id="sertifikat-message" style="display:none;">Cek berkala Sertifikatmu! Apakah sudah ditandatangani? Muat
+          ulang halaman dasbor-mu <a href="dashboard.html" id="reload-dashboard-link">klik di sini</a></p>
+      </div>
+
+      <h2 class="section-title" id="my-courses-title">Pelatihan Saya</h2>
+      <div class="course-grid" id="courseContainer">
+      </div>
+      <div class="see-more" id="see-more-courses-container" style="display: none;">
+        <button class="see" id="see-more-courses-button">Lihat Semua Pelatihan Saya</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section footer-brand">
+        <div class="footer-title">
+          <span>KURSUS</span><span class="orange"> IN AJA!</span>
+        </div>
+        <p class="footer-text">
+          Platform pembelajaran online interaktif untuk bapak-bapak,<br>
+          dengan kursus pertukangan, pertamanan, bengkel, dan lainnya.
+        </p>
+        <p class="footer-copy">&copy; 2025 Kursusin. All rights reserved.</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Menu</h4>
+        <ul class="footer-links">
+          <li><a href="home.html">Beranda</a></li>
+          <li><a href="course.html">Pelatihan</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Kenalan dengan kami</h4>
+        <ul class="social-links">
+          <li><a href="#"><img src="assets/gmail.png" alt="Gmail">Gmail</a></li>
+          <li><a href="#"><img src="assets/instagram.png" alt="Instagram">Instagram</a></li>
+          <li><a href="#"><img src="assets/facebook.png" alt="Facebook">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div id="popup-box" class="popup-box">
+      <img id="popup-image" class="popup-icon" alt="Popup Icon" src="">
+      <h2 id="popup-title">Status</h2>
+      <p id="popup-message">Pesan akan tampil di sini.</p>
+      <p id="popup-redirect-message" class="redirect-message" style="display: none;"></p>
+      <div id="popup-loader" class="popup-loader" style="display: none;"></div>
+      <button id="popup-ok-btn" style="display: none;">OK</button>
+    </div>
+  </div>
+
+  <script src="./js/global.js" defer></script>
+  <script src="./js/dashboard.js" defer></script>
+</body>
+
+</html>

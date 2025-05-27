@@ -1,0 +1,18 @@
+[
+    {
+        "transaction_id": "trxXYZ",
+        "order_id": "ord123",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-01-10T10:05:00Z",
+        "payment_details_id": "external_payment_ref_123"
+    },
+    {
+        "transaction_id": "trxABC",
+        "order_id": "ord124",
+        "payment_method": "qris",
+        "status": "pending",
+        "transaction_date": "2025-05-20T11:02:00Z",
+        "payment_details_id": null
+    }
+]

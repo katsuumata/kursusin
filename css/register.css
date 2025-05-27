@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fallback font */
+}
+
+.main {
+    /* This class is not in the register.html, consider removing or adding to HTML */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container {
+    flex: 1;
+    /* Allows main content to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    margin-top: 2rem;
+    /* Add some space from header */
+    margin-bottom: 2rem;
+    /* Add some space before footer */
+}
+
+.register-illustration {
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* Prevent illustration from shrinking too much */
+}
+
+.register-illustration img {
+    width: 100%;
+    max-width: 350px;
+    /* Max size of illustration */
+    height: auto;
+    object-fit: contain;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Take full width on small screens when wrapped */
+    max-width: 28rem;
+    /* Max width for the form and login redirect box */
+}
+
+.register-form {
+    width: 100%;
+    /* max-width: 25rem; Handled by .register-box */
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    /* Increased padding slightly */
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.register-form h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #375a60;
+    /* Match theme color */
+    font-size: 1.8em;
+}
+
+.register-form p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    /* Increased margin */
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    /* Consistent margin */
+    color: #333;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="number"] {
+    width: 100%;
+    /* Make input take full width of its container */
+    padding: 0.6rem;
+    /* Adjusted padding */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+    font-size: 0.95em;
+}
+
+.gender-options {
+    display: flex;
+    gap: 1.5rem;
+    /* Increased gap */
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    /* Add some top margin */
+}
+
+.gender-options label {
+    font-size: 0.95rem;
+    color: #333;
+    display: flex;
+    /* Align radio button and text */
+    align-items: center;
+    cursor: pointer;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.terms-label {
+    /* Style for the terms and conditions label */
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85em;
+    color: #555;
+}
+
+.terms-label input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+
+.register-form button[type="submit"] {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    /* Increased padding */
+    background: #375a60;
+    /* Match theme color */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.register-form button[type="submit"]:hover {
+    background: #efbf7e;
+    /* Theme accent color */
+    color: #375a60;
+}
+
+.login-redirect-box {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    /* max-width: 25rem; Handled by .register-box */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.login-redirect-box h2 {
+    font-size: 1.1em;
+    /* Adjusted size */
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    /* Increased margin */
+    color: #333;
+}
+
+.login-button {
+    margin-top: 0.75rem;
+    /* border: 1px solid #ccc; Removed, button itself will have style */
+    border-radius: 0.5rem;
+    display: inline-block;
+    /* To make it not full width */
+    transition: 0.3s all ease;
+    /* Smooth transition */
+}
+
+.login-button a {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    /* Button-like padding */
+    background-color: #efbf7e;
+    /* Theme accent */
+    color: #375a60;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.login-button a:hover {
+    background-color: #375a60;
+    /* Theme main color */
+    color: white;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .register-illustration {
+        max-width: 60%;
+        /* Allow illustration to be a bit larger on tablets */
+        margin-bottom: 1rem;
+    }
+
+    .register-box {
+        max-width: 100%;
+        /* Allow form to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .register-illustration {
+        max-width: 80%;
+    }
+
+    .register-form h2 {
+        font-size: 1.5em;
+    }
+
+    .register-form,
+    .login-redirect-box {
+        padding: 1rem;
+    }
+}

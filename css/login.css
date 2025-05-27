@@ -1,0 +1,247 @@
+/* Inherits general styles from style.css */
+
+body {
+    /* background-image is set in login.html inline style, can be moved here if preferred */
+    display: flex;
+    /* Ensure body itself is a flex container for centering main */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-container {
+    flex: 1;
+    /* Allows main content to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    margin-top: 1rem;
+    /* Add some space from header */
+    margin-bottom: 1rem;
+    /* Add some space before footer */
+}
+
+.login-illustration {
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.login-illustration img {
+    width: 100%;
+    max-width: 300px;
+    /* Adjusted max-width for login illustration */
+    height: auto;
+    object-fit: contain;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center form and daftar-box */
+    width: 100%;
+    /* Take full width on small screens when wrapped */
+    max-width: 26rem;
+    /* Max width for the login area */
+}
+
+.login-form-container {
+    /* Changed from .login-form to be the container */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    /* Increased padding */
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.login-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    color: #375a60;
+    /* Theme color */
+    font-size: 1.6em;
+    /* Adjusted size */
+}
+
+#login-form label {
+    /* Targeting labels within the form */
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+    /* Make input take full width of its container */
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+
+.password-wrapper {
+    position: relative;
+    /* Add styles for show/hide toggle if implemented */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    /* Increased margin */
+    font-size: 0.85em;
+}
+
+.options .remember-me-label {
+    /* More specific selector */
+    display: flex;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.options .remember-me-label input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+.options a.forgot {
+    text-decoration: none;
+    color: #375a60;
+    /* Theme color */
+}
+
+.options a.forgot:hover {
+    text-decoration: underline;
+    color: #efbf7e;
+    /* Theme accent */
+}
+
+#login-form button[type="submit"] {
+    margin-top: 0.5rem;
+    /* margin-bottom: 0.5rem; Removed, spacing handled by form padding */
+    width: 100%;
+    padding: 0.75rem;
+    background: #375a60;
+    /* Theme color */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button[type="submit"]:hover {
+    background: #efbf7e;
+    /* Theme accent */
+    color: #375a60;
+}
+
+.daftar-box {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.daftar-box h2 {
+    font-size: 1.1em;
+    /* Adjusted size */
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.daftar-button {
+    margin-top: 0.75rem;
+    display: inline-block;
+    /* To make it not full width */
+}
+
+.daftar-button a {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #efbf7e;
+    /* Theme accent */
+    color: #375a60;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.daftar-button a:hover {
+    background-color: #375a60;
+    /* Theme main color */
+    color: white;
+}
+
+/* Responsive for layar kecil */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .login-illustration {
+        max-width: 60%;
+        /* Allow illustration to be a bit larger on tablets */
+        margin-bottom: 1rem;
+        /* Add space when stacked */
+    }
+
+    .login-box {
+        max-width: 100%;
+        /* Allow form to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-illustration {
+        max-width: 70%;
+        /* Adjust for very small screens */
+    }
+
+    .login-form-container h2 {
+        font-size: 1.4em;
+    }
+
+    .login-form-container,
+    .daftar-box {
+        padding: 1.25rem;
+    }
+
+    #login-form input[type="email"],
+    #login-form input[type="password"] {
+        padding: 0.5rem;
+    }
+
+    #login-form button[type="submit"] {
+        padding: 0.65rem;
+    }
+}
