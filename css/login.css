@@ -3,61 +3,53 @@
 body {
     /* background-image is set in login.html inline style, can be moved here if preferred */
     display: flex;
-    /* Ensure body itself is a flex container for centering main */
     flex-direction: column;
     min-height: 100vh;
 }
 
 .login-container {
     flex: 1;
-    /* Allows main content to fill available space */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem;
+    justify-content: center; /* Horizontally center the illustration and box */
+    align-items: center;    /* Vertically center them */
+    gap: 4rem;              /* Increased gap between illustration and box */
+    padding: 2rem 5%;       /* Padding on container (e.g., 5% horizontal) */
     flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
     margin-top: 1rem;
-    /* Add some space from header */
     margin-bottom: 1rem;
-    /* Add some space before footer */
 }
 
 .login-illustration {
-    max-width: 40%;
+    flex-basis: 45%;        /* Illustration takes up about 45% of available space */
+    flex-shrink: 1;
+    flex-grow: 0;           /* Don't let it grow beyond its basis excessively */
+    max-width: 550px;       /* Max width for the illustration container */
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 }
 
 .login-illustration img {
-    width: 100%;
-    max-width: 300px;
-    /* Adjusted max-width for login illustration */
+    width: 100%;            /* Image fills its container */
     height: auto;
     object-fit: contain;
 }
 
 .login-box {
+    flex-basis: 35%;        /* Form box takes about 35% */
+    flex-shrink: 1;
+    flex-grow: 0;
+    max-width: 26rem;       /* Keeps the form content itself from becoming too wide */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center form and daftar-box */
-    width: 100%;
-    /* Take full width on small screens when wrapped */
-    max-width: 26rem;
-    /* Max width for the login area */
 }
 
 .login-form-container {
-    /* Changed from .login-form to be the container */
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    /* Increased padding */
     box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
     background: #fff;
     box-sizing: border-box;
@@ -68,13 +60,10 @@ body {
     margin-bottom: 1.25rem;
     text-align: center;
     color: #375a60;
-    /* Theme color */
     font-size: 1.6em;
-    /* Adjusted size */
 }
 
 #login-form label {
-    /* Targeting labels within the form */
     display: block;
     margin-bottom: 0.3rem;
     color: #333;
@@ -85,7 +74,6 @@ body {
 #login-form input[type="email"],
 #login-form input[type="password"] {
     width: 100%;
-    /* Make input take full width of its container */
     padding: 0.6rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -96,7 +84,6 @@ body {
 
 .password-wrapper {
     position: relative;
-    /* Add styles for show/hide toggle if implemented */
 }
 
 .options {
@@ -104,12 +91,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.25rem;
-    /* Increased margin */
     font-size: 0.85em;
 }
 
 .options .remember-me-label {
-    /* More specific selector */
     display: flex;
     align-items: center;
     color: #555;
@@ -123,22 +108,18 @@ body {
 .options a.forgot {
     text-decoration: none;
     color: #375a60;
-    /* Theme color */
 }
 
 .options a.forgot:hover {
     text-decoration: underline;
     color: #efbf7e;
-    /* Theme accent */
 }
 
 #login-form button[type="submit"] {
     margin-top: 0.5rem;
-    /* margin-bottom: 0.5rem; Removed, spacing handled by form padding */
     width: 100%;
     padding: 0.75rem;
     background: #375a60;
-    /* Theme color */
     color: #fff;
     border: none;
     border-radius: 0.25rem;
@@ -150,7 +131,6 @@ body {
 
 #login-form button[type="submit"]:hover {
     background: #efbf7e;
-    /* Theme accent */
     color: #375a60;
 }
 
@@ -168,7 +148,6 @@ body {
 
 .daftar-box h2 {
     font-size: 1.1em;
-    /* Adjusted size */
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -177,54 +156,56 @@ body {
 
 .daftar-button {
     margin-top: 0.75rem;
-    display: inline-block;
-    /* To make it not full width */
+    width: 100%;
 }
 
 .daftar-button a {
-    display: inline-block;
-    padding: 0.6rem 1.5rem;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
     background-color: #efbf7e;
-    /* Theme accent */
     color: #375a60;
     text-decoration: none;
     border-radius: 0.25rem;
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .daftar-button a:hover {
     background-color: #375a60;
-    /* Theme main color */
     color: white;
 }
 
 /* Responsive for layar kecil */
 @media (max-width: 768px) {
     .login-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
         gap: 2rem;
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1rem; /* Adjust padding for smaller screens */
     }
 
     .login-illustration {
-        max-width: 60%;
-        /* Allow illustration to be a bit larger on tablets */
+        max-width: 70%;  /* Allow illustration to be reasonably large when stacked */
         margin-bottom: 1rem;
-        /* Add space when stacked */
+        flex-basis: auto; /* Reset flex-basis for stacked layout */
     }
 
     .login-box {
-        max-width: 100%;
-        /* Allow form to take full width */
+        max-width: 100%; /* Allow form box to take full width */
+        flex-basis: auto; /* Reset flex-basis */
+        width: 90%; /* Ensure it doesn't touch edges completely */
     }
 }
 
 @media (max-width: 480px) {
     .login-illustration {
-        max-width: 70%;
-        /* Adjust for very small screens */
+        max-width: 80%;
+    }
+    .login-box {
+        width: 100%;
     }
 
     .login-form-container h2 {
@@ -241,7 +222,8 @@ body {
         padding: 0.5rem;
     }
 
-    #login-form button[type="submit"] {
+    #login-form button[type="submit"],
+    .daftar-button a {
         padding: 0.65rem;
     }
 }

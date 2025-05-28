@@ -296,7 +296,7 @@ header {
 .site-footer {
     color: #ecf0f1;
     padding: 2rem 1rem;
-    margin-top: 2rem;
+    margin-top: 0;
     font-size: 0.9rem;
     /* height: 100%; Removed, let content define height */
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
@@ -404,6 +404,89 @@ header {
     font-weight: bold;
 }
 
+/* === STYLING DROPDOWN MENU PENGGUNA === */
+
+/* Kontainer untuk bagian dropdown di dalam .menu */
+.menu .dropdown {
+    position: relative; /* Penting untuk positioning .dropdown-content */
+  }
+  
+  /* Trigger dropdown (link dengan avatar dan nama pengguna) */
+  .menu .user-nav-trigger {
+    cursor: pointer; /* Menunjukkan elemen ini interaktif */
+    /* Anda bisa meng-copy/paste style dari .menu a jika ingin tampilan serupa,
+       atau biarkan .menu a yang sudah ada memberi style dasar.
+       Kelas .nav-link yang saya sarankan di HTML bisa mewarisi dari .menu a.
+       Pastikan warnanya kontras dengan background navbar.
+    */
+  }
+  
+  /* Avatar pengguna di dalam trigger dropdown */
+  .menu .user-nav-trigger #user-nav-avatar {
+    width: 25px;   /* Sesuaikan ukuran jika perlu */
+    height: 25px;  /* Sesuaikan ukuran jika perlu */
+    border-radius: 50%;
+    margin-right: 8px; /* Jarak antara avatar dan nama */
+    /* border: 1px solid #efbf7e; /* Optional: border dengan warna aksen */
+  }
+  
+  /* Konten dropdown yang sebenarnya (kotak yang muncul) */
+  .menu .dropdown-content {
+    display: none; /* **Sangat Penting: Sembunyikan secara default** */
+    position: absolute; /* **Sangat Penting: Keluarkan dari alur normal, jadi lapisan** */
+    right: 0; /* Posisi menempel di sisi kanan trigger */
+    top: 100%; /* Posisi tepat di bawah elemen trigger (.user-nav-trigger) */
+    background-color: white; /* Latar belakang dropdown */
+    min-width: 200px; /* Lebar minimal dropdown, sesuaikan */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15); /* Bayangan agar terlihat 'mengambang' */
+    border-radius: 6px; /* Sedikit lengkungan pada sudut */
+    z-index: 1001; /* Pastikan di atas elemen lain (header Anda z-index: 1000) */
+    border: 1px solid #e0e0e0; /* Optional: border tipis untuk dropdown */
+  }
+  
+  /* Tampilkan dropdown-content ketika .dropdown di-hover, ATAU
+     ketika .user-nav-trigger memiliki atribut aria-expanded="true" (untuk kontrol via JavaScript/klik) */
+  .menu .dropdown:hover .dropdown-content,
+  .menu .dropdown .user-nav-trigger[aria-expanded="true"] + .dropdown-content {
+    display: block; /* **Sangat Penting: Tampilkan dropdown** */
+  }
+  
+  /* Styling untuk setiap link di dalam .dropdown-content */
+  .menu .dropdown-content a {
+    color: #333333; /* Warna teks lebih gelap agar terbaca di background putih */
+    padding: 12px 16px; /* Padding untuk setiap item link */
+    text-decoration: none; /* Hapus garis bawah default link */
+    display: block; /* Membuat seluruh area link bisa diklik */
+    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil dari nav utama */
+    /* Hapus/override style hover dari .menu a yang mungkin tidak cocok di sini */
+    border-bottom: none; /* Pastikan tidak ada border-bottom dari .menu a:hover */
+    background-color: transparent; /* Pastikan background awal transparan */
+    font-weight: normal; /* Reset font-weight jika .menu a:hover membuatnya bold */
+    transform: none; /* Reset transform dari .menu a:hover */
+  }
+  
+  /* Efek hover untuk link di dalam .dropdown-content */
+  .menu .dropdown-content a:hover {
+    background-color: #f5f5f5; /* Warna latar sedikit berubah saat hover */
+    color: #375a60; /* Warna teks bisa sama dengan warna utama navbar saat hover */
+    /* Pastikan tidak ada efek transform atau border yang tidak diinginkan dari .menu a:hover */
+    border-bottom: none;
+    transform: none;
+  }
+  
+  /* Opsional: Jika Anda menambahkan ikon panah dropdown di HTML */
+  .menu .user-nav-trigger .dropdown-arrow-icon { /* Contoh kelas untuk ikon panah */
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menu .user-nav-trigger[aria-expanded="true"] .dropdown-arrow-icon {
+    transform: rotate(180deg); /* Putar panah saat dropdown terbuka */
+  }
+  
+  /* === AKHIR STYLING DROPDOWN MENU PENGGUNA === */
 
 /* MEDIA QUERIES */
 @media(max-width:768px) {

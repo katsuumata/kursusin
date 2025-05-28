@@ -162,147 +162,1479 @@
         "text_content": "Hindari tidur tengkurap. Posisi tidur miring dengan bantal di antara lutut dapat membantu."
     },
     {
-        "lesson_id": "lesson009_01_01",
-        "module_id": "mod009_01",
-        "lesson_title": "Video: Memilih Joran dan Reel yang Tepat",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "videoIDJoranReel",
-        "text_content": null
+      "lesson_id": "les003_01_01",
+      "module_id": "mod003_01",
+      "lesson_title": "Pendahuluan: Kenapa 1000 Hari Pertama Kehidupan Sangat Penting untuk MPASI?",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Periode 1000 hari pertama kehidupan (sejak konsepsi hingga usia 2 tahun) adalah masa emas pertumbuhan dan perkembangan anak. Pemberian Makanan Pendamping ASI (MPASI) yang berkualitas setelah usia 6 bulan memegang peranan krusial dalam memenuhi kebutuhan nutrisi optimal untuk otak dan fisik anak. Pelajaran ini menekankan pentingnya MPASI yang tepat.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_01_02",
-        "module_id": "mod009_01",
-        "lesson_title": "Artikel: Panduan Lengkap Senar dan Kail",
-        "order": 2,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Pemilihan senar (PE, mono, fluoro) dan kail (ukuran, bentuk) sangat penting. Perhatikan kekuatan (lbs) senar dan ukuran kail yang sesuai dengan target ikan dan teknik mancing."
+      "lesson_id": "les003_02_01",
+      "module_id": "mod003_02",
+      "lesson_title": "Modul 1 - Prinsip Dasar Pemberian MPASI: Tekstur, Frekuensi, dan Porsi",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Pemberian MPASI harus memperhatikan beberapa prinsip dasar. Pelajaran ini, dipandu oleh dokter, akan menjelaskan bagaimana menyesuaikan tekstur makanan secara bertahap sesuai usia bayi (dari puree halus hingga makanan keluarga), frekuensi pemberian makan yang ideal, serta porsi yang sesuai untuk setiap tahapan usia agar kebutuhan gizinya terpenuhi.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_01_03",
-        "module_id": "mod009_01",
-        "lesson_title": "Aksesoris Pancing Tambahan",
-        "order": 3,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Pelampung, timah pemberat, swivel, dan snap adalah beberapa aksesoris yang akan membantu Anda."
+      "lesson_id": "les003_02_02",
+      "module_id": "mod003_02",
+      "lesson_title": "Modul 1 - Komposisi Gizi Seimbang dalam MPASI: Karbohidrat, Protein, Lemak, Vitamin, Mineral",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "MPASI yang baik harus mengandung gizi seimbang. Pelajaran ini menguraikan pentingnya setiap komponen makronutrien (karbohidrat, protein, lemak) dan mikronutrien (vitamin, mineral seperti zat besi dan zinc) untuk tumbuh kembang bayi. Akan diberikan contoh sumber makanan untuk setiap komponen gizi tersebut.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_02_01",
-        "module_id": "mod009_02",
-        "lesson_title": "Video Tutorial: Teknik Casting (Melempar Umpan) untuk Pemula",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "videoIDCasting",
-        "text_content": null
+      "lesson_id": "les003_03_01",
+      "module_id": "mod003_03",
+      "lesson_title": "Modul 2 - Kumpulan Resep MPASI Sehat dan Lezat untuk Bayi Usia 6-8 Bulan",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Bingung mau masak apa untuk si kecil? Pelajaran ini menyediakan kumpulan resep MPASI 4 bintang yang praktis, lezat, dan bergizi untuk bayi usia 6-8 bulan, dengan variasi bahan makanan untuk mengenalkan berbagai rasa dan tekstur. Setiap resep akan disertai panduan cara membuat yang mudah diikuti oleh para bapak.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_02_02",
-        "module_id": "mod009_02",
-        "lesson_title": "Tips: Variasi Teknik Retrieving (Menggulung Senar)",
-        "order": 2,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Variasi kecepatan retrieve bisa memicu sambaran ikan. Coba retrieve cepat, lambat, atau dengan jeda (stop and go) untuk meniru gerakan mangsa alami."
+      "lesson_id": "les003_04_01",
+      "module_id": "mod003_04",
+      "lesson_title": "Modul 3 - Mengenali Penyebab Gerakan Tutup Mulut (GTM) pada Anak",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Gerakan Tutup Mulut (GTM) adalah salah satu tantangan umum saat memberikan MPASI. Pelajaran ini akan membantu Anda mengenali berbagai kemungkinan penyebab GTM, mulai dari bosan dengan menu, tekstur yang tidak sesuai, kondisi tidak nyaman (sakit atau tumbuh gigi), hingga faktor psikologis. Memahami penyebabnya adalah langkah awal untuk mencari solusi.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_03_01",
-        "module_id": "mod009_03",
-        "lesson_title": "Video: Kelebihan & Kekurangan Umpan Alami vs Buatan",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "videoIDUmpan",
-        "text_content": null
+      "lesson_id": "les003_04_02",
+      "module_id": "mod003_04",
+      "lesson_title": "Modul 3 - Strategi Jitu Mengatasi GTM dan Menciptakan Suasana Makan Menyenangkan",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Setelah mengetahui penyebab GTM, pelajaran ini memberikan berbagai tips dan trik praktis untuk mengatasinya. Mulai dari variasi menu dan tekstur, menciptakan suasana makan yang menyenangkan tanpa paksaan, menerapkan feeding rules yang konsisten, hingga kapan perlu berkonsultasi dengan dokter anak. Kesabaran dan kreativitas adalah kunci.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_03_02",
-        "module_id": "mod009_03",
-        "lesson_title": "Resep Rahasia: Meracik Umpan Galatama Sendiri",
-        "order": 2,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Beberapa bahan alami yang bisa diracik untuk umpan antara lain cacing, jangkrik, udang, atau pelet yang dicampur dengan essen aroma tertentu untuk meningkatkan daya tarik."
+      "lesson_id": "les004_01_01",
+      "module_id": "mod004_01",
+      "lesson_title": "Dasar-Dasar Smart Home: Konsep, Manfaat, dan Komponen Utama",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Smart home atau rumah pintar adalah konsep hunian yang dilengkapi teknologi untuk mengontrol dan mengotomatisasi berbagai perangkat elektronik di rumah dari jarak jauh melalui smartphone atau perintah suara. Manfaatnya meliputi peningkatan kenyamanan, efisiensi energi, dan keamanan. Pelajaran ini akan memperkenalkan komponen utama seperti hub/gateway, sensor, aktuator (perangkat pintar), dan platform kontrol.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson009_04_01",
-        "module_id": "mod009_04",
-        "lesson_title": "Membaca Tanda-Tanda Alam untuk Spot Potensial",
-        "order": 1,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Perhatikan arus air, vegetasi, dan aktivitas ikan kecil sebagai indikator keberadaan ikan target."
+      "lesson_id": "les004_02_01",
+      "module_id": "mod004_02",
+      "lesson_title": "Modul 1 - Tutorial Video: Instalasi dan Konfigurasi Lampu Pintar (Smart Bulb)",
+      "order": 1,
+      "lesson_type": "video",
+      "text_content": null,
+      "video_url": "smart_bulb_installation_guide_id"
     },
     {
-        "lesson_id": "lesson009_04_02",
-        "module_id": "mod009_04",
-        "lesson_title": "Video: Etika dan Keselamatan Saat Memancing",
-        "order": 2,
-        "lesson_type": "video",
-        "content_url": "videoIDMancingSafety",
-        "text_content": null
+      "lesson_id": "les004_02_02",
+      "module_id": "mod004_02",
+      "lesson_title": "Modul 1 - Panduan Memasang Stop Kontak Pintar (Smart Plug) dengan Aman",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Smart plug memungkinkan Anda mengontrol perangkat elektronik biasa (seperti kipas angin atau teko listrik) melalui smartphone. Pelajaran ini memberikan panduan langkah demi langkah cara memasang dan mengkonfigurasi smart plug ke jaringan Wi-Fi rumah Anda, serta tips penggunaan yang aman dan efektif.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson004_01_01",
-        "module_id": "mod004_01",
-        "lesson_title": "Video: Apa itu Smart Home?",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "smartHomeIntroID",
-        "text_content": null
+      "lesson_id": "les004_03_01",
+      "module_id": "mod004_03",
+      "lesson_title": "Modul 2 - Memasang Sensor Pintu/Jendela dan Sensor Gerak untuk Keamanan",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Sensor adalah mata dan telinga dari sistem smart home Anda. Pelajaran ini membahas cara pemasangan sensor pintu/jendela nirkabel yang akan memberi notifikasi jika ada yang terbuka, serta sensor gerak (motion sensor) yang bisa digunakan untuk memicu lampu menyala otomatis atau mengirim peringatan keamanan. Akan dijelaskan juga cara menghubungkannya ke hub atau aplikasi smart home Anda.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson004_01_02",
-        "module_id": "mod004_01",
-        "lesson_title": "Perangkat Wajib untuk Memulai",
-        "order": 2,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Router Wi-Fi yang stabil, smartphone, dan perangkat pintar pertama Anda (misal, lampu pintar)."
+      "lesson_id": "les004_04_01",
+      "module_id": "mod004_04",
+      "lesson_title": "Modul 3 - Mengintegrasikan Perangkat Smart Home dengan Google Assistant atau Alexa",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Salah satu kemudahan smart home adalah kontrol suara. Pelajaran ini memandu Anda cara menghubungkan perangkat-perangkat pintar yang sudah terpasang (lampu, plug, sensor) dengan asisten suara populer seperti Google Assistant atau Amazon Alexa. Anda akan belajar cara membuat perintah suara kustom untuk mengontrol berbagai perangkat di rumah Anda.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson004_02_01",
-        "module_id": "mod004_02",
-        "lesson_title": "Tutorial: Pasang Lampu Pintar",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "pasangLampuPintarID",
-        "text_content": null
+      "lesson_id": "les005_01_01",
+      "module_id": "mod005_01",
+      "lesson_title": "Mengapa Investasi Emas Menarik untuk Bapak Pemula? Kelebihan dan Fungsi Emas",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Emas telah lama dianggap sebagai aset aman (safe haven) dan lindung nilai terhadap inflasi. Bagi bapak pemula dalam investasi, emas menawarkan beberapa kelebihan seperti likuiditas yang tinggi (mudah dicairkan), risiko yang relatif lebih rendah dibanding saham, dan wujud fisik yang nyata (untuk emas fisik). Pelajaran ini akan membahas mengapa emas bisa menjadi pilihan investasi awal yang baik untuk diversifikasi portofolio dan menjaga nilai kekayaan jangka panjang.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson006_01_01",
-        "module_id": "mod006_01",
-        "lesson_title": "Video: Kenapa Perawatan Rutin Itu Penting?",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "rawatKendaraanIntroID",
-        "text_content": null
+      "lesson_id": "les005_02_01",
+      "module_id": "mod005_02",
+      "lesson_title": "Modul 1 - Mengenal Jenis Emas untuk Investasi: Perhiasan vs Batangan vs Digital",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Ada beberapa bentuk emas yang bisa dipertimbangkan untuk investasi. Emas perhiasan mudah didapat namun biasanya memiliki biaya pembuatan dan selisih harga jual-beli yang lebih tinggi. Emas batangan (logam mulia) lebih murni dan selisih harganya lebih kecil, cocok untuk investasi jangka panjang. Kini juga tersedia emas digital yang bisa dibeli dalam pecahan kecil melalui platform online. Pelajaran ini akan membahas kelebihan dan kekurangan masing-masing jenis.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson006_02_01",
-        "module_id": "mod006_02",
-        "lesson_title": "Cek Oli Mesin & Air Radiator",
-        "order": 1,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Pastikan level oli dan air radiator selalu dalam batas aman. Ganti oli secara berkala."
+      "lesson_id": "les005_02_02",
+      "module_id": "mod005_02",
+      "lesson_title": "Modul 1 - Tempat Membeli Emas Fisik dan Digital yang Terpercaya",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Untuk emas fisik batangan, Anda bisa membelinya di tempat terpercaya seperti Antam, Pegadaian, atau toko emas bereputasi. Pastikan mendapatkan sertifikat keaslian. Untuk emas digital, pilihlah platform fintech yang sudah terdaftar dan diawasi oleh OJK atau Bappebti. Pelajaran ini memberikan tips memilih tempat pembelian yang aman dan terhindar dari penipuan.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson011_01_01",
-        "module_id": "mod011_01",
-        "lesson_title": "Video: Alat Tukang Wajib Punya",
-        "order": 1,
-        "lesson_type": "video",
-        "content_url": "alatTukangVideoID",
-        "text_content": null
+      "lesson_id": "les005_03_01",
+      "module_id": "mod005_03",
+      "lesson_title": "Modul 2 - Strategi Dasar Investasi Emas: Beli Cicil atau Beli Sekaligus?",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Ada beberapa strategi dalam berinvestasi emas. Anda bisa membeli secara berkala dengan jumlah tetap (dollar cost averaging) atau mencicil emas melalui platform tertentu. Atau, jika memiliki dana lebih, bisa membeli dalam jumlah besar sekaligus saat harga dianggap baik. Pelajaran ini membahas pertimbangan untuk setiap strategi, disesuaikan dengan kemampuan finansial dan tujuan investasi Anda. Risiko utama investasi emas adalah fluktuasi harga jangka pendek.",
+      "video_url": null
     },
     {
-        "lesson_id": "lesson011_02_01",
-        "module_id": "mod011_02",
-        "lesson_title": "Teknik Memotong Kayu Lurus",
-        "order": 1,
-        "lesson_type": "text",
-        "content_url": null,
-        "text_content": "Gunakan gergaji yang tepat dan pastikan kayu terkunci dengan baik sebelum memotong."
-    }
+      "lesson_id": "les006_01_01",
+      "module_id": "mod006_01",
+      "lesson_title": "Pentingnya Perawatan Kendaraan Rutin untuk Keamanan dan Keawetan",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Merawat kendaraan secara rutin bukan hanya soal menjaga penampilan, tetapi yang lebih penting adalah untuk faktor keamanan, keawetan komponen, dan efisiensi bahan bakar. Kendaraan yang terawat baik cenderung lebih aman dikendarai, mengurangi risiko mogok di jalan, dan memiliki nilai jual kembali yang lebih tinggi. Pelajaran ini menekankan mengapa bapak-bapak perlu peduli dan meluangkan waktu untuk perawatan dasar kendaraannya.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les006_02_01",
+      "module_id": "mod006_02",
+      "lesson_title": "Modul 1 - Pemeriksaan Rutin Cairan Kendaraan: Oli Mesin, Air Radiator, Minyak Rem",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Ada beberapa cairan vital pada kendaraan yang perlu diperiksa levelnya secara berkala. Pelajaran ini akan memandu Anda cara memeriksa level oli mesin menggunakan dipstick, level air radiator pada tabung reservoir, level minyak rem, dan air aki (untuk aki basah). Memastikan semua cairan berada pada level yang direkomendasikan adalah langkah pencegahan kerusakan yang mudah dan murah.",
+      "video_url": null
+    },
+    {
+    "lesson_id": "les006_03_01",
+    "module_id": "mod006_03",
+    "lesson_title": "Modul 2 - Dasar-Dasar Perawatan Ban: Tekanan Angin dan Cek Keausan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ban adalah satu-satunya komponen kendaraan yang bersentuhan langsung dengan jalan, sehingga kondisinya sangat vital. Pelajaran ini mengajarkan cara memeriksa tekanan angin ban menggunakan alat pengukur dan menyesuaikannya dengan rekomendasi pabrikan (biasanya tertera di stiker pada pilar pintu pengemudi). Akan dibahas juga cara memeriksa kedalaman alur ban (thread wear indicator) untuk mengetahui kapan ban perlu diganti.",
+    "video_url": null
+    },
+    {
+      "lesson_id": "les006_03_02",
+      "module_id": "mod006_03",
+      "lesson_title": "Modul 2 - Perawatan Aki (Baterai) Mobil/Motor Sederhana",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Aki adalah sumber kelistrikan kendaraan. Untuk aki basah, periksa level air aki secara berkala dan tambahkan air aki murni jika kurang (jangan air zuur). Bersihkan terminal aki dari kerak putih menggunakan sikat kawat dan air panas (hati-hati). Pastikan klem aki terpasang kencang. Untuk aki kering (maintenance free), biasanya hanya perlu memastikan kebersihan terminal dan kondisi fisik aki.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les006_04_01",
+      "module_id": "mod006_04",
+      "lesson_title": "Modul 3 - Mengenali Tanda-Tanda Masalah Umum Kendaraan dan Kapan Harus ke Bengkel",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Tidak semua masalah kendaraan bisa diatasi sendiri. Pelajaran ini membantu Anda mengenali beberapa tanda masalah umum, seperti bunyi aneh pada mesin, rem kurang pakem, setir terasa berat atau bergetar, atau lampu indikator di dashboard menyala. Memahami tanda-tanda ini membantu Anda memutuskan kapan perbaikan ringan bisa dilakukan sendiri dan kapan harus segera membawa kendaraan ke bengkel profesional untuk pemeriksaan lebih lanjut.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les007_01_01",
+      "module_id": "mod007_01",
+      "lesson_title": "Menentukan Konsep Bisnis Kuliner yang Unik dan Melakukan Riset Pasar Awal",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Memulai bisnis kuliner membutuhkan konsep yang matang. Apakah Anda ingin fokus pada masakan tradisional, fusion, healthy food, atau camilan unik? Pelajaran ini membahas pentingnya menentukan Unique Selling Proposition (USP) atau nilai jual unik dari bisnis kuliner Anda. Setelah itu, lakukan riset pasar sederhana: siapa target pelanggan Anda, bagaimana tren kuliner saat ini, dan siapa saja kompetitor di area Anda. Ini akan membantu memvalidasi ide bisnis Anda.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les007_02_01",
+      "module_id": "mod007_02",
+      "lesson_title": "Modul 1 - Membangun Identitas Merek (Branding) yang Kuat untuk Bisnis Kuliner Anda",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Branding bukan hanya soal logo dan nama. Ini adalah tentang keseluruhan identitas dan persepsi pelanggan terhadap bisnis kuliner Anda. Pelajaran ini membahas elemen-elemen branding penting seperti pemilihan nama merek yang mudah diingat, desain logo yang menarik, tagline yang menjual, serta konsistensi dalam penyajian dan kualitas produk. Branding yang kuat akan membedakan Anda dari kompetitor dan membangun loyalitas pelanggan.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les007_02_02",
+      "module_id": "mod007_02",
+      "lesson_title": "Modul 1 - Inovasi Menu: Menciptakan Signature Dish dan Mengikuti Tren",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Menu adalah jantung dari bisnis kuliner. Selain memiliki menu andalan (signature dish) yang menjadi ciri khas, penting juga untuk terus berinovasi dan mengikuti tren kuliner yang relevan. Pelajaran ini memberikan tips bagaimana mengembangkan resep baru, melakukan uji coba rasa (food tasting), dan menyesuaikan menu dengan selera target pasar tanpa menghilangkan identitas utama brand Anda.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les007_03_01",
+      "module_id": "mod007_03",
+      "lesson_title": "Modul 2 - Strategi Pemasaran Digital Efektif untuk Bisnis Kuliner Skala Kecil",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Di era digital, pemasaran online sangat krusial. Manfaatkan media sosial seperti Instagram dan Facebook untuk mempromosikan menu Anda dengan foto-foto yang menggugah selera. Gunakan WhatsApp Business untuk komunikasi dengan pelanggan. Pertimbangkan mendaftar di platform pesan-antar makanan online. Pelajaran ini membahas dasar-dasar pemasaran digital yang bisa dilakukan dengan budget terbatas, termasuk pentingnya konten berkualitas dan interaksi dengan audiens.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les008_01_01",
+      "module_id": "mod008_01",
+      "lesson_title": "Pengenalan Anatomi dan Fisiologi Dasar Sistem Reproduksi Pria",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Memahami sistem reproduksi sendiri adalah langkah awal untuk menjaga kesehatannya. Pelajaran ini akan memberikan penjelasan sederhana mengenai organ-organ utama dalam sistem reproduksi pria (seperti testis, penis, prostat) dan fungsinya masing-masing dalam produksi sperma, hormon testosteron, dan proses reproduksi secara umum. Pengetahuan dasar ini penting untuk memahami isu-isu kesehatan reproduksi lebih lanjut.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les008_02_01",
+      "module_id": "mod008_02",
+      "lesson_title": "Modul 1 - Faktor-Faktor yang Mempengaruhi Kesuburan Pria",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Kesuburan pria dipengaruhi oleh berbagai faktor, baik internal maupun eksternal. Pelajaran ini membahas faktor-faktor seperti kualitas dan kuantitas sperma, masalah hormonal, kondisi medis tertentu (misalnya varikokel), serta pengaruh gaya hidup seperti merokok, konsumsi alkohol berlebih, stres, obesitas, dan paparan zat berbahaya. Memahami faktor-faktor ini dapat membantu dalam upaya menjaga atau meningkatkan kesuburan.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les008_03_01",
+      "module_id": "mod008_03",
+      "lesson_title": "Modul 2 - Pentingnya Deteksi Dini Masalah Prostat dan Pencegahannya",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Prostat adalah kelenjar penting dalam sistem reproduksi pria yang rentan mengalami masalah seiring bertambahnya usia, seperti pembesaran prostat jinak (BPH) atau kanker prostat. Pelajaran ini menjelaskan fungsi prostat, gejala masalah prostat yang perlu diwaspadai (seperti kesulitan buang air kecil), dan pentingnya pemeriksaan rutin (skrining) untuk deteksi dini. Akan dibahas juga langkah-langkah pencegahan melalui gaya hidup sehat.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les008_03_02",
+      "module_id": "mod008_03",
+      "lesson_title": "Modul 2 - Gaya Hidup Sehat untuk Menjaga Kesehatan Reproduksi Pria",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Menerapkan gaya hidup sehat secara keseluruhan berdampak besar pada kesehatan reproduksi. Ini meliputi konsumsi makanan bergizi seimbang, menjaga berat badan ideal, olahraga teratur, mengelola stres dengan baik, tidur yang cukup, menghindari merokok dan konsumsi alkohol berlebih, serta menghindari paparan zat kimia berbahaya. Pelajaran ini memberikan tips praktis untuk mengadopsi kebiasaan-kebiasaan sehat ini dalam kehidupan sehari-hari.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les009_01_01",
+      "module_id": "mod009_01",
+      "lesson_title": "Pengenalan Jenis-Jenis Alat Pancing: Joran, Reel, Senar, dan Kail",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Bagi pemula, memahami alat pancing dasar adalah langkah awal. Pelajaran ini akan memperkenalkan komponen utama: Joran (rod) dan berbagai jenisnya (spinning, casting). Reel (penggulung senar) dan tipenya. Senar pancing (line) dengan berbagai material dan kekuatan. Serta mata kail (hook) dengan berbagai ukuran dan bentuk. Memahami fungsi masing-masing akan membantu Anda memilih peralatan yang sesuai dengan target ikan dan teknik memancing yang diinginkan.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les009_02_01",
+      "module_id": "mod009_02",
+      "lesson_title": "Teknik Dasar Memancing: Casting (Melempar Umpan) dan Retrieving (Menggulung Senar)",
+      "order": 1,
+      "lesson_type": "video",
+      "text_content": null,
+      "video_url": "basic_fishing_cast_retrieve_id"
+    },
+    {
+      "lesson_id": "les009_03_01",
+      "module_id": "mod009_03",
+      "lesson_title": "Modul 1 - Jenis Umpan Alami (Cacing, Udang Kecil, dll) dan Cara Pemasangannya",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Umpan alami seringkali sangat efektif untuk menarik ikan. Pelajaran ini membahas beberapa jenis umpan alami yang populer seperti cacing tanah, udang kecil hidup, jangkrik, atau potongan ikan kecil. Akan diajarkan juga cara memasang umpan alami tersebut pada mata kail dengan benar agar tidak mudah lepas dan terlihat menarik bagi ikan target.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les009_03_02",
+      "module_id": "mod009_03",
+      "lesson_title": "Modul 1 - Mengenal Umpan Buatan (Lure): Minnow, Spoon, Soft Lure",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Umpan buatan atau lure dirancang untuk meniru gerakan atau bentuk mangsa ikan. Ada berbagai jenis lure seperti minnow (meniru ikan kecil), spoon (lempengan logam berkilau), soft lure (umpan berbahan karet lembut), atau popper (mengapung dan membuat cipratan di permukaan). Pelajaran ini akan memperkenalkan jenis-jenis lure dasar dan kapan waktu yang tepat untuk menggunakannya.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les009_04_01",
+      "module_id": "mod009_04",
+      "lesson_title": "Modul 2 - Strategi Memilih Spot Mancing Potensial (Air Tawar & Pinggir Laut)",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Menemukan spot atau lokasi memancing yang 'gacor' adalah seni tersendiri. Untuk air tawar (sungai atau danau), cari area dengan struktur seperti bebatuan, tunggul kayu, atau tanaman air tempat ikan berlindung dan mencari makan. Perhatikan juga arus air. Untuk pinggir laut, area sekitar dermaga, pemecah gelombang, atau muara sungai bisa menjadi spot potensial. Pelajaran ini memberikan tips dasar membaca kondisi air dan memilih lokasi.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les010_01_01",
+      "module_id": "mod010_01",
+      "lesson_title": "Dasar Sistem Distribusi Air Bersih di Rumah: Dari Meteran hingga Keran",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Memahami alur dasar sistem air bersih di rumah akan membantu Anda saat terjadi masalah. Pelajaran ini menjelaskan secara sederhana bagaimana air masuk dari meteran PDAM atau sumber air lain (sumur bor), kemudian didistribusikan melalui jaringan pipa ke berbagai titik keran, shower, toilet, dan mesin cuci di rumah Anda. Akan disinggung juga peran stop kran utama dan stop kran lokal.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les010_02_01",
+      "module_id": "mod010_02",
+      "lesson_title": "Modul 1 - Teknik Mengatasi Kebocoran Kecil pada Sambungan Pipa atau Keran",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Kebocoran kecil pada sambungan pipa atau drat keran seringkali bisa diatasi dengan mudah. Pelajaran ini akan menunjukkan cara menggunakan seal tape (pita putih khusus ulir) untuk melapisi ulang drat yang bocor. Akan dibahas juga cara mengencangkan sambungan yang kendor. Ingat untuk mematikan aliran air utama sebelum melakukan perbaikan.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les010_03_01",
+      "module_id": "mod010_03",
+      "lesson_title": "Modul 2 - Perawatan Dasar Pompa Air (Jika Menggunakan Sumur Bor)",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Jika rumah Anda menggunakan pompa air dari sumur bor, perawatan dasar penting untuk menjaga kinerjanya. Pelajaran ini membahas cara memeriksa apakah ada suara aneh pada pompa, memastikan tidak ada kebocoran pada pipa hisap atau pipa dorong, dan menjaga area sekitar pompa tetap kering dan bersih. Untuk masalah yang lebih kompleks, sebaiknya panggil teknisi.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les010_03_02",
+      "module_id": "mod010_03",
+      "lesson_title": "Modul 2 - Membersihkan atau Mengganti Filter Air Sederhana",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Beberapa rumah mungkin dilengkapi dengan filter air sederhana pada input utama atau pada keran tertentu. Filter ini perlu dibersihkan atau diganti kartridnya secara berkala agar kualitas air tetap terjaga dan aliran tidak tersumbat. Pelajaran ini memberikan panduan umum cara membersihkan atau mengganti filter air jenis cartridge yang umum digunakan di rumah tangga.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les011_01_01",
+      "module_id": "mod011_01",
+      "lesson_title": "Pengenalan Alat Tukang Esensial yang Wajib Ada di Rumah Bapak",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Setiap bapak sebaiknya memiliki setidaknya beberapa alat tukang dasar di rumah untuk perbaikan kecil atau proyek DIY. Pelajaran ini akan memperkenalkan alat-alat esensial seperti palu, berbagai jenis obeng (plus, minus), tang kombinasi, kunci inggris, meteran, cutter, dan tespen. Akan dijelaskan fungsi utama masing-masing alat dan tips memilih kualitas yang baik namun terjangkau.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les011_02_01",
+      "module_id": "mod011_02",
+      "lesson_title": "Modul 1 - Teknik Dasar Menggunakan Palu dan Memaku dengan Benar",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Memaku mungkin terlihat sepele, tapi ada tekniknya agar paku lurus dan jari tidak terluka. Pelajaran ini akan menunjukkan cara memegang palu dan paku dengan benar, teknik ayunan palu yang efektif, serta cara mencabut paku yang bengkok menggunakan cakar palu. Keselamatan jari adalah prioritas!",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les011_02_02",
+      "module_id": "mod011_02",
+      "lesson_title": "Modul 1 - Teknik Dasar Memotong Kayu Sederhana dengan Gergaji Tangan",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Untuk proyek DIY berbahan kayu, kemampuan memotong dengan gergaji tangan adalah dasar. Pelajaran ini memperkenalkan jenis gergaji tangan umum, cara membuat tanda garis potong yang lurus, posisi memegang gergaji dan kayu yang aman, serta teknik menggergaji agar hasil potongan lurus dan tidak macet. Latihan dan kesabaran diperlukan untuk menguasai teknik ini.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les011_03_01",
+      "module_id": "mod011_03",
+      "lesson_title": "Modul 2 - Proyek DIY Sederhana: Membuat Rak Bumbu Dapur dari Kayu",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Mari praktikkan keterampilan dasar Anda dengan membuat proyek DIY sederhana seperti rak bumbu dapur dari beberapa potong kayu. Pelajaran ini akan memberikan contoh desain, daftar bahan dan alat yang dibutuhkan, serta panduan langkah demi langkah mulai dari memotong kayu, merakit menggunakan paku atau sekrup, hingga finishing dasar (amplas dan vernis/cat). Ini akan menjadi karya pertama yang membanggakan.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les012_01_01",
+      "module_id": "mod012_01",
+      "lesson_title": "Persiapan Lahan atau Media Tanam untuk Kebun Sayur Organik di Rumah",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Memulai kebun sayur organik bisa dilakukan di lahan pekarangan atau menggunakan pot/wadah (container gardening) jika lahan terbatas. Pelajaran ini membahas cara mempersiapkan lahan: membersihkan dari gulma, menggemburkan tanah, dan menambahkan pupuk organik seperti kompos atau pupuk kandang untuk memperbaiki struktur dan kesuburan tanah. Untuk container gardening, akan dibahas cara memilih wadah yang sesuai dan campuran media tanam yang baik (tanah, kompos, sekam bakar).",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les012_02_01",
+      "module_id": "mod012_02",
+      "lesson_title": "Modul 1 - Memilih Jenis Sayuran yang Mudah Ditanam untuk Pemula",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Bagi pemula, sebaiknya pilih jenis sayuran yang relatif mudah tumbuh dan tidak memerlukan perawatan rumit. Pelajaran ini merekomendasikan beberapa sayuran daun seperti kangkung, bayam, sawi, atau selada. Untuk sayuran buah, tomat ceri atau cabai rawit bisa jadi pilihan. Pertimbangkan juga kondisi iklim dan paparan sinar matahari di area tanam Anda saat memilih jenis sayuran.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les012_02_02",
+      "module_id": "mod012_02",
+      "lesson_title": "Modul 1 - Teknik Penyemaian Benih yang Benar",
+      "order": 2,
+      "lesson_type": "text",
+      "text_content": "Beberapa jenis sayuran lebih baik disemai terlebih dahulu sebelum dipindah tanam. Pelajaran ini menjelaskan cara menyemai benih menggunakan tray semai atau wadah kecil dengan media semai yang lembab. Akan dibahas kedalaman penanaman benih, cara menjaga kelembaban, dan kapan bibit siap untuk dipindah ke lahan atau pot yang lebih besar.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "les012_03_01",
+      "module_id": "mod012_03",
+      "lesson_title": "Modul 2 - Dasar-Dasar Perawatan Organik: Penyiraman, Pemupukan, dan Pengendalian Hama Alami",
+      "order": 1,
+      "lesson_type": "text",
+      "text_content": "Perawatan kebun sayur organik meliputi penyiraman rutin yang disesuaikan dengan kebutuhan tanaman dan cuaca. Pemupukan susulan menggunakan pupuk organik cair atau padat juga penting untuk menjaga kesuburan. Untuk pengendalian hama dan penyakit secara organik, pelajaran ini akan memperkenalkan beberapa metode alami seperti menanam tanaman pengusir hama (companion planting), membuat pestisida nabati sederhana, atau memanfaatkan musuh alami hama.",
+      "video_url": null
+    },
+    {
+      "lesson_id": "lesson013_01_01",
+      "module_id": "mod013_01",
+      "lesson_title": "Definisi dan Mengapa Mendengar Aktif Itu Penting",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Selamat datang di modul pengantar kursus 'Seni Mendengar Aktif dalam Pernikahan'. Sebelum kita melangkah lebih jauh, mari kita pahami terlebih dahulu apa sebenarnya yang dimaksud dengan 'mendengar aktif'. Mendengar aktif bukan sekadar membiarkan suara masuk ke telinga kita. Ini adalah sebuah proses sadar dan penuh perhatian untuk memahami pesan lengkap yang disampaikan oleh pembicara, baik verbal maupun non-verbal. Dalam konteks pernikahan, mendengar aktif berarti Anda memberikan perhatian penuh kepada pasangan saat ia berbicara, mencoba memahami sudut pandangnya, perasaannya, dan kebutuhannya tanpa langsung menghakimi atau mempersiapkan sanggahan. Mengapa ini begitu krusial? Karena mendengar aktif adalah fondasi dari komunikasi yang sehat. Ketika pasangan merasa didengarkan dan dipahami, ia akan merasa dihargai, aman, dan lebih terbuka. Ini akan mengurangi kesalahpahaman, mencegah konflik yang tidak perlu, dan memperkuat ikatan emosional antara Anda berdua. Banyak pernikahan mengalami masalah komunikasi bukan karena kurangnya cinta, tetapi karena kurangnya keterampilan mendengar yang efektif. Bapak-bapak sekalian, menguasai seni mendengar aktif adalah salah satu investasi terbaik yang bisa Anda lakukan untuk keharmonisan rumah tangga. Ini menunjukkan bahwa Anda peduli, menghormati, dan benar-benar ingin terhubung dengan pasangan Anda di level yang lebih dalam. Dalam modul-modul berikutnya, kita akan membahas teknik-teknik spesifik untuk menjadi pendengar yang lebih aktif dan empatik."
+    },
+    {
+      "lesson_id": "lesson013_01_02",
+      "module_id": "mod013_01",
+      "lesson_title": "Video: Dampak Mendengar Aktif vs Pasif dalam Hubungan",
+      "order": 2,
+      "lesson_type": "video",
+      "content_url": "video_dampak_mendengar_013_01",
+      "text_content": null
+    },
+    {
+      "lesson_id": "lesson013_02_01",
+      "module_id": "mod013_02",
+      "lesson_title": "Menguasai Teknik Parafrase untuk Klarifikasi",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Salah satu teknik inti dalam mendengar aktif adalah parafrase. Parafrase berarti Anda menyatakan kembali apa yang dikatakan pasangan dengan menggunakan kata-kata Anda sendiri, tanpa mengubah maknanya. Tujuannya bukan untuk mengulang seperti beo, melainkan untuk memastikan bahwa Anda telah memahami pesan yang disampaikan dengan benar dan untuk menunjukkan kepada pasangan bahwa Anda benar-benar memperhatikan. Contohnya, jika pasangan Anda berkata, 'Aku capek banget hari ini, kerjaan di kantor numpuk, anak-anak juga rewel terus,' Anda bisa memparafrasekannya dengan, 'Jadi, kalau aku nggak salah tangkap, kamu merasa sangat lelah hari ini karena tekanan pekerjaan dan juga harus mengurus anak-anak di rumah ya?' Teknik ini sangat efektif untuk menghindari kesalahpahaman. Ketika Anda memparafrasekan, Anda memberikan kesempatan kepada pasangan untuk mengoreksi jika pemahaman Anda keliru. Selain itu, parafrase juga membuat pasangan merasa lebih didengarkan karena Anda menunjukkan usaha untuk mencerna informasinya. Latihlah teknik ini secara rutin. Awalnya mungkin terasa canggung, tetapi seiring waktu akan menjadi lebih alami. Perhatikan juga intonasi Anda saat memparafrasekan; sampaikan dengan nada ingin tahu dan suportif, bukan interogatif. Menguasai parafrase akan membantu Anda membangun jembatan pemahaman yang lebih kuat dengan istri Anda, mengurangi argumen yang sia-sia, dan meningkatkan kualitas percakapan sehari-hari."
+    },
+    {
+      "lesson_id": "lesson013_02_02",
+      "module_id": "mod013_02",
+      "lesson_title": "Pentingnya Validasi Perasaan Pasangan",
+      "order": 2,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Validasi perasaan adalah mengakui dan menerima perasaan pasangan Anda sebagai sesuatu yang sah dan dapat dimengerti, meskipun Anda mungkin tidak setuju dengan alasan di baliknya atau tidak merasakan hal yang sama. Ini bukan berarti Anda harus setuju dengan pandangan pasangan, tetapi Anda menunjukkan bahwa Anda memahami mengapa ia merasa seperti itu dari sudut pandangnya. Contohnya, jika istri Anda mengungkapkan kekecewaannya karena Anda lupa hari jadi pernikahan, validasi perasaannya bisa berupa, 'Aku bisa mengerti kenapa kamu merasa kecewa dan sedih karena aku lupa hari penting kita. Aku minta maaf sudah membuatmu merasa tidak dihargai.' Validasi membuat pasangan merasa aman secara emosional. Ia tahu bahwa perasaannya penting bagi Anda dan ia tidak akan dihakimi atau diremehkan. Ini sangat berbeda dengan respons yang defensif atau mencoba mengecilkan perasaannya, seperti, 'Ah, gitu aja kok marah,' yang justru akan memperburuk situasi. Manfaat validasi sangat besar: membangun kepercayaan, meningkatkan keintiman emosional, dan membantu meredakan ketegangan saat konflik. Ini menunjukkan empati dan kepedulian Anda. Bapak-bapak, belajar memvalidasi perasaan istri adalah langkah penting untuk menciptakan hubungan yang suportif dan penuh pengertian. Ingatlah, tujuan utamanya adalah membuat pasangan merasa dipahami dan diterima."
+    },
+    {
+      "lesson_id": "lesson013_03_01",
+      "module_id": "mod013_03",
+      "lesson_title": "Mengenali Hambatan Umum dalam Komunikasi Pernikahan",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Komunikasi yang efektif seringkali terhalang oleh berbagai rintangan, baik yang disadari maupun tidak. Salah satu hambatan umum adalah 'membaca pikiran', di mana kita berasumsi sudah tahu apa yang dipikirkan atau dirasakan pasangan tanpa bertanya langsung. Ini seringkali berujung pada kesalahpahaman. Hambatan lainnya adalah 'sibuk menyiapkan sanggahan'; bukannya mendengarkan untuk memahami, kita malah sibuk memikirkan apa yang akan kita katakan selanjutnya untuk membela diri atau memenangkan argumen. Kritik yang berlebihan, sarkasme, dan sikap defensif juga merupakan penghalang besar. Ketika pasangan merasa diserang, ia akan cenderung menutup diri atau balas menyerang, bukan lagi berkomunikasi secara konstruktif. Selain itu, gangguan eksternal seperti gadget, televisi, atau kesibukan lain juga bisa menjadi penghambat. Jika Anda berbicara sambil melihat ponsel, pasangan akan merasa tidak dihargai. Penting bagi para bapak untuk menyadari hambatan-hambatan ini dalam diri sendiri dan dalam interaksi dengan pasangan. Mengidentifikasinya adalah langkah pertama untuk mengatasinya. Cobalah untuk fokus pada satu percakapan dalam satu waktu, singkirkan distraksi, dan latih diri untuk mendengarkan dengan tujuan memahami, bukan hanya untuk merespons. Komunikasi yang terbuka dan jujur tanpa hambatan-hambatan ini akan membuat pernikahan terasa lebih ringan dan menyenangkan."
+    },
+    {
+      "lesson_id": "lesson013_03_02",
+      "module_id": "mod013_03",
+      "lesson_title": "Video Tutorial: Teknik Bertanya yang Membuka Dialog",
+      "order": 2,
+      "lesson_type": "video",
+      "content_url": "video_teknik_bertanya_013_03",
+      "text_content": null
+    },
+    {
+      "lesson_id": "lesson013_04_01",
+      "module_id": "mod013_04",
+      "lesson_title": "Studi Kasus 1: Menyelesaikan Perbedaan Pendapat dengan Mendengar Aktif",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Bayangkan situasi berikut: Istri Anda mengeluh bahwa Anda terlalu banyak menghabiskan waktu untuk hobi di akhir pekan dan kurang memperhatikan keluarga. Respons pertama Anda mungkin adalah membela diri, mengatakan bahwa hobi itu penting untuk melepas stres. Namun, mari kita terapkan prinsip mendengar aktif. Pertama, dengarkan keluhannya tanpa interupsi. Kemudian, coba parafrasekan: 'Jadi, kamu merasa aku terlalu asyik dengan hobiku dan khawatir aku jadi kurang punya waktu untuk keluarga, ya?' Berikan ia kesempatan untuk mengonfirmasi atau mengklarifikasi. Selanjutnya, validasi perasaannya: 'Aku bisa mengerti kalau kamu merasa seperti itu, apalagi kalau akhir pekan adalah satu-satunya waktu kita bisa benar-benar kumpul.' Setelah ia merasa didengarkan dan dipahami, baru Anda bisa menyampaikan sudut pandang Anda dengan tenang, dan bersama-sama mencari solusi. Mungkin solusinya adalah mengatur jadwal hobi yang lebih seimbang atau merencanakan kegiatan keluarga yang lebih berkualitas. Dengan mendengar aktif, konflik yang tadinya bisa membesar dapat diubah menjadi diskusi konstruktif yang justru memperkuat hubungan. Bapak-bapak, studi kasus ini menunjukkan betapa kuatnya dampak mendengar aktif dalam menyelesaikan masalah sehari-hari."
+    },
+    {
+      "lesson_id": "lesson013_04_02",
+      "module_id": "mod013_04",
+      "lesson_title": "Checklist: Latihan Harian Mendengar Aktif",
+      "order": 2,
+      "lesson_type": "file",
+      "content_url": "checklist_mendengar_aktif_harian.pdf",
+      "text_content": null
+    },
+    {
+      "lesson_id": "lesson014_01_01",
+      "module_id": "mod014_01",
+      "lesson_title": "Mitos vs Fakta: Romantisme dalam Pernikahan",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Banyak bapak berpikir bahwa romantisme identik dengan makan malam mewah, hadiah mahal, atau liburan ke tempat eksotis. Anggapan ini seringkali membuat romantisme terasa berat dan sulit dilakukan secara rutin. Padahal, itu adalah mitos! Fakta sebenarnya, romantisme dalam pernikahan lebih sering ditemukan dalam hal-hal kecil dan perhatian sehari-hari. Sebuah kecupan di kening sebelum berangkat kerja, secangkir teh hangat saat istri sedang lelah, atau pujian tulus atas masakannya bisa jauh lebih bermakna daripada hadiah mahal yang diberikan setahun sekali. Kursus ini akan membantu Anda mengubah paradigma tentang romantisme. Romantis itu bukan soal seberapa banyak uang yang Anda keluarkan, tetapi seberapa besar perhatian dan ketulusan yang Anda berikan. Kita akan fokus pada ide-ide sederhana, kreatif, dan yang terpenting, bisa dilakukan di rumah dengan biaya minimal atau bahkan tanpa biaya sama sekali. Tujuannya adalah menjaga api asmara tetap menyala dalam rutinitas sehari-hari, membuat pasangan merasa dicintai dan dihargai secara konsisten. Jadi, singkirkan anggapan bahwa Anda harus menjadi pujangga atau pangeran berkuda putih. Cukup jadi diri sendiri, dengan sedikit sentuhan kreativitas dan kemauan untuk membuat pasangan tersenyum."
+    },
+    {
+      "lesson_id": "lesson014_02_01",
+      "module_id": "mod014_02",
+      "lesson_title": "Ide Kencan 1: Piknik Indoor di Ruang Tamu",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Siapa bilang piknik harus di taman? Anda bisa menciptakan suasana piknik yang seru dan romantis di ruang tamu Anda sendiri! Ini adalah ide kencan yang hemat, tidak terpengaruh cuaca, dan bisa dilakukan kapan saja. Persiapannya pun mudah. Pertama, siapkan 'alas piknik'. Bisa berupa tikar, selimut tebal, atau beberapa bantal besar yang ditata nyaman di lantai. Kedua, siapkan 'bekal piknik'. Tidak perlu rumit, cukup makanan ringan favorit Anda berdua, seperti sandwich, buah-buahan potong, keripik, atau bahkan sisa kue semalam. Minumannya bisa jus, teh, atau kopi. Tata semua makanan di atas nampan atau keranjang kecil agar terlihat menarik. Ketiga, ciptakan suasana. Matikan lampu utama dan gunakan lampu meja yang lebih redup atau lilin (hati-hati dengan api ya, Pak!). Putar musik instrumental yang menenangkan atau playlist lagu-lagu favorit Anda berdua. Singkirkan gadget untuk sementara waktu agar bisa fokus mengobrol dan menikmati kebersamaan. Anda bisa mengisi waktu dengan bermain kartu, permainan papan, atau sekadar mengobrol santai tentang hari Anda atau kenangan masa lalu. Kencan piknik indoor ini adalah cara yang menyenangkan untuk 'melarikan diri' sejenak dari rutinitas tanpa perlu pergi jauh."
+    },
+    {
+      "lesson_id": "lesson014_02_02",
+      "module_id": "mod014_02",
+      "lesson_title": "Ide Kencan 2: Malam Nonton Film Tematik",
+      "order": 2,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Malam nonton film di rumah bisa menjadi lebih spesial jika Anda memberikannya sentuhan tematik. Pilih satu genre film yang disukai berdua, misalnya komedi romantis, film klasik, atau bahkan maraton serial favorit. Untuk membuatnya lebih seru, siapkan camilan dan minuman yang sesuai dengan tema film. Misalnya, jika menonton film Hollywood, siapkan popcorn dan soda. Jika film India, mungkin bisa samosa dan teh masala. Tata ruang nonton senyaman mungkin. Gunakan banyak bantal dan selimut di sofa. Redupkan lampu agar suasana seperti di bioskop pribadi. Anda juga bisa 'berdandan' sesuai tema film jika ingin lebih totalitas, meskipun ini opsional. Yang terpenting adalah kualitas waktu bersama. Hindari gangguan ponsel selama film berlangsung. Setelah film selesai, luangkan waktu untuk membahas film tersebut. Apa adegan favorit Anda? Apa pesan yang bisa diambil? Diskusi ringan seperti ini bisa menjadi cara yang baik untuk lebih mengenal satu sama lain. Malam nonton film tematik ini tidak hanya menghibur tetapi juga menciptakan kenangan baru yang menyenangkan. Bapak-bapak bisa berinisiatif memilih film dan menyiapkan semua kejutannya!"
+    },
+    {
+      "lesson_id": "lesson014_03_01",
+      "module_id": "mod014_03",
+      "lesson_title": "Resep Andalan 1: Pasta Aglio Olio Kilat (Video Tutorial)",
+      "order": 1,
+      "lesson_type": "video",
+      "content_url": "video_resep_aglio_olio_014_03",
+      "text_content": null
+    },
+    {
+      "lesson_id": "lesson014_03_02",
+      "module_id": "mod014_03",
+      "lesson_title": "Resep Andalan 2: Ayam Panggang Madu Sederhana",
+      "order": 2,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Ingin menyajikan makan malam romantis yang terkesan 'mewah' tapi mudah dibuat? Ayam Panggang Madu Sederhana ini bisa jadi pilihan. Bahan-bahannya mudah didapat dan cara masaknya pun praktis. Anda membutuhkan: 2 potong dada ayam fillet, 3 siung bawang putih (cincang halus), 2 sendok makan madu, 1 sendok makan kecap asin, 1 sendok teh minyak wijen, sedikit jahe parut (opsional), garam, dan merica secukupnya. Cara membuat: Pertama, lumuri dada ayam dengan garam dan merica. Sisihkan. Dalam mangkuk terpisah, campurkan bawang putih cincang, madu, kecap asin, minyak wijen, dan jahe parut. Aduk rata. Panaskan sedikit minyak di teflon. Masukkan ayam, masak hingga kedua sisinya agak kecoklatan. Kemudian, tuangkan campuran saus madu ke atas ayam. Kecilkan api, masak sambil sesekali dibalik dan diolesi sisa saus hingga ayam matang sempurna dan saus mengental. Sajikan ayam panggang madu ini dengan nasi hangat dan tumisan sayuran sederhana seperti brokoli atau buncis. Aroma dan rasanya yang manis gurih pasti akan membuat istri Anda terkesan. Selamat mencoba, Pak!"
+    },
+    {
+      "lesson_id": "lesson014_04_01",
+      "module_id": "mod014_04",
+      "lesson_title": "Ciptakan Suasana: Pencahayaan & Musik yang Tepat",
+      "order": 1,
+      "lesson_type": "text",
+      "content_url": null,
+      "text_content": "Suasana adalah kunci untuk kencan rumahan yang sukses. Dua elemen penting untuk menciptakan suasana romantis adalah pencahayaan dan musik. Untuk pencahayaan, hindari lampu neon terang yang biasa digunakan sehari-hari. Pilihlah pencahayaan yang lebih lembut dan hangat. Lampu meja dengan kap, lampu lantai, atau bahkan string lights (lampu tumblr) bisa memberikan efek dramatis dan intim. Lilin juga pilihan klasik yang selalu berhasil, namun pastikan penempatannya aman dan jauh dari benda mudah terbakar. Cahaya temaram akan membuat suasana lebih rileks dan personal. Untuk musik, pilihlah genre yang menenangkan dan disukai berdua. Musik instrumental, jazz lembut, akustik, atau lagu-lagu cinta klasik bisa menjadi pilihan. Buatlah playlist khusus untuk kencan Anda. Volume musik sebaiknya tidak terlalu keras sehingga tidak mengganggu percakapan, cukup sebagai latar yang memperkuat suasana. Hindari memutar berita atau acara TV yang bisa memecah fokus. Dengan mengatur pencahayaan dan musik yang tepat, Anda bisa mengubah ruang biasa di rumah menjadi tempat kencan yang spesial dan tak terlupakan."
+    },
+    {
+      "lesson_id": "lesson014_04_02",
+      "module_id": "mod014_04",
+      "lesson_title": "Daftar Putar (Playlist) Romantis Pilihan Bapak",
+      "order": 2,
+      "lesson_type": "file",
+      "content_url": "playlist_romantis_bapak.pdf",
+      "text_content": null
+    },
+    {
+    "lesson_id": "les015_01_01",
+    "module_id": "mod015_01",
+    "lesson_title": "Pentingnya Olahraga Rutin untuk Bapak Sibuk",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Sebagai seorang bapak dengan segudang aktivitas, menemukan waktu untuk berolahraga seringkali terasa sulit. Namun, menjaga kebugaran fisik adalah investasi jangka panjang untuk kesehatan dan kualitas hidup. Olahraga rutin tidak hanya membantu menjaga berat badan ideal dan stamina, tetapi juga mengurangi risiko penyakit kronis seperti penyakit jantung, diabetes, dan tekanan darah tinggi. Selain manfaat fisik, aktivitas fisik juga berdampak positif pada kesehatan mental, membantu mengurangi stres, meningkatkan suasana hati, dan memperbaiki kualitas tidur. Modul ini akan meyakinkan Anda bahwa olahraga tidak harus lama dan menyiksa. Dengan program yang tepat, bahkan 15 menit sehari sudah cukup untuk memberikan manfaat signifikan. Mari kita ubah mindset bahwa olahraga adalah beban, menjadi sebuah kebutuhan dan gaya hidup untuk bapak yang lebih sehat, energik, dan bahagia bersama keluarga tercinta. Ingatlah, tubuh yang bugar mendukung pikiran yang tajam dan semangat yang tinggi.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les015_02_01",
+    "module_id": "mod015_02",
+    "lesson_title": "Modul 1 - Gerakan Pemanasan & Pendinginan Efektif",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Sebelum memulai rutinitas olahraga inti, pemanasan adalah langkah krusial yang tidak boleh dilewatkan. Pemanasan bertujuan untuk mempersiapkan otot dan sendi, meningkatkan aliran darah, serta mengurangi risiko cedera. Gerakan pemanasan dinamis seperti putaran lengan, putaran pinggang, jogging di tempat, dan 'high knees' selama 3-5 menit sudah cukup. Pastikan seluruh kelompok otot utama terlibat. Setelah sesi olahraga inti, pendinginan sama pentingnya. Pendinginan membantu menurunkan detak jantung secara bertahap, merelaksasi otot, dan mencegah pusing atau kram. Lakukan peregangan statis selama 3-5 menit, tahan setiap gerakan peregangan selama 15-30 detik. Fokus pada otot-otot besar yang baru saja dilatih, seperti otot kaki, punggung, dan dada. Peregangan yang benar setelah berolahraga membantu mempercepat pemulihan dan meningkatkan fleksibilitas jangka panjang. Jangan pernah meremehkan pentingnya kedua sesi ini dalam rutinitas olahraga Anda, sesingkat apapun latihan inti yang Anda lakukan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les015_03_01",
+    "module_id": "mod015_03",
+    "lesson_title": "Modul 2 - Program Latihan Inti 15 Menit (Video Tutorial)",
+    "order": 1,
+    "lesson_type": "video",
+    "text_content": null,
+    "video_url": "placeholder_15min_core_workout_video"
+  },
+  {
+    "lesson_id": "les015_04_01",
+    "module_id": "mod015_04",
+    "lesson_title": "Modul 3 - Menjaga Konsistensi & Motivasi Berolahraga",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Memulai olahraga itu mudah, tetapi menjaga konsistensi adalah tantangan sebenarnya. Berikut beberapa tips untuk tetap termotivasi: Pertama, tetapkan tujuan yang realistis dan spesifik. Misalnya, 'Saya akan berolahraga 15 menit, 3 kali seminggu.' Kedua, cari waktu yang paling pas. Apakah pagi sebelum kerja, atau malam setelah anak-anak tidur? Jadwalkan seperti janji penting. Ketiga, variasikan latihan Anda. Jika bosan dengan satu rutinitas, coba gerakan baru atau aktivitas lain seperti bersepeda atau jalan cepat di akhir pekan. Keempat, ajak pasangan atau teman. Memiliki rekan olahraga bisa meningkatkan semangat dan akuntabilitas. Kelima, catat kemajuan Anda. Melihat progres, sekecil apapun, bisa menjadi motivator yang kuat. Keenam, beri penghargaan pada diri sendiri (bukan makanan tidak sehat!) ketika mencapai target tertentu. Terakhir, jangan terlalu keras pada diri sendiri jika sesekali melewatkan jadwal. Segera kembali ke rutinitas di kesempatan berikutnya. Ingatlah alasan Anda memulai: untuk kesehatan jangka panjang dan menjadi bapak yang lebih bugar bagi keluarga.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les016_01_01",
+    "module_id": "mod016_01",
+    "lesson_title": "Pengenalan Diabetes: Faktor Risiko pada Pria",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Diabetes melitus adalah penyakit metabolik kronis yang ditandai dengan kadar gula darah tinggi. Bagi pria, pemahaman akan faktor risiko menjadi langkah awal pencegahan yang penting. Beberapa faktor risiko umum meliputi riwayat keluarga dengan diabetes, kelebihan berat badan atau obesitas (terutama lemak di area perut), gaya hidup kurang aktif, dan usia di atas 45 tahun. Pola makan tidak sehat yang tinggi gula, lemak jenuh, dan makanan olahan juga berkontribusi besar. Selain itu, kondisi seperti tekanan darah tinggi (hipertensi) dan kadar kolesterol abnormal (dislipidemia) seringkali berjalan beriringan dengan risiko diabetes. Pria juga perlu mewaspadai gejala seperti sering haus, sering buang air kecil terutama di malam hari, penurunan berat badan tanpa sebab jelas, mudah lelah, pandangan kabur, dan luka yang sulit sembuh. Mengenali faktor risiko dan gejala ini lebih dini memungkinkan Anda untuk mengambil langkah proaktif dalam pencegahan atau penanganan, sehingga kualitas hidup tetap terjaga. Konsultasi dengan dokter untuk skrining rutin sangat dianjurkan, terutama jika Anda memiliki beberapa faktor risiko.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les016_02_01",
+    "module_id": "mod016_02",
+    "lesson_title": "Modul 1 - Mengenali Gejala Awal & Tes Gula Darah",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Mengenali gejala awal diabetes sangat penting untuk deteksi dini. Gejala klasik meliputi poliuria (sering buang air kecil), polidipsia (sering haus), dan polifagia (sering lapar). Namun, ada juga gejala lain seperti kelelahan yang tidak biasa, penurunan berat badan tanpa alasan yang jelas, pandangan kabur, luka yang lambat sembuh, kesemutan atau mati rasa pada tangan dan kaki, serta infeksi yang berulang. Jika Anda mengalami beberapa gejala ini, segera konsultasikan dengan dokter. Untuk memastikan diagnosis, dokter akan merekomendasikan tes gula darah. Tes yang umum dilakukan antara lain: Tes Gula Darah Puasa (GDP), di mana Anda berpuasa minimal 8 jam sebelum darah diambil. Tes Gula Darah Sewaktu (GDS), bisa dilakukan kapan saja tanpa puasa. Tes Toleransi Glukosa Oral (TTGO), mengukur respons tubuh terhadap gula setelah minum larutan gula. Serta tes HbA1c, yang memberikan gambaran rata-rata kadar gula darah Anda selama 2-3 bulan terakhir. Memahami jenis tes dan hasilnya akan membantu Anda dan dokter dalam menentukan langkah penanganan atau pencegahan selanjutnya.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les016_03_01",
+    "module_id": "mod016_03",
+    "lesson_title": "Modul 2 - Panduan Pola Makan Sehat Pencegah Diabetes",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pola makan memainkan peran sentral dalam pencegahan dan pengelolaan diabetes. Prinsip utamanya adalah konsumsi makanan bergizi seimbang dengan porsi terkontrol. Perbanyak konsumsi serat dari sayuran hijau, buah-buahan utuh (bukan jus), dan biji-bijian utuh seperti oatmeal atau beras merah. Serat membantu mengontrol kadar gula darah dan memberikan rasa kenyang lebih lama. Pilih sumber protein tanpa lemak seperti ikan, ayam tanpa kulit, tahu, tempe, dan kacang-kacangan. Batasi konsumsi daging merah dan daging olahan. Hindari atau kurangi drastis minuman manis seperti soda, teh manis kemasan, dan sirup. Gula tambahan adalah musuh utama. Perhatikan juga asupan lemak; pilih lemak sehat seperti yang terdapat pada alpukat, kacang-kacangan, dan minyak zaitun, serta batasi lemak jenuh dan lemak trans. Atur jadwal makan teratur (3 kali makan utama dan 2 kali selingan sehat jika perlu) untuk menjaga kadar gula darah stabil. Membaca label nutrisi pada kemasan makanan juga penting untuk mengetahui kandungan gula, lemak, dan kalori. Dengan disiplin menerapkan pola makan sehat, Anda dapat secara signifikan mengurangi risiko diabetes.",
+    "video_url": "Fp9khm_23a0"
+  },
+  {
+    "lesson_id": "les017_01_01",
+    "module_id": "mod017_01",
+    "lesson_title": "Peran Ayah dalam Pembelajaran Jarak Jauh (PJJ)",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pembelajaran Jarak Jauh (PJJ) menghadirkan tantangan dan dinamika baru dalam pendidikan anak. Peran ayah menjadi semakin vital dalam mendukung keberhasilan PJJ. Ayah tidak hanya sebagai pencari nafkah, tetapi juga sebagai pendamping belajar, motivator, dan fasilitator. Keterlibatan aktif ayah dapat memberikan dampak positif pada motivasi belajar anak, disiplin, dan kesejahteraan emosional mereka selama PJJ. Ayah bisa berperan dalam membantu menyiapkan perangkat dan koneksi internet, menciptakan lingkungan belajar yang tenang dan nyaman, serta memastikan anak mengikuti jadwal belajar dengan baik. Lebih dari itu, kehadiran ayah untuk berdiskusi tentang materi pelajaran, membantu mengatasi kesulitan, atau sekadar memberikan semangat akan sangat berarti. Modul ini akan mengupas lebih dalam bagaimana ayah bisa mengambil peran strategis dan efektif dalam mendukung PJJ anak, membangun kemitraan dengan ibu dan guru, serta menjadikan PJJ sebagai momen untuk mempererat ikatan keluarga.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les017_02_01",
+    "module_id": "mod017_02",
+    "lesson_title": "Modul 1 - Menciptakan Ruang Belajar Kondusif di Rumah",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Lingkungan belajar yang kondusif adalah salah satu kunci sukses Pembelajaran Jarak Jauh (PJJ). Sebagai ayah, Anda bisa berperan aktif dalam menyiapkannya. Pertama, tentukan area khusus untuk belajar. Idealnya, area ini tenang, bebas dari gangguan televisi atau aktivitas rumah tangga lainnya. Jika ruang terbatas, sudut kamar atau meja lipat di area yang minim distraksi sudah cukup. Pastikan pencahayaan cukup terang, baik alami maupun buatan, untuk kenyamanan mata anak. Sediakan meja dan kursi yang ergonomis sesuai tinggi badan anak agar mereka nyaman belajar dalam waktu lama. Rapikan area belajar dari barang-barang yang tidak relevan agar anak bisa fokus. Sediakan tempat penyimpanan untuk buku dan alat tulis agar mudah dijangkau dan tidak berantakan. Terakhir, diskusikan dengan anak mengenai pentingnya menjaga kebersihan dan kerapian area belajar mereka sendiri. Keterlibatan Anda dalam menciptakan ruang ini menunjukkan dukungan nyata terhadap proses belajar anak.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les017_03_01",
+    "module_id": "mod017_03",
+    "lesson_title": "Modul 2 - Strategi Mengatasi Distraksi & Menjaga Fokus Anak",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Salah satu tantangan terbesar PJJ adalah menjaga fokus anak di tengah banyaknya distraksi di rumah. Ayah dapat membantu dengan beberapa strategi. Pertama, buat aturan main terkait penggunaan gadget di luar jam belajar. Batasi akses ke game atau media sosial saat sesi PJJ berlangsung. Kedua, ajarkan anak teknik manajemen waktu sederhana, seperti teknik Pomodoro (belajar fokus selama 25 menit, lalu istirahat 5 menit). Ketiga, minimalkan gangguan dari anggota keluarga lain. Beri pengertian kepada adik atau kakak untuk tidak mengganggu saat anak sedang belajar online. Keempat, perhatikan tanda-tanda anak mulai kehilangan fokus. Ajak mereka istirahat sejenak, melakukan peregangan ringan, atau minum air. Kelima, variasikan metode pendampingan. Terkadang, kehadiran fisik ayah di dekatnya sudah cukup. Di lain waktu, Anda mungkin perlu duduk bersama dan membahas materi. Keenam, berikan pujian ketika anak berhasil fokus dan menyelesaikan tugasnya. Penguatan positif sangat penting untuk membangun kebiasaan baik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les017_04_01",
+    "module_id": "mod017_04",
+    "lesson_title": "Modul 3 - Komunikasi Efektif dengan Anak & Guru",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Komunikasi yang efektif dengan anak dan guru adalah pilar penting dalam PJJ. Dengan anak, luangkan waktu setiap hari untuk bertanya tentang apa yang mereka pelajari, kesulitan apa yang dihadapi, dan bagaimana perasaan mereka tentang PJJ. Dengarkan keluh kesah mereka dengan empati. Hindari langsung menyalahkan atau memarahi jika ada kesulitan. Sebaliknya, tawarkan bantuan dan cari solusi bersama. Pujilah usaha mereka, bukan hanya hasil akhir. Terhadap guru, ayah perlu proaktif. Manfaatkan platform komunikasi yang disediakan sekolah untuk mengetahui perkembangan anak, tugas-tugas, dan kendala yang mungkin ada. Jangan ragu untuk bertanya atau memberikan masukan kepada guru jika diperlukan. Menghadiri pertemuan orang tua virtual juga penting. Kemitraan yang baik antara orang tua (ayah dan ibu) dengan guru akan sangat membantu kelancaran proses PJJ dan memastikan anak mendapatkan dukungan optimal.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les017_05_01",
+    "module_id": "mod017_05",
+    "lesson_title": "Studi Kasus: Mengatasi Tantangan PJJ Spesifik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setiap anak dan keluarga mungkin menghadapi tantangan PJJ yang spesifik. Mari kita bahas beberapa contoh dan solusinya. Kasus 1: Anak mudah bosan dan tidak termotivasi. Solusi: Variasikan cara belajar, gunakan media visual menarik, berikan jeda teratur, dan kaitkan materi pelajaran dengan minat anak. Berikan 'reward' kecil untuk pencapaian tertentu. Kasus 2: Kesulitan teknis dengan perangkat atau internet. Solusi: Ayah bisa membantu memeriksa koneksi, melakukan troubleshooting dasar, atau menghubungi pihak sekolah/penyedia layanan jika masalah berlanjut. Siapkan rencana cadangan seperti materi offline. Kasus 3: Anak kesulitan memahami materi tertentu. Solusi: Ayah bisa mencoba menjelaskan dengan cara yang berbeda, mencari sumber belajar tambahan di internet (video edukasi, artikel), atau berdiskusi dengan guru untuk mendapatkan panduan. Kasus 4: Anak merindukan interaksi sosial dengan teman. Solusi: Fasilitasi interaksi virtual dengan teman sekelas di luar jam belajar, atau adakan kegiatan keluarga yang menyenangkan untuk mengisi kebutuhan sosialnya. Dengan mengidentifikasi tantangan spesifik dan mencari solusi kreatif, ayah dapat membantu anak melewati PJJ dengan lebih baik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les018_01_01",
+    "module_id": "mod018_01",
+    "lesson_title": "Pentingnya Ikatan Ayah dan Anak Laki-Laki",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ikatan antara ayah dan anak laki-laki memiliki peran fundamental dalam perkembangan anak. Ayah adalah role model pertama bagi anak laki-lakinya dalam banyak aspek, termasuk bagaimana menjadi seorang pria, suami, dan ayah di masa depan. Kedekatan yang kuat dengan ayah membantu anak laki-laki mengembangkan rasa percaya diri, identitas maskulin yang sehat, kemampuan mengatasi masalah, dan kecerdasan emosional. Anak laki-laki yang memiliki hubungan baik dengan ayahnya cenderung memiliki performa akademis yang lebih baik, lebih sedikit masalah perilaku, dan lebih mampu membangun hubungan sosial yang positif. Melalui interaksi sehari-hari dan kegiatan bersama, ayah dapat menanamkan nilai-nilai penting seperti tanggung jawab, integritas, kerja keras, dan rasa hormat. Modul ini akan mengeksplorasi bagaimana hobi bersama dapat menjadi sarana yang sangat efektif untuk membangun dan memperkuat ikatan spesial ini, menciptakan kenangan tak terlupakan, sekaligus mengajarkan berbagai life skills.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les018_02_01",
+    "module_id": "mod018_02",
+    "lesson_title": "Modul 1 - Ide Hobi Outdoor: Petualangan & Olahraga",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Aktivitas di luar ruangan (outdoor) menawarkan banyak kesempatan bagi ayah dan anak laki-laki untuk berpetualang dan berolahraga bersama. Hobi outdoor tidak hanya menyehatkan fisik tetapi juga membangun keberanian, kerjasama tim, dan kecintaan pada alam. Beberapa ide hobi outdoor yang bisa dicoba: Pertama, memancing. Kegiatan ini melatih kesabaran dan bisa menjadi momen untuk percakapan mendalam. Kedua, bersepeda. Jelajahi lingkungan sekitar atau taman kota sambil menikmati udara segar. Ketiga, hiking atau berkemah. Ini adalah cara luar biasa untuk mengajarkan tentang alam, survival skill dasar, dan membangun ketahanan fisik. Keempat, bermain sepak bola, basket, atau bulu tangkis di taman atau lapangan terdekat. Selain menyehatkan, olahraga tim mengajarkan sportivitas. Kelima, fotografi alam. Ajak anak mengamati dan mengabadikan keindahan alam sekitar. Pilih aktivitas yang sesuai dengan usia dan minat anak, dan pastikan keselamatan selalu menjadi prioritas utama.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les018_03_01",
+    "module_id": "mod018_03",
+    "lesson_title": "Modul 2 - Ide Hobi Indoor: Merakit, Game Edukatif, Memasak",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Tidak selalu harus keluar rumah, hobi indoor juga bisa sangat menyenangkan dan edukatif untuk ayah dan anak laki-laki. Pertama, merakit model kit seperti pesawat, mobil, atau robot. Kegiatan ini melatih ketelitian, kesabaran, dan kemampuan mengikuti instruksi. Kedua, bermain game edukatif, baik itu board game strategis, puzzle, maupun video game yang memiliki unsur pembelajaran. Ini bisa mengasah logika dan kemampuan problem solving. Ketiga, memasak atau membuat kue bersama. Pilih resep sederhana yang bisa dikerjakan bersama, mulai dari mengukur bahan hingga menghias. Ini mengajarkan life skill dasar dan kerjasama. Keempat, coding sederhana atau membuat animasi dasar menggunakan aplikasi atau platform online yang ramah anak. Ini mengenalkan mereka pada dunia teknologi secara kreatif. Kelima, membaca buku atau komik favorit bersama, lalu berdiskusi tentang ceritanya. Hobi indoor ini bisa menjadi alternatif berkualitas saat cuaca tidak mendukung untuk beraktivitas di luar.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les018_04_01",
+    "module_id": "mod018_04",
+    "lesson_title": "Modul 3 - Membangun Komunikasi Terbuka Lewat Hobi",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Hobi bersama bukan hanya tentang aktivitasnya, tetapi juga tentang kesempatan untuk membangun komunikasi yang lebih terbuka dan mendalam antara ayah dan anak laki-laki. Saat melakukan hobi, suasana cenderung lebih santai dan informal, ini membuka ruang bagi anak untuk lebih mudah bercerita atau bertanya tentang hal-hal yang mungkin tidak mereka sampaikan dalam situasi formal. Manfaatkan momen ini. Tanyakan tentang sekolahnya, teman-temannya, atau apa yang sedang ia pikirkan. Dengarkan dengan penuh perhatian tanpa langsung menghakimi atau memberi nasihat jika tidak diminta. Bagikan juga pengalaman atau cerita masa kecil Anda yang relevan. Tertawalah bersama, hadapi tantangan dalam hobi bersama (misalnya saat model rakitan sulit dipasang), dan rayakan pencapaian kecil. Komunikasi yang terbangun melalui kesamaan minat dan pengalaman positif ini akan menjadi fondasi hubungan yang kuat hingga ia dewasa. Jadikan setiap sesi hobi sebagai 'quality time' yang bermakna.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_01_01",
+    "module_id": "mod019_01",
+    "lesson_title": "Ancaman Siber di Era Digital: Mengapa Keluarga Perlu Waspada?",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Di era digital saat ini, internet telah menjadi bagian tak terpisahkan dari kehidupan sehari-hari keluarga. Namun, kemudahan akses ini juga datang dengan berbagai risiko dan ancaman siber. Phishing, malware, pencurian identitas, perundungan siber (cyberbullying), hingga paparan konten negatif adalah beberapa contoh ancaman yang bisa menimpa siapa saja, termasuk anak-anak. Sebagai kepala keluarga, bapak memiliki peran penting dalam memahami dan mengedukasi seluruh anggota keluarga tentang pentingnya keamanan siber. Kurangnya kesadaran akan risiko ini bisa berakibat fatal, mulai dari kerugian finansial, kerusakan reputasi, hingga trauma psikologis. Modul pengantar ini bertujuan untuk memberikan pemahaman dasar mengenai berbagai jenis ancaman siber yang umum terjadi dan mengapa perlindungan data pribadi serta perangkat menjadi sangat krusial. Dengan memahami potensi bahayanya, kita bisa lebih proaktif dalam mengambil langkah-langkah pencegahan untuk menciptakan lingkungan digital yang aman bagi seluruh keluarga.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_02_01",
+    "module_id": "mod019_02",
+    "lesson_title": "Modul 1 - Menciptakan Kata Sandi Kuat dan Unik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Kata sandi (password) adalah garda terdepan dalam melindungi akun online kita. Sayangnya, banyak orang masih menggunakan kata sandi yang lemah dan mudah ditebak. Modul ini akan mengajarkan Anda cara membuat kata sandi yang kuat. Kombinasikan huruf besar, huruf kecil, angka, dan simbol. Usahakan panjang minimal 12 karakter. Hindari penggunaan informasi pribadi yang mudah diketahui seperti tanggal lahir, nama anak, atau kata-kata umum. Yang tak kalah penting adalah menggunakan kata sandi yang berbeda untuk setiap akun online. Mengapa? Jika satu akun Anda berhasil dibobol dan Anda menggunakan kata sandi yang sama di tempat lain, maka semua akun Anda berisiko. Mengingat banyak kata sandi unik memang sulit, oleh karena itu, pertimbangkan penggunaan password manager. Aplikasi ini bisa membantu Anda membuat dan menyimpan kata sandi yang kompleks dengan aman. Ajarkan juga prinsip ini kepada seluruh anggota keluarga. Keamanan dimulai dari hal sederhana seperti kata sandi yang kuat.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_02_02",
+    "module_id": "mod019_02",
+    "lesson_title": "Modul 1 - Mengenal dan Menggunakan Password Manager",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Mengingat puluhan kata sandi yang kuat dan unik untuk setiap akun online adalah tugas yang hampir mustahil bagi kebanyakan orang. Di sinilah peran password manager menjadi sangat penting. Password manager adalah perangkat lunak yang dirancang untuk membuat, menyimpan, dan mengelola semua kata sandi Anda dalam sebuah brankas digital yang terenkripsi. Anda hanya perlu mengingat satu kata sandi utama (master password) yang sangat kuat untuk mengakses semua kata sandi lainnya. Kebanyakan password manager juga memiliki fitur untuk menghasilkan kata sandi acak yang sangat kompleks, sehingga Anda tidak perlu repot memikirkannya. Selain itu, banyak yang menawarkan fitur sinkronisasi antar perangkat, sehingga kata sandi Anda bisa diakses dari komputer, laptop, maupun smartphone. Beberapa password manager populer antara lain Bitwarden (open-source dan gratis), LastPass, 1Password, dan Dashlane. Pelajari cara memilih password manager yang sesuai dengan kebutuhan Anda, cara menginstalnya, dan tips untuk menjaga keamanan master password Anda. Menggunakan password manager adalah langkah cerdas untuk meningkatkan keamanan digital Anda secara signifikan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_03_01",
+    "module_id": "mod019_03",
+    "lesson_title": "Modul 2 - Waspada Phishing: Kenali Ciri-cirinya",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Phishing adalah salah satu bentuk penipuan online yang paling umum dan berbahaya. Pelaku phishing mencoba memancing korban untuk memberikan informasi sensitif seperti kata sandi, nomor kartu kredit, atau data pribadi lainnya dengan menyamar sebagai institusi atau individu tepercaya melalui email, pesan teks, atau situs web palsu. Penting untuk mengenali ciri-ciri upaya phishing. Pertama, perhatikan alamat email pengirim. Seringkali, alamat email pelaku phishing terlihat mirip dengan alamat email resmi tetapi memiliki sedikit perbedaan atau domain yang aneh. Kedua, waspadai tata bahasa dan ejaan yang buruk dalam pesan. Institusi resmi biasanya memiliki standar komunikasi yang profesional. Ketiga, jangan mudah percaya pada pesan yang menciptakan rasa urgensi atau ancaman, misalnya 'akun Anda akan segera diblokir jika tidak segera verifikasi'. Keempat, jangan pernah mengklik tautan atau mengunduh lampiran dari email atau pesan yang mencurigakan. Jika ragu, ketikkan alamat situs web resmi secara manual di browser Anda. Ajarkan anggota keluarga untuk selalu berhati-hati dan tidak sembarangan memberikan informasi pribadi secara online.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_03_02",
+    "module_id": "mod019_03",
+    "lesson_title": "Modul 2 - Melindungi Perangkat dari Malware dan Virus",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Malware (Malicious Software) adalah perangkat lunak berbahaya yang dirancang untuk merusak atau menyusup ke sistem komputer tanpa izin pengguna. Jenis malware beragam, mulai dari virus, worm, trojan, ransomware, hingga spyware. Infeksi malware bisa menyebabkan pencurian data, kerusakan sistem, hingga kerugian finansial. Langkah pertama perlindungan adalah menginstal perangkat lunak antivirus atau anti-malware yang terpercaya di semua perangkat (komputer, laptop, smartphone) dan pastikan selalu terupdate. Kedua, selalu perbarui sistem operasi dan aplikasi Anda. Pembaruan seringkali menyertakan patch keamanan untuk menutup celah yang bisa dieksploitasi malware. Ketiga, berhati-hatilah saat mengunduh file dari internet, terutama dari sumber yang tidak dikenal atau tidak resmi. Hindari mengklik iklan pop-up yang mencurigakan. Keempat, gunakan firewall. Sebagian besar sistem operasi modern sudah dilengkapi firewall bawaan, pastikan fitur ini aktif. Kelima, lakukan pemindaian (scan) rutin pada perangkat Anda. Dengan langkah-langkah pencegahan ini, Anda dapat secara signifikan mengurangi risiko perangkat keluarga terinfeksi malware.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les019_04_01",
+    "module_id": "mod019_04",
+    "lesson_title": "Modul 3 - Bijak Bermedia Sosial: Pengaturan Privasi dan Jejak Digital",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Media sosial adalah platform yang menyenangkan untuk terhubung, namun juga menyimpan risiko privasi jika tidak digunakan dengan bijak. Penting bagi setiap anggota keluarga untuk memahami cara mengatur privasi akun mereka. Ajarkan mereka untuk membatasi siapa saja yang bisa melihat postingan dan informasi pribadi. Periksa secara berkala pengaturan privasi di setiap platform media sosial, karena seringkali ada pembaruan. Pikirkan baik-baik sebelum memposting sesuatu. Informasi, foto, atau video yang sudah diunggah ke internet bisa sulit untuk dihapus sepenuhnya dan akan menjadi bagian dari jejak digital Anda. Hindari membagikan informasi yang terlalu pribadi seperti alamat rumah, nomor telepon, atau jadwal rutin keluarga secara publik. Edukasi anak-anak tentang bahaya berinteraksi dengan orang asing di media sosial dan risiko membagikan informasi pribadi kepada mereka. Ingatlah bahwa apa yang terlihat keren atau lucu saat ini mungkin bisa menjadi penyesalan di masa depan. Membangun kesadaran akan jejak digital dan pentingnya privasi adalah kunci untuk bermedia sosial secara aman dan bertanggung jawab.",
+    "video_url": "0S2N6ZQ3n4Y"
+  },
+  {
+    "lesson_id": "les020_01_01",
+    "module_id": "mod020_01",
+    "lesson_title": "Dasar-Dasar YouTube: Membuat Akun Google dan Channel YouTube",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Selamat datang di kursus membuat channel YouTube keluarga! Langkah paling awal adalah memastikan Anda memiliki akun Google. Jika Anda sudah menggunakan Gmail, berarti Anda sudah memiliki akun Google. Jika belum, Anda bisa membuatnya dengan mudah di situs Google. Setelah memiliki akun Google, membuat channel YouTube sangatlah mudah. Cukup kunjungi situs YouTube, login dengan akun Google Anda, dan biasanya akan ada opsi untuk membuat channel baru. Anda bisa memilih menggunakan nama pribadi Anda atau membuat nama channel khusus untuk keluarga. Pikirkan nama channel yang unik, mudah diingat, dan mencerminkan konten yang akan Anda buat. Setelah channel dibuat, Anda bisa mulai menyesuaikan tampilan channel seperti menambahkan foto profil (logo channel) dan banner channel. Foto profil bisa berupa foto keluarga atau logo sederhana yang Anda desain. Banner adalah gambar header di bagian atas halaman channel Anda. Modul ini akan memandu Anda langkah demi langkah dalam proses pembuatan akun dan channel, serta memberikan tips untuk tampilan awal channel yang menarik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les020_02_01",
+    "module_id": "mod020_02",
+    "lesson_title": "Modul 1 - Menemukan Ide dan Niche Konten Keluarga yang Unik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setelah channel YouTube keluarga Anda siap, langkah selanjutnya adalah menentukan ide dan niche (ceruk) konten. Apa yang membuat channel Anda unik dan menarik bagi penonton? Mulailah dengan memikirkan minat dan aktivitas keluarga Anda. Apakah keluarga Anda suka traveling? Anda bisa membuat vlog perjalanan. Apakah Anda jago memasak bersama anak-anak? Buat konten resep keluarga. Apakah anak-anak memiliki bakat tertentu seperti menyanyi atau bermain alat musik? Dokumentasikan perkembangannya. Beberapa ide konten keluarga yang populer antara lain: daily vlog (keseharian keluarga), tantangan (challenges) seru, unboxing mainan atau produk anak, tutorial DIY atau kerajinan tangan bersama anak, review tempat liburan ramah anak, atau konten edukasi yang dikemas secara menyenangkan. Penting untuk memilih niche yang benar-benar Anda dan keluarga nikmati, karena konsistensi dalam membuat konten adalah kunci. Jangan takut untuk menjadi diri sendiri dan menunjukkan keunikan keluarga Anda. Lakukan riset kecil tentang channel keluarga lain untuk mendapatkan inspirasi, tapi tetaplah autentik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les020_03_01",
+    "module_id": "mod020_03",
+    "lesson_title": "Modul 2 - Teknik Dasar Merekam Video dengan Smartphone",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Anda tidak memerlukan peralatan mahal untuk memulai channel YouTube. Smartphone yang Anda miliki sudah lebih dari cukup untuk merekam video berkualitas baik. Berikut beberapa teknik dasar: Pertama, rekam dalam posisi horizontal (landscape), bukan vertikal, agar video terlihat bagus saat ditonton di berbagai perangkat. Kedua, pastikan pencahayaan cukup. Cahaya alami dari jendela adalah yang terbaik. Hindari merekam membelakangi sumber cahaya. Jika di dalam ruangan, gunakan lampu tambahan jika perlu. Ketiga, jaga kestabilan video. Gunakan kedua tangan saat merekam, atau pertimbangkan menggunakan tripod mini untuk smartphone. Keempat, perhatikan kualitas audio. Rekam di tempat yang tidak terlalu bising. Jika memungkinkan, gunakan mikrofon eksternal kecil yang bisa disambungkan ke smartphone untuk suara yang lebih jernih. Kelima, ambil beberapa angle atau variasi shot untuk membuat video lebih dinamis. Jangan takut untuk mendekat (close-up) atau mengambil gambar dari sudut yang berbeda. Latihan akan membuat Anda semakin mahir.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les020_03_02",
+    "module_id": "mod020_03",
+    "lesson_title": "Modul 2 - Aplikasi Editing Video Sederhana di Smartphone",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Setelah selesai merekam, proses selanjutnya adalah editing video. Banyak aplikasi editing video gratis maupun berbayar yang mudah digunakan di smartphone. Beberapa aplikasi populer antara lain CapCut, InShot, VN Video Editor, atau KineMaster. Proses editing dasar meliputi: Pertama, memotong (trimming) dan menggabungkan klip video. Buang bagian-bagian yang tidak perlu atau membosankan. Kedua, menambahkan musik latar. Pilih musik bebas royalti agar video Anda tidak terkena masalah hak cipta. Banyak aplikasi menyediakan pustaka musik gratis. Ketiga, menambahkan teks atau judul. Ini bisa digunakan untuk memberi keterangan, judul segmen, atau subtitle. Keempat, menambahkan transisi antar klip agar perpindahan gambar lebih halus. Kelima, koreksi warna dasar jika diperlukan untuk membuat video terlihat lebih cerah atau menarik. Jangan terlalu banyak menggunakan efek yang berlebihan, fokus pada cerita dan kejelasan konten. Pelajari fitur-fitur dasar di aplikasi pilihan Anda, dan dengan sedikit latihan, Anda akan bisa menghasilkan video yang menarik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les020_04_01",
+    "module_id": "mod020_04",
+    "lesson_title": "Modul 3 - Proses Upload Video ke YouTube dan Optimasi Dasar",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setelah video Anda selesai diedit, saatnya mengunggahnya ke YouTube. Proses upload bisa dilakukan melalui aplikasi YouTube di smartphone atau melalui situs web YouTube di komputer. Saat mengupload, perhatikan beberapa hal penting untuk optimasi dasar. Pertama, buat judul video yang menarik dan relevan dengan isi video. Gunakan kata kunci yang mungkin dicari orang. Kedua, tulis deskripsi video yang informatif. Jelaskan isi video secara singkat, tambahkan tautan ke media sosial Anda (jika ada), dan sertakan juga kata kunci yang relevan. Ketiga, buat thumbnail (gambar mini) yang menarik perhatian. Thumbnail adalah hal pertama yang dilihat orang sebelum mengklik video Anda. Anda bisa membuat thumbnail kustom menggunakan aplikasi desain grafis sederhana seperti Canva. Keempat, tambahkan tag atau kata kunci yang relevan dengan video Anda. Ini membantu YouTube memahami isi video Anda dan merekomendasikannya kepada penonton yang tepat. Kelima, pilih kategori video yang sesuai. Terakhir, tentukan apakah video tersebut dibuat untuk anak-anak atau tidak, sesuai dengan aturan YouTube.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les020_05_01",
+    "module_id": "mod020_05",
+    "lesson_title": "Tips & Trik: Menambah Penonton dan Etika Bermedia",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Membangun penonton di YouTube membutuhkan waktu dan konsistensi. Berikut beberapa tips: Pertama, konsisten mengupload video. Buat jadwal upload yang realistis, misalnya seminggu sekali atau dua minggu sekali. Kedua, promosikan video Anda di media sosial lain yang Anda miliki. Ketiga, berinteraksi dengan penonton. Balas komentar dengan ramah dan apresiasi dukungan mereka. Keempat, perhatikan analitik YouTube. Pelajari video mana yang paling banyak ditonton dan disukai untuk memahami preferensi audiens Anda. Selain menambah penonton, penting juga untuk menjaga etika bermedia. Selalu jaga privasi keluarga, terutama anak-anak. Hindari membagikan informasi yang terlalu pribadi. Berhati-hatilah dengan komentar negatif, jangan terpancing emosi. Jika ada konten yang melibatkan orang lain, pastikan Anda mendapatkan izin mereka. Ingatlah bahwa YouTube adalah platform publik, jadi buatlah konten yang positif, bermanfaat, dan bertanggung jawab. Yang terpenting, nikmati proses berkreasi bersama keluarga!",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_01_01",
+    "module_id": "mod021_01",
+    "lesson_title": "Pengantar: Pentingnya Anggaran Rumah Tangga untuk Stabilitas Finansial",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Selamat datang di modul pengantar mengenai pentingnya anggaran rumah tangga. Mengelola keuangan keluarga secara efektif adalah kunci utama untuk mencapai stabilitas finansial jangka panjang. Anggaran berfungsi sebagai peta jalan keuangan Anda, membantu melacak sumber pemasukan dan ke mana saja uang Anda dibelanjakan. Dengan memiliki anggaran yang jelas, Anda dapat mengidentifikasi area-area di mana penghematan bisa dilakukan, mengalokasikan dana untuk tabungan dan investasi, serta bekerja menuju pencapaian tujuan finansial keluarga, seperti membeli rumah, dana pendidikan anak, atau persiapan pensiun. Tanpa anggaran, pengeluaran cenderung tidak terkontrol, dan seringkali sulit untuk mengetahui ke mana uang menghilang, apalagi untuk menabung. Modul ini akan membahas secara mendalam mengapa setiap bapak, sebagai salah satu pilar keluarga, perlu memahami dan menerapkan sistem penganggaran yang baik dan konsisten.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_02_01",
+    "module_id": "mod021_02",
+    "lesson_title": "Modul 1 - Memahami Prinsip Dasar Metode Amplop Fisik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Metode amplop adalah salah satu cara klasik namun sangat efektif untuk mengelola anggaran kas harian dan mingguan. Pelajaran ini akan membahas prinsip dasar metode amplop fisik. Setelah menerima gaji atau pemasukan, Anda mengalokasikan sejumlah uang tunai ke dalam amplop-amplop berbeda yang telah diberi label sesuai kategori pengeluaran, misalnya 'Belanja Dapur', 'Transportasi', 'Hiburan Anak', 'Tagihan Listrik', dan lain-lain. Ketika Anda perlu berbelanja untuk kategori tertentu, Anda hanya mengambil uang dari amplop yang sesuai. Ini membantu Anda melihat secara visual berapa sisa dana yang tersedia untuk setiap pos pengeluaran dan secara alami mencegah pengeluaran berlebih karena Anda terbatas pada jumlah uang di dalam amplop tersebut. Metode ini sangat baik untuk melatih disiplin.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_02_02",
+    "module_id": "mod021_02",
+    "lesson_title": "Modul 1 - Adaptasi Metode Amplop ke Era Digital (Rekening & Aplikasi)",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Seiring kemajuan teknologi, metode amplop juga dapat diadaptasi ke dalam format digital untuk kemudahan dan kepraktisan, terutama bagi mereka yang jarang bertransaksi tunai. Pelajaran ini menjelaskan bagaimana konsep 'amplop' dapat diterapkan menggunakan beberapa rekening bank terpisah yang didedikasikan untuk pos-pos pengeluaran besar seperti tabungan, investasi, atau cicilan. Selain itu, banyak aplikasi perbankan digital atau aplikasi budgeting pihak ketiga yang kini menawarkan fitur 'pockets', 'goals', atau 'virtual envelopes', yang memungkinkan Anda membagi saldo utama ke dalam beberapa sub-akun virtual. Tujuannya tetap sama dengan metode fisik: memisahkan dana berdasarkan kategori untuk kontrol yang lebih baik dan visibilitas yang jelas atas alokasi dana Anda tanpa perlu menyimpan banyak uang tunai.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_03_01",
+    "module_id": "mod021_03",
+    "lesson_title": "Modul 2 - Mengenal dan Memilih Aplikasi Budgeting Populer",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Saat ini, tersedia banyak aplikasi budgeting yang dapat membantu Anda mencatat, melacak, dan menganalisis keuangan keluarga dengan lebih mudah. Pelajaran ini akan memperkenalkan beberapa aplikasi budgeting populer yang tersedia untuk pengguna di Indonesia, baik yang gratis maupun berbayar. Akan dibahas fitur-fitur unggulan yang umumnya ditawarkan, seperti kemampuan untuk terhubung dengan rekening bank (dengan izin Anda), pencatatan pengeluaran otomatis berdasarkan kategori, pembuatan laporan dan grafik pengeluaran, serta fitur pengingat tagihan. Pertimbangkan faktor kemudahan penggunaan, fitur yang ditawarkan, keamanan data, dan biaya (jika ada) saat memilih aplikasi yang paling sesuai dengan kebutuhan dan preferensi gaya hidup digital keluarga Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_04_01",
+    "module_id": "mod021_04",
+    "lesson_title": "Modul 3 - Membangun Kebiasaan Disiplin Mencatat Setiap Pengeluaran",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Kunci keberhasilan dari sistem budgeting apapun adalah kedisiplinan dalam mencatat setiap pengeluaran, tidak peduli seberapa kecil nilainya. Tanpa pencatatan yang akurat, anggaran yang telah dibuat tidak akan mencerminkan kondisi keuangan yang sebenarnya. Pelajaran ini memberikan tips praktis untuk membangun kebiasaan disiplin ini. Misalnya, biasakan untuk mencatat pengeluaran segera setelah transaksi dilakukan, baik secara manual di buku catatan, spreadsheet, maupun melalui aplikasi budgeting di smartphone Anda. Alternatif lain adalah meluangkan waktu spesifik setiap hari, misalnya 5-10 menit di malam hari, untuk merekap semua pengeluaran harian. Libatkan juga pasangan Anda dalam proses ini agar ada akuntabilitas bersama. Ingat, konsistensi adalah kunci untuk memahami pola pengeluaran dan membuat penyesuaian anggaran yang efektif.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les021_04_02",
+    "module_id": "mod021_04",
+    "lesson_title": "Modul 3 - Melakukan Evaluasi Anggaran Secara Berkala",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Membuat anggaran hanyalah langkah awal. Langkah penting berikutnya adalah melakukan evaluasi anggaran secara berkala, misalnya mingguan atau bulanan. Evaluasi ini bertujuan untuk membandingkan antara rencana anggaran dengan realisasi pengeluaran. Apakah ada kategori yang melebihi budget? Apakah ada pos yang dananya selalu sisa? Dari evaluasi ini, Anda bisa mengidentifikasi kebocoran finansial, area yang perlu dihemat lebih lanjut, atau bahkan menyesuaikan alokasi anggaran jika memang ada perubahan kebutuhan. Evaluasi juga membantu Anda melihat kemajuan dalam mencapai tujuan finansial. Jika ada penyimpangan, segera diskusikan dengan pasangan untuk mencari solusi dan membuat komitmen baru. Proses evaluasi ini menjadikan anggaran Anda sebagai alat yang dinamis dan terus relevan dengan kondisi keluarga.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les022_01_01",
+    "module_id": "mod022_01",
+    "lesson_title": "Apa itu Reksa Dana? Pengenalan Konsep Dasar untuk Bapak Pemula",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Reksa dana sering disebut sebagai salah satu instrumen investasi yang cocok untuk pemula. Secara sederhana, reksa dana adalah sebuah wadah yang digunakan untuk menghimpun dana secara kolektif dari masyarakat pemodal. Dana yang terkumpul tersebut kemudian akan dikelola oleh Manajer Investasi (MI) profesional untuk diinvestasikan ke dalam berbagai instrumen pasar modal, seperti saham, obligasi, atau pasar uang. Sebagai investor reksa dana, Anda membeli unit penyertaan. Keuntungan bagi pemula adalah Anda tidak perlu memiliki pengetahuan mendalam tentang analisis pasar atau modal besar untuk memulai, karena semuanya dikelola oleh MI. Pelajaran ini akan menjelaskan lebih lanjut konsep dasar ini dan mengapa reksa dana bisa menjadi pilihan bijak untuk memulai perjalanan investasi Anda sebagai seorang bapak.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les022_02_01",
+    "module_id": "mod022_02",
+    "lesson_title": "Modul 1 - Mengenal Jenis-Jenis Reksa Dana: Pasar Uang, Pendapatan Tetap, Saham, dan Campuran",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ada beberapa jenis reksa dana yang umum tersedia, masing-masing dengan karakteristik, potensi keuntungan, dan tingkat risiko yang berbeda. Reksa Dana Pasar Uang (RDPU) menginvestasikan 100% dananya pada instrumen pasar uang seperti deposito atau surat utang jangka pendek, risikonya paling rendah. Reksa Dana Pendapatan Tetap (RDPT) mengalokasikan minimal 80% asetnya ke obligasi (surat utang), risikonya sedikit lebih tinggi dari RDPU. Reksa Dana Saham (RDS) menempatkan minimal 80% dananya di efek bersifat ekuitas (saham), memiliki potensi keuntungan tertinggi namun juga risiko paling tinggi. Terakhir, Reksa Dana Campuran (RDC) berinvestasi pada kombinasi saham, obligasi, dan pasar uang, dengan tingkat risiko dan potensi return yang moderat. Memahami perbedaan ini krusial untuk memilih jenis yang sesuai.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les022_03_01",
+    "module_id": "mod022_03",
+    "lesson_title": "Modul 2 - Memilih Manajer Investasi (MI) dan Agen Penjual Reksa Dana (APERD) yang Tepat",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Keberhasilan investasi reksa dana Anda salah satunya bergantung pada kelihaian Manajer Investasi (MI) dalam mengelola portofolio. Pelajaran ini akan memberikan panduan bagaimana cara menilai kredibilitas dan rekam jejak seorang MI, misalnya dengan melihat kinerja produk reksa dana yang mereka kelola di masa lalu (meskipun kinerja masa lalu tidak menjamin kinerja masa depan) dan membaca prospektus serta fund fact sheet. Selain itu, Anda juga perlu memilih Agen Penjual Efek Reksa Dana (APERD) yang terpercaya. APERD bisa berupa bank atau perusahaan sekuritas dan platform fintech yang telah mendapatkan izin dari Otoritas Jasa Keuangan (OJK). Pastikan APERD pilihan Anda memiliki platform yang mudah digunakan dan layanan nasabah yang baik.",
+    "video_url": "1g7_w5jplqM"
+  },
+  {
+    "lesson_id": "les023_01_01",
+    "module_id": "mod023_01",
+    "lesson_title": "Persiapan Alat dan Bahan untuk Mengganti Oli Motor",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Sebelum memulai proses penggantian oli motor, pastikan semua alat dan bahan yang diperlukan sudah tersedia. Alat utama yang dibutuhkan adalah kunci pas atau kunci sok dengan ukuran yang sesuai dengan baut pembuangan oli motor Anda (biasanya tertera di buku manual). Anda juga memerlukan wadah penampung oli bekas yang cukup besar, corong untuk menuangkan oli baru agar tidak tumpah, serta beberapa lembar lap bersih untuk membersihkan sisa-sisa oli. Tentu saja, yang paling penting adalah oli mesin baru yang sesuai dengan spesifikasi motor Anda. Periksa buku manual kendaraan untuk mengetahui jenis oli yang direkomendasikan oleh pabrikan, perhatikan kode SAE (viskositas) dan API service-nya. Memiliki semua ini akan membuat proses penggantian oli berjalan lancar.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les023_01_02",
+    "module_id": "mod023_01",
+    "lesson_title": "Tips Keamanan Saat Bekerja dengan Oli Kendaraan",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Saat melakukan penggantian oli sendiri, faktor keamanan harus diutamakan. Pertama, pastikan mesin motor dalam kondisi dingin atau setidaknya tidak terlalu panas untuk menghindari luka bakar. Gunakan sarung tangan untuk melindungi tangan dari oli bekas yang kotor dan panas. Bekerjalah di area yang berventilasi baik dan memiliki penerangan cukup. Pastikan motor berdiri stabil menggunakan standar tengah atau paddock stand jika ada. Hindari kontak langsung oli bekas dengan kulit dalam waktu lama, dan segera cuci tangan setelah selesai. Simpan oli bekas dalam wadah tertutup dan buanglah di tempat yang semestinya, jangan dibuang ke saluran air atau tanah karena dapat mencemari lingkungan. Mengikuti tips keamanan ini akan membuat aktivitas DIY Anda lebih aman dan bertanggung jawab.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les023_02_01",
+    "module_id": "mod023_02",
+    "lesson_title": "Modul 1 - Panduan Langkah Demi Langkah Mengganti Oli Motor (Disertai Ilustrasi)",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pelajaran ini akan memandu Anda langkah demi langkah dalam proses penggantian oli motor. 1. Siapkan motor di tempat rata dan panaskan mesin sebentar (sekitar 1-2 menit) agar oli lebih encer dan mudah keluar. Matikan mesin. 2. Letakkan wadah penampung di bawah baut pembuangan oli. 3. Buka baut pembuangan oli menggunakan kunci yang sesuai, putar berlawanan arah jarum jam. Hati-hati oli bisa masih hangat. 4. Biarkan oli lama mengalir keluar hingga habis. Miringkan motor sedikit untuk memastikan semua oli keluar. 5. Bersihkan baut pembuangan dan pasang kembali. Kencangkan secukupnya, jangan terlalu keras. 6. Buka tutup lubang pengisian oli di bagian atas mesin. 7. Tuangkan oli baru menggunakan corong sesuai takaran yang direkomendasikan pabrikan (biasanya tertera di dekat lubang pengisian atau di buku manual). 8. Tutup kembali lubang pengisian oli. Nyalakan mesin beberapa saat, lalu matikan dan periksa kembali level oli.",
+    "video_url": "DIY_motorcycle_oil_change_tutorial"
+  },
+  {
+    "lesson_id": "les023_03_01",
+    "module_id": "mod023_03",
+    "lesson_title": "Modul 2 - Cara Akurat Memeriksa Level Oli Mesin Motor",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setelah mengisi oli baru, atau secara berkala, penting untuk memeriksa level oli mesin. Cara paling umum adalah menggunakan dipstick (tongkat pengukur) jika motor Anda memilikinya. Pastikan motor dalam posisi tegak lurus di permukaan rata dan mesin sudah dingin atau didiamkan beberapa menit setelah dimatikan. Cabut dipstick, lap bersih, masukkan kembali tanpa diputar, lalu cabut lagi. Periksa level oli, seharusnya berada di antara tanda batas minimum dan maksimum pada dipstick. Untuk motor tanpa dipstick, biasanya terdapat lubang intip (sight glass) di bagian bawah mesin. Level oli harus terlihat di tengah-tengah lubang intip tersebut. Jika kurang, tambahkan sedikit demi sedikit. Jika berlebih, sebaiknya dikurangi karena bisa mengganggu performa mesin.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les024_01_01",
+    "module_id": "mod024_01",
+    "lesson_title": "Alat dan Bahan Dasar untuk Membersihkan Interior Mobil",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Menjaga kebersihan interior mobil adalah kunci kenyamanan. Untuk memulai, siapkan beberapa alat dan bahan dasar. Anda akan memerlukan vacuum cleaner (idealnya yang portabel atau dengan selang panjang) untuk menyedot debu dan kotoran. Beberapa jenis sikat detail dengan bulu berbeda (halus untuk permukaan sensitif, agak kaku untuk karpet) sangat berguna untuk membersihkan sela-sela. Siapkan juga beberapa lap mikrofiber bersih; bedakan lap untuk kaca, dashboard, dan jok. Untuk bahan pembersih, Anda bisa menggunakan pembersih interior serbaguna (all-purpose cleaner) yang aman untuk berbagai permukaan, pembersih kaca khusus, dan jika perlu, pembersih khusus untuk jok (kain atau kulit) serta karpet. Seember air bersih dan semprotan juga akan berguna.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les024_02_01",
+    "module_id": "mod024_02",
+    "lesson_title": "Modul 1 - Membersihkan Dashboard, Panel Pintu, dan Area Plastik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Dashboard, panel pintu, dan area berbahan plastik lainnya adalah bagian yang paling sering terpapar debu dan sinar matahari. Mulailah dengan menyedot semua debu dan kotoran lepas. Kemudian, semprotkan pembersih interior serbaguna pada lap mikrofiber (bukan langsung ke permukaan untuk menghindari residu berlebih pada komponen elektronik). Usap permukaan secara merata. Untuk area yang sulit dijangkau seperti kisi-kisi AC atau sela-sela tombol, gunakan sikat detail yang lembut. Setelah bersih, Anda bisa mengaplikasikan produk pelindung (dressing) khusus interior yang memberikan lapisan proteksi UV dan tampilan yang tidak terlalu mengkilap, agar dashboard tidak cepat kusam atau retak.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les024_03_01",
+    "module_id": "mod024_03",
+    "lesson_title": "Modul 2 - Teknik Dasar Perawatan Jok Mobil Berbahan Kain",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Jok berbahan kain (fabric) memerlukan perawatan rutin agar tetap bersih dan tidak bau. Langkah pertama adalah menyedot debu dan kotoran yang terperangkap di serat kain menggunakan vacuum cleaner dengan sikat khusus. Untuk noda ringan, gunakan pembersih interior khusus kain (fabric cleaner). Semprotkan secukupnya pada area bernoda, sikat lembut dengan sikat kain atau lap mikrofiber, lalu seka sisa pembersih dengan lap bersih yang sedikit lembab. Hindari menggunakan terlalu banyak air agar jok tidak terlalu basah dan menyebabkan jamur. Biarkan jok mengering dengan sendirinya dengan membuka jendela mobil atau menggunakan bantuan kipas angin jika perlu. Lakukan pembersihan mendalam secara berkala untuk menjaga kesegaran jok kain Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les024_03_02",
+    "module_id": "mod024_03",
+    "lesson_title": "Modul 2 - Tips Efektif Perawatan Jok Mobil Berbahan Kulit",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Jok kulit memberikan kesan mewah namun butuh perawatan khusus agar awet dan tidak pecah-pecah. Pertama, bersihkan debu secara rutin dengan lap mikrofiber kering atau vacuum cleaner dengan ujung sikat yang lembut. Untuk pembersihan, gunakan pembersih khusus kulit (leather cleaner) yang formulanya lembut. Semprotkan pada lap, bukan langsung ke jok, lalu usap permukaan kulit secara merata. Hindari penggunaan sabun deterjen biasa yang bisa merusak kulit. Setelah bersih dan kering, sangat penting untuk mengaplikasikan kondisioner kulit (leather conditioner). Kondisioner menjaga kelembaban alami kulit, mencegahnya dari kekeringan, retak, dan pudarnya warna akibat paparan sinar UV. Lakukan perawatan ini secara berkala, misalnya setiap 3-6 bulan sekali, tergantung intensitas penggunaan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les024_04_01",
+    "module_id": "mod024_04",
+    "lesson_title": "Modul 3 - Cara Menghilangkan Bau Apek dan Menjaga Kesegaran Kabin Mobil",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Bau tidak sedap di dalam kabin mobil tentu mengurangi kenyamanan. Langkah pertama adalah mengidentifikasi dan menghilangkan sumber bau, misalnya sisa makanan yang tertinggal, tumpahan minuman, atau karpet yang lembab. Bersihkan area tersebut secara tuntas. Untuk menetralisir bau, Anda bisa menggunakan bahan alami seperti kopi bubuk (dalam wadah terbuka) atau arang aktif yang diletakkan di dalam kabin semalaman. Pastikan sirkulasi udara baik dengan membuka jendela saat mobil tidak digunakan. Periksa juga filter AC kabin, karena filter yang kotor bisa menjadi sumber bau apek. Ganti filter AC secara berkala. Jika ingin menggunakan pewangi mobil, pilih yang aromanya lembut dan tidak menyengat, serta pastikan aman untuk kesehatan pernapasan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les025_01_01",
+    "module_id": "mod025_01",
+    "lesson_title": "Pengantar Bisnis Franchise: Memahami Peluang dan Risiko Bisnis Waralaba",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Bisnis waralaba atau franchise menawarkan model bisnis yang menarik bagi calon pengusaha, termasuk para bapak yang ingin memulai usaha. Konsepnya adalah Anda membeli hak untuk menggunakan merek, sistem operasional, dan dukungan dari pemilik merek (franchisor) yang sudah mapan. Peluangnya meliputi brand yang sudah dikenal, sistem yang teruji, serta dukungan pelatihan dan pemasaran awal. Namun, ada juga risiko yang perlu dipertimbangkan, seperti biaya franchise awal dan royalti berkelanjutan, keterikatan pada aturan franchisor, dan potensi kejenuhan pasar. Pelajaran ini akan memberikan gambaran umum tentang dunia franchise, membantu Anda memahami apakah model bisnis ini cocok dengan profil dan tujuan Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les025_02_01",
+    "module_id": "mod025_02",
+    "lesson_title": "Modul 1 - Kriteria Penting dalam Melakukan Riset dan Memilih Franchisor yang Tepat",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Memilih franchisor yang tepat adalah langkah krusial dalam bisnis waralaba. Jangan tergiur hanya karena merek terkenal atau biaya murah. Lakukan riset mendalam. Periksa rekam jejak franchisor: berapa lama mereka beroperasi, bagaimana reputasi mereka, dan seberapa sukses franchisee lain yang sudah bergabung. Pelajari dengan saksama dokumen penawaran waralaba (Franchise Disclosure Document/FDD jika tersedia) yang memuat informasi detail tentang bisnis, biaya, dan kewajiban. Pertimbangkan juga jenis dukungan yang diberikan oleh franchisor, seperti pelatihan awal, bantuan pemilihan lokasi, suplai bahan baku, dan strategi pemasaran berkelanjutan. Pastikan produk atau jasa yang ditawarkan memiliki permintaan pasar yang baik dan potensi pertumbuhan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les025_02_02",
+    "module_id": "mod025_02",
+    "lesson_title": "Modul 1 - Wawancara dengan Franchisee Lain: Menggali Informasi Berharga",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Salah satu cara terbaik untuk mendapatkan gambaran nyata tentang sebuah franchise adalah dengan berbicara langsung kepada franchisee (penerima waralaba) lain yang sudah menjalankan bisnis tersebut. Mintalah kontak beberapa franchisee dari calon franchisor Anda. Tanyakan pengalaman mereka selama ini: seberapa besar dukungan yang mereka terima dari franchisor, apakah proyeksi keuntungan sesuai dengan kenyataan, apa saja tantangan operasional yang sering dihadapi, dan apakah mereka merasa puas dengan investasi mereka. Pertanyaan-pertanyaan ini akan memberikan perspektif yang lebih objektif dan membantu Anda membuat keputusan yang lebih matang sebelum berkomitmen. Jangan ragu untuk bertanya hal-hal detail yang mungkin tidak tercantum dalam brosur atau presentasi franchisor.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les025_03_01",
+    "module_id": "mod025_03",
+    "lesson_title": "Modul 2 - Memahami Isi Perjanjian Waralaba dan Aspek Legal yang Perlu Diperhatikan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Perjanjian waralaba adalah dokumen legal yang mengikat antara Anda (franchisee) dan franchisor. Sangat penting untuk memahami setiap klausul dalam perjanjian ini sebelum menandatanganinya. Perhatikan detail mengenai biaya awal (franchise fee), royalti berkelanjutan, biaya pemasaran, durasi kontrak, hak dan kewajiban masing-masing pihak, aturan mengenai penggunaan merek, standar operasional yang harus dipatuhi, serta ketentuan mengenai perpanjangan atau pengakhiran kontrak. Jika ada bagian yang kurang Anda pahami, jangan ragu untuk bertanya kepada pihak franchisor atau bahkan berkonsultasi dengan ahli hukum yang berpengalaman dalam perjanjian waralaba. Kesalahan dalam memahami perjanjian bisa berakibat fatal di kemudian hari.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les025_04_01",
+    "module_id": "mod025_04",
+    "lesson_title": "Modul 3 - Strategi Pemasaran Lokal untuk Outlet Franchise Anda",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Meskipun franchisor biasanya menyediakan dukungan pemasaran nasional atau regional, Anda sebagai franchisee juga perlu melakukan upaya pemasaran lokal untuk menarik pelanggan di area sekitar outlet Anda. Pelajaran ini akan membahas beberapa strategi pemasaran lokal yang efektif, seperti promosi pembukaan, kerjasama dengan komunitas atau bisnis lokal lain, penggunaan media sosial untuk menjangkau target pasar di sekitar lokasi, serta program loyalitas pelanggan. Sesuaikan strategi pemasaran Anda dengan karakteristik target pasar di wilayah Anda. Kreativitas dalam pemasaran lokal bisa menjadi pembeda kesuksesan outlet franchise Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les026_01_01",
+    "module_id": "mod026_01",
+    "lesson_title": "Kekuatan Word-of-Mouth Marketing (WOMM): Kenapa Ini Penting untuk Bisnis Kecil?",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Word-of-Mouth Marketing (WOMM) atau pemasaran dari mulut ke mulut adalah salah satu bentuk promosi paling tua namun tetap sangat efektif, terutama untuk bisnis kecil. WOMM terjadi ketika pelanggan yang puas dengan produk atau jasa Anda secara sukarela merekomendasikannya kepada teman, keluarga, atau kolega mereka. Kepercayaan terhadap rekomendasi dari orang yang dikenal jauh lebih tinggi dibandingkan iklan konvensional. WOMM yang positif dapat membangun reputasi brand Anda secara organik, meningkatkan loyalitas pelanggan, dan mendatangkan pelanggan baru dengan biaya yang relatif rendah. Di era digital, WOMM juga bisa terjadi melalui ulasan online, testimoni di media sosial, atau diskusi di forum komunitas. Pelajaran ini akan menggali lebih dalam mengapa WOMM begitu kuat dan bagaimana Anda bisa memanfaatkannya.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les026_02_01",
+    "module_id": "mod026_02",
+    "lesson_title": "Modul 1 - Fondasi WOMM: Menciptakan Produk Unggul dan Pengalaman Pelanggan Terbaik",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Word-of-Mouth Marketing yang positif tidak terjadi begitu saja; ia harus diupayakan. Fondasi utamanya adalah memiliki produk atau jasa yang berkualitas unggul dan memberikan pengalaman pelanggan yang luar biasa (customer experience). Pastikan produk Anda benar-benar memenuhi atau bahkan melebihi ekspektasi pelanggan. Berikan pelayanan yang ramah, responsif, dan solutif. Dengarkan masukan pelanggan dan tanggapi keluhan dengan baik. Ketika pelanggan merasa sangat puas, mereka akan lebih termotivasi untuk berbagi pengalaman positif tersebut kepada orang lain. Pelajaran ini akan membahas cara-cara untuk terus meningkatkan kualitas produk dan menciptakan momen 'wow' bagi pelanggan Anda, yang akan menjadi bahan bakar utama WOMM.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les026_03_01",
+    "module_id": "mod026_03",
+    "lesson_title": "Modul 2 - Mendorong Testimoni, Ulasan, dan Program Referral yang Efektif",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setelah memberikan pengalaman terbaik, Anda bisa secara proaktif mendorong testimoni dan ulasan positif. Jangan ragu untuk meminta pelanggan yang puas untuk memberikan ulasan di platform online seperti Google Maps, marketplace, atau media sosial Anda. Sediakan cara yang mudah bagi mereka untuk melakukannya. Testimoni positif adalah bukti sosial yang kuat. Selain itu, pertimbangkan untuk membuat program referral atau member get member. Berikan insentif (seperti diskon atau hadiah kecil) bagi pelanggan lama yang berhasil merekomendasikan pelanggan baru. Program referral yang dirancang dengan baik bisa menjadi mesin WOMM yang sangat efektif untuk mengakuisisi pelanggan baru dengan biaya yang terkontrol.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les026_03_02",
+    "module_id": "mod026_03",
+    "lesson_title": "Modul 2 - Menanggapi Ulasan Negatif Secara Profesional",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Tidak semua ulasan akan positif. Penting untuk menanggapi ulasan negatif secara profesional dan konstruktif. Jangan bersikap defensif atau menyerang balik. Ucapkan terima kasih atas masukannya, sampaikan permohonan maaf atas pengalaman yang kurang memuaskan, dan tawarkan solusi atau tindak lanjut. Jika memungkinkan, ajak diskusi lebih lanjut secara privat untuk menyelesaikan masalah. Cara Anda menanggapi ulasan negatif bisa dilihat oleh calon pelanggan lain dan dapat menunjukkan bahwa Anda peduli serta bertanggung jawab. Respons yang baik bahkan bisa mengubah pelanggan yang kecewa menjadi loyal.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les026_04_01",
+    "module_id": "mod026_04",
+    "lesson_title": "Modul 3 - Memanfaatkan Konten Buatan Pengguna (UGC) di Media Sosial untuk WOMM",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "User-Generated Content (UGC) adalah konten (foto, video, ulasan) yang dibuat oleh pelanggan Anda sendiri terkait produk atau brand Anda. UGC adalah bentuk WOMM digital yang sangat autentik dan efektif. Dorong pelanggan untuk membagikan pengalaman mereka menggunakan produk Anda di media sosial dengan menggunakan hashtag khusus. Adakan kontes foto atau video dengan hadiah menarik. Repost atau bagikan kembali UGC terbaik di akun media sosial resmi Anda (dengan izin pemilik konten). Ini tidak hanya memberikan eksposur gratis tetapi juga membangun rasa komunitas dan apresiasi terhadap pelanggan setia Anda. UGC menunjukkan bahwa brand Anda dicintai dan digunakan oleh orang-orang nyata.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les027_01_01",
+    "module_id": "mod027_01",
+    "lesson_title": "Dasar Fotografi Smartphone: Memahami Komposisi (Rule of Thirds, Leading Lines)",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Smartphone modern memiliki kamera yang canggih, namun hasil foto yang bagus tidak hanya bergantung pada kualitas kamera, tetapi juga pemahaman tentang komposisi. Pelajaran ini akan mengenalkan dua prinsip komposisi dasar: Rule of Thirds (aturan sepertiga) dan Leading Lines (garis penuntun). Rule of Thirds menyarankan untuk membagi frame menjadi sembilan bagian sama besar dengan dua garis horizontal dan dua garis vertikal, lalu menempatkan subjek utama atau elemen penting di sepanjang garis atau di titik perpotongan garis tersebut. Leading lines adalah penggunaan elemen garis dalam foto (seperti jalan, sungai, atau pagar) untuk menuntun mata pemirsa ke subjek utama. Menguasai kedua prinsip ini akan membuat foto landscape Anda terlihat lebih seimbang dan menarik secara visual.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les027_01_02",
+    "module_id": "mod027_01",
+    "lesson_title": "Dasar Fotografi Smartphone: Peran Pencahayaan Alami dalam Foto Landscape",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Pencahayaan adalah elemen krusial dalam fotografi landscape. Cahaya alami, terutama pada jam-jam emas (golden hour) yaitu sesaat setelah matahari terbit dan sebelum matahari terbenam, memberikan kualitas cahaya yang lembut, hangat, dan bayangan yang panjang, yang sangat ideal untuk foto pemandangan. Hindari memotret di bawah sinar matahari terik tengah hari yang menghasilkan bayangan keras dan kontras tinggi. Pelajari cara memanfaatkan arah datangnya cahaya: backlight (cahaya dari belakang subjek) bisa menciptakan siluet menarik, sidelight (cahaya dari samping) menonjolkan tekstur, dan frontlight (cahaya dari depan) memberikan penerangan merata. Memahami bagaimana cahaya berinteraksi dengan lanskap akan membantu Anda menangkap momen dengan dramatisasi yang tepat.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les027_02_01",
+    "module_id": "mod027_02",
+    "lesson_title": "Modul 1 - Teknik Mengambil Foto Landscape yang Dramatis: Sudut Pandang dan Foreground",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Untuk membuat foto landscape yang lebih dramatis dan berdimensi, perhatikan sudut pandang (angle) dan penggunaan elemen foreground (latar depan). Jangan hanya memotret dari ketinggian mata. Cobalah mengambil dari sudut rendah (low angle) untuk membuat subjek terlihat lebih megah atau dari sudut tinggi (high angle) untuk mendapatkan perspektif yang luas. Elemen foreground yang menarik, seperti batu, bunga, atau aliran air di bagian depan frame, dapat menambah kedalaman pada foto Anda dan menuntun mata pemirsa ke subjek utama di latar belakang. Pastikan foreground tersebut relevan dan tidak mengganggu elemen utama lanskap. Eksplorasi berbagai sudut dan komposisi akan menghasilkan foto yang lebih unik.",
+    "video_url": "xqyJUXR6Y3Y"
+  },
+  {
+    "lesson_id": "les027_03_01",
+    "module_id": "mod027_03",
+    "lesson_title": "Modul 2 - Pengenalan Aplikasi Editing Foto Landscape Populer di Smartphone",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Editing ringan dapat menyempurnakan foto landscape Anda. Banyak aplikasi mobile yang menawarkan fitur editing canggih namun mudah digunakan. Pelajaran ini akan memperkenalkan beberapa aplikasi populer seperti Snapseed, Adobe Lightroom Mobile, atau VSCO. Fitur dasar yang sering digunakan untuk foto landscape meliputi penyesuaian brightness (kecerahan), contrast (kontras), saturation (saturasi warna), highlights (area terang), dan shadows (area gelap). Anda juga bisa melakukan cropping (memotong foto) untuk memperbaiki komposisi atau meluruskan horizon. Beberapa aplikasi juga menawarkan filter atau preset yang bisa memberikan nuansa tertentu pada foto Anda. Ingatlah, tujuan editing adalah menyempurnakan, bukan mengubah foto secara berlebihan hingga terlihat tidak alami.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_01_01",
+    "module_id": "mod028_01",
+    "lesson_title": "Pengenalan Diorama: Alat, Bahan, dan Menemukan Inspirasi Tema",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Membuat miniatur diorama adalah hobi kreatif yang bisa sangat menenangkan dan memuaskan. Diorama adalah replika tiga dimensi dari suatu adegan atau pemandangan. Sebelum memulai, kenali alat dan bahan dasar yang umum digunakan, seperti cutter, lem, pinset, kuas, cat akrilik, styrofoam atau gabus untuk dasar, clay (tanah liat sintetis), pasir miniatur, rumput statis, dan berbagai bahan daur ulang lainnya. Inspirasi tema bisa datang dari mana saja: pemandangan alam favorit, adegan film, sejarah, atau bahkan imajinasi murni. Pelajaran ini akan membantu Anda mengumpulkan ide dan mempersiapkan alat serta bahan awal yang dibutuhkan untuk memulai proyek diorama pertama Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_02_01",
+    "module_id": "mod028_02",
+    "lesson_title": "Modul 1 - Teknik Dasar Membuat Lanskap Miniatur: Bentuk Dasar (Tanah, Bukit)",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Langkah awal dalam membuat diorama lanskap adalah membentuk kontur dasar. Styrofoam atau gabus adalah bahan yang populer karena mudah dipotong dan dibentuk. Pelajaran ini akan menunjukkan cara memotong dan menumpuk styrofoam untuk menciptakan ilusi perbukitan atau dataran yang tidak rata. Anda juga akan belajar cara melapisi permukaan styrofoam dengan campuran lem dan serbuk kayu atau pasir untuk menciptakan tekstur tanah yang realistis. Penggunaan pisau cutter yang tajam dan teknik pengamplasan dasar juga akan dibahas untuk menghaluskan bentuk. Kesabaran dalam membentuk dasar ini akan sangat mempengaruhi hasil akhir diorama Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_02_02",
+    "module_id": "mod028_02",
+    "lesson_title": "Modul 1 - Teknik Dasar Membuat Lanskap Miniatur: Efek Air dan Vegetasi Sederhana",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Setelah kontur tanah terbentuk, Anda bisa mulai menambahkan elemen alam lain seperti air dan vegetasi. Untuk efek air (sungai atau danau kecil), ada beberapa teknik, mulai dari penggunaan resin epoksi bening, cat dengan lapisan glossy, hingga bahan silikon. Pelajaran ini akan fokus pada teknik sederhana menggunakan cat dan lapisan vernis mengkilap. Untuk vegetasi, Anda akan belajar cara membuat rumput menggunakan serbuk rumput statis (static grass) atau busa yang dihaluskan dan diwarnai. Membuat pohon miniatur sederhana dari ranting kering dan busa atau lumut kering (moss) juga akan didemonstrasikan. Kunci dari vegetasi yang terlihat alami adalah variasi warna dan tekstur.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_03_01",
+    "module_id": "mod028_03",
+    "lesson_title": "Modul 2 - Membuat Detail Bangunan atau Struktur Miniatur Sederhana",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Jika tema diorama Anda melibatkan bangunan atau struktur, pelajaran ini akan memberikan dasar pembuatannya. Anda bisa menggunakan bahan seperti karton tebal, kayu balsa, atau stik es krim. Akan diajarkan cara mengukur, memotong, dan merekatkan bahan-bahan tersebut untuk membentuk struktur dasar rumah, gubuk, atau pagar. Teknik membuat tekstur dinding (misalnya batu bata atau kayu) menggunakan goresan atau penempelan material tipis juga akan dicakup. Pewarnaan dasar untuk memberikan kesan tua atau realistis pada bangunan menjadi bagian penting dari modul ini.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_04_01",
+    "module_id": "mod028_04",
+    "lesson_title": "Modul 3 - Studi Kasus Pembuatan Diorama Bertema Alam (Hutan atau Pantai)",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pelajaran ini akan memandu Anda melalui studi kasus pembuatan diorama bertema alam, misalnya hutan mini atau pantai. Akan ditunjukkan bagaimana mengintegrasikan semua teknik yang telah dipelajari sebelumnya: membentuk kontur tanah berbukit untuk hutan atau dataran landai untuk pantai, membuat pohon-pohon dengan berbagai ukuran dan jenis, menambahkan semak belukar atau batu karang, serta menciptakan efek air laut atau sungai kecil. Penempatan elemen-elemen ini akan dibahas untuk menciptakan komposisi yang menarik dan seimbang. Teknik pewarnaan akhir untuk memberikan kedalaman dan realisme juga akan menjadi fokus.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_04_02",
+    "module_id": "mod028_04",
+    "lesson_title": "Modul 3 - Studi Kasus Pembuatan Diorama Bertema Perkotaan (Sudut Jalan atau Taman Kota)",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Untuk variasi, pelajaran ini juga menyajikan studi kasus pembuatan diorama bertema perkotaan, seperti sudut jalan dengan trotoar dan bangunan sederhana, atau sebuah taman kota mini. Akan dibahas cara membuat elemen-elemen khas perkotaan seperti jalan aspal (menggunakan amplas halus yang dicat), trotoar, lampu jalan miniatur, atau bangku taman. Penempatan figur miniatur (jika ada) untuk menghidupkan suasana juga akan disinggung. Tantangan dalam diorama perkotaan adalah menciptakan detail-detail kecil yang membuatnya terlihat hidup dan tidak monoton.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les028_05_01",
+    "module_id": "mod028_05",
+    "lesson_title": "Tips Finishing: Weathering, Dry Brushing, dan Perawatan Diorama Anda",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Tahap finishing dapat membuat diorama Anda terlihat jauh lebih realistis. Pelajaran ini akan memperkenalkan teknik dasar 'weathering' yaitu memberikan efek tua, kotor, atau usang pada objek (misalnya karat pada besi, lumut pada batu). Teknik 'dry brushing' menggunakan kuas dengan sedikit cat untuk menonjolkan tekstur dan detail juga akan diajarkan. Terakhir, akan diberikan tips tentang cara merawat diorama yang sudah jadi agar terhindar dari debu dan kerusakan, misalnya dengan menyimpannya dalam kotak akrilik atau membersihkannya secara berkala dengan kuas halus.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les029_01_01",
+    "module_id": "mod029_01",
+    "lesson_title": "Masalah Umum Garasi: Identifikasi Penyebab Garasi Berantakan dan Tidak Efisien",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Garasi seringkali menjadi 'ruang terlupakan' di rumah, tempat menumpuk barang-barang yang jarang terpakai, perkakas, hingga kendaraan itu sendiri. Akibatnya, garasi menjadi berantakan, sulit mencari barang, dan tidak efisien penggunaannya. Pelajaran ini akan membantu Anda mengidentifikasi penyebab umum mengapa garasi menjadi tidak teratur, seperti kurangnya sistem penyimpanan yang memadai, kebiasaan menunda merapikan, atau tidak adanya pemilahan barang secara berkala. Memahami akar masalah adalah langkah pertama sebelum Anda bisa menerapkan solusi penataan yang efektif.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les029_02_01",
+    "module_id": "mod029_02",
+    "lesson_title": "Modul 1 - Langkah Awal: Teknik Decluttering dan Penyortiran Barang di Garasi",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Proses menata garasi dimulai dengan decluttering atau membuang barang yang tidak perlu. Siapkan tiga area atau kategori: Simpan, Donasikan/Jual, dan Buang. Keluarkan semua barang dari satu area garasi, lalu pilah satu per satu. Tanyakan pada diri sendiri: Apakah barang ini masih saya butuhkan? Kapan terakhir kali saya menggunakannya? Apakah masih berfungsi dengan baik? Bersikaplah tegas namun realistis. Barang yang rusak atau sudah tidak terpakai lebih baik dibuang atau didonasikan. Pelajaran ini akan memberikan panduan praktis untuk proses penyortiran yang efisien.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les029_03_01",
+    "module_id": "mod029_03",
+    "lesson_title": "Modul 2 - Memanfaatkan Dinding: Solusi Penyimpanan Vertikal dengan Rak dan Gantungan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Dinding garasi adalah area yang seringkali kurang dimanfaatkan. Padahal, penyimpanan vertikal adalah solusi cerdas untuk menghemat ruang lantai. Pelajaran ini akan membahas berbagai jenis solusi penyimpanan dinding, seperti rak besi terbuka yang kokoh, lemari kabinet tertutup, papan pegboard dengan berbagai macam pengait untuk menggantung perkakas, serta gantungan khusus untuk sepeda atau peralatan olahraga. Pertimbangkan jenis barang yang akan disimpan untuk memilih sistem penyimpanan yang paling sesuai. Pemasangan rak yang kuat dan aman menjadi kunci utama.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les029_03_02",
+    "module_id": "mod029_03",
+    "lesson_title": "Modul 2 - Penggunaan Kotak Penyimpanan Modular dan Berlabel",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Setelah barang disortir, gunakan kotak penyimpanan (storage box) untuk mengelompokkan barang-barang sejenis. Pilih kotak penyimpanan yang transparan atau berikan label yang jelas pada setiap kotak agar Anda mudah menemukan barang saat dibutuhkan. Kotak penyimpanan modular yang bisa ditumpuk juga sangat efisien untuk memaksimalkan ruang di rak. Kelompokkan barang berdasarkan frekuensi penggunaan: barang yang sering dipakai diletakkan di tempat yang mudah dijangkau, sementara barang yang jarang dipakai bisa ditaruh di rak bagian atas atau area yang kurang aksesibel.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les029_04_01",
+    "module_id": "mod029_04",
+    "lesson_title": "Modul 3 - Ide Tata Letak Garasi Multifungsi: Area Parkir, Workshop, dan Penyimpanan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Garasi yang tertata baik bisa memiliki lebih dari satu fungsi. Pelajaran ini akan memberikan ide bagaimana merancang tata letak garasi agar bisa mengakomodasi area parkir kendaraan, area kerja atau workshop kecil untuk hobi pertukangan (jika diinginkan), dan area penyimpanan yang terorganisir. Pertimbangkan alur gerak dan aksesibilitas. Misalnya, area workshop sebaiknya memiliki penerangan yang baik dan dekat dengan sumber listrik. Pastikan area parkir tetap lapang dan mudah untuk manuver kendaraan. Pemisahan zona secara visual atau fisik (dengan rak) bisa membantu menciptakan tata letak yang lebih jelas dan fungsional.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les030_01_01",
+    "module_id": "mod030_01",
+    "lesson_title": "Keuntungan Taman Vertikal: Solusi Hijau untuk Lahan Sempit di Rumah Bapak",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Taman vertikal atau vertical garden adalah solusi inovatif untuk menghadirkan kehijauan di rumah dengan lahan terbatas, seperti di area perkotaan. Metode ini memanfaatkan ruang vertikal (dinding) untuk menanam berbagai jenis tanaman. Keuntungannya antara lain meningkatkan estetika rumah, memperbaiki kualitas udara di sekitar, memberikan efek menenangkan, dan bahkan bisa menjadi sumber sayuran atau herbal segar jika Anda menanam tanaman produktif. Pelajaran ini akan mengupas berbagai manfaat taman vertikal dan mengapa ini bisa menjadi proyek DIY yang menyenangkan bagi para bapak.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les030_02_01",
+    "module_id": "mod030_02",
+    "lesson_title": "Modul 1 - Memilih Sistem Taman Vertikal DIY: Kantong Tanam, Pipa, atau Botol Bekas",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ada berbagai sistem taman vertikal yang bisa Anda buat sendiri (DIY) dengan biaya terjangkau. Pelajaran ini akan memperkenalkan beberapa sistem populer: Pertama, menggunakan kantong tanam (wall planter bag) yang terbuat dari felt atau terpal tebal, mudah dipasang di dinding. Kedua, memanfaatkan pipa paralon PVC yang dilubangi sebagai wadah tanam bertingkat. Ketiga, menggunakan botol plastik bekas yang dipotong dan disusun secara vertikal. Setiap sistem memiliki kelebihan dan kekurangan dalam hal biaya, kemudahan pembuatan, dan jenis tanaman yang cocok. Pilihlah sistem yang paling sesuai dengan ketersediaan bahan, keterampilan, dan area yang Anda miliki.",
+    "video_url": "t8Hk9jplQWk"
+  },
+  {
+    "lesson_id": "les030_03_01",
+    "module_id": "mod030_03",
+    "lesson_title": "Modul 2 - Panduan Memilih Tanaman, Menanam, dan Merawat Taman Vertikal Sederhana",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pemilihan jenis tanaman adalah kunci keberhasilan taman vertikal. Pilih tanaman yang sesuai dengan kondisi pencahayaan di lokasi Anda dan tidak memiliki sistem perakaran yang terlalu besar. Untuk tanaman hias, jenis seperti sirih gading, lili paris, atau pakis suplir bisa jadi pilihan. Jika ingin menanam sayuran, kangkung, bayam, selada, atau berbagai jenis herbal cocok untuk taman vertikal. Pelajaran ini akan memandu Anda dalam proses penanaman, mulai dari persiapan media tanam yang ringan dan bernutrisi, hingga cara penyiraman dan pemupukan rutin. Perawatan taman vertikal umumnya membutuhkan perhatian lebih pada kelembaban media tanam karena lebih cepat kering.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les031_01_01",
+    "module_id": "mod031_01",
+    "lesson_title": "Pentingnya Sarapan Sehat untuk Produktivitas dan Energi Bapak Sepanjang Hari",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Sarapan sering disebut sebagai waktu makan paling penting dalam sehari, dan ini sangat berlaku bagi para bapak yang memiliki aktivitas padat. Sarapan yang sehat dan bergizi memberikan energi awal yang dibutuhkan tubuh dan otak untuk berfungsi optimal sepanjang pagi hingga siang hari. Melewatkan sarapan dapat menyebabkan penurunan konsentrasi, mudah lelah, dan kecenderungan untuk makan berlebihan di waktu makan berikutnya. Sarapan yang baik membantu menjaga kadar gula darah tetap stabil, meningkatkan metabolisme, dan mendukung produktivitas kerja. Pelajaran ini akan menekankan mengapa bapak tidak boleh melewatkan sarapan dan bagaimana memilih menu yang tepat untuk memulai hari dengan penuh semangat.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les031_02_01",
+    "module_id": "mod031_02",
+    "lesson_title": "Modul 1 - Resep Sarapan Super Cepat (Kurang dari 15 Menit): Smoothie Bowl dan Overnight Oats",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Bagi bapak yang super sibuk, sarapan harus praktis dan cepat disiapkan. Pelajaran ini menyajikan dua ide resep sarapan sehat yang bisa dibuat dalam waktu kurang dari 15 menit. Pertama, Smoothie Bowl. Campurkan buah-buahan beku (pisang, berry, mangga), sedikit sayuran hijau (bayam), yogurt atau susu, dan protein powder (opsional) dalam blender. Tuang ke mangkuk dan beri topping granola, biji-bijian, atau potongan buah segar. Kedua, Overnight Oats. Malam sebelumnya, campurkan rolled oats dengan susu atau yogurt, chia seeds, dan pemanis alami (madu/maple syrup) dalam wadah tertutup. Simpan di kulkas. Pagi harinya, tinggal tambahkan topping buah segar atau kacang-kacangan. Keduanya sangat bergizi dan mengenyangkan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les031_03_01",
+    "module_id": "mod031_03",
+    "lesson_title": "Modul 2 - Ide Resep Sarapan Praktis Mengenyangkan: Roti Lapis Sehat dan Variasi Telur",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Jika Anda menginginkan sarapan yang lebih substansial namun tetap praktis, roti lapis sehat atau variasi olahan telur bisa menjadi pilihan. Untuk roti lapis, gunakan roti gandum utuh, tambahkan sumber protein seperti telur rebus/dadar, irisan ayam panggang, atau keju rendah lemak. Jangan lupa tambahkan sayuran seperti selada, tomat, dan timun. Hindari penggunaan mayones berlebih. Untuk variasi telur, selain telur dadar atau mata sapi, Anda bisa membuat scrambled eggs dengan tambahan potongan sayuran atau sosis, atau frittata mini menggunakan cetakan muffin yang bisa disiapkan malam sebelumnya dan tinggal dipanaskan. Olahan telur adalah sumber protein yang baik untuk memulai hari.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les031_03_02",
+    "module_id": "mod031_03",
+    "lesson_title": "Modul 2 - Bubur Instan Sehat dan Modifikasinya",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Bubur instan sering dianggap kurang sehat, namun dengan pilihan yang tepat dan modifikasi, bisa menjadi sarapan praktis. Pilih bubur instan yang terbuat dari biji-bijian utuh (whole grains) dan rendah sodium. Untuk meningkatkan nilai gizinya, tambahkan topping protein seperti suwiran ayam rebus, telur rebus, atau abon ikan. Tambahkan juga sayuran cincang seperti wortel atau daun bawang. Sedikit taburan bawang goreng atau biji wijen bisa menambah cita rasa. Dengan cara ini, bubur instan bisa menjadi pilihan sarapan yang lebih seimbang dan tetap cepat disajikan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les031_04_01",
+    "module_id": "mod031_04",
+    "lesson_title": "Modul 3 - Tips Efektif Meal Prep Sarapan untuk Satu Minggu ke Depan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Meal prep atau menyiapkan bahan makanan di awal minggu bisa sangat menghemat waktu persiapan sarapan setiap pagi. Pelajaran ini memberikan tips praktis. Misalnya, di hari Minggu, Anda bisa merebus beberapa butir telur sekaligus, memotong buah-buahan untuk smoothie dan disimpan dalam wadah kedap udara di freezer, atau membuat adonan overnight oats untuk beberapa hari ke depan. Anda juga bisa memanggang sejumlah potongan ayam atau membuat stok bumbu dasar. Dengan meal prep, di pagi hari Anda tinggal meracik atau memanaskan bahan-bahan yang sudah setengah jadi, sehingga sarapan sehat bisa tersaji dalam hitungan menit meskipun jadwal Anda padat.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_01_01",
+    "module_id": "mod032_01",
+    "lesson_title": "Pengenalan Bahan-Bahan Kunci dan Peralatan Dasar Membuat Kue Kering",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Membuat kue kering Lebaran sendiri bisa menjadi aktivitas yang menyenangkan dan hasilnya membanggakan. Sebelum memulai, penting untuk mengenal bahan-bahan kunci seperti tepung terigu (protein rendah atau sedang untuk kue kering), mentega atau margarin berkualitas baik, gula halus, kuning telur, serta bahan tambahan seperti keju, cokelat, atau kacang-kacangan. Peralatan dasar yang dibutuhkan antara lain timbangan kue digital untuk takaran akurat, mangkuk adonan, spatula atau mixer, rolling pin (penggiling adonan), cetakan kue kering berbagai bentuk, loyang datar, dan tentu saja oven yang berfungsi baik. Memahami fungsi setiap bahan dan memiliki peralatan yang memadai adalah langkah awal kesuksesan membuat kue kering.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_02_01",
+    "module_id": "mod032_02",
+    "lesson_title": "Modul 1 - Resep Detail dan Teknik Membuat Adonan Nastar yang Lembut dan Isian Nanas Legit",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Nastar adalah salah satu kue kering primadona saat Lebaran. Pelajaran ini akan memberikan resep detail untuk membuat adonan nastar yang lembut dan lumer di mulut, serta cara membuat isian selai nanas sendiri yang legit dan tidak terlalu basah. Akan dijelaskan teknik mencampur mentega dan gula, penambahan kuning telur, hingga cara memasukkan tepung agar adonan tidak keras. Tips membentuk nastar agar bulat sempurna dan cara membuat olesan kuning telur yang mengkilap juga akan dibagikan. Perhatikan takaran dan langkah-langkahnya dengan cermat untuk hasil terbaik.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_03_01",
+    "module_id": "mod032_03",
+    "lesson_title": "Modul 2 - Resep Detail dan Teknik Membuat Kastengel Keju yang Renyah dan Gurih",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Kastengel dengan rasa keju yang gurih dan tekstur renyah juga menjadi favorit banyak orang. Pelajaran ini menyajikan resep andalan untuk kastengel. Akan dibahas pemilihan jenis keju yang tepat (misalnya Edam atau Parmesan) untuk aroma dan rasa yang kuat, teknik mencampur adonan agar tetap renyah, cara mencetak kastengel dengan ukuran seragam, serta tips pemanggangan agar matang merata dan berwarna keemasan. Penggunaan kuning telur untuk olesan dan taburan keju parut di atasnya akan menambah daya tarik kastengel buatan Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_04_01",
+    "module_id": "mod032_04",
+    "lesson_title": "Modul 3 - Resep Detail dan Teknik Membuat Kue Putri Salju yang Dingin dan Manis",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Kue putri salju dengan taburan gula halus yang dingin dan rasa kacang yang khas juga tak boleh ketinggalan. Pelajaran ini akan memberikan resep untuk menghasilkan kue putri salju yang renyah namun tetap lembut saat digigit. Akan dijelaskan penggunaan kacang mede atau almond sangrai dalam adonan, teknik membentuk kue bulan sabit yang cantik, dan cara membalut kue yang masih hangat dengan gula halus agar menempel sempurna. Perhatikan suhu oven dan waktu pemanggangan agar kue tidak gosong dan matang merata.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_04_02",
+    "module_id": "mod032_04",
+    "lesson_title": "Modul 3 - Variasi Bentuk dan Taburan untuk Kue Putri Salju",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Selain bentuk bulan sabit klasik, Anda bisa berkreasi dengan bentuk lain untuk kue putri salju, misalnya bulat atau bunga kecil. Pelajaran ini memberikan inspirasi bentuk dan cara penggunaan cetakan. Untuk taburan, selain gula halus biasa, Anda bisa mencoba gula donat yang teksturnya lebih halus dan tidak mudah mencair, atau mencampurkan sedikit susu bubuk ke dalam gula halus untuk rasa yang lebih creamy. Eksplorasi ini akan membuat kue putri salju Anda tampil beda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les032_05_01",
+    "module_id": "mod032_05",
+    "lesson_title": "Tips Umum Anti Gagal dalam Membuat Kue Kering dan Cara Penyimpanan yang Benar",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ada beberapa tips umum yang bisa membantu Anda sukses membuat berbagai jenis kue kering. Pertama, pastikan semua bahan dalam suhu ruang kecuali jika resep menyatakan lain. Kedua, jangan mengocok mentega dan gula terlalu lama agar kue tidak melebar saat dipanggang. Ketiga, masukkan tepung secara bertahap dan aduk secukupnya saja hingga rata. Keempat, panaskan oven terlebih dahulu sebelum memanggang. Kelima, kenali oven Anda, karena setiap oven memiliki karakteristik panas yang berbeda. Untuk penyimpanan, pastikan kue kering sudah benar-benar dingin sebelum dimasukkan ke dalam toples kedap udara agar tetap renyah dan awet lebih lama. Simpan di tempat yang sejuk dan kering.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les033_01_01",
+    "module_id": "mod033_01",
+    "lesson_title": "Mengidentifikasi Penyebab Umum Keran Air Menetes atau Bocor",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Keran air yang menetes terus-menerus bukan hanya mengganggu tetapi juga membuang air dan menambah tagihan. Sebelum memperbaiki, penting untuk mengidentifikasi kemungkinan penyebabnya. Penyebab paling umum adalah kerusakan pada seal karet (washer) atau O-ring di dalam mekanisme keran yang sudah aus atau getas. Pada keran jenis cartridge, kerusakan pada cartridge itu sendiri juga bisa menjadi penyebab. Kadang, masalah juga bisa disebabkan oleh tekanan air yang terlalu tinggi atau adanya kotoran yang menyumbat. Pelajaran ini akan membantu Anda memahami bagian-bagian dasar keran dan cara mendiagnosis sumber masalah.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les033_02_01",
+    "module_id": "mod033_02",
+    "lesson_title": "Modul 1 - Alat yang Dibutuhkan dan Langkah Keselamatan Sebelum Memperbaiki Keran",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Sebelum membongkar keran, siapkan alat-alat yang mungkin dibutuhkan seperti kunci inggris (adjustable wrench), beberapa jenis obeng (plus dan minus), tang, serta seal tape baru dan pengganti seal karet atau cartridge jika sudah Anda identifikasi. Langkah keselamatan paling penting adalah mematikan sumber aliran air utama ke keran tersebut. Biasanya ada stop kran di bawah wastafel atau meteran air utama. Pastikan tidak ada lagi air yang mengalir sebelum mulai bekerja. Siapkan juga lap atau handuk untuk menampung sisa air yang mungkin keluar saat keran dibongkar.",
+    "video_url": "7J6KjKlmZLk"
+  },
+  {
+    "lesson_id": "les033_03_01",
+    "module_id": "mod033_03",
+    "lesson_title": "Modul 2 - Panduan Mengganti Seal Karet (Washer) atau Cartridge pada Jenis Keran Umum",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pelajaran ini akan memberikan panduan umum cara mengganti seal karet atau cartridge pada beberapa jenis keran yang umum digunakan. Untuk keran putar tradisional, biasanya kebocoran disebabkan oleh washer yang aus di bawah gagang putar. Lepas gagang, lalu buka baut penahan mekanisme dalam, dan ganti washer yang rusak. Untuk keran dengan cartridge (biasanya keran modern model tuas), Anda perlu melepas tuas, kemudian membuka mur penahan cartridge, lalu mencabut cartridge lama dan menggantinya dengan yang baru yang sesuai tipenya. Pastikan semua bagian dipasang kembali dengan urutan yang benar dan kencang. Gunakan seal tape pada ulir jika diperlukan untuk mencegah kebocoran pada sambungan.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les034_01_01",
+    "module_id": "mod034_01",
+    "lesson_title": "Persiapan Dinding Sebelum Memasang Wallpaper: Membersihkan dan Meratakan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Persiapan dinding yang baik adalah kunci utama agar wallpaper terpasang rapi dan tahan lama. Pastikan permukaan dinding bersih dari debu, kotoran, minyak, dan sisa wallpaper lama (jika ada). Cuci dinding dengan larutan sabun lembut jika perlu, lalu bilas dan biarkan kering sempurna. Periksa apakah ada lubang paku atau retakan kecil; tambal dengan dempul tembok (plamir) lalu amplas halus setelah kering. Dinding yang berjamur harus dibersihkan dengan cairan anti jamur. Permukaan dinding yang rata dan halus akan membuat wallpaper menempel dengan baik dan tidak mudah menggelembung. Jika dinding baru diaci, pastikan acian sudah benar-benar kering.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les034_01_02",
+    "module_id": "mod034_01",
+    "lesson_title": "Memilih Jenis Wallpaper dan Lem yang Sesuai Kebutuhan",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Ada berbagai jenis wallpaper di pasaran, seperti vinyl, kertas, non-woven, atau fiber. Wallpaper vinyl cenderung lebih tahan lama dan mudah dibersihkan, cocok untuk area yang sering disentuh. Pilih motif dan warna yang sesuai dengan gaya interior dan ukuran ruangan Anda. Untuk lem, ada lem wallpaper khusus yang berbentuk bubuk dan perlu dicampur air, atau lem siap pakai. Pastikan Anda menggunakan lem yang direkomendasikan untuk jenis wallpaper yang Anda pilih. Baca instruksi pada kemasan wallpaper dan lem dengan teliti sebelum memulai.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les034_02_01",
+    "module_id": "mod034_02",
+    "lesson_title": "Modul 1 - Teknik Mengukur Dinding, Memotong Wallpaper, dan Mencocokkan Motif",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Pengukuran yang akurat sangat penting. Ukur tinggi dan lebar dinding yang akan dipasangi wallpaper. Saat memotong lembaran wallpaper, tambahkan beberapa sentimeter ekstra di bagian atas dan bawah untuk penyesuaian. Jika wallpaper Anda bermotif, perhatikan pola sambungan (pattern repeat) antar lembaran. Anda perlu mencocokkan motifnya dengan cermat agar terlihat menyambung dengan sempurna. Tandai bagian belakang wallpaper dengan pensil untuk urutan pemasangan dan arah atasnya. Gunakan cutter yang tajam dan penggaris panjang untuk hasil potongan yang lurus dan rapi.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les034_03_01",
+    "module_id": "mod034_03",
+    "lesson_title": "Modul 2 - Teknik Menempel Wallpaper dan Menghilangkan Gelembung Udara",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Setelah lem diaplikasikan pada wallpaper atau dinding (tergantung jenis wallpaper), tempelkan lembaran wallpaper dari bagian atas dinding, ratakan ke bawah dan ke samping menggunakan alat perata wallpaper (smoother) atau spons lembut. Mulai dari tengah ke arah luar untuk mengeluarkan gelembung udara yang terperangkap. Jika ada gelembung kecil, coba tusuk dengan jarum halus lalu ratakan kembali. Pastikan sambungan antar lembaran wallpaper rapat dan motifnya pas. Potong sisa wallpaper di bagian atas (plafon) dan bawah (lantai/plint) menggunakan cutter dan penggaris setelah lem agak mengering. Bersihkan sisa lem yang mungkin menempel di permukaan wallpaper dengan spons lembab.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les035_01_01",
+    "module_id": "mod035_01",
+    "lesson_title": "Manfaat Latihan Kekuatan dengan Berat Badan (Bodyweight Training) untuk Bapak-Bapak",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Latihan kekuatan tidak selalu memerlukan peralatan gym yang mahal. Bodyweight training, atau latihan menggunakan berat badan sendiri, adalah cara yang sangat efektif, praktis, dan bisa dilakukan di mana saja untuk membangun otot, meningkatkan kekuatan fungsional, dan menjaga metabolisme tubuh. Bagi para bapak, latihan ini membantu menjaga massa otot seiring bertambahnya usia, meningkatkan kepadatan tulang, memperbaiki postur, dan mendukung aktivitas sehari-hari agar lebih bertenaga. Gerakan bodyweight seperti push-up, squat, dan plank melatih banyak kelompok otot sekaligus, menjadikannya latihan yang efisien. Pelajaran ini akan mengupas lebih lanjut manfaat spesifiknya.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les035_02_01",
+    "module_id": "mod035_02",
+    "lesson_title": "Modul 1 - Teknik Dasar Gerakan Esensial: Push-up dan Squat yang Benar",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Push-up adalah latihan klasik yang sangat baik untuk melatih otot dada, trisep, dan bahu. Pelajaran ini akan menunjukkan form atau teknik push-up yang benar untuk memaksimalkan manfaat dan menghindari cedera, mulai dari posisi tangan, penjagaan inti tubuh (core engagement), hingga gerakan naik turun yang terkontrol. Akan ada variasi untuk pemula (misalnya push-up dengan lutut menumpu). Selanjutnya, squat adalah gerakan fundamental untuk melatih otot kaki (paha depan, paha belakang, bokong) dan inti tubuh. Akan dijelaskan posisi kaki yang tepat, kedalaman jongkok yang ideal, dan cara menjaga punggung tetap lurus.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les035_02_02",
+    "module_id": "mod035_02",
+    "lesson_title": "Modul 1 - Teknik Dasar Gerakan Esensial: Plank dan Lunges yang Efektif",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Plank adalah latihan isometrik yang sangat efektif untuk memperkuat otot inti (core muscles) termasuk perut, punggung bawah, dan pinggul. Pelajaran ini akan menunjukkan cara melakukan plank dengan form yang benar, yaitu menjaga tubuh lurus dari kepala hingga tumit dan mengaktifkan otot perut. Akan ada variasi seperti forearm plank atau side plank. Kemudian, lunges adalah latihan yang bagus untuk kekuatan kaki unilateral (satu sisi) dan keseimbangan. Akan dijelaskan teknik melakukan forward lunge dan reverse lunge dengan benar, menjaga lutut tidak melebihi ujung jari kaki depan, dan menjaga keseimbangan tubuh.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les035_03_01",
+    "module_id": "mod035_03",
+    "lesson_title": "Modul 2 - Contoh Program Latihan Mingguan Bodyweight untuk Bapak",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Untuk mendapatkan hasil yang optimal, diperlukan program latihan yang terstruktur. Pelajaran ini akan memberikan contoh program latihan bodyweight mingguan yang bisa diikuti oleh bapak-bapak, misalnya 3-4 kali seminggu. Program ini akan mengkombinasikan berbagai gerakan yang telah dipelajari (push-up, squat, plank, lunges, dan variasi lainnya) untuk melatih seluruh kelompok otot utama. Akan ada contoh pengaturan set dan repetisi, serta durasi istirahat antar set. Program ini bisa disesuaikan dengan tingkat kebugaran awal Anda dan ditingkatkan secara bertahap.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les035_04_01",
+    "module_id": "mod035_04",
+    "lesson_title": "Modul 3 - Pentingnya Form yang Benar dan Prinsip Progresif Overload dalam Latihan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Dalam latihan kekuatan, form atau teknik gerakan yang benar jauh lebih penting daripada jumlah repetisi atau berat beban. Form yang salah tidak hanya mengurangi efektivitas latihan tetapi juga meningkatkan risiko cedera. Pelajaran ini akan menekankan kembali pentingnya fokus pada kualitas gerakan. Selain itu, untuk terus mendapatkan kemajuan, Anda perlu menerapkan prinsip progresif overload, yaitu secara bertahap meningkatkan tantangan pada otot Anda. Ini bisa dilakukan dengan menambah jumlah repetisi, set, mengurangi waktu istirahat, atau mencoba variasi gerakan yang lebih sulit seiring dengan meningkatnya kekuatan Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_01_01",
+    "module_id": "mod036_01",
+    "lesson_title": "Mengenal Jenis-Jenis Sepeda Populer: MTB, Road Bike, Hybrid, dan Sepeda Lipat",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Memilih sepeda yang tepat dimulai dengan mengenal jenis-jenisnya. Mountain Bike (MTB) atau sepeda gunung dirancang untuk medan off-road dengan suspensi dan ban yang lebar. Road Bike atau sepeda balap dioptimalkan untuk kecepatan di jalan aspal dengan ban tipis dan posisi berkendara membungkuk. Sepeda Hybrid adalah kombinasi antara MTB dan Road Bike, nyaman untuk bersepeda santai di perkotaan atau jalanan ringan. Sepeda Lipat (Folding Bike) sangat praktis karena bisa dilipat, mudah dibawa dan disimpan, cocok untuk komuter. Pelajaran ini akan membahas karakteristik utama, kelebihan, dan kekurangan masing-masing jenis agar Anda bisa menentukan mana yang paling sesuai dengan kebutuhan dan gaya bersepeda Anda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_02_01",
+    "module_id": "mod036_02",
+    "lesson_title": "Modul 1 - Menentukan Ukuran Frame Sepeda yang Sesuai dengan Tinggi Badan",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Ukuran frame sepeda yang pas sangat penting untuk kenyamanan dan efisiensi bersepeda, serta mencegah cedera. Frame yang terlalu besar atau terlalu kecil akan membuat posisi berkendara tidak ideal. Pelajaran ini akan memberikan panduan umum cara menentukan ukuran frame yang sesuai berdasarkan tinggi badan Anda atau panjang inseam (jarak dari selangkangan ke lantai). Setiap jenis sepeda mungkin memiliki panduan ukuran yang sedikit berbeda. Jika memungkinkan, sangat disarankan untuk mencoba langsung beberapa ukuran sepeda sebelum membeli atau berkonsultasi dengan toko sepeda yang berpengalaman untuk mendapatkan 'bike fitting' dasar.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_02_02",
+    "module_id": "mod036_02",
+    "lesson_title": "Modul 1 - Pertimbangan Komponen Sepeda Sesuai Budget: Groupset, Rem, Roda",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Selain frame, komponen sepeda seperti groupset (sistem pemindah gigi dan penggerak), sistem pengereman (rem cakram atau V-brake), dan roda juga mempengaruhi performa dan harga sepeda. Pelajaran ini akan memberikan gambaran umum tentang tingkatan groupset dari produsen utama (seperti Shimano atau SRAM) dan bagaimana memilihnya sesuai budget dan kebutuhan. Akan dibahas juga kelebihan dan kekurangan jenis rem yang berbeda. Bagi pemula, komponen entry-level hingga mid-range biasanya sudah cukup memadai untuk hobi bersepeda.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_03_01",
+    "module_id": "mod036_03",
+    "lesson_title": "Modul 2 - Tips Cerdas Membeli Sepeda Baru vs Pertimbangan Membeli Sepeda Bekas",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Membeli sepeda baru memberikan keuntungan garansi dan kondisi komponen yang prima. Namun, sepeda bekas bisa menjadi pilihan yang lebih hemat jika Anda teliti. Pelajaran ini akan memberikan tips saat membeli sepeda baru, seperti memastikan kelengkapan, mencoba posisi berkendara, dan menanyakan layanan purna jual. Untuk sepeda bekas, akan dibahas hal-hal yang perlu diperiksa dengan cermat, seperti kondisi frame (retak atau penyok), fungsi groupset, keausan ban dan rantai, serta kelurusan roda. Jangan ragu untuk melakukan test ride dan bertanya riwayat pemakaian sepeda bekas tersebut.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_04_01",
+    "module_id": "mod036_04",
+    "lesson_title": "Modul 3 - Perawatan Dasar Sepeda yang Wajib Diketahui Pemula: Membersihkan dan Melumasi Rantai",
+    "order": 1,
+    "lesson_type": "text",
+    "text_content": "Perawatan dasar akan membuat sepeda Anda awet dan nyaman dikendarai. Salah satu yang paling penting adalah menjaga kebersihan dan pelumasan rantai. Rantai yang kotor dan kering akan berisik, mempercepat keausan komponen drivetrain, dan membuat perpindahan gigi tidak mulus. Pelajaran ini akan menunjukkan cara membersihkan rantai menggunakan degreaser dan sikat, lalu cara mengaplikasikan pelumas rantai (chain lube) yang tepat. Perawatan ini sebaiknya dilakukan secara berkala, terutama setelah bersepeda di kondisi basah atau berlumpur.",
+    "video_url": null
+  },
+  {
+    "lesson_id": "les036_04_02",
+    "module_id": "mod036_04",
+    "lesson_title": "Modul 3 - Pemeriksaan Tekanan Ban dan Fungsi Rem Sebelum Bersepeda",
+    "order": 2,
+    "lesson_type": "text",
+    "text_content": "Sebelum setiap kali bersepeda, biasakan untuk melakukan pemeriksaan singkat. Pertama, periksa tekanan angin ban. Tekanan yang tepat (biasanya tertera di dinding ban) membuat sepeda lebih ringan digowes dan mengurangi risiko ban bocor. Gunakan pompa yang memiliki indikator tekanan. Kedua, periksa fungsi rem. Pastikan kedua rem (depan dan belakang) berfungsi dengan baik, kampas rem tidak aus, dan tidak ada bunyi berdecit yang aneh. Keselamatan adalah yang utama, jadi jangan pernah mengabaikan kondisi rem. Pemeriksaan rutin ini hanya memakan waktu beberapa menit namun sangat penting.",
+    "video_url": null
+  } 
 ]

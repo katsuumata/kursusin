@@ -1,22 +1,202 @@
 [
     {
-        "order_id": "ord123",
-        "user_id": "user102",
+        "order_id": "ord001",
+        "user_id": "user101",
         "plan_id": "paket-12bln",
         "course_id": null,
-        "order_date": "2025-01-10T10:00:00Z",
+        "order_date": "2025-01-15T10:30:00Z",
         "total_amount": 1299000.00,
         "status": "completed",
         "coupon_code": null
     },
     {
-        "order_id": "ord124",
-        "user_id": "user101",
+        "order_id": "ord002",
+        "user_id": "user102",
         "plan_id": "paket-3bln",
         "course_id": null,
-        "order_date": "2025-05-20T11:00:00Z",
-        "total_amount": 599000,
+        "order_date": "2025-02-20T14:00:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord003",
+        "user_id": "user103",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-03-01T09:15:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
+        "coupon_code": "DISKONAYAH"
+    },
+    {
+        "order_id": "ord004",
+        "user_id": "user104",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-04-05T16:45:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord005",
+        "user_id": "user105",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-05-10T11:20:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord006",
+        "user_id": "user106",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-01-25T08:00:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord007",
+        "user_id": "user107",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-03-12T13:00:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": "FREEONGKIR"
+    },
+    {
+        "order_id": "ord008",
+        "user_id": "user108",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-04-20T17:30:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord009",
+        "user_id": "user109",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-02-18T10:45:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord010",
+        "user_id": "user110",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-01-01T09:00:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": "TAHUNBARU"
+    },
+    {
+        "order_id": "ord011",
+        "user_id": "user111",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-03-05T15:00:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord012",
+        "user_id": "user112",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-04-10T11:00:00Z",
+        "total_amount": 899000.00,
         "status": "pending",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord013",
+        "user_id": "user113",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-05-01T14:10:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord014",
+        "user_id": "user114",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-02-08T09:40:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord015",
+        "user_id": "user115",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-03-25T12:00:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
+        "coupon_code": "SPESIALAYAH"
+    },
+    {
+        "order_id": "ord016",
+        "user_id": "user116",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-01-20T18:00:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord017",
+        "user_id": "user001",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-04-01T11:30:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord018",
+        "user_id": "user002",
+        "plan_id": "paket-3bln",
+        "course_id": null,
+        "order_date": "2025-05-02T09:00:00Z",
+        "total_amount": 599000.00,
+        "status": "completed",
+        "coupon_code": null
+    },
+    {
+        "order_id": "ord019",
+        "user_id": "user003",
+        "plan_id": "paket-12bln",
+        "course_id": null,
+        "order_date": "2025-02-14T14:00:00Z",
+        "total_amount": 1299000.00,
+        "status": "completed",
+        "coupon_code": "VALENTINE"
+    },
+    {
+        "order_id": "ord020",
+        "user_id": "user004",
+        "plan_id": "paket-6bln",
+        "course_id": null,
+        "order_date": "2025-03-08T10:00:00Z",
+        "total_amount": 899000.00,
+        "status": "completed",
         "coupon_code": null
     }
 ]

@@ -1,142 +1,262 @@
 [
-    {
-        "user_id": "user001",
-        "name": "Rudy Tabuti",
-        "email": "rudy.t@example.com",
-        "password_hash": "simulated_hash_for_password123",
-        "password": "password123",
-        "age": 45,
-        "gender": "pria",
-        "image_url": "assets/authors/rudy_tabuti.jpg"
-    },
-    {
-        "user_id": "user002",
-        "name": "Pak Ambarrukmo",
-        "email": "pak.ambarrukmo@example.com",
-        "password_hash": "simulated_hash_for_pass002",
-        "password": "pass002",
-        "age": 52,
-        "gender": "pria",
-        "image_url": "assets/authors/pak_ambarrukmo.jpg"
-    },
-    {
-        "user_id": "user003",
-        "name": "dr. Andang Djunaedi",
-        "email": "andang.d@example.com",
-        "password_hash": "simulated_hash_for_pass003",
-        "password": "pass003",
-        "age": 48,
-        "gender": "pria",
-        "image_url": "assets/authors/andang_djunaedi.jpg"
-    },
-    {
-        "user_id": "user004",
-        "name": "Ilham M. Jabieb",
-        "email": "ilham.mj@example.com",
-        "password_hash": "simulated_hash_for_pass004",
-        "password": "pass004",
-        "age": 35,
-        "gender": "pria",
-        "image_url": "assets/authors/ilham_jabieb.jpg"
-    },
-    {
-        "user_id": "user005",
-        "name": "Bapak Pemula Investasi",
-        "email": "bapak.invest@example.com",
-        "password_hash": "simulated_hash_for_pass005",
-        "password": "pass005",
-        "age": 40,
-        "gender": "pria",
-        "image_url": "assets/authors/bapak_pemula.jpg"
-    },
-    {
-        "user_id": "user006",
-        "name": "Fitra Eri",
-        "email": "fitra.e@example.com",
-        "password_hash": "simulated_hash_for_pass006",
-        "password": "pass006",
-        "age": 42,
-        "gender": "pria",
-        "image_url": "assets/authors/fitra_eri.jpg"
-    },
-    {
-        "user_id": "user007",
-        "name": "Tim Makan Pakai Tangan",
-        "email": "tim.makan@example.com",
-        "password_hash": "simulated_hash_for_pass007",
-        "password": "pass007",
-        "age": 30,
-        "gender": "pria",
-        "image_url": "assets/authors/tim_makan.jpg"
-    },
-    {
-        "user_id": "user008",
-        "name": "dr.Boy Kemal",
-        "email": "boy.k@example.com",
-        "password_hash": "simulated_hash_for_pass008",
-        "password": "pass008",
-        "age": 50,
-        "gender": "pria",
-        "image_url": "assets/authors/boy_kemal.jpg"
-    },
-    {
-        "user_id": "user009",
-        "name": "Raymond Sinulingga",
-        "email": "raymond.s@example.com",
-        "password_hash": "simulated_hash_for_pass009",
-        "password": "pass009",
-        "age": 38,
-        "gender": "pria",
-        "image_url": "assets/authors/raymond_sinulingga.jpg"
-    },
-    {
-        "user_id": "user010",
-        "name": "Komunitas Bapak-Bapak Ronda Pos Malam",
-        "email": "komunitas.ronda@example.com",
-        "password_hash": "simulated_hash_for_pass010",
-        "password": "pass010",
-        "age": 45,
-        "gender": "pria",
-        "image_url": "assets/authors/komunitas_ronda.jpg"
-    },
-    {
-        "user_id": "user101",
-        "name": "Rakhmat Satria Wicaksono",
-        "email": "rakhmat.s@example.com",
-        "password_hash": "simulated_hash_for_pass101",
-        "password": "pass101",
-        "age": 38,
-        "gender": "pria",
-        "image_url": "assets/cat-card1.jpg"
-    },
-    {
-        "user_id": "user102",
-        "name": "Firman Wisnu Krisnayana",
-        "email": "firman.w@example.com",
-        "password_hash": "simulated_hash_for_pass102",
-        "password": "pass102",
-        "age": 42,
-        "gender": "pria",
-        "image_url": "assets/3d/casual-life-3d-profile-picture-of-person-in-glasses-and-orange-shirt.png"
-    },
-    {
-        "user_id": "user103",
-        "name": "Dhiya Tsalsa",
-        "email": "dhiya.t@example.com",
-        "password_hash": "simulated_hash_for_pass103",
-        "password": "pass103",
-        "age": 35,
-        "gender": "wanita",
-        "image_url": "assets/cat-card3.jpg"
-    },
-    {
-        "user_id": "user105",
-        "name": "Bapak Budi Hartono",
-        "email": "budi.h@example.com",
-        "password_hash": "simulated_hash_for_pass105",
-        "password": "pass105",
-        "age": 39,
-        "gender": "pria",
-        "image_url": "assets/default_profile.png"
-    }
+  {
+    "user_id": "user001",
+    "name": "Rudy Tabuti",
+    "email": "rudy.t@example.com",
+    "password_hash": "simulated_hash_for_password123",
+    "password": "password123",
+    "age": 45,
+    "gender": "pria",
+    "image_url": "assets/author/user001.jpg"
+  },
+  {
+    "user_id": "user002",
+    "name": "Pak Ambarrukmo",
+    "email": "pak.ambarrukmo@example.com",
+    "password_hash": "simulated_hash_for_pass002",
+    "password": "pass002",
+    "age": 52,
+    "gender": "pria",
+    "image_url": "assets/author/user002.jpg"
+  },
+  {
+    "user_id": "user003",
+    "name": "dr. Andang Djunaedi",
+    "email": "andang.d@example.com",
+    "password_hash": "simulated_hash_for_pass003",
+    "password": "pass003",
+    "age": 48,
+    "gender": "pria",
+    "image_url": "assets/author/user003.jpg"
+  },
+  {
+    "user_id": "user004",
+    "name": "Ilham Habiebburokhman",
+    "email": "ilham.mj@example.com",
+    "password_hash": "simulated_hash_for_pass004",
+    "password": "pass004",
+    "age": 35,
+    "gender": "pria",
+    "image_url": "assets/author/user004.jpg"
+  },
+  {
+    "user_id": "user005",
+    "name": "Bapak Pemula Investasi",
+    "email": "bapak.invest@example.com",
+    "password_hash": "simulated_hash_for_pass005",
+    "password": "pass005",
+    "age": 40,
+    "gender": "pria",
+    "image_url": "assets/author/user005.jpg"
+  },
+  {
+    "user_id": "user006",
+    "name": "Fitra Eri",
+    "email": "fitra.e@example.com",
+    "password_hash": "simulated_hash_for_pass006",
+    "password": "pass006",
+    "age": 42,
+    "gender": "pria",
+    "image_url": "assets/author/user006.jpg"
+  },
+  {
+    "user_id": "user007",
+    "name": "Tim Makan Pakai Tangan",
+    "email": "tim.makan@example.com",
+    "password_hash": "simulated_hash_for_pass007",
+    "password": "pass007",
+    "age": 30,
+    "gender": "pria",
+    "image_url": "assets/author/user007.jpg"
+  },
+  {
+    "user_id": "user008",
+    "name": "dr.Boy Kemal",
+    "email": "boy.k@example.com",
+    "password_hash": "simulated_hash_for_pass008",
+    "password": "pass008",
+    "age": 50,
+    "gender": "pria",
+    "image_url": "assets/author/user008.jpg"
+  },
+  {
+    "user_id": "user009",
+    "name": "Raymond Sinulingga",
+    "email": "raymond.s@example.com",
+    "password_hash": "simulated_hash_for_pass009",
+    "password": "pass009",
+    "age": 38,
+    "gender": "pria",
+    "image_url": "assets/author/user009.jpg"
+  },
+  {
+    "user_id": "user010",
+    "name": "Komunitas Bapak-Bapak Ronda Pos Malam",
+    "email": "komunitas.ronda@example.com",
+    "password_hash": "simulated_hash_for_pass010",
+    "password": "pass010",
+    "age": 45,
+    "gender": "pria",
+    "image_url": "assets/author/user010.jpg"
+  },
+  {
+    "user_id": "user101",
+    "name": "Rakhmat Satria Wicaksono",
+    "email": "rakhmat.s@example.com",
+    "password_hash": "simulated_hash_for_pass101",
+    "password": "pass101",
+    "age": 38,
+    "gender": "pria",
+    "image_url": "assets/user/user101.png"
+  },
+  {
+    "user_id": "user102",
+    "name": "Firman Wisnu Krisnayana",
+    "email": "firman.w@example.com",
+    "password_hash": "simulated_hash_for_pass102",
+    "password": "pass102",
+    "age": 42,
+    "gender": "pria",
+    "image_url": "assets/user/user102.png"
+  },
+  {
+    "user_id": "user103",
+    "name": "Dhiya Tsalsa",
+    "email": "dhiya.t@example.com",
+    "password_hash": "simulated_hash_for_pass103",
+    "password": "pass103",
+    "age": 35,
+    "gender": "pria",
+    "image_url": "assets/user/user103.png"
+  },
+  {
+    "user_id": "user104",
+    "name": "Ahmad Zuhri",
+    "email": "ahmad@mail.com",
+    "password_hash": "simulated_hash_for_pass104",
+    "password": "pass104",
+    "age": 28,
+    "gender": "pria",
+    "image_url": "assets/user/user104.png"
+  },
+  {
+    "user_id": "user105",
+    "name": "Yoseph Terry Febrianto",
+    "email": "yosephine@example.com",
+    "password_hash": "simulated_hash_for_pass105",
+    "password": "pass105",
+    "age": 39,
+    "gender": "pria",
+    "image_url": "assets/user/user105.png"
+  },
+  {
+    "user_id": "user106",
+    "name": "Gading Saputra",
+    "email": "gading@mail.com",
+    "password_hash": "simulated_hash_for_pass106",
+    "password": "pass106",
+    "age": 42,
+    "gender": "pria",
+    "image_url": "assets/user/user106.png"
+  },
+  {
+    "user_id": "user107",
+    "name": "Agus Yudhantoko",
+    "email": "agus.y@mail.com",
+    "password_hash": "simulated_hash_for_pass107",
+    "password": "pass107",
+    "age": 51,
+    "gender": "pria",
+    "image_url": "assets/user/user107.png"
+  },
+  {
+    "user_id": "user108",
+    "name": "Kevin Wijaya",
+    "email": "kevin.w@mail.com",
+    "password_hash": "simulated_hash_for_pass108",
+    "password": "pass108",
+    "age": 38,
+    "gender": "pria",
+    "image_url": "assets/user/user108.png"
+  },
+  {
+    "user_id": "user109",
+    "name": "Alman Mulyana",
+    "email": "alman.mul@mail.com",
+    "password_hash": "simulated_hash_for_pass109",
+    "password": "pass109",
+    "age": 45,
+    "gender": "pria",
+    "image_url": "assets/user/user109.png"
+  },
+  {
+    "user_id": "user110",
+    "name": "Djaka Budi Sampurno",
+    "email": "djaka@mail.com",
+    "password_hash": "simulated_hash_for_pass110",
+    "password": "pass110",
+    "age": 49,
+    "gender": "pria",
+    "image_url": "assets/user/user110.png"
+  },
+  {
+    "user_id": "user111",
+    "name": "Rahmat Hidayat",
+    "email": "rahmat.h@mail.com",
+    "password_hash": "simulated_hash_for_pass111",
+    "password": "pass111",
+    "age": 37,
+    "gender": "pria",
+    "image_url": "assets/user/user111.png"
+  },
+  {
+    "user_id": "user112",
+    "name": "Asep Sunandar",
+    "email": "asep.sunandar@mail.com",
+    "password_hash": "simulated_hash_for_pass112",
+    "password": "pass112",
+    "age": 55,
+    "gender": "pria",
+    "image_url": "assets/user/user112.png"
+  },
+  {
+    "user_id": "user113",
+    "name": "Joko Susanto",
+    "email": "joko.s@mail.com",
+    "password_hash": "simulated_hash_for_pass113",
+    "password": "pass113",
+    "age": 41,
+    "gender": "pria",
+    "image_url": "assets/user/user113.png"
+  },
+  {
+    "user_id": "user114",
+    "name": "Endang Sutisna",
+    "email": "endang.sutisna@mail.com",
+    "password_hash": "simulated_hash_for_pass114",
+    "password": "pass114",
+    "age": 53,
+    "gender": "pria",
+    "image_url": "assets/user/user114.png"
+  },
+  {
+    "user_id": "user115",
+    "name": "Mulyadi Siregar",
+    "email": "mulyadi.s@mail.com",
+    "password_hash": "simulated_hash_for_pass115",
+    "password": "pass115",
+    "age": 46,
+    "gender": "pria",
+    "image_url": "assets/user/user115.png"
+  },
+  {
+    "user_id": "user116",
+    "name": "Ujang Setiawan",
+    "email": "ujang.setiawan@mail.com",
+    "password_hash": "simulated_hash_for_pass116",
+    "password": "pass116",
+    "age": 36,
+    "gender": "pria",
+    "image_url": "assets/user/user116.png"
+  }
 ]

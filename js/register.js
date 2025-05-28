@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
             password_hash: `simulated_hash_for_${password}`, // IMPORTANT: NEVER store plain passwords
             age: usia,
             gender: gender,
-            image_url: "assets/default_profile.png" // Default profile image
+            image_url: "assets/user/default_profile_nav.png" // Default profile image
         };
 
         console.log("New user data that WOULD be added to users.json:", newUserForDb);

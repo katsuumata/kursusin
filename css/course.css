@@ -15,6 +15,7 @@
     /* Center content vertically */
     align-items: center;
     /* Center content horizontally */
+    background-image: linear-gradient(rgba(55, 90, 96, 0.9), rgba(55, 90, 96, 0.9)), url(assets/banner/background.avif);
 }
 
 .course-judul {

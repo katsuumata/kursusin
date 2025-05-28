@@ -3,59 +3,79 @@
 /* Main container for the learning page */
 .learning-page-container {
   max-width: 1200px;
-  /* Or your preferred max width */
   margin: 2rem auto;
-  padding: 0 1rem;
-  /* Horizontal padding */
+  padding: 0 1rem; /* Padding horizontal untuk seluruh kontainer halaman */
+  box-sizing: border-box; /* Pastikan padding termasuk dalam max-width */
 }
 
+/* Header di dalam halaman learning content (berisi judul kursus & materi) */
 .learning-header {
+  position: static;
+  background-color: #ffffff;
+  
+  /* Padding: 2rem atas/bawah, 1rem kiri/kanan */
+  /* padding-left: 1rem ini SANGAT PENTING agar teks tidak mepet kiri */
+  padding: 2rem 1rem; 
+  
+  min-height: 135px; /* Tambahan: tinggi minimal untuk kotak header. Sesuaikan nilainya (misal 80px, 100px, dll.) */
+                     /* Ini akan memberi 'ruang' vertikal. */
+
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
   border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  box-sizing: border-box; /* KRUSIAL: Pastikan padding termasuk dalam kalkulasi lebar/tinggi */
 }
 
 #course-main-title {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #375a60;
-  margin-bottom: 0.25rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem; 
+  margin-left: 0;     /* Pastikan tidak ada margin yang menarik ke kiri */
+  padding-left: 0;    /* Pastikan tidak ada padding internal h1 yang menggeser teks */
+  line-height: 1.3;
+  box-sizing: border-box; /* Konsistensi */
+  /* width: auto; max-width: 100%; adalah default untuk block-level seperti h1 */
 }
 
 #current-lesson-title {
-  font-size: 1.3em;
+  font-size: 1.15em;
   color: #555;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;     /* Pastikan tidak ada margin yang menarik ke kiri */
+  padding-left: 0;    /* Pastikan tidak ada padding internal h2 yang menggeser teks */
+  line-height: 1.4;
+  box-sizing: border-box; /* Konsistensi */
+  /* width: auto; max-width: 100%; adalah default untuk block-level seperti h2 */
 }
 
 /* Layout for video/content and sidebar */
 .coursecontent {
   display: flex;
-  /* Use flex for side-by-side layout */
   flex-wrap: wrap;
-  /* Allow sidebar to wrap on smaller screens */
   gap: 20px;
-  /* height: auto; Removed fixed height */
+  box-sizing: border-box; /* Tambahkan untuk konsistensi */
 }
 
 .course-video-main {
   flex: 3;
-  /* Main content area takes more space */
   min-width: 300px;
-  /* Minimum width before wrapping */
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Tambahkan untuk konsistensi */
 }
 
 .video-player-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
   background-color: #000;
-  /* Black background for video area */
   border-radius: 6px;
 }
 
@@ -66,7 +86,6 @@
   width: 100%;
   height: 100%;
   border: none;
-  /* Remove iframe border */
 }
 
 .lesson-description {
@@ -112,19 +131,16 @@
   cursor: not-allowed;
 }
 
-
 /* Sidebar for module and lesson navigation */
 .content-container-sidebar {
   flex: 1;
-  /* Sidebar takes less space */
   min-width: 280px;
-  /* Minimum width before wrapping */
   background-color: #f8f9fa;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   height: fit-content;
-  /* Adjust height to content */
+  box-sizing: border-box; /* Tambahkan untuk konsistensi */
 }
 
 .content-container-sidebar h3 {
@@ -137,16 +153,11 @@
 }
 
 .course-module-navigation {
-  /* Container for all module items in sidebar */
-  /* max-width: 80%; Removed, let flexbox handle width */
-  /* padding: 0.5rem; Removed, parent has padding */
   width: 100%;
 }
 
 .course-module-item-button {
-  /* Accordion button in sidebar */
   background-color: #e9ecef;
-  /* Slightly different from coursedetail.css for distinction */
   color: #333;
   cursor: pointer;
   padding: 12px 15px;
@@ -157,7 +168,6 @@
   font-weight: 600;
   transition: background-color 0.3s ease;
   margin-top: 8px;
-  /* Space between module buttons */
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
@@ -169,40 +179,31 @@
 }
 
 .course-module-item-button::after {
-  /* Accordion arrow */
-  content: '\\25BC';
-  /* Down arrow */
+  content: '▼'; /* Menggunakan simbol literal */
   font-size: 0.7em;
   transition: transform 0.3s ease;
 }
 
 .course-module-item-button.active::after {
   transform: rotate(180deg);
-  /* Up arrow */
 }
 
 .course-module-item-button:hover,
 .course-module-item-button.active {
   background-color: #375a60;
-  /* Darker active/hover */
   color: #fff;
 }
 
 .course-module-item-button.active::after {
-  color: #fff;
-  /* Ensure arrow is visible on active background */
+  color: #fff; /* Pastikan panah terlihat di background aktif */
 }
 
-
 .course-module-item-content {
-  /* Lesson list under module button */
   background-color: #fff;
-  /* White background for lesson list */
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  padding: 0 15px;
-  /* Horizontal padding when closed */
+  padding: 0 15px; /* Padding horizontal saat tertutup */
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
@@ -210,15 +211,13 @@
   border-bottom-right-radius: 4px;
 }
 
-.course-module-item-button.active+.course-module-item-content {
-  /* Apply padding when open */
-  padding: 5px 15px 5px 15px;
+.course-module-item-button.active + .course-module-item-content {
+  padding: 5px 15px 5px 15px; /* Padding saat terbuka */
 }
 
 .course-module-item-content a {
   display: block;
   padding: 8px 10px 8px 15px;
-  /* Indent lesson links */
   color: #375a60;
   text-decoration: none;
   border-bottom: 1px solid #f0f0f0;
@@ -242,39 +241,34 @@
   font-weight: 600;
 }
 
-/* Adding a play icon or similar for lesson links */
 .course-module-item-content a::before {
-  content: '\\25B6';
-  /* Play icon - or use an icon font/SVG */
+  content: '▶'; /* Menggunakan simbol literal */
   margin-right: 8px;
   font-size: 0.8em;
   color: #aaa;
 }
 
 .course-module-item-content a.active-lesson::before {
-  color: #375a60;
+  color: #375a60; /* Warna ikon untuk materi aktif */
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .coursecontent {
-    flex-direction: column-reverse;
-    /* Stack sidebar above video on small screens */
+    flex-direction: column-reverse; /* Sidebar di atas video pada layar kecil */
   }
 
   .course-video-main,
   .content-container-sidebar {
-    flex-basis: auto;
-    /* Allow them to take full width when stacked */
+    flex-basis: auto; /* Lebar penuh saat ditumpuk */
     width: 100%;
   }
 
-  .learning-header h1 {
-    font-size: 1.5em;
+  .learning-header #course-main-title { /* Target spesifik untuk override jika perlu */
+    font-size: 1.4em;
   }
 
-  .learning-header h2 {
-    font-size: 1.1em;
+  .learning-header #current-lesson-title { /* Target spesifik untuk override jika perlu */
+    font-size: 1.05em;
   }
 }

@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dasbor Pengguna - KURSUSIN</title>
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap"
     rel="stylesheet">
-
   <style>
     body {
       background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(assets/background.avif);
@@ -22,24 +21,24 @@
   <header class="header">
     <section class="navbar">
       <nav class="top-nav">
-        <a class="page-tittle" href="home.html">
-          <img src="assets/logo.png" alt="Logo Kursusin">
+        <a class="page-tittle" href="index.html">
+          <img src="assets/icon/logo.png" alt="Logo Kursusin">
         </a>
       </nav>
       <nav class="menu">
-        <a href="home.html" class="Home"><img src="assets/nav-home.png" alt="Beranda">Beranda</a>
-        <a href="course.html" class="Course"><img src="assets/nav-course.png" alt="Pelatihan">Pelatihan</a>
-        <a href="pricing.html" class="pricing"><img src="assets/nav-article.png" alt="Pricing">Pricing</a>
+            <a href="index.html" class="nav-link Home"><img src="assets/icon/nav-home.png" alt="Beranda">Beranda</a>
+            <a href="course.html" class="nav-link Course"><img src="assets/icon/nav-course.png" alt="Pelatihan">Pelatihan</a>
+            <a href="pricing.html" class="nav-link pricing-link"><img src="assets/icon/nav-article.png" alt="Pricing">Pricing</a>
         <div class="vertical-line"></div>
-
-        <a href="login.html" class="masuk" id="auth-link"> MASUK </a>
+  
+        <a href="login.html" class="nav-link auth-action" id="auth-link">MASUK</a>
+  
         <div class="dropdown" id="user-dropdown-container" style="display: none;">
-          <a href="#" class="masuk" id="user-nav-trigger">
-            <img src="assets/default_profile_nav.png" alt="User Avatar" id="user-nav-avatar"
-              style="width:20px; height:20px; border-radius:50%; margin-right:5px;">
+          <a href="#" class="nav-link user-nav-trigger" id="user-nav-trigger" aria-haspopup="true" aria-expanded="false" aria-label="User menu">
+            <img src="assets/user/default_profile_nav.png" alt="User Avatar" id="user-nav-avatar" style="width:20px; height:20px; border-radius:50%; margin-right:5px;">
             <span id="user-nav-name">Nama User</span>
-          </a>
-          <div class="dropdown-content">
+            </a>
+          <div class="dropdown-content" id="user-dropdown-menu" aria-labelledby="user-nav-trigger">
             <a href="dashboard.html" id="dashboard-link-nav">Dasbor</a>
             <a href="#" id="logout-link">Logout</a>
           </div>
@@ -53,7 +52,7 @@
   <main class="dashboard-container">
     <aside class="sidebar">
       <div class="card profile-card">
-        <img class="avatar" src="assets/default_profile.png" alt="Foto Profil Pengguna" id="profile-avatar">
+        <img class="avatar" src="assets/user/default_profile_nav.png" alt="Foto Profil Pengguna" id="profile-avatar">
         <div>
           <strong id="profile-name">Nama Pengguna</strong>
           <p id="profile-email">email@example.com</p>
@@ -72,13 +71,12 @@
             </div>
           </div>
           <div class="chart biru">
-            <div class="progress-circle" id="lencana-circle" style="--value: 0;">
+            <div class="progress-circle" id="pelatihan-aktif-circle" style="--value: 0;">
               <div class="circle-text">
-                <strong id="lencana-count-text">0</strong>
-                <p>Lencana</p>
-              </div>
+                <strong id="pelatihan-aktif-count-text">0</strong>
+                <p>Pelatihan Aktif</p> </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
 
@@ -96,7 +94,7 @@
     <section class="main-content">
       <div class="card" id="welcome-sertifikat-card">
         <strong id="welcome-message">Selamat Datang di Dasbor Anda!</strong>
-        <p id="sertifikat-message" style="display:none;">Cek berkala Sertifikatmu! Apakah sudah ditandatangani? Muat
+        <p id="sertifikat-message" style="display:none;">Cek berkala Pelatihanmu! Apakah sudah diselesaikan? Muat
           ulang halaman dasbor-mu <a href="dashboard.html" id="reload-dashboard-link">klik di sini</a></p>
       </div>
 
@@ -124,7 +122,7 @@
       <div class="footer-section">
         <h4 class="footer-title">Menu</h4>
         <ul class="footer-links">
-          <li><a href="home.html">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li><a href="course.html">Pelatihan</a></li>
           <li><a href="pricing.html">Pricing</a></li>
         </ul>
@@ -132,9 +130,9 @@
       <div class="footer-section">
         <h4 class="footer-title">Kenalan dengan kami</h4>
         <ul class="social-links">
-          <li><a href="#"><img src="assets/gmail.png" alt="Gmail">Gmail</a></li>
-          <li><a href="#"><img src="assets/instagram.png" alt="Instagram">Instagram</a></li>
-          <li><a href="#"><img src="assets/facebook.png" alt="Facebook">Facebook</a></li>
+          <li><a href="#"><img src="assets/icon/gmail.png" alt="Gmail">Gmail</a></li>
+          <li><a href="#"><img src="assets/icon/instagram.png" alt="Instagram">Instagram</a></li>
+          <li><a href="#"><img src="assets/icon/facebook.png" alt="Facebook">Facebook</a></li>
         </ul>
       </div>
     </div>

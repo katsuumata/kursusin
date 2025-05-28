@@ -5,7 +5,7 @@
         "price": 599000,
         "originalPrice": null,
         "period": "/3 bln",
-        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "icon": "assets/icon/plan.png",
         "features": [
             {
                 "text": "Tutorial bersih-bersih & perawatan rumah",
@@ -50,7 +50,7 @@
         "price": 999000,
         "originalPrice": 1198000,
         "period": "/6 bln",
-        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "icon": "assets/icon/plan.png",
         "features": [
             {
                 "text": "Tutorial bersih-bersih & perawatan rumah",
@@ -99,7 +99,7 @@
         "price": 1299000,
         "originalPrice": 2396000,
         "period": "/thn",
-        "icon": "assets/3d/3d-casual-life-man-wondering-holding-phone.png",
+        "icon": "assets/icon/plan.png",
         "features": [
             {
                 "text": "Tutorial bersih-bersih & perawatan rumah",

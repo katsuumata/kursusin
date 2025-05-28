@@ -9,7 +9,6 @@ body {
 }
 
 .main {
-    /* This class is not in the register.html, consider removing or adding to HTML */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -17,54 +16,47 @@ body {
 
 .register-container {
     flex: 1;
-    /* Allows main content to fill available space */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem;
+    justify-content: center; /* Horizontally center the illustration and box */
+    align-items: center;    /* Vertically center them */
+    gap: 4rem;              /* Increased gap */
+    padding: 2rem 5%;       /* Padding on container */
     flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
     margin-top: 2rem;
-    /* Add some space from header */
     margin-bottom: 2rem;
-    /* Add some space before footer */
 }
 
 .register-illustration {
-    max-width: 40%;
+    flex-basis: 45%;        /* Illustration takes up about 45% */
+    flex-shrink: 1;
+    flex-grow: 0;
+    max-width: 550px;       /* Max width for the illustration container */
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    /* Prevent illustration from shrinking too much */
 }
 
 .register-illustration img {
-    width: 100%;
-    max-width: 350px;
-    /* Max size of illustration */
+    width: 100%;            /* Image fills its container */
     height: auto;
     object-fit: contain;
 }
 
 .register-box {
+    flex-basis: 35%;        /* Form box takes about 35% */
+    flex-shrink: 1;
+    flex-grow: 0;
+    max-width: 28rem;       /* Keeps the form content itself from becoming too wide */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    /* Take full width on small screens when wrapped */
-    max-width: 28rem;
-    /* Max width for the form and login redirect box */
 }
 
 .register-form {
     width: 100%;
-    /* max-width: 25rem; Handled by .register-box */
     border: 0.1rem solid #ccc;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    /* Increased padding slightly */
     box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
     background: #fff;
     box-sizing: border-box;
@@ -75,14 +67,12 @@ body {
     margin-bottom: 0.5rem;
     text-align: center;
     color: #375a60;
-    /* Match theme color */
     font-size: 1.8em;
 }
 
 .register-form p {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    /* Increased margin */
     text-align: center;
     font-size: 0.9rem;
     color: #555;
@@ -91,7 +81,6 @@ body {
 .register-form label {
     display: block;
     margin-bottom: 0.3rem;
-    /* Consistent margin */
     color: #333;
     font-size: 0.9em;
     font-weight: 500;
@@ -102,31 +91,25 @@ body {
 .register-form input[type="password"],
 .register-form input[type="number"] {
     width: 100%;
-    /* Make input take full width of its container */
     padding: 0.6rem;
-    /* Adjusted padding */
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /* Include padding and border in element's total width and height */
     font-size: 0.95em;
 }
 
 .gender-options {
     display: flex;
     gap: 1.5rem;
-    /* Increased gap */
     margin-bottom: 1rem;
     margin-top: 0.5rem;
-    /* Add some top margin */
 }
 
 .gender-options label {
     font-size: 0.95rem;
     color: #333;
     display: flex;
-    /* Align radio button and text */
     align-items: center;
     cursor: pointer;
 }
@@ -136,7 +119,6 @@ body {
 }
 
 .terms-label {
-    /* Style for the terms and conditions label */
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -154,9 +136,7 @@ body {
     margin-top: 0.5rem;
     width: 100%;
     padding: 0.75rem;
-    /* Increased padding */
     background: #375a60;
-    /* Match theme color */
     color: #fff;
     border: none;
     border-radius: 0.25rem;
@@ -164,12 +144,10 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    /* Smooth transition */
 }
 
 .register-form button[type="submit"]:hover {
     background: #efbf7e;
-    /* Theme accent color */
     color: #375a60;
 }
 
@@ -177,7 +155,6 @@ body {
     text-align: center;
     margin-top: 1.5rem;
     width: 100%;
-    /* max-width: 25rem; Handled by .register-box */
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     padding: 1.25rem;
@@ -188,67 +165,65 @@ body {
 
 .login-redirect-box h2 {
     font-size: 1.1em;
-    /* Adjusted size */
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 1rem;
-    /* Increased margin */
     color: #333;
 }
 
 .login-button {
     margin-top: 0.75rem;
-    /* border: 1px solid #ccc; Removed, button itself will have style */
-    border-radius: 0.5rem;
-    display: inline-block;
-    /* To make it not full width */
+    width: 100%;
     transition: 0.3s all ease;
-    /* Smooth transition */
 }
 
 .login-button a {
-    display: inline-block;
-    padding: 0.6rem 1.5rem;
-    /* Button-like padding */
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
     background-color: #efbf7e;
-    /* Theme accent */
     color: #375a60;
     text-decoration: none;
     border-radius: 0.25rem;
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .login-button a:hover {
     background-color: #375a60;
-    /* Theme main color */
     color: white;
 }
 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .register-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
         gap: 2rem;
         padding: 1.5rem 1rem;
-        /* Adjust padding for smaller screens */
     }
 
     .register-illustration {
-        max-width: 60%;
-        /* Allow illustration to be a bit larger on tablets */
+        max-width: 70%; /* Allow illustration to be reasonably large when stacked */
         margin-bottom: 1rem;
+        flex-basis: auto; /* Reset flex-basis for stacked layout */
     }
 
     .register-box {
-        max-width: 100%;
-        /* Allow form to take full width */
+        max-width: 100%; /* Allow form box to take full width */
+        flex-basis: auto; /* Reset flex-basis */
+        width: 90%; /* Ensure it doesn't touch edges completely */
     }
 }
 
 @media (max-width: 480px) {
     .register-illustration {
         max-width: 80%;
+    }
+    .register-box {
+        width: 100%;
     }
 
     .register-form h2 {
@@ -258,5 +233,10 @@ body {
     .register-form,
     .login-redirect-box {
         padding: 1rem;
+    }
+
+    .register-form button[type="submit"],
+    .login-button a {
+        padding: 0.65rem;
     }
 }

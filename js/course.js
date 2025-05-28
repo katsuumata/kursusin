@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 let starsHTML = '';
                 const rating = course.rating_average ? Math.round(course.rating_average * 2) / 2 : 0;
                 for (let i = 1; i <= 5; i++) {
-                    starsHTML += `<img src="assets/rating_${rating >= i ? 'full' : (rating >= i - 0.5 ? 'half' : 'blank')}.png" alt="Rating Star">`;
+                    starsHTML += `<img src="assets/icon/rating_${rating >= i ? 'full' : (rating >= i - 0.5 ? 'half' : 'blank')}.png" alt="Rating Star">`;
                 }
 
                 const author = allUsers.find(u => u.user_id === course.author_id);

@@ -19,11 +19,11 @@ function showPopup(message, isSuccess, redirectMessage = '', showLoader = false)
 
     // Setup icon and title
     if (isSuccess) {
-        image.src = './assets/check.png'; // Ensure this path is correct relative to HTML file
+        image.src = './assets/icon/check.png'; // Ensure this path is correct relative to HTML file
         image.alt = 'Success';
         title.textContent = 'Berhasil!';
     } else {
-        image.src = './assets/warning.png'; // Ensure this path is correct relative to HTML file
+        image.src = './assets/icon/warning.png'; // Ensure this path is correct relative to HTML file
         image.alt = 'Error';
         title.textContent = 'Terjadi Kesalahan';
     }
@@ -99,10 +99,10 @@ function updateNavbarState() {
         }
 
         if (userNavAvatar) {
-            userNavAvatar.src = loggedInUser.image_url || 'assets/default_profile_nav.png'; // Provide a default nav avatar
+            userNavAvatar.src = loggedInUser.image_url || 'assets/user/default_profile_nav.png'; // Provide a default nav avatar
             userNavAvatar.alt = loggedInUser.name ? `Avatar ${loggedInUser.name}` : 'User Avatar';
             userNavAvatar.onerror = function () {
-                this.src = 'assets/default_profile_nav.png';
+                this.src = 'assets/user/default_profile_nav.png';
                 this.alt = 'Default Avatar';
                 console.warn("User nav avatar failed to load, using default.");
             };
@@ -130,7 +130,7 @@ function updateNavbarState() {
                 }
 
                 setTimeout(() => {
-                    window.location.href = "home.html";
+                    window.location.href = "index.html";
                 }, 2000);
             });
             logoutLink.dataset.listenerAttached = 'true'; // Prevent adding multiple listeners

@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         name: recentlyRegisteredUser.nama,
                         email: recentlyRegisteredUser.email,
                         // image_url might not be in registeredUser from localStorage, add a default
-                        image_url: "assets/default_profile.png"
+                        image_url: "assets/user/default_profile_nav.png"
                     };
                     localStorage.setItem("loggedInUser", JSON.stringify(loggedInUserData));
 

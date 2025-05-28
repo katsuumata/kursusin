@@ -2,61 +2,61 @@
     {
         "category_id": "cat001",
         "name": "Hubungan",
-        "icon_url": "assets/cat_cinta.png"
+        "icon_url": "assets/category/cat_cinta.png"
     },
     {
         "category_id": "cat002",
         "name": "Kesehatan",
-        "icon_url": "assets/cat_kesehatan.png"
+        "icon_url": "assets/category/cat_kesehatan.png"
     },
     {
         "category_id": "cat003",
         "name": "Asuh Anak",
-        "icon_url": "assets/cat_anak.png"
+        "icon_url": "assets/category/cat_anak.png"
     },
     {
         "category_id": "cat004",
         "name": "Teknologi",
-        "icon_url": "assets/cat_elektro.png"
+        "icon_url": "assets/category/cat_elektro.png"
     },
     {
         "category_id": "cat005",
         "name": "Keuangan",
-        "icon_url": "assets/cat_uang.png"
+        "icon_url": "assets/category/cat_uang.png"
     },
     {
         "category_id": "cat006",
         "name": "Otomotif",
-        "icon_url": "assets/cat_bengkel.png"
+        "icon_url": "assets/category/cat_bengkel.png"
     },
     {
         "category_id": "cat007",
         "name": "Bisnis",
-        "icon_url": "https://placehold.co/60x60/EAEAEA/B0B0B0?text=Bisnis"
+        "icon_url": "assets/category/cat_bisnis.png"
     },
     {
         "category_id": "cat008",
         "name": "Hobi",
-        "icon_url": "assets/cat_hobi.png"
+        "icon_url": "assets/category/cat_hobi.png"
     },
     {
         "category_id": "cat009",
         "name": "Rumah Tangga",
-        "icon_url": "assets/cat_taman.png"
+        "icon_url": "assets/category/cat_taman.png"
     },
     {
         "category_id": "cat010",
         "name": "Kuliner",
-        "icon_url": "https://placehold.co/60x60/EAEAEA/B0B0B0?text=Kuliner"
+        "icon_url": "assets/category/cat_kuliner.png"
     },
     {
         "category_id": "cat011",
         "name": "Tukang",
-        "icon_url": "assets/cat_tukang.png"
+        "icon_url": "assets/category/cat_tukang.png"
     },
     {
         "category_id": "cat012",
         "name": "Olahraga",
-        "icon_url": "assets/cat_olahraga.png"
+        "icon_url": "assets/category/cat_olahraga.png"
     }
 ]

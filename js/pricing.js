@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch pricing plans data from plans.json
     async function fetchPricingPlans() {
         try {
-            const response = await fetch('./json/plans.json'); // Assuming plans.json is in a 'data' subdirectory
+            const response = await fetch('./json/plans.json'); // Assuming plans.json is in a 'json' subdirectory
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -10,36 +10,32 @@ document.addEventListener('DOMContentLoaded', function () {
             return plans;
         } catch (error) {
             console.error("Could not fetch pricing plans:", error);
-            // Optionally, display an error message to the user on the page
             const container = document.getElementById('pricing-plans-container');
             if (container) {
                 container.innerHTML = '<p class="error-message">Maaf, terjadi kesalahan saat memuat paket harga. Silakan coba lagi nanti.</p>';
             }
-            return []; // Return an empty array or handle error appropriately
+            return [];
         }
     }
 
     // Guna mengonversi angka menjadi string dengan pemisah ribuan, tanpa Rp.
     function formatCurrency(amount) {
         if (typeof amount !== 'number' || isNaN(amount)) {
-            // console.warn("formatCurrency received invalid value:", amount);
-            return 'N/A'; // Return N/A or some placeholder for invalid amounts
+            return 'N/A';
         }
         return amount.toLocaleString('id-ID');
     }
 
     // Render Pricing Plans
-    // mengambil data paket harga (plans) dan menampilkannya di dalam elemen HTML
     function renderPlans(plans) {
         const container = document.getElementById('pricing-plans-container');
         if (!container) {
             console.error("Pricing plans container tidak ditemukan!");
             return;
         }
-        container.innerHTML = ''; // Clear previous content or loading indicator
+        container.innerHTML = ''; // Clear previous content
 
         if (!plans || plans.length === 0) {
-            // Handle case where no plans are loaded or an error occurred
             container.innerHTML = '<p>Saat ini tidak ada paket harga yang tersedia.</p>';
             return;
         }
@@ -61,23 +57,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 planElement.appendChild(discountBadge);
             }
 
-            // Ikon
             const icon = document.createElement('img');
-            icon.src = plan.icon || 'assets/default-icon.png'; // Fallback icon
+            icon.src = plan.icon || 'assets/icon/plan.png';
             icon.alt = plan.name || 'Paket Harga';
             icon.classList.add('plan-icon');
-            icon.onerror = function () { // Handle broken image links
+            icon.onerror = function () {
                 this.src = 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=Icon';
                 this.alt = 'Ikon tidak tersedia';
             };
             planElement.appendChild(icon);
 
-            // Judul
             const title = document.createElement('h2');
             title.innerHTML = plan.name || 'Nama Paket Tidak Tersedia';
             planElement.appendChild(title);
 
-            // harga
             const priceDiv = document.createElement('div');
             priceDiv.classList.add('price');
 
@@ -106,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             planElement.appendChild(priceDiv);
 
-            // Features
             const featuresList = document.createElement('ul');
             featuresList.classList.add('features-list');
             if (plan.features && Array.isArray(plan.features)) {
@@ -120,34 +112,48 @@ document.addEventListener('DOMContentLoaded', function () {
             planElement.appendChild(featuresList);
 
             // CTA Button
-            const ctaButton = document.createElement('a');
-            // Ensure plan.id and plan.ctaLink are valid before constructing href
-            if (plan.id && plan.ctaLink) {
-                ctaButton.href = `${plan.ctaLink}?planId=${plan.id}`;
-            } else {
-                ctaButton.href = '#'; // Fallback href
-                console.warn(`Plan ID or ctaLink missing for plan: ${plan.name}`);
-            }
+            const ctaButton = document.createElement('a'); // Tetap sebagai <a> untuk styling
             ctaButton.classList.add('cta-button');
             ctaButton.textContent = 'Beli Paket';
-            planElement.appendChild(ctaButton);
+            ctaButton.href = '#'; // Atur href default untuk mencegah navigasi jika JS gagal
 
+            ctaButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Selalu cegah aksi default anchor tag
+
+                // Cek status login. Anda mungkin memiliki cara yang lebih baik di global.js
+                // Untuk contoh ini, kita akan cek keberadaan token di localStorage atau tampilan elemen navigasi.
+                // Asumsi: global.js mengatur tampilan '#user-dropdown-container' saat login
+                const userDropdownContainer = document.getElementById('user-dropdown-container');
+                let isLoggedIn = false;
+                if (userDropdownContainer && userDropdownContainer.style.display !== 'none') {
+                    isLoggedIn = true;
+                }
+                // Alternatif lain, jika Anda menyimpan token:
+                // const userToken = localStorage.getItem('userToken');
+                // if (userToken) {
+                //     isLoggedIn = true;
+                // }
+
+
+                if (isLoggedIn) {
+                    // Pengguna sudah login, arahkan ke link paket
+                    if (plan.id && plan.ctaLink) {
+                        window.location.href = `${plan.ctaLink}?planId=${plan.id}`;
+                    } else {
+                        console.warn(`Plan ID atau ctaLink tidak ada untuk paket: ${plan.name}. Tidak bisa mengarahkan.`);
+                        // Mungkin tampilkan pesan error atau fallback
+                        alert('Detail paket tidak tersedia saat ini. Silakan hubungi dukungan.');
+                    }
+                } else {
+                    // Pengguna belum login, arahkan ke halaman register
+                    // Pastikan Anda memiliki halaman register.html
+                    window.location.href = 'register.html';
+                }
+            });
+
+            planElement.appendChild(ctaButton);
             container.appendChild(planElement);
         });
-
-        // Re-apply the disabling logic after plans are rendered
-        // This part seems to disable buttons after rendering.
-        // If this is intended for a specific state (e.g., user not logged in),
-        // it should ideally be handled with more specific logic.
-        // document.querySelectorAll('.cta-button').forEach(button => {
-        //     button.classList.add('disabled');
-        //     button.removeAttribute('href'); // Removing href makes it non-navigable
-        //     button.style.pointerEvents = 'none';
-        //     button.style.opacity = '0.5';
-        //     // To make it act like a button that can be clicked (e.g., for a popup),
-        //     // you might want to add an event listener instead of removing href.
-        //     // For now, keeping it as per your original logic of disabling.
-        // });
     }
 
     // Main execution: Fetch plans and then render them
@@ -155,6 +161,67 @@ document.addEventListener('DOMContentLoaded', function () {
         const pricingPlansData = await fetchPricingPlans();
         renderPlans(pricingPlansData);
     }
+
+    // --- MODIFIKASI UNTUK TOMBOL HUBUNGI KAMI ---
+    const contactUsButton = document.getElementById('contact-us-popup-trigger');
+    const popupOverlay = document.getElementById('popup-overlay');
+    const popupTitle = document.getElementById('popup-title');
+    const popupMessage = document.getElementById('popup-message');
+    const popupImage = document.getElementById('popup-image');
+    const popupLoader = document.getElementById('popup-loader');
+    const popupRedirectMessage = document.getElementById('popup-redirect-message');
+    const popupOkBtn = document.getElementById('popup-ok-btn'); // Kita tetap ambil referensinya untuk memastikan tetap tersembunyi
+
+    // Variabel kontak (pastikan sudah didefinisikan di scope yang benar, seperti sebelumnya)
+    const whatsappNumber = '6281234567890'; // GANTI DENGAN NOMOR ANDA
+    const whatsappMessage = 'Halo Kursusin, saya ingin bertanya lebih lanjut mengenai layanan Anda.';
+    const emailAddress = 'info@kursusin.com'; // GANTI DENGAN EMAIL ANDA
+    const emailSubject = 'Pertanyaan Mengenai Kursusin';
+    const emailBody = 'Halo Kursusin,\n\nSaya memiliki beberapa pertanyaan:\n\n';
+
+    if (contactUsButton && popupOverlay && popupTitle && popupMessage) { // popupOkBtn tidak wajib ada di sini untuk logika utama
+        contactUsButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Atur konten pop-up "Hubungi Kami"
+            popupTitle.textContent = 'Hubungi Kami';
+            if (popupImage) popupImage.style.display = 'none';
+            if (popupLoader) popupLoader.style.display = 'none';
+            if (popupRedirectMessage) popupRedirectMessage.style.display = 'none';
+
+            popupMessage.innerHTML = `
+                <p>Anda dapat menghubungi kami melalui:</p>
+                <a href="https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}" target="_blank" class="popup-contact-link">
+                    Chat via WhatsApp
+                </a>
+                <a href="mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}" class="popup-contact-link">
+                    Kirim Email
+                </a>
+            `;
+
+            // Pastikan tombol OK/Tutup bawaan tetap tersembunyi untuk pop-up ini
+            if (popupOkBtn) {
+                popupOkBtn.style.display = 'none';
+                popupOkBtn.onclick = null; // Hapus event handler onclick sebelumnya jika ada
+            }
+            
+            // Tampilkan pop-up dengan menambahkan kelas .active
+            popupOverlay.classList.add('active');
+        });
+
+        // Tambahkan event listener pada overlay untuk menutup pop-up saat diklik di luarnya
+        popupOverlay.addEventListener('click', function (event) {
+            // Jika target klik adalah overlay itu sendiri (bagian luar kotak pop-up)
+            if (event.target === popupOverlay) {
+                popupOverlay.classList.remove('active');
+            }
+        });
+
+    } else {
+        console.error("Salah satu elemen penting untuk pop-up kontak (tombol pemicu, overlay, title, message) tidak ditemukan! Periksa ID di HTML.");
+    }
+
+    // --- AKHIR MODIFIKASI UNTUK TOMBOL HUBUNGI KAMI ---
 
     initPricingPage();
 

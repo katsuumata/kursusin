@@ -256,5 +256,563 @@
         "course_id": "course012",
         "module_title": "Modul 2 - Perawatan Organik & Panen",
         "order": 3
-    }
+    },
+    {
+    "module_id": "mod013_01",
+    "course_id": "course013",
+    "module_title": "Pengantar: Apa Itu Mendengar Aktif?",
+    "order": 1
+  },
+  {
+    "module_id": "mod013_02",
+    "course_id": "course013",
+    "module_title": "Modul 1 - Teknik Parafrase dan Validasi Perasaan",
+    "order": 2
+  },
+  {
+    "module_id": "mod013_03",
+    "course_id": "course013",
+    "module_title": "Modul 2 - Menghindari Hambatan Komunikasi Umum",
+    "order": 3
+  },
+  {
+    "module_id": "mod013_04",
+    "course_id": "course013",
+    "module_title": "Modul 3 - Studi Kasus: Menerapkan Mendengar Aktif",
+    "order": 4
+  },
+  {
+    "module_id": "mod014_01",
+    "course_id": "course014",
+    "module_title": "Pendahuluan: Romantis Tak Harus Mahal",
+    "order": 1
+  },
+  {
+    "module_id": "mod014_02",
+    "course_id": "course014",
+    "module_title": "Modul 1 - Ide Kencan Kreatif di Ruang Tamu",
+    "order": 2
+  },
+  {
+    "module_id": "mod014_03",
+    "course_id": "course014",
+    "module_title": "Modul 2 - Resep Kilat Makan Malam Romantis",
+    "order": 3
+  },
+  {
+    "module_id": "mod014_04",
+    "course_id": "course014",
+    "module_title": "Modul 3 - Tips Dekorasi dan Playlist Pendukung Suasana",
+    "order": 4
+  },
+  {
+    "module_id": "mod015_01",
+    "course_id": "course015",
+    "module_title": "Pentingnya Olahraga Rutin untuk Bapak Sibuk",
+    "order": 1
+  },
+  {
+    "module_id": "mod015_02",
+    "course_id": "course015",
+    "module_title": "Modul 1 - Gerakan Pemanasan & Pendinginan Efektif",
+    "order": 2
+  },
+  {
+    "module_id": "mod015_03",
+    "course_id": "course015",
+    "module_title": "Modul 2 - Program Latihan Inti 15 Menit (Video Tutorial)",
+    "order": 3
+  },
+  {
+    "module_id": "mod015_04",
+    "course_id": "course015",
+    "module_title": "Modul 3 - Menjaga Konsistensi & Motivasi Berolahraga",
+    "order": 4
+  },
+  {
+    "module_id": "mod016_01",
+    "course_id": "course016",
+    "module_title": "Pengenalan Diabetes: Faktor Risiko pada Pria",
+    "order": 1
+  },
+  {
+    "module_id": "mod016_02",
+    "course_id": "course016",
+    "module_title": "Modul 1 - Mengenali Gejala Awal & Tes Gula Darah",
+    "order": 2
+  },
+  {
+    "module_id": "mod016_03",
+    "course_id": "course016",
+    "module_title": "Modul 2 - Panduan Pola Makan Sehat Pencegah Diabetes",
+    "order": 3
+  },
+  {
+    "module_id": "mod017_01",
+    "course_id": "course017",
+    "module_title": "Peran Ayah dalam Pembelajaran Jarak Jauh (PJJ)",
+    "order": 1
+  },
+  {
+    "module_id": "mod017_02",
+    "course_id": "course017",
+    "module_title": "Modul 1 - Menciptakan Ruang Belajar Kondusif di Rumah",
+    "order": 2
+  },
+  {
+    "module_id": "mod017_03",
+    "course_id": "course017",
+    "module_title": "Modul 2 - Strategi Mengatasi Distraksi & Menjaga Fokus Anak",
+    "order": 3
+  },
+  {
+    "module_id": "mod017_04",
+    "course_id": "course017",
+    "module_title": "Modul 3 - Komunikasi Efektif dengan Anak & Guru",
+    "order": 4
+  },
+  {
+    "module_id": "mod017_05",
+    "course_id": "course017",
+    "module_title": "Studi Kasus: Mengatasi Tantangan PJJ Spesifik",
+    "order": 5
+  },
+  {
+    "module_id": "mod018_01",
+    "course_id": "course018",
+    "module_title": "Pentingnya Ikatan Ayah dan Anak Laki-Laki",
+    "order": 1
+  },
+  {
+    "module_id": "mod018_02",
+    "course_id": "course018",
+    "module_title": "Modul 1 - Ide Hobi Outdoor: Petualangan & Olahraga",
+    "order": 2
+  },
+  {
+    "module_id": "mod018_03",
+    "course_id": "course018",
+    "module_title": "Modul 2 - Ide Hobi Indoor: Merakit, Game Edukatif, Memasak",
+    "order": 3
+  },
+  {
+    "module_id": "mod018_04",
+    "course_id": "course018",
+    "module_title": "Modul 3 - Membangun Komunikasi Terbuka Lewat Hobi",
+    "order": 4
+  },
+  {
+    "module_id": "mod019_01",
+    "course_id": "course019",
+    "module_title": "Ancaman Siber di Era Digital: Pengantar",
+    "order": 1
+  },
+  {
+    "module_id": "mod019_02",
+    "course_id": "course019",
+    "module_title": "Modul 1 - Membuat Kata Sandi Kuat & Manajemen Password",
+    "order": 2
+  },
+  {
+    "module_id": "mod019_03",
+    "course_id": "course019",
+    "module_title": "Modul 2 - Mengenali Phishing & Melindungi dari Malware",
+    "order": 3
+  },
+  {
+    "module_id": "mod019_04",
+    "course_id": "course019",
+    "module_title": "Modul 3 - Pengaturan Privasi di Media Sosial & Backup Data",
+    "order": 4
+  },
+  {
+    "module_id": "mod020_01",
+    "course_id": "course020",
+    "module_title": "Dasar-Dasar YouTube: Membuat Akun & Channel",
+    "order": 1
+  },
+  {
+    "module_id": "mod020_02",
+    "course_id": "course020",
+    "module_title": "Modul 1 - Menentukan Ide & Tema Konten Keluarga",
+    "order": 2
+  },
+  {
+    "module_id": "mod020_03",
+    "course_id": "course020",
+    "module_title": "Modul 2 - Teknik Merekam & Editing Video dengan Smartphone",
+    "order": 3
+  },
+  {
+    "module_id": "mod020_04",
+    "course_id": "course020",
+    "module_title": "Modul 3 - Upload, Thumbnail, dan Etika Bermedia",
+    "order": 4
+  },
+  {
+    "module_id": "mod020_05",
+    "course_id": "course020",
+    "module_title": "Tips & Trik: Menambah Penonton Secara Organik",
+    "order": 5
+  },
+  {
+    "module_id": "mod021_01",
+    "course_id": "course021",
+    "module_title": "Pengantar: Pentingnya Anggaran Rumah Tangga",
+    "order": 1
+  },
+  {
+    "module_id": "mod021_02",
+    "course_id": "course021",
+    "module_title": "Modul 1 - Prinsip Metode Amplop (Fisik & Digital)",
+    "order": 2
+  },
+  {
+    "module_id": "mod021_03",
+    "course_id": "course021",
+    "module_title": "Modul 2 - Aplikasi Budgeting & Template Spreadsheet",
+    "order": 3
+  },
+  {
+    "module_id": "mod021_04",
+    "course_id": "course021",
+    "module_title": "Modul 3 - Disiplin Pencatatan & Evaluasi Anggaran",
+    "order": 4
+  },
+  {
+    "module_id": "mod022_01",
+    "course_id": "course022",
+    "module_title": "Apa itu Reksa Dana? Pengenalan untuk Pemula",
+    "order": 1
+  },
+  {
+    "module_id": "mod022_02",
+    "course_id": "course022",
+    "module_title": "Modul 1 - Jenis-Jenis Reksa Dana & Risikonya",
+    "order": 2
+  },
+  {
+    "module_id": "mod022_03",
+    "course_id": "course022",
+    "module_title": "Modul 2 - Memilih Manajer Investasi & Platform Pembelian",
+    "order": 3
+  },
+  {
+    "module_id": "mod023_01",
+    "course_id": "course023",
+    "module_title": "Persiapan Alat & Oli Motor yang Tepat",
+    "order": 1
+  },
+  {
+    "module_id": "mod023_02",
+    "course_id": "course023",
+    "module_title": "Modul 1 - Langkah Aman Mengganti Oli Motor (Video)",
+    "order": 2
+  },
+  {
+    "module_id": "mod023_03",
+    "course_id": "course023",
+    "module_title": "Modul 2 - Memeriksa Level Oli & Jadwal Penggantian",
+    "order": 3
+  },
+  {
+    "module_id": "mod024_01",
+    "course_id": "course024",
+    "module_title": "Alat & Bahan Pembersih Interior Mobil",
+    "order": 1
+  },
+  {
+    "module_id": "mod024_02",
+    "course_id": "course024",
+    "module_title": "Modul 1 - Membersihkan Dashboard & Area Plastik",
+    "order": 2
+  },
+  {
+    "module_id": "mod024_03",
+    "course_id": "course024",
+    "module_title": "Modul 2 - Perawatan Jok Mobil (Kain & Kulit)",
+    "order": 3
+  },
+  {
+    "module_id": "mod024_04",
+    "course_id": "course024",
+    "module_title": "Modul 3 - Menghilangkan Bau & Menjaga Kesegaran Kabin",
+    "order": 4
+  },
+  {
+    "module_id": "mod025_01",
+    "course_id": "course025",
+    "module_title": "Pengantar Bisnis Franchise: Peluang & Risiko",
+    "order": 1
+  },
+  {
+    "module_id": "mod025_02",
+    "course_id": "course025",
+    "module_title": "Modul 1 - Riset & Memilih Franchisor yang Tepat",
+    "order": 2
+  },
+  {
+    "module_id": "mod025_03",
+    "course_id": "course025",
+    "module_title": "Modul 2 - Memahami Perjanjian Waralaba & Aspek Legal",
+    "order": 3
+  },
+  {
+    "module_id": "mod025_04",
+    "course_id": "course025",
+    "module_title": "Modul 3 - Strategi Pemasaran & Operasional Franchise",
+    "order": 4
+  },
+  {
+    "module_id": "mod026_01",
+    "course_id": "course026",
+    "module_title": "Kekuatan Word-of-Mouth Marketing (WOMM)",
+    "order": 1
+  },
+  {
+    "module_id": "mod026_02",
+    "course_id": "course026",
+    "module_title": "Modul 1 - Menciptakan Pengalaman Pelanggan Terbaik",
+    "order": 2
+  },
+  {
+    "module_id": "mod026_03",
+    "course_id": "course026",
+    "module_title": "Modul 2 - Mendorong Testimoni & Program Referral",
+    "order": 3
+  },
+  {
+    "module_id": "mod026_04",
+    "course_id": "course026",
+    "module_title": "Modul 3 - Memanfaatkan Media Sosial untuk WOMM",
+    "order": 4
+  },
+  {
+    "module_id": "mod027_01",
+    "course_id": "course027",
+    "module_title": "Dasar Fotografi Smartphone: Komposisi & Cahaya",
+    "order": 1
+  },
+  {
+    "module_id": "mod027_02",
+    "course_id": "course027",
+    "module_title": "Modul 1 - Teknik Mengambil Foto Landscape yang Dramatis",
+    "order": 2
+  },
+  {
+    "module_id": "mod027_03",
+    "course_id": "course027",
+    "module_title": "Modul 2 - Aplikasi Editing Foto Landscape di HP",
+    "order": 3
+  },
+  {
+    "module_id": "mod028_01",
+    "course_id": "course028",
+    "module_title": "Pengenalan Diorama: Alat, Bahan, dan Inspirasi",
+    "order": 1
+  },
+  {
+    "module_id": "mod028_02",
+    "course_id": "course028",
+    "module_title": "Modul 1 - Teknik Membuat Lanskap Miniatur (Tanah, Rumput, Air)",
+    "order": 2
+  },
+  {
+    "module_id": "mod028_03",
+    "course_id": "course028",
+    "module_title": "Modul 2 - Membuat Detail & Pewarnaan Diorama",
+    "order": 3
+  },
+  {
+    "module_id": "mod028_04",
+    "course_id": "course028",
+    "module_title": "Modul 3 - Studi Kasus: Diorama Tema Alam & Perkotaan",
+    "order": 4
+  },
+  {
+    "module_id": "mod028_05",
+    "course_id": "course028",
+    "module_title": "Tips Finishing & Perawatan Diorama",
+    "order": 5
+  },
+  {
+    "module_id": "mod029_01",
+    "course_id": "course029",
+    "module_title": "Masalah Umum Garasi: Berantakan & Tidak Efisien",
+    "order": 1
+  },
+  {
+    "module_id": "mod029_02",
+    "course_id": "course029",
+    "module_title": "Modul 1 - Teknik Decluttering & Penyortiran Barang di Garasi",
+    "order": 2
+  },
+  {
+    "module_id": "mod029_03",
+    "course_id": "course029",
+    "module_title": "Modul 2 - Solusi Penyimpanan Vertikal & Modular",
+    "order": 3
+  },
+  {
+    "module_id": "mod029_04",
+    "course_id": "course029",
+    "module_title": "Modul 3 - Ide Tata Letak Garasi Multifungsi",
+    "order": 4
+  },
+  {
+    "module_id": "mod030_01",
+    "course_id": "course030",
+    "module_title": "Keuntungan Taman Vertikal di Lahan Sempit",
+    "order": 1
+  },
+  {
+    "module_id": "mod030_02",
+    "course_id": "course030",
+    "module_title": "Modul 1 - Memilih Sistem & Material Taman Vertikal DIY",
+    "order": 2
+  },
+  {
+    "module_id": "mod030_03",
+    "course_id": "course030",
+    "module_title": "Modul 2 - Panduan Menanam & Merawat Tanaman Vertikal",
+    "order": 3
+  },
+  {
+    "module_id": "mod031_01",
+    "course_id": "course031",
+    "module_title": "Pentingnya Sarapan Sehat untuk Produktivitas Bapak",
+    "order": 1
+  },
+  {
+    "module_id": "mod031_02",
+    "course_id": "course031",
+    "module_title": "Modul 1 - Kumpulan Resep Sarapan 15 Menit (Smoothie & Overnight Oats)",
+    "order": 2
+  },
+  {
+    "module_id": "mod031_03",
+    "course_id": "course031",
+    "module_title": "Modul 2 - Resep Sarapan Praktis (Roti Lapis & Telur)",
+    "order": 3
+  },
+  {
+    "module_id": "mod031_04",
+    "course_id": "course031",
+    "module_title": "Modul 3 - Tips Meal Prep Sarapan Mingguan",
+    "order": 4
+  },
+  {
+    "module_id": "mod032_01",
+    "course_id": "course032",
+    "module_title": "Pengenalan Bahan & Alat Membuat Kue Kering",
+    "order": 1
+  },
+  {
+    "module_id": "mod032_02",
+    "course_id": "course032",
+    "module_title": "Modul 1 - Resep & Teknik Membuat Nastar Lumer",
+    "order": 2
+  },
+  {
+    "module_id": "mod032_03",
+    "course_id": "course032",
+    "module_title": "Modul 2 - Resep & Teknik Membuat Kastengel Keju Renyah",
+    "order": 3
+  },
+  {
+    "module_id": "mod032_04",
+    "course_id": "course032",
+    "module_title": "Modul 3 - Resep & Teknik Membuat Putri Salju Lembut",
+    "order": 4
+  },
+  {
+    "module_id": "mod032_05",
+    "course_id": "course032",
+    "module_title": "Tips Anti Gagal & Penyimpanan Kue Kering",
+    "order": 5
+  },
+  {
+    "module_id": "mod033_01",
+    "course_id": "course033",
+    "module_title": "Identifikasi Penyebab Keran Menetes",
+    "order": 1
+  },
+  {
+    "module_id": "mod033_02",
+    "course_id": "course033",
+    "module_title": "Modul 1 - Alat & Langkah Memperbaiki Keran (Video)",
+    "order": 2
+  },
+  {
+    "module_id": "mod033_03",
+    "course_id": "course033",
+    "module_title": "Modul 2 - Mengganti Seal atau Cartridge Keran",
+    "order": 3
+  },
+  {
+    "module_id": "mod034_01",
+    "course_id": "course034",
+    "module_title": "Persiapan Dinding & Pemilihan Wallpaper",
+    "order": 1
+  },
+  {
+    "module_id": "mod034_02",
+    "course_id": "course034",
+    "module_title": "Modul 1 - Teknik Mengukur, Memotong, & Menempel Wallpaper",
+    "order": 2
+  },
+  {
+    "module_id": "mod034_03",
+    "course_id": "course034",
+    "module_title": "Modul 2 - Mengatasi Gelembung & Sambungan Tidak Rapi",
+    "order": 3
+  },
+  {
+    "module_id": "mod035_01",
+    "course_id": "course035",
+    "module_title": "Manfaat Latihan Kekuatan dengan Berat Badan",
+    "order": 1
+  },
+  {
+    "module_id": "mod035_02",
+    "course_id": "course035",
+    "module_title": "Modul 1 - Teknik Dasar Push-up, Squat, Plank, Lunges",
+    "order": 2
+  },
+  {
+    "module_id": "mod035_03",
+    "course_id": "course035",
+    "module_title": "Modul 2 - Program Latihan Mingguan & Variasi Gerakan",
+    "order": 3
+  },
+  {
+    "module_id": "mod035_04",
+    "course_id": "course035",
+    "module_title": "Modul 3 - Pentingnya Form & Progresif Overload",
+    "order": 4
+  },
+  {
+    "module_id": "mod036_01",
+    "course_id": "course036",
+    "module_title": "Jenis-Jenis Sepeda: MTB, Road Bike, Hybrid, Lipat",
+    "order": 1
+  },
+  {
+    "module_id": "mod036_02",
+    "course_id": "course036",
+    "module_title": "Modul 1 - Menentukan Ukuran Frame & Komponen Sesuai Budget",
+    "order": 2
+  },
+  {
+    "module_id": "mod036_03",
+    "course_id": "course036",
+    "module_title": "Modul 2 - Tips Membeli Sepeda Baru vs Bekas",
+    "order": 3
+  },
+  {
+    "module_id": "mod036_04",
+    "course_id": "course036",
+    "module_title": "Modul 3 - Perawatan Dasar Sepeda untuk Pemula",
+    "order": 4
+  } 
 ]

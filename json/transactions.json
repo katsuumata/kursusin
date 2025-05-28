@@ -1,18 +1,162 @@
 [
     {
-        "transaction_id": "trxXYZ",
-        "order_id": "ord123",
+        "transaction_id": "trx001",
+        "order_id": "ord001",
         "payment_method": "transfer",
         "status": "success",
-        "transaction_date": "2025-01-10T10:05:00Z",
-        "payment_details_id": "external_payment_ref_123"
+        "transaction_date": "2025-01-15T10:35:00Z",
+        "payment_details_id": "ext_pay_ref_A1B2C3"
     },
     {
-        "transaction_id": "trxABC",
-        "order_id": "ord124",
+        "transaction_id": "trx002",
+        "order_id": "ord002",
+        "payment_method": "qris",
+        "status": "success",
+        "transaction_date": "2025-02-20T14:05:00Z",
+        "payment_details_id": "qris_trx_X1Y2Z3"
+    },
+    {
+        "transaction_id": "trx003",
+        "order_id": "ord003",
+        "payment_method": "kartu kredit",
+        "status": "success",
+        "transaction_date": "2025-03-01T09:20:00Z",
+        "payment_details_id": "cc_auth_P4Q5R6"
+    },
+    {
+        "transaction_id": "trx004",
+        "order_id": "ord004",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-04-05T16:50:00Z",
+        "payment_details_id": "ext_pay_ref_D7E8F9"
+    },
+    {
+        "transaction_id": "trx005",
+        "order_id": "ord005",
+        "payment_method": "e-wallet",
+        "status": "success",
+        "transaction_date": "2025-05-10T11:25:00Z",
+        "payment_details_id": "ewallet_trx_G0H1I2"
+    },
+    {
+        "transaction_id": "trx006",
+        "order_id": "ord006",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-01-25T08:05:00Z",
+        "payment_details_id": "ext_pay_ref_J3K4L5"
+    },
+    {
+        "transaction_id": "trx007",
+        "order_id": "ord007",
+        "payment_method": "kartu kredit",
+        "status": "success",
+        "transaction_date": "2025-03-12T13:05:00Z",
+        "payment_details_id": "cc_auth_M6N7O8"
+    },
+    {
+        "transaction_id": "trx008",
+        "order_id": "ord008",
+        "payment_method": "qris",
+        "status": "success",
+        "transaction_date": "2025-04-20T17:35:00Z",
+        "payment_details_id": "qris_trx_P9Q0R1"
+    },
+    {
+        "transaction_id": "trx009",
+        "order_id": "ord009",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-02-18T10:50:00Z",
+        "payment_details_id": "ext_pay_ref_S2T3U4"
+    },
+    {
+        "transaction_id": "trx010",
+        "order_id": "ord010",
+        "payment_method": "e-wallet",
+        "status": "success",
+        "transaction_date": "2025-01-01T09:05:00Z",
+        "payment_details_id": "ewallet_trx_V5W6X7"
+    },
+    {
+        "transaction_id": "trx011",
+        "order_id": "ord011",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-03-05T15:05:00Z",
+        "payment_details_id": "ext_pay_ref_Y8Z9A0"
+    },
+    {
+        "transaction_id": "trx012",
+        "order_id": "ord012",
         "payment_method": "qris",
         "status": "pending",
-        "transaction_date": "2025-05-20T11:02:00Z",
+        "transaction_date": "2025-04-10T11:02:00Z",
         "payment_details_id": null
+    },
+    {
+        "transaction_id": "trx013",
+        "order_id": "ord013",
+        "payment_method": "kartu kredit",
+        "status": "success",
+        "transaction_date": "2025-05-01T14:15:00Z",
+        "payment_details_id": "cc_auth_B1C2D3"
+    },
+    {
+        "transaction_id": "trx014",
+        "order_id": "ord014",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-02-08T09:45:00Z",
+        "payment_details_id": "ext_pay_ref_E4F5G6"
+    },
+    {
+        "transaction_id": "trx015",
+        "order_id": "ord015",
+        "payment_method": "e-wallet",
+        "status": "success",
+        "transaction_date": "2025-03-25T12:05:00Z",
+        "payment_details_id": "ewallet_trx_H7I8J9"
+    },
+    {
+        "transaction_id": "trx016",
+        "order_id": "ord016",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-01-20T18:05:00Z",
+        "payment_details_id": "ext_pay_ref_K0L1M2"
+    },
+    {
+        "transaction_id": "trx017",
+        "order_id": "ord017",
+        "payment_method": "kartu kredit",
+        "status": "success",
+        "transaction_date": "2025-04-01T11:35:00Z",
+        "payment_details_id": "cc_auth_N3O4P5"
+    },
+    {
+        "transaction_id": "trx018",
+        "order_id": "ord018",
+        "payment_method": "qris",
+        "status": "success",
+        "transaction_date": "2025-05-02T09:05:00Z",
+        "payment_details_id": "qris_trx_Q6R7S8"
+    },
+    {
+        "transaction_id": "trx019",
+        "order_id": "ord019",
+        "payment_method": "transfer",
+        "status": "success",
+        "transaction_date": "2025-02-14T14:05:00Z",
+        "payment_details_id": "ext_pay_ref_T9U0V1"
+    },
+    {
+        "transaction_id": "trx020",
+        "order_id": "ord020",
+        "payment_method": "e-wallet",
+        "status": "success",
+        "transaction_date": "2025-03-08T10:05:00Z",
+        "payment_details_id": "ewallet_trx_W2X3Y4"
     }
 ]
