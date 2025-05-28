@@ -355,87 +355,155 @@
     cursor: pointer;
 }
 
-@media(max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .search-box {
-        min-width: 250px;
+        min-width: 15.65rem;
     }
 
     .listcourse {
-        padding: 30px 15px;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
+        padding: 1.85rem 0.95rem;
+        grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+        gap: 1.25rem;
     }
 }
 
-@media(max-width:768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .search-box {
+        min-width: 15.65rem;
+    }
+
+    .listcourse {
+        padding: 3rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+        gap: 2rem;
+    }
+
     .course-pencarian {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px 15px;
+        flex-wrap: wrap;
+        gap: 0.95rem;
+        padding: 0.65rem 0.95rem;
     }
 
     .search-box {
         width: 100%;
         margin-right: 0;
+        min-width: auto;
     }
 
-    .search-wrap {
-        height: 50px;
-    }
-
-    .search-wrap input[type="text"]::placeholder {
+    .filter-box,
+    .reset-box {
+        width: 100%;
+        min-width: auto;
+        height: 3.15rem;
         font-size: 0.9em;
+        margin: 0;
+    }
+
+    .course-pencarian>button:nth-of-type(1) {
+        margin-right: 2%;
+        margin-left: 0;
+    }
+
+    .course-pencarian>button:nth-of-type(2) {
+        margin-left: 2%;
+        margin-right: 0;
+    }
+
+    .info-pelatihan {
+        font-size: 0.9em;
+        margin-top: 0.95rem;
+    }
+
+    .listcourse {
+        padding: 1.85rem 0.65rem;
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        gap: 0.95rem;
+    }
+
+    .course-content {
+        padding: 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    .course-star img {
+        width: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-box {
+        min-width: 15.65rem;
+    }
+
+    .listcourse {
+        padding: 1.85rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+        gap: 2rem;
+    }
+
+    .course-pencarian {
+        flex-wrap: wrap;
+        gap: 0.95rem;
+        padding: 0.65rem 0.95rem;
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-right: 0;
+        min-width: auto;
     }
 
     .filter-box,
     .reset-box {
         width: 48%;
         min-width: auto;
-        height: 50px;
+        height: 3.15rem;
         font-size: 0.9em;
+        margin: 0;
     }
 
     .course-pencarian>button:nth-of-type(1) {
         margin-right: 2%;
+        margin-left: 0;
     }
 
     .course-pencarian>button:nth-of-type(2) {
         margin-left: 2%;
+        margin-right: 0;
     }
 
     .info-pelatihan {
         font-size: 0.9em;
-        margin-top: 15px;
+        margin-top: 0.95rem;
     }
 
     .listcourse {
-        padding: 30px 10px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
+        padding: 1.85rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        gap: 3rem;
     }
 
     .course-content {
-        padding: 10px;
+        padding: 0.65rem;
         font-size: 0.9rem;
     }
 
     .course-star img {
-        width: 10px;
+        width: 0.65rem;
     }
-}
 
-@media(max-width:480px) {
     .part-pencarian {
         min-height: auto;
     }
 
     .course-judul {
         font-size: 1.2em;
-        padding: 20px 15px 10px 15px;
+        padding: 1.25rem 0.95rem 0.65rem 0.95rem;
     }
 
     .search-wrap {
-        height: 45px;
+        height: 2.85rem;
     }
 
     .search-wrap input[type="text"]::placeholder {
@@ -443,19 +511,19 @@
     }
 
     .search-wrap img {
-        width: 20px;
+        width: 1.25rem;
     }
 
     .filter-box,
     .reset-box {
         width: 100%;
-        height: 45px;
-        margin: 5px 0;
+        height: 2.85rem;
+        margin: 0.35rem 0;
     }
 
     .course-pencarian>button:nth-of-type(1),
     .course-pencarian>button:nth-of-type(2) {
-        margin: 5px 0;
+        margin: 0.35rem 0;
     }
 
     .filter-box span,
@@ -465,27 +533,27 @@
 
     .filter-box,
     .reset-box {
-        min-width: 45px;
-        padding: 0 10px;
+        min-width: 2.85rem;
+        padding: 0 0.65rem;
     }
 
     .info-pelatihan {
         font-size: 0.8em;
-        margin-top: 10px;
+        margin-top: 0.65rem;
     }
 
     .listcourse {
-        padding: 20px 10px;
+        padding: 1.5rem 2rem;
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 2rem;
     }
 
     .course-content {
-        padding: 12px;
+        padding: 0.75rem;
         font-size: 0.9rem;
     }
 
     .course-star img {
-        width: 10px;
+        width: 0.65rem;
     }
 }

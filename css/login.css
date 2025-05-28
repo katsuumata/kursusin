@@ -1,7 +1,4 @@
-/* Inherits general styles from style.css */
-
 body {
-    /* background-image is set in login.html inline style, can be moved here if preferred */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -10,36 +7,37 @@ body {
 .login-container {
     flex: 1;
     display: flex;
-    justify-content: center; /* Horizontally center the illustration and box */
-    align-items: center;    /* Vertically center them */
-    gap: 4rem;              /* Increased gap between illustration and box */
-    padding: 2rem 5%;       /* Padding on container (e.g., 5% horizontal) */
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 5%;
     flex-wrap: wrap;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .login-illustration {
-    flex-basis: 45%;        /* Illustration takes up about 45% of available space */
+    flex-basis: 45%;
     flex-shrink: 1;
-    flex-grow: 0;           /* Don't let it grow beyond its basis excessively */
-    max-width: 550px;       /* Max width for the illustration container */
+    flex-grow: 0;
+    max-width: 34.35rem;
+    /* 550px */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .login-illustration img {
-    width: 100%;            /* Image fills its container */
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
 
 .login-box {
-    flex-basis: 35%;        /* Form box takes about 35% */
+    flex-basis: 35%;
     flex-shrink: 1;
     flex-grow: 0;
-    max-width: 26rem;       /* Keeps the form content itself from becoming too wide */
+    max-width: 26rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,8 +45,10 @@ body {
 
 .login-form-container {
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
+    border: 0.05rem solid #ccc;
+    /* 1px */
+    border-radius: 0.55rem;
+    /* 0.5rem */
     padding: 1.5rem;
     box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
     background: #fff;
@@ -65,7 +65,7 @@ body {
 
 #login-form label {
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.35rem;
     color: #333;
     font-size: 0.9em;
     font-weight: 500;
@@ -74,10 +74,10 @@ body {
 #login-form input[type="email"],
 #login-form input[type="password"] {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.65rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     font-size: 0.95em;
 }
@@ -102,7 +102,7 @@ body {
 }
 
 .options .remember-me-label input[type="checkbox"] {
-    margin-right: 0.4rem;
+    margin-right: 0.45rem;
 }
 
 .options a.forgot {
@@ -138,10 +138,10 @@ body {
     text-align: center;
     margin-top: 1.5rem;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.55rem;
     padding: 1.25rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.1);
     background: #fff;
     box-sizing: border-box;
 }
@@ -179,31 +179,69 @@ body {
     color: white;
 }
 
-/* Responsive for layar kecil */
-@media (max-width: 768px) {
+/* MEDIA QUERIES */
+/* Tablet Besar */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
     .login-container {
-        flex-direction: column; /* Stack elements vertically */
-        gap: 2rem;
-        padding: 1.5rem 1rem; /* Adjust padding for smaller screens */
+        gap: 3rem;
     }
 
     .login-illustration {
-        max-width: 70%;  /* Allow illustration to be reasonably large when stacked */
-        margin-bottom: 1rem;
-        flex-basis: auto; /* Reset flex-basis for stacked layout */
+        max-width: 31.25rem;
     }
 
     .login-box {
-        max-width: 100%; /* Allow form box to take full width */
-        flex-basis: auto; /* Reset flex-basis */
-        width: 90%; /* Ensure it doesn't touch edges completely */
+        max-width: 25rem;
     }
 }
 
-@media (max-width: 480px) {
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .login-illustration {
+        max-width: 70%;
+        margin-bottom: 1rem;
+        flex-basis: auto;
+    }
+
+    .login-box {
+        max-width: 100%;
+        flex-basis: auto;
+        width: 90%;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+
+    .login-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .login-illustration {
+        max-width: 70%;
+        margin-bottom: 1rem;
+        flex-basis: auto;
+    }
+
+    .login-box {
+        max-width: 100%;
+        flex-basis: auto;
+        width: 90%;
+    }
+
     .login-illustration {
         max-width: 80%;
     }
+
     .login-box {
         width: 100%;
     }

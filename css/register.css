@@ -1,11 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Fallback font */
 }
 
 .main {
@@ -17,36 +14,36 @@ body {
 .register-container {
     flex: 1;
     display: flex;
-    justify-content: center; /* Horizontally center the illustration and box */
-    align-items: center;    /* Vertically center them */
-    gap: 4rem;              /* Increased gap */
-    padding: 2rem 5%;       /* Padding on container */
+    justify-content: center;
+    align-items: center;
+    gap: 4.05rem;
+    padding: 2.05rem 5%;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2.05rem;
+    margin-bottom: 2.05rem;
 }
 
 .register-illustration {
-    flex-basis: 45%;        /* Illustration takes up about 45% */
+    flex-basis: 45%;
     flex-shrink: 1;
     flex-grow: 0;
-    max-width: 550px;       /* Max width for the illustration container */
+    max-width: 34.35rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .register-illustration img {
-    width: 100%;            /* Image fills its container */
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
 
 .register-box {
-    flex-basis: 35%;        /* Form box takes about 35% */
+    flex-basis: 35%;
     flex-shrink: 1;
     flex-grow: 0;
-    max-width: 28rem;       /* Keeps the form content itself from becoming too wide */
+    max-width: 28.05rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,9 +51,9 @@ body {
 
 .register-form {
     width: 100%;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
+    border: 0.15rem solid #ccc;
+    border-radius: 0.55rem;
+    padding: 1.55rem;
     box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
     background: #fff;
     box-sizing: border-box;
@@ -80,7 +77,7 @@ body {
 
 .register-form label {
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.35rem;
     color: #333;
     font-size: 0.9em;
     font-weight: 500;
@@ -91,10 +88,10 @@ body {
 .register-form input[type="password"],
 .register-form input[type="number"] {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.65rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     font-size: 0.95em;
 }
@@ -131,7 +128,6 @@ body {
     margin-right: 0.5rem;
 }
 
-
 .register-form button[type="submit"] {
     margin-top: 0.5rem;
     width: 100%;
@@ -155,10 +151,10 @@ body {
     text-align: center;
     margin-top: 1.5rem;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.55rem;
     padding: 1.25rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.1);
     background: #fff;
     box-sizing: border-box;
 }
@@ -197,31 +193,63 @@ body {
     color: white;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .register-container {
-        flex-direction: column; /* Stack elements vertically */
-        gap: 2rem;
-        padding: 1.5rem 1rem;
+        gap: 3.05rem;
     }
 
     .register-illustration {
-        max-width: 70%; /* Allow illustration to be reasonably large when stacked */
-        margin-bottom: 1rem;
-        flex-basis: auto; /* Reset flex-basis for stacked layout */
+        max-width: 31.25rem;
     }
 
     .register-box {
-        max-width: 100%; /* Allow form box to take full width */
-        flex-basis: auto; /* Reset flex-basis */
-        width: 90%; /* Ensure it doesn't touch edges completely */
+        max-width: 25.05rem;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+        gap: 2.05rem;
+        padding: 1.55rem 1.05rem;
+    }
+
+    .register-illustration {
+        max-width: 70%;
+        margin-bottom: 1.05rem;
+        flex-basis: auto;
+    }
+
+    .register-box {
+        max-width: 100%;
+        flex-basis: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .register-container {
+        flex-direction: column;
+        gap: 2.05rem;
+        padding: 1.55rem 1.05rem;
+    }
+
+    .register-illustration {
+        max-width: 70%;
+        margin-bottom: 1.05rem;
+        flex-basis: auto;
+    }
+
+    .register-box {
+        max-width: 100%;
+        flex-basis: auto;
+        width: 90%;
+    }
+
     .register-illustration {
         max-width: 80%;
     }
+
     .register-box {
         width: 100%;
     }
@@ -232,7 +260,7 @@ body {
 
     .register-form,
     .login-redirect-box {
-        padding: 1rem;
+        padding: 1.05rem;
     }
 
     .register-form button[type="submit"],
