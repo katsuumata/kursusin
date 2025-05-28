@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             const response = await fetch(JSON_USERS_PATH);
             if (!response.ok) {
-                // If users.json doesn't exist or network error, assume no users yet for this simulation
                 if (response.status === 404) {
                     console.warn("users.json not found. Starting with an empty user list for checks.");
                     return [];
@@ -17,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
             return await response.json();
         } catch (error) {
             console.error("Could not fetch users.json:", error);
-            // In a real app, you might want to prevent registration if this check fails.
-            // For simulation, we can proceed but email uniqueness won't be guaranteed against a "DB".
-            return []; // Return empty array to allow registration but log error
+
+            return [];
         }
     }
 
@@ -27,19 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     function generateUserId(existingUsers) {
         let newIdNum = 1;
         if (existingUsers && existingUsers.length > 0) {
-            // Find the highest numeric part of existing user_ids like "userXXX"
             const maxIdNum = existingUsers.reduce((max, user) => {
                 const numPart = parseInt(user.user_id.replace(/[^0-9]/g, ''), 10);
                 return numPart > max ? numPart : max;
             }, 0);
             newIdNum = maxIdNum + 1;
         }
-        // Pad with leading zeros if needed, e.g., user001, user010, user100
         return `user${String(newIdNum).padStart(3, '0')}`;
     }
 
 
-    form.addEventListener("submit", async function (e) { // Made async for await fetchUsers
+    form.addEventListener("submit", async function (e) {
         e.preventDefault();
         console.log("Register form submitted.");
 
@@ -107,31 +103,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("All client-side validations passed.");
 
-        // Simulate creating a new user object for the "database"
         const newUserId = generateUserId(existingUsers);
         const newUserForDb = {
             user_id: newUserId,
             name: nama,
             email: email,
-            password_hash: `simulated_hash_for_${password}`, // IMPORTANT: NEVER store plain passwords
+            password_hash: `simulated_hash_for_${password}`,
             age: usia,
             gender: gender,
-            image_url: "assets/user/default_profile_nav.png" // Default profile image
+            image_url: "assets/user/default_profile_nav.png"
         };
 
         console.log("New user data that WOULD be added to users.json:", newUserForDb);
-        // In a real app, this newUserForDb object would be sent to a backend server.
-        // The server would then handle secure password hashing and database insertion.
 
-        // For client-side simulation and immediate use (e.g., pre-filling login):
-        const userForLocalStorage = { // Storing less sensitive info or what's needed immediately
-            user_id: newUserId, // Good to have for consistency
+
+        const userForLocalStorage = {
+            user_id: newUserId,
             nama: nama,
             email: email,
-            // DO NOT store plain password in localStorage for long term or if other scripts might access it carelessly.
-            // For this specific flow where it redirects to login, it might be okay if login page clears it.
-            // However, it's better practice to not store it even temporarily if avoidable.
-            // password: password // Original script had this. Consider implications.
+            password: password,
         };
         localStorage.setItem("registeredUser", JSON.stringify(userForLocalStorage));
         console.log("User data saved to localStorage for potential login prefill:", userForLocalStorage);

@@ -12,18 +12,17 @@ function showPopup(message, isSuccess, redirectMessage = '', showLoader = false)
     // Ensure all essential popup elements exist before proceeding
     if (!overlay || !box || !image || !title || !messageEl || !redirectMsgEl || !loader || !okBtn) {
         console.error("Popup elements (or one of their IDs: popup-overlay, popup-box, popup-image, popup-title, popup-message, popup-redirect-message, popup-loader, popup-ok-btn) not found on the current page. Please ensure the HTML structure for the popup is correct.");
-        // Fallback to a simple alert if popup elements are missing
         alert(message + (redirectMessage ? `\n${redirectMessage}` : ''));
         return;
     }
 
     // Setup icon and title
     if (isSuccess) {
-        image.src = './assets/icon/check.png'; // Ensure this path is correct relative to HTML file
+        image.src = './assets/icon/check.png';
         image.alt = 'Success';
         title.textContent = 'Berhasil!';
     } else {
-        image.src = './assets/icon/warning.png'; // Ensure this path is correct relative to HTML file
+        image.src = './assets/icon/warning.png';
         image.alt = 'Error';
         title.textContent = 'Terjadi Kesalahan';
     }

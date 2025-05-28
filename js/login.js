@@ -102,34 +102,38 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.warn("Login failed: Email not found:", emailInput);
                 // Check if this email was the one just registered and stored in localStorage
-                const recentlyRegisteredUser = JSON.parse(localStorage.getItem("registeredUser"));
-                if (recentlyRegisteredUser && emailInput === recentlyRegisteredUser.email && passwordInput === recentlyRegisteredUser.password) {
-                    // This case handles if users.json hasn't "updated" yet in our simulation
-                    // but the user just registered.
-                    console.log("Login successful for recently registered user (from localStorage):", recentlyRegisteredUser.nama);
-                    showPopup(`Selamat datang, ${recentlyRegisteredUser.nama}! Anda berhasil login.`, true, "Mengalihkan ke dasbor...", true);
+                const recentlyRegisteredUserJSON = localStorage.getItem("registeredUser"); // Ambil JSON string
+                if (recentlyRegisteredUserJSON) {
+                    const recentlyRegisteredUser = JSON.parse(recentlyRegisteredUserJSON); // Parse JSON
 
-                    const loggedInUserData = {
-                        user_id: recentlyRegisteredUser.user_id || `temp_${Date.now()}`, // Use ID if available
-                        name: recentlyRegisteredUser.nama,
-                        email: recentlyRegisteredUser.email,
-                        // image_url might not be in registeredUser from localStorage, add a default
-                        image_url: "assets/user/default_profile_nav.png"
-                    };
-                    localStorage.setItem("loggedInUser", JSON.stringify(loggedInUserData));
+                    // UBAH INI: Bandingkan dengan password yang disimpan
+                    if (recentlyRegisteredUser && emailInput === recentlyRegisteredUser.email && passwordInput === recentlyRegisteredUser.password) { // <-- PERBAIKI INI
+                        // This case handles if users.json hasn't "updated" yet in our simulation
+                        // but the user just registered.
+                        console.log("Login successful for recently registered user (from localStorage):", recentlyRegisteredUser.nama);
+                        showPopup(`Selamat datang, ${recentlyRegisteredUser.nama}! Anda berhasil login.`, true, "Mengalihkan ke dasbor...", true);
 
-                    if (rememberMeChecked) {
-                        localStorage.setItem("rememberedEmail", emailInput);
+                        const loggedInUserData = {
+                            user_id: recentlyRegisteredUser.user_id || `temp_${Date.now()}`,
+                            name: recentlyRegisteredUser.nama,
+                            email: recentlyRegisteredUser.email,
+                            image_url: "assets/user/default_profile_nav.png"
+                        };
+                        localStorage.setItem("loggedInUser", JSON.stringify(loggedInUserData));
+
+                        if (rememberMeChecked) {
+                            localStorage.setItem("rememberedEmail", emailInput);
+                        } else {
+                            localStorage.removeItem("rememberedEmail");
+                        }
+                        localStorage.removeItem("registeredUser");
+
+                        setTimeout(() => {
+                            window.location.href = "dashboard.html";
+                        }, 2000);
                     } else {
-                        localStorage.removeItem("rememberedEmail");
+                        showPopup("Email atau kata sandi salah, atau akun tidak ditemukan.", false);
                     }
-                    localStorage.removeItem("registeredUser");
-
-                    setTimeout(() => {
-                        window.location.href = "dashboard.html";
-                    }, 2000);
-                } else {
-                    showPopup("Email atau kata sandi salah, atau akun tidak ditemukan.", false);
                 }
             }
         });
