@@ -12,7 +12,11 @@ html {
 
 body {
     overflow-x: hidden;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url(../assets/banner/background.avif);
+    min-height: 100vh;
 }
+
 
 /* FONT POPPINS */
 .thin-text {
@@ -58,7 +62,6 @@ header {
 }
 
 .page-tittle {
-    /* This is an <a> tag in the HTML */
     color: white;
     margin-left: 20px;
     display: flex;
@@ -68,7 +71,6 @@ header {
 .line-nav {
     background-color: #efbf7e;
     height: 5%;
-    /* This is 5% of the header's height (5rem), so 0.25rem or 4px. */
 }
 
 .menu {
@@ -81,7 +83,6 @@ header {
 }
 
 .menu a {
-    /* General style for links within .menu */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,13 +101,11 @@ header {
 }
 
 .page-tittle img {
-    /* Logo image */
     width: 10rem;
     height: auto;
 }
 
 .menu a:hover {
-    /* padding: 10px; already defined in .menu a */
     color: #375a60;
     background-color: #efbf7e;
     border-bottom: 3px solid white;
@@ -115,12 +114,10 @@ header {
 }
 
 .masuk {
-    /* Specific style for "MASUK" button/link */
     padding: 10px;
     color: #375a60;
     background-color: #efbf7e;
     border-bottom: 3px solid orange;
-    /* Consider using a hex color for 'orange' for consistency */
     border-radius: 10px;
     font-weight: bold;
     transform: scale(1);
@@ -133,26 +130,20 @@ header {
 
 .menu a.active {
     /* Style for the active navigation link */
-    /* padding: 10px; already defined in .menu a */
     border-bottom: 3px solid #efbf7e;
-    /* Note: missing # before efbf7e in original, corrected */
     background-color: rgba(255, 255, 255, 0.1);
-    /* border-radius: 10px; already defined in .menu a */
-    /* color: white; already defined in .menu a */
 }
 
 .tombol {
-    /* Hamburger menu button for mobile */
     display: none;
-    /* Hidden by default, shown in media query */
 }
 
 .tombol:hover {
     cursor: pointer;
 }
 
-/* Progress Bar (Simple version from your style.css) */
-/* This class name was changed to .progress-bars to avoid conflict with the multi-step progress bar in cart.css */
+/* Progress Bar (Simple version) */
+/* This class name was changed to .progress-bars to avoid conflict */
 .progress-bars {
     width: 100%;
     height: 12px;
@@ -165,7 +156,6 @@ header {
 .progress-fill {
     height: 100%;
     width: 0;
-    /* JS will update this to show progress */
     background: linear-gradient(90deg, #f97316, #fb923c);
     border-radius: 8px 0 0 8px;
     transition: width 1.5s ease-in-out;
@@ -183,14 +173,12 @@ header {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    /* Made transition faster */
     justify-content: center;
     align-items: center;
 }
 
 .popup-box {
     position: relative;
-    /* For centering within flex overlay */
     background-color: white;
     padding: 30px 40px;
     border-radius: 8px;
@@ -198,33 +186,26 @@ header {
     z-index: 2000;
     text-align: center;
     display: none;
-    /* JS will toggle this */
     min-width: 300px;
     max-width: 90%;
     opacity: 0;
     transform: scale(0.9);
-    /* Start smaller for pop effect */
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    /* Made transition faster */
 }
 
 .popup-overlay.active {
     opacity: 1;
     display: flex;
-    /* Use flex to enable centering */
 }
 
 .popup-overlay.active .popup-box {
     opacity: 1;
     transform: scale(1);
-    /* Pop to full size */
     display: block;
-    /* Or flex/grid if internal content needs it */
 }
 
 .popup-icon {
     width: 5rem;
-    /* Adjusted from 8rem for potentially better balance */
     height: auto;
     margin-bottom: 1rem;
 }
@@ -298,9 +279,7 @@ header {
     padding: 2rem 1rem;
     margin-top: 0;
     font-size: 0.9rem;
-    /* height: 100%; Removed, let content define height */
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    /* Shadow on top of footer */
     background-color: #375a60;
 }
 
@@ -317,7 +296,6 @@ header {
 .footer-section {
     flex: 1;
     min-width: 200px;
-    /* Helps with wrapping on smaller screens */
     padding-top: 0;
     margin-top: 0;
 }
@@ -334,7 +312,6 @@ header {
 }
 
 .footer-brand span.orange {
-    /* Ensure your HTML uses this class if intended */
     color: #f39c12;
 }
 
@@ -393,146 +370,102 @@ header {
 }
 
 .white {
-    /* Utility class */
     color: white;
     font-weight: bold;
 }
 
 .orange {
-    /* Utility class */
     color: #efbf7e;
     font-weight: bold;
 }
 
 /* === STYLING DROPDOWN MENU PENGGUNA === */
 
-/* Kontainer untuk bagian dropdown di dalam .menu */
 .menu .dropdown {
-    position: relative; /* Penting untuk positioning .dropdown-content */
-  }
-  
-  /* Trigger dropdown (link dengan avatar dan nama pengguna) */
-  .menu .user-nav-trigger {
-    cursor: pointer; /* Menunjukkan elemen ini interaktif */
-    /* Anda bisa meng-copy/paste style dari .menu a jika ingin tampilan serupa,
-       atau biarkan .menu a yang sudah ada memberi style dasar.
-       Kelas .nav-link yang saya sarankan di HTML bisa mewarisi dari .menu a.
-       Pastikan warnanya kontras dengan background navbar.
-    */
-  }
-  
-  /* Avatar pengguna di dalam trigger dropdown */
-  .menu .user-nav-trigger #user-nav-avatar {
-    width: 25px;   /* Sesuaikan ukuran jika perlu */
-    height: 25px;  /* Sesuaikan ukuran jika perlu */
+    position: relative;
+}
+
+.menu .user-nav-trigger {
+    cursor: pointer;
+}
+
+.menu .user-nav-trigger #user-nav-avatar {
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    margin-right: 8px; /* Jarak antara avatar dan nama */
-    /* border: 1px solid #efbf7e; /* Optional: border dengan warna aksen */
-  }
-  
-  /* Konten dropdown yang sebenarnya (kotak yang muncul) */
-  .menu .dropdown-content {
-    display: none; /* **Sangat Penting: Sembunyikan secara default** */
-    position: absolute; /* **Sangat Penting: Keluarkan dari alur normal, jadi lapisan** */
-    right: 0; /* Posisi menempel di sisi kanan trigger */
-    top: 100%; /* Posisi tepat di bawah elemen trigger (.user-nav-trigger) */
-    background-color: white; /* Latar belakang dropdown */
-    min-width: 200px; /* Lebar minimal dropdown, sesuaikan */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15); /* Bayangan agar terlihat 'mengambang' */
-    border-radius: 6px; /* Sedikit lengkungan pada sudut */
-    z-index: 1001; /* Pastikan di atas elemen lain (header Anda z-index: 1000) */
-    border: 1px solid #e0e0e0; /* Optional: border tipis untuk dropdown */
-  }
-  
-  /* Tampilkan dropdown-content ketika .dropdown di-hover, ATAU
-     ketika .user-nav-trigger memiliki atribut aria-expanded="true" (untuk kontrol via JavaScript/klik) */
-  .menu .dropdown:hover .dropdown-content,
-  .menu .dropdown .user-nav-trigger[aria-expanded="true"] + .dropdown-content {
-    display: block; /* **Sangat Penting: Tampilkan dropdown** */
-  }
-  
-  /* Styling untuk setiap link di dalam .dropdown-content */
-  .menu .dropdown-content a {
-    color: #333333; /* Warna teks lebih gelap agar terbaca di background putih */
-    padding: 12px 16px; /* Padding untuk setiap item link */
-    text-decoration: none; /* Hapus garis bawah default link */
-    display: block; /* Membuat seluruh area link bisa diklik */
-    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil dari nav utama */
-    /* Hapus/override style hover dari .menu a yang mungkin tidak cocok di sini */
-    border-bottom: none; /* Pastikan tidak ada border-bottom dari .menu a:hover */
-    background-color: transparent; /* Pastikan background awal transparan */
-    font-weight: normal; /* Reset font-weight jika .menu a:hover membuatnya bold */
-    transform: none; /* Reset transform dari .menu a:hover */
-  }
-  
-  /* Efek hover untuk link di dalam .dropdown-content */
-  .menu .dropdown-content a:hover {
-    background-color: #f5f5f5; /* Warna latar sedikit berubah saat hover */
-    color: #375a60; /* Warna teks bisa sama dengan warna utama navbar saat hover */
-    /* Pastikan tidak ada efek transform atau border yang tidak diinginkan dari .menu a:hover */
+    margin-right: 8px;
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    z-index: 1001;
+    border: 1px solid #e0e0e0;
+}
+
+.menu .dropdown:hover .dropdown-content,
+.menu .dropdown .user-nav-trigger[aria-expanded="true"]+.dropdown-content {
+    display: block;
+}
+
+.menu .dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    border-bottom: none;
+    background-color: transparent;
+    font-weight: normal;
+    transform: none;
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #375a60;
     border-bottom: none;
     transform: none;
-  }
-  
-  /* Opsional: Jika Anda menambahkan ikon panah dropdown di HTML */
-  .menu .user-nav-trigger .dropdown-arrow-icon { /* Contoh kelas untuk ikon panah */
+}
+
+.menu .user-nav-trigger .dropdown-arrow-icon {
     width: 12px;
     height: 12px;
     margin-left: 8px;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  .menu .user-nav-trigger[aria-expanded="true"] .dropdown-arrow-icon {
-    transform: rotate(180deg); /* Putar panah saat dropdown terbuka */
-  }
-  
-  /* === AKHIR STYLING DROPDOWN MENU PENGGUNA === */
+}
+
+.menu .user-nav-trigger[aria-expanded="true"] .dropdown-arrow-icon {
+    transform: rotate(180deg);
+}
 
 /* MEDIA QUERIES */
 @media(max-width:768px) {
 
     /* NAVBAR */
     .top-nav img {
-        /* Assuming this is for .page-tittle img */
         width: 8rem;
-        /* Slightly smaller for mobile */
     }
-
-    /* .top-nav span - no span in your page-tittle HTML */
 
     .menu {
         display: none;
-        /* This hides the menu, JS would be needed to toggle it */
-        /* Example for JS toggled menu:
-        flex-direction: column;
-        position: absolute;
-        top: 5rem; // Height of the header
-        left: 0;
-        width: 100%;
-        background-color: #375a60; // Same as navbar
-        padding: 1rem 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        */
     }
 
-    /* .menu.open { display: flex; } // Class to be added by JS */
-
-
     .tombol {
-        /* Hamburger icon */
         display: flex;
         color: white;
         font-size: 1.5em;
         justify-content: center;
         align-items: center;
         padding: 5px 15px;
-        /* Adjusted padding for better touch target */
         margin-right: 1rem;
-        /* Added some margin */
         background: none;
-        /* Ensure no default button background */
         border: none;
-        /* Ensure no default button border */
     }
 
     .tombol:hover {
@@ -559,7 +492,6 @@ header {
 
     .social-links {
         flex-direction: row;
-        /* Make social links horizontal on mobile */
         justify-content: center;
         gap: 1rem;
     }

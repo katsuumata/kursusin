@@ -1,7 +1,6 @@
 /* SECTION 1A : BANNER-SLIDESHOW */
 .part-top {
-    margin-top: 60px;
-    /* Consider using rem or em for scalability */
+    margin-top: 3.75rem;
 }
 
 .banner-slideshow {
@@ -11,60 +10,44 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* For positioning prev/next absolutely if needed */
 }
 
 .banner {
     text-align: center;
-    /* padding: 0 100px; Consider removing if prev/next are outside or using max-width */
-    max-width: 1020px;
-    /* To constrain banner width */
+    max-width: 63.75rem;
     margin: 0 auto;
-    /* Center the banner if it's narrower than slideshow container */
     overflow: hidden;
-    /* If multiple images are inside and only one is shown */
 }
 
 .banner img {
     width: 100%;
-    /* Make image responsive within .banner */
-    max-width: 1020px;
-    /* Original fixed width */
+    max-width: 63.75rem;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.63rem;
     display: block;
-    /* Remove extra space below image */
 }
 
 .banner-slideshow .prev,
-/* More specific selector */
 .banner-slideshow .next {
-    padding: 15px;
+    padding: 0.94rem;
     color: #375a60;
     background-color: rgba(255, 255, 255, 0.5);
-    /* Add a slight background for visibility */
     border-radius: 50%;
-    /* Make them circular */
     cursor: pointer;
     user-select: none;
-    /* Prevent text selection */
     position: absolute;
-    /* Position them over the banner */
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
     line-height: 1;
-    /* For better vertical alignment of arrow character */
 }
 
 .banner-slideshow .prev {
-    left: 20px;
-    /* Adjust as needed */
+    left: 1.25rem;
 }
 
 .banner-slideshow .next {
-    right: 20px;
-    /* Adjust as needed */
+    right: 1.25rem;
 }
 
 .banner-slideshow .prev:hover,
@@ -72,54 +55,43 @@
     background-color: #efbf7e;
     color: #375a60;
     transition: 0.3s all ease;
-    /* Smoother transition */
 }
-
 
 /* SECTION 1B : ADS */
 .ads {
     width: 100%;
-    margin: 50px auto;
-    /* Centering ads section */
-    padding: 10px;
+    margin: 3.13rem auto;
+    padding: 0.63rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3.13rem;
     flex-wrap: wrap;
-    /* Allow ads to wrap on smaller screens */
 }
 
 .ads-content {
     display: flex;
     align-items: center;
-    /* Vertically align icon and text */
-    gap: 15px;
-    /* Increased gap slightly */
-    max-width: 450px;
-    /* Give ads a max width */
+    gap: 0.94rem;
+    max-width: 28.13rem;
 }
 
 .ads-icon img {
-    width: 70px;
-    /* Slightly smaller for balance */
+    width: 4.38rem;
     height: auto;
 }
 
 .ads-text {
-    /* width: 400px; Removed fixed width, let content define or use flex-grow */
-    padding: 5px;
+    padding: 0.31rem;
     color: #375a60;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Align text vertically */
-    gap: 5px;
+    gap: 0.31rem;
 }
 
 .ads-text h4 {
     font-size: 1.2em;
-    /* Adjusted size */
     margin: 0;
 }
 
@@ -128,113 +100,88 @@
     margin: 0;
 }
 
-
 /* SECTION 2 : APA ITU? */
 .part-info {
     width: 100%;
-    /* height: 80%; Removed fixed height, let content dictate */
     background-color: #375a60;
-    padding: 60px 20px;
-    /* Adjusted padding, added horizontal padding */
+    padding: 3.75rem 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Vertically align items */
     gap: 3em;
-    /* Adjusted gap */
     flex-wrap: wrap;
-    /* Allow wrapping */
 }
 
 .info {
-    /* Container for the image */
-    flex-basis: 450px;
-    /* Base width */
+    flex-basis: 28.13rem;
     max-width: 100%;
 }
 
 .info img {
     width: 100%;
-    /* Make image responsive */
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.63rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
     display: block;
 }
 
 .what-is {
-    flex-basis: 450px;
-    /* Base width */
+    flex-basis: 28.13rem;
     max-width: 100%;
-    padding: 20px;
-    /* Reduced padding for better balance on wrap */
+    padding: 1.25rem;
     color: white;
     box-sizing: border-box;
 }
 
 .what-is h1 {
     font-size: 2.2em;
-    /* Adjusted size */
     transform: scale(1);
     transition: 0.3s all ease;
-    /* Smoother transition */
-    margin-bottom: 10px;
-    /* Added margin */
+    margin-bottom: 0.63rem;
 }
 
 .what-is h1:hover {
     color: #efbf7e;
     transform: scale(1.05);
-    /* Slightly reduced hover scale */
 }
 
 .what-is p {
     font-size: 0.9em;
     line-height: 1.6em;
-    /* Increased line-height */
     text-align: justify;
 }
 
 .what-is button {
-    /* This button is empty in HTML, consider adding text or an icon */
-    margin-top: 15px;
-    /* Adjusted margin */
-    margin-bottom: 20px;
-    width: 100px;
-    height: 4px;
+    margin-top: 0.94rem;
+    margin-bottom: 1.25rem;
+    width: 6.25rem;
+    height: 0.25rem;
     background-color: #efbf7e;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     display: block;
-    /* If it's meant to be a visual separator */
 }
 
 /* SECTION 3A CATEGORY-ICON */
 .category {
-    /* Added padding to the section */
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .category-tittle h1 {
     font-size: 2em;
     text-align: center;
-    padding: 30px 0;
-    /* Adjusted padding */
+    padding: 1.88rem 0;
     color: #375a60;
     margin: 0;
 }
 
 .category-list {
-    margin-top: 30px;
+    margin-top: 1.88rem;
     display: grid;
     justify-content: center;
-    /* Removed grid-template-columns for auto-fit behavior */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(9.38rem, 1fr));
     gap: 2em;
-    /* Adjusted gap */
-    max-width: 1200px;
-    /* Max width for the grid */
+    max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,66 +190,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
     justify-content: center;
-    gap: 10px;
-    /* Reduced gap */
+    gap: 0.63rem;
     text-align: center;
     cursor: pointer;
-    /* Indicate interactivity */
 }
 
 .category-box {
-    /* width: 200px; Removed fixed width, let content or grid define */
     display: flex;
     justify-content: center;
 }
 
 .category-img {
-    /* This is the circle */
     background-color: rgba(55, 90, 96, 0.1);
-    /* Lighter background */
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: scale(1);
     transition: 0.3s all ease;
-    /* Smoother transition */
-    border: 2px solid transparent;
-    /* For hover effect */
+    border: 0.13rem solid transparent;
 }
 
 .category-img:hover {
-    /* outline: auto; Replaced with border for better control */
-    /* outline-offset: 1em; */
     border-color: #375a60;
     background-color: rgba(55, 90, 96, 0.2);
     transform: scale(1.1);
-    /* Add scale on hover */
 }
 
 .category-img img {
-    width: 55px;
-    /* Adjusted size */
+    width: 3.44rem;
     height: auto;
-    /* padding: 13px; Removed, let centering handle it */
 }
 
 .category-text {
-    /* width: 200px; Removed fixed width */
     text-align: center;
 }
 
 .category-text p {
     font-size: 0.9em;
-    /* Adjusted size */
     color: #375a60;
-    margin-bottom: 10px;
+    margin-bottom: 0.63rem;
     font-weight: 500;
-    /* Slightly bolder */
 }
 
 /* SECTION 3B CATEGORY-CARD */
@@ -310,253 +241,182 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    /* Make cards same height if in a row */
-    gap: 20px;
-    padding: 50px 20px 30px 20px;
-    /* Added horizontal padding */
+    gap: 1.25rem;
+    padding: 3.13rem 1.25rem 1.88rem 1.25rem;
     flex-wrap: wrap;
-    /* Allow cards to wrap */
 }
 
 .cat-card-content {
     display: flex;
-    /* justify-content: flex-start; Default */
     width: 100%;
-    /* Make it responsive initially */
-    max-width: 350px;
-    /* Max width for each card */
-    min-height: 165px;
-    /* Ensure minimum height */
+    max-width: 21.88rem;
+    min-height: 10.31rem;
     background-color: rgba(55, 90, 96, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.63rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
     transform: scale(1);
     transition: 0.3s all ease;
-    /* Smoother transition */
     overflow: hidden;
-    /* Ensure content fits */
 }
 
 .cat-card-content:hover {
     transform: scale(1.05);
-    /* Slightly reduced hover scale */
     background-color: rgb(55, 90, 96);
 }
 
 .cat-card-pict img {
-    width: 150px;
+    width: 9.38rem;
     height: 100%;
-    /* Make image fill the height of its container */
     object-fit: cover;
-    /* Ensure image covers without distortion */
     display: block;
 }
 
 .cat-card-text {
     flex-grow: 1;
-    /* Allow text area to take remaining space */
-    padding: 15px;
+    padding: 0.94rem;
     color: rgb(239, 191, 126);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Distribute content vertically */
 }
 
 .cat-card-text h3 {
     font-size: 1.1em;
-    margin: 0 0 5px 0;
-    /* Adjusted margin */
+    margin: 0 0 0.31rem 0;
     color: white;
 }
 
 .cat-card-text p {
     font-size: 0.8em;
-    /* Adjusted size */
     text-align: justify;
     line-height: 1.4em;
-    /* Adjusted line height */
     flex-grow: 1;
-    /* Allow paragraph to take available space */
 }
 
 .cat-card-arrow {
-    /* Container for the arrow */
     align-self: flex-end;
-    /* Push arrow to the bottom right */
-    margin-top: 10px;
+    margin-top: 0.63rem;
     display: inline-block;
-    /* To allow transform */
     transition: 0.3s transform ease;
 }
 
 .cat-card-arrow img {
-    width: 20px;
+    width: 1.25rem;
     height: auto;
     display: block;
-    /* Remove extra space */
 }
 
 .cat-card-link:hover .cat-card-arrow {
-    /* Target arrow on link hover */
-    transform: translateX(5px);
+    transform: translateX(0.31rem);
 }
-
 
 /* SECTION 4 & 5 LIST COURSE (Carousels) */
 .pelatihan-baru,
 .pelatihan-populer {
-    /* Added padding to sections */
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .course-new {
-    /* Carousel container */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* For positioning arrows */
-    padding: 0 10px;
-    /* Add some padding so arrows don't touch edges */
+    padding: 0 0.63rem;
     box-sizing: border-box;
 }
 
 .list-new-course {
-    padding: 30px 0;
-    /* Removed horizontal padding, handled by .course-new */
+    padding: 1.88rem 0;
     display: flex;
-    /* justify-content: flex-start; Default for flex */
     align-items: stretch;
-    /* Make items same height */
     gap: 1.5rem;
     overflow-x: auto;
-    /* Enable horizontal scrolling */
     scroll-behavior: smooth;
-    /* Smooth scrolling for JS scrollBy */
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
-    width: 1012px;
-    max-width: calc(100% - 80px);
-    /* Adjust based on arrow widths + padding */
+    width: 63.25rem;
+    max-width: calc(100% - 5rem);
 }
 
 .list-new-course::-webkit-scrollbar {
-    /* Hide scrollbar for Chrome, Safari, Opera */
     display: none;
 }
 
-
 .course-new .kekiri,
-/* More specific selector */
 .course-new .kekanan {
-    padding: 5px 10px;
-    /* Removed top padding of 0 */
+    padding: 0.31rem 0.63rem;
     background-color: #efbf7e;
     color: rgba(55, 90, 96, 1);
-    height: 30px;
-    line-height: 30px;
-    /* Vertically center arrow character */
+    height: 1.88rem;
+    line-height: 1.88rem;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     transform: scale(1);
     transition: 0.3s all ease;
-    /* Smoother transition */
     cursor: pointer;
     user-select: none;
-    /* position: absolute; // Alternative positioning
-    top: 50%;
-    transform: translateY(-50%); */
-    margin: 0 10px;
-    /* Space out arrows from the list */
+    margin: 0 0.63rem;
 }
-
-/* .course-new .kekiri { left: 0; }
-.course-new .kekanan { right: 0; } */
-
 
 .course-new .kekiri:hover,
 .course-new .kekanan:hover {
-    /* padding: 5px 10px 0 10px; */
     color: rgb(55, 90, 96);
     background-color: #e0b070;
-    /* Darken on hover */
-    /* outline: auto; Replaced with box-shadow for softer effect */
-    /* outline-offset: 0.2em; */
-    box-shadow: 0 0 5px rgba(55, 90, 96, 0.5);
+    box-shadow: 0 0 0.31rem rgba(55, 90, 96, 0.5);
     transform: scale(1.1);
 }
 
 .course-item {
-    width: 235px;
+    width: 14.69rem;
     flex-shrink: 0;
-    /* Prevent items from shrinking in flex container */
-    /* height: fit-content; Default */
     padding-bottom: 0.8rem;
     background-color: white;
-    border-radius: 10px;
-    /* Apply to whole item */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    /* Softer shadow */
+    border-radius: 0.63rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
     transform: scale(1);
     transition: 0.3s all ease;
-    /* Smoother transition */
     display: flex;
-    /* For consistent internal layout */
     flex-direction: column;
 }
 
 .course-item .course-pict img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.63rem;
+    border-top-right-radius: 0.63rem;
     width: 100%;
-    height: 132px;
-    /* Fixed height for consistency */
+    height: 8.25rem;
     object-fit: cover;
-    /* Ensure image covers area */
 }
 
-
 .course-content {
-    padding: 12px;
+    padding: 0.75rem;
     flex-grow: 1;
-    /* Allow content to fill space */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Push button to bottom */
 }
 
 .course-item:hover {
     transform: scale(1.03);
-    /* Slightly reduced hover scale */
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.38rem 0.75rem 0 rgba(0, 0, 0, 0.15);
 }
 
 .course-tittle {
     color: rgb(55, 90, 96);
     text-align: left;
-    /* Usually better for titles */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1em;
-    /* Ensure consistent title size */
     min-height: 2.4em;
-    /* Approx 2 lines height */
-    margin-bottom: 5px;
+    margin-bottom: 0.31rem;
 }
 
 .course-author {
-    padding: 0 0 5px 0;
-    /* Adjusted padding */
+    padding: 0 0 0.31rem 0;
     color: #777;
-    /* Lighter grey */
     font-size: 0.8em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -567,117 +427,95 @@
 
 .course-rating {
     display: flex;
-    /* justify-content: flex-start; Default */
     align-items: center;
-    /* Vertically align stars and point */
-    gap: 5px;
-    padding: 0 0 5px 0;
+    gap: 0.31rem;
+    padding: 0 0 0.31rem 0;
 }
 
 .course-star img {
-    width: 12px;
-    /* Slightly larger */
+    width: 0.75rem;
     height: auto;
 }
 
 .course-point {
     font-size: 0.75em;
-    /* Adjusted size */
     font-weight: bold;
     color: #555;
-    /* padding: 3px 0 0 3px; Removed specific padding */
 }
 
 .course-participant {
     color: #333;
-    /* Darker color */
     font-size: 0.8em;
-    padding: 0 0 10px 0;
+    padding: 0 0 0.63rem 0;
 }
 
 .lihat {
-    /* Button style */
-    padding: 8px 12px;
-    /* Adjusted padding */
+    padding: 0.5rem 0.75rem;
     align-self: flex-end;
-    /* Align to the right within flex content */
-    /* float: right; Remove float, use flex alignment */
-    /* margin-right: 10px; Not needed with align-self if padding is on .course-content */
     border: none;
-    border-radius: 7px;
-    border-bottom: 3px solid #d98200;
-    /* Darker orange */
+    border-radius: 0.44rem;
+    border-bottom: 0.19rem solid #d98200;
     background-color: #efbf7e;
     color: #375a60;
     font-size: 0.8em;
     font-weight: bolder;
     cursor: pointer;
     transition: 0.3s all ease;
-    /* Smoother transition */
 }
 
 .lihat:hover {
     background-color: #375a60;
     border-bottom-color: #22a047;
-    /* Darker green */
     color: white;
 }
 
-/* Dropdown styles are already in global style.css */
+/* MEDIA QUERIES */
 
-/* MEDIA QUERIES from home.css */
-@media (max-width: 992px) {
+/* Tablet Besar */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     /* BANNER */
     .part-top {
-        margin-top: 30px;
-        /* Reduced margin */
+        margin-top: 1.88rem;
     }
 
     .banner {
-        padding: 0 10px;
-        /* Add some padding for smaller screens */
+        padding: 0 0.63rem;
     }
 
     .banner img {
-        border-radius: 5px;
-        /* Slightly smaller radius */
+        border-radius: 0.31rem;
     }
 
     .banner-slideshow .prev,
     .banner-slideshow .next {
-        padding: 10px;
-        width: 20px;
-        /* Explicit size for touch */
-        height: 20px;
-        line-height: 20px;
+        padding: 0.63rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
     }
 
-    /* ads */
+    /* ADS */
     .ads {
-        margin: 30px 10px;
-        gap: 20px;
+        margin: 1.88rem 0.63rem;
+        gap: 1.25rem;
         flex-direction: column;
-        /* Stack ads on smaller screens */
         align-items: center;
     }
 
     .ads-content {
         gap: 1rem;
         width: 100%;
-        max-width: 400px;
-        /* Limit width of each ad item */
+        max-width: 25rem;
         justify-content: center;
     }
 
     .ads-icon img {
         width: 5rem;
-        /* Adjusted size */
     }
 
     .ads-text {
         max-width: none;
-        /* Allow text to take available space */
         text-align: left;
     }
 
@@ -689,40 +527,33 @@
         font-size: 0.85em;
     }
 
-    /* Apa itu ? */
+    /* APA ITU? */
     .part-info {
-        padding: 50px 20px;
+        padding: 3.13rem 1.25rem;
         gap: 2em;
     }
 
     .info img {
-        border-width: 2px;
+        border-width: 0.13rem;
     }
 
     .what-is {
-        padding: 0 20px;
-        /* Adjust padding */
+        padding: 0 1.25rem;
     }
 
     /* CATEGORY-ICON */
     .category-list {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        /* Adjust minmax for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
         gap: 1.5em;
     }
 
-    .category-box {
-        /* Not directly used in current JS rendering, but if it were */
-        width: 100px;
-    }
-
     .category-img {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
     }
 
     .category-img img {
-        width: 45px;
+        width: 2.81rem;
     }
 
     .category-text p {
@@ -731,104 +562,172 @@
 
     /* CATEGORY - CARD */
     .category-card {
-        padding: 30px 15px;
+        padding: 1.88rem 0.94rem;
     }
 
     .cat-card-content {
         flex-direction: column;
-        /* Stack image and text */
         height: auto;
-        /* Allow height to adjust */
-        max-width: 300px;
-        /* Adjust max-width */
+        max-width: 18.75rem;
         margin: 0 auto;
-        /* Center cards if they wrap */
     }
 
     .cat-card-pict img {
         width: 100%;
-        height: 150px;
-        /* Fixed height for image part */
-        border-radius: 10px 10px 0 0;
+        height: 9.38rem;
+        border-radius: 0.63rem 0.63rem 0 0;
     }
 
     .cat-card-text {
         width: auto;
-        /* Take full width */
     }
-
 
     /* LIST COURSE */
-    .list-new-course {
-        /* For carousels */
-        /* On medium screens, it's still a horizontal scroll.
-           If you want grid, this needs to change significantly.
-           The original home.css had grid here, which conflicts with carousel.
-           Assuming carousel is intended for larger, grid for smaller.
-        */
-        /* display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-        width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-        overflow-x: hidden; */
-        /* Remove scroll if grid */
-    }
-
-    .course-new .kekiri,
-    .course-new .kekanan {
-        /* display: none; Hide arrows if using grid */
-    }
-
     .course-item {
-        width: 220px;
-        /* Adjust if using grid */
+        width: 13.75rem;
     }
 }
 
-@media (max-width: 768px) {
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
-    /* This was duplicated, merging with above or making more specific */
-    /* LIST COURSE - specific for 768px if different from 992px */
-    /* If carousel is still desired, keep overflow-x: auto;
-       If grid is desired for this breakpoint: */
+    /* Rules from 992px that also apply to this range */
+    .part-top {
+        margin-top: 1.88rem;
+    }
+
+    .banner {
+        padding: 0 0.63rem;
+    }
+
+    .banner img {
+        border-radius: 0.31rem;
+    }
+
+    .banner-slideshow .prev,
+    .banner-slideshow .next {
+        padding: 0.63rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    .ads {
+        margin: 1.88rem 0.63rem;
+        gap: 1.25rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ads-content {
+        gap: 1rem;
+        width: 100%;
+        max-width: 25rem;
+        justify-content: center;
+    }
+
+    .ads-icon img {
+        width: 5rem;
+    }
+
+    .ads-text {
+        max-width: none;
+        text-align: left;
+    }
+
+    .ads-text h4 {
+        font-size: 1.1em;
+    }
+
+    .ads-text p {
+        font-size: 0.85em;
+    }
+
+    .part-info {
+        padding: 3.13rem 1.25rem;
+        gap: 2em;
+    }
+
+    .info img {
+        border-width: 0.13rem;
+    }
+
+    .what-is {
+        padding: 0 1.25rem;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        gap: 1.5em;
+    }
+
+    .category-img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .category-img img {
+        width: 2.81rem;
+    }
+
+    .category-text p {
+        font-size: 0.8em;
+    }
+
+    .category-card {
+        padding: 1.88rem 0.94rem;
+    }
+
+    .cat-card-content {
+        flex-direction: column;
+        height: auto;
+        max-width: 18.75rem;
+        margin: 0 auto;
+    }
+
+    .cat-card-pict img {
+        width: 100%;
+        height: 9.38rem;
+        border-radius: 0.63rem 0.63rem 0 0;
+    }
+
+    .cat-card-text {
+        width: auto;
+    }
+
+    .course-item {
+        width: 13.75rem;
+    }
+
+    /* Rules specific to 768px and below (merged) */
     .list-new-course {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        /* Example: 2 columns then 1 */
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(15.63rem, 1fr));
+        gap: 1.25rem;
         width: 100%;
-        padding: 0 15px;
-        /* Add padding to the container */
+        padding: 0 0.94rem;
         box-sizing: border-box;
         overflow-x: hidden;
-        /* No horizontal scroll for grid */
     }
 
     .course-new .kekiri,
     .course-new .kekanan {
         display: none;
-        /* Hide carousel arrows when in grid layout */
     }
 
     .course-item {
         width: 100%;
-        /* Full width in grid column */
         min-width: 0;
-        /* Override previous min-width */
     }
 
     .course-pict img {
         min-width: auto;
-        /* Override previous min-width */
         width: 100%;
     }
 
     .course-content {
-        padding: 15px;
+        padding: 0.94rem;
         font-size: 1rem;
-        /* Adjust base font size for content */
     }
 
     .course-star img {
@@ -836,35 +735,183 @@
     }
 
     .responsive {
-        /* This class was in original HTML, purpose unclear, hiding by default */
         display: none;
     }
 }
 
+/* Smartphone */
+@media screen and (max-width: 480px) {
 
-@media (max-width: 480px) {
-
-    /* BANNER */
+    /* Rules from 992px that also apply to this range */
     .part-top {
-        margin-top: 15px;
+        margin-top: 1.88rem;
+    }
+
+    .banner {
+        padding: 0 0.63rem;
+    }
+
+    .banner img {
+        border-radius: 0.31rem;
     }
 
     .banner-slideshow .prev,
     .banner-slideshow .next {
-        padding: 8px;
-        font-size: 0.9em;
-        /* Smaller arrows */
+        padding: 0.63rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
     }
 
-    /* ads */
     .ads {
-        margin: 20px 0;
+        margin: 1.88rem 0.63rem;
+        gap: 1.25rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ads-content {
+        gap: 1rem;
+        width: 100%;
+        max-width: 25rem;
+        justify-content: center;
+    }
+
+    .ads-icon img {
+        width: 5rem;
+    }
+
+    .ads-text {
+        max-width: none;
+        text-align: left;
+    }
+
+    .ads-text h4 {
+        font-size: 1.1em;
+    }
+
+    .ads-text p {
+        font-size: 0.85em;
+    }
+
+    .part-info {
+        padding: 3.13rem 1.25rem;
+        gap: 2em;
+    }
+
+    .info img {
+        border-width: 0.13rem;
+    }
+
+    .what-is {
+        padding: 0 1.25rem;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+        gap: 1.5em;
+    }
+
+    .category-img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .category-img img {
+        width: 2.81rem;
+    }
+
+    .category-text p {
+        font-size: 0.8em;
+    }
+
+    .category-card {
+        padding: 1.88rem 0.94rem;
+    }
+
+    .cat-card-content {
+        flex-direction: column;
+        height: auto;
+        max-width: 18.75rem;
+        margin: 0 auto;
+    }
+
+    .cat-card-pict img {
+        width: 100%;
+        height: 9.38rem;
+        border-radius: 0.63rem 0.63rem 0 0;
+    }
+
+    .cat-card-text {
+        width: auto;
+    }
+
+    .course-item {
+        width: 13.75rem;
+        /* This will be overridden by 768px rules below, then potentially 480px specific rule */
+    }
+
+    /* Rules from 768px that also apply to this range */
+    .list-new-course {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15.63rem, 1fr));
+        /* Will be overridden by 480px specific rule */
+        gap: 1.25rem;
+        width: 100%;
+        padding: 0 0.94rem;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .course-new .kekiri,
+    .course-new .kekanan {
+        display: none;
+    }
+
+    .course-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .course-pict img {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .course-content {
+        padding: 0.94rem;
+        /* This will be overridden by 480px specific rule */
+        font-size: 1rem;
+        /* This will be overridden by 480px specific rule */
+    }
+
+    .course-star img {
+        width: 1rem;
+        /* This will be overridden by 480px specific rule */
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    /* Rules specific to 480px and below */
+    .part-top {
+        margin-top: 0.94rem;
+    }
+
+    .banner-slideshow .prev,
+    .banner-slideshow .next {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
+
+    .ads {
+        margin: 1.25rem 0;
         gap: 1rem;
     }
 
     .ads-content {
         flex-direction: column;
-        /* Stack icon and text */
         text-align: center;
         gap: 0.5rem;
     }
@@ -881,20 +928,17 @@
         font-size: 0.75em;
     }
 
-    /* Apa itu ? */
     .part-info {
-        padding: 30px 15px;
+        padding: 1.88rem 0.94rem;
     }
 
     .info img {
         width: 80%;
-        /* Adjust image size */
         margin: 0 auto;
-        /* Center if smaller */
     }
 
     .what-is {
-        padding: 0 15px;
+        padding: 0 0.94rem;
     }
 
     .what-is h1 {
@@ -905,36 +949,32 @@
         font-size: 0.85em;
     }
 
-    /* CATEGORY-ICON */
     .category-tittle h1 {
         font-size: 1.5em;
-        padding: 15px 0;
+        padding: 0.94rem 0;
     }
 
     .category-list {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        /* More columns on very small screens */
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
         gap: 1rem;
-        margin-top: 15px;
+        margin-top: 0.94rem;
     }
 
     .category-img {
-        width: 60px;
-        height: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
     }
 
     .category-img img {
-        width: 35px;
+        width: 2.19rem;
     }
 
     .category-text p {
         font-size: 0.7em;
     }
 
-    /* CATEGORY - CARD */
     .cat-card-content {
         max-width: 90%;
-        /* Allow cards to be wider */
     }
 
     .cat-card-text h3 {
@@ -945,26 +985,16 @@
         font-size: 0.75em;
     }
 
-
-    /* LIST COURSE - ensure it's single column */
     .list-new-course {
         grid-template-columns: 1fr;
-        /* Single column */
-        padding: 0 10px;
-        /* Adjust padding */
-    }
-
-    .course-item {
-        /* min-width: auto; Removed specific min-width */
-    }
-
-    .course-pict img {
-        /* min-width: auto; Removed specific min-width */
+        padding: 0 0.63rem;
     }
 
     .course-content {
-        padding: 15px;
+        padding: 0.94rem;
+        /* Re-asserting for clarity, though might be same as 768px */
         font-size: 1rem;
+        /* Re-asserting for clarity */
     }
 
     .course-star img {

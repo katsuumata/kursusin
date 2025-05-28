@@ -4,19 +4,17 @@
     justify-content: center;
     padding: 2rem;
     margin-top: 1rem;
-    /* Added margin from header */
 }
 
 .detail-card-course {
     background-color: #fff;
-    border-radius: 0.625rem;
-    padding: 1.875rem 1.5625rem;
+    border-radius: 0.63rem;
+    padding: 1.88rem 1.56rem;
     text-align: left;
-    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
-    border: 0.0625rem solid #eee;
+    box-shadow: 0 0.25rem 0.94rem rgba(0, 0, 0, 0.1);
+    border: 0.06rem solid #eee;
     width: 100%;
-    max-width: 900px;
-    /* Constrain width */
+    max-width: 56.25rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -32,15 +30,14 @@
 
 .course-pict {
     flex-shrink: 0;
-    width: 300px;
+    width: 18.75rem;
     max-width: 100%;
-    /* Ensure it's responsive on smaller views */
 }
 
 .course-pict img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.63rem;
     display: block;
 }
 
@@ -50,7 +47,6 @@
 }
 
 .course-content .course-tittle {
-    /* Target h1 specifically */
     color: rgb(55, 90, 96);
     text-align: left;
     font-size: 1.8em;
@@ -58,7 +54,6 @@
 }
 
 .course-content .course-author {
-    /* Target h6 specifically */
     padding: 0 0 0.5rem 0;
     color: #555;
     font-size: 1em;
@@ -78,7 +73,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 0.06rem solid #eee;
     margin-top: 1rem;
 }
 
@@ -129,12 +124,12 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
-    border-bottom: 0.1875rem solid #2c484d;
+    border-bottom: 0.19rem solid #2c484d;
 }
 
 .mulai-button:hover:not(.disabled) {
     background-color: #2c484d;
-    transform: translateY(-2px);
+    transform: translateY(-0.13rem);
 }
 
 .mulai-button.disabled {
@@ -150,9 +145,9 @@
 }
 
 .course-star img {
-    width: 16px;
+    width: 1rem;
     height: auto;
-    margin-right: 2px;
+    margin-right: 0.13rem;
 }
 
 /* INFORMASI COURSE & PERSYARATAN KHUSUS */
@@ -160,19 +155,19 @@
 .courseterms {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25rem;
     align-items: center;
     margin-top: 1.5rem;
 }
 
 .courseinformation-container,
 .courseterms-container {
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.13rem 0.25rem rgba(0, 0, 0, 0.05);
 }
 
 .courseinformation-container h1,
@@ -182,7 +177,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #efbf7e;
+    border-bottom: 0.13rem solid #efbf7e;
     display: inline-block;
 }
 
@@ -198,13 +193,13 @@
 .coursemodule {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25rem;
     align-items: center;
     margin-top: 1.5rem;
 }
 
 .coursemodule-container {
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
 }
 
@@ -214,18 +209,14 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #efbf7e;
+    border-bottom: 0.13rem solid #efbf7e;
     display: inline-block;
 }
 
-.course-module {
-    /* Container for all module items */
-}
-
 .course-module-item {
-    margin-bottom: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
+    margin-bottom: 0.63rem;
+    border: 0.06rem solid #e0e0e0;
+    border-radius: 0.31rem;
     overflow: hidden;
 }
 
@@ -233,7 +224,7 @@
     background-color: #f7f7f7;
     color: #333;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 0.94rem 1.25rem;
     width: 100%;
     text-align: left;
     border: none;
@@ -246,10 +237,9 @@
 }
 
 .course-module-item-button::after {
-    content: '▼'; /* Menggunakan simbol ▼ langsung */
+    content: '▼';
     font-size: 0.8em;
     transition: transform 0.3s ease;
-    /* Pastikan tidak ada karakter lain seperti ɔɐटᄅ| di sini! */
 }
 
 .course-module-item-button.active::after {
@@ -267,19 +257,19 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .course-module-item-button.active+.course-module-item-content {
-    padding: 10px 20px 15px 20px;
+    padding: 0.63rem 1.25rem 0.94rem 1.25rem;
 }
 
 .course-module-item-content a {
     display: block;
-    padding: 10px 0px 10px 15px;
+    padding: 0.63rem 0rem 0.63rem 0.94rem;
     color: #375a60;
     text-decoration: none;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 0.06rem solid #f0f0f0;
     font-size: 0.9em;
     position: relative;
 }
@@ -294,24 +284,23 @@
 }
 
 .course-module-item-content a::before {
-    content: '▶'; /* Menggunakan simbol ▶ langsung */
-    margin-right: 10px;
+    content: '▶';
+    margin-right: 0.63rem;
     font-size: 0.8em;
     color: #efbf7e;
-    /* Pastikan tidak ada karakter lain di sini! */
 }
 
 /* ULASAN */
 .coursereview {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25rem;
     align-items: center;
     margin-top: 1.5rem;
 }
 
 .coursereview-container {
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
 }
 
@@ -321,36 +310,35 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #efbf7e;
+    border-bottom: 0.13rem solid #efbf7e;
     display: inline-block;
 }
 
 .course-review {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .course-review-card {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 0.94rem;
     padding: 1rem;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 0.06rem solid #e0e0e0;
+    border-radius: 0.5rem;
     background-color: #fff;
 }
 
 .profile {
-    width: 50px;
-    height: 50px;
+    width: 3.13rem;
+    height: 3.13rem;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
 }
 
 .course-review-content {
-    /* Added wrapper for meta and detail for better flex control */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -358,7 +346,6 @@
 
 .course-review-meta {
     margin-bottom: 0.5rem;
-    /* Add space between meta and detail */
 }
 
 .course-review-detail {
@@ -366,7 +353,7 @@
 }
 
 .course-review-meta h3 {
-    margin: 0 0 3px 0;
+    margin: 0 0 0.19rem 0;
     font-size: 1.05em;
     font-weight: 600;
     color: #333;
@@ -385,9 +372,9 @@
 }
 
 .course-review-detail .course-star img {
-    width: 16px;
+    width: 1rem;
     height: auto;
-    margin-right: 2px;
+    margin-right: 0.13rem;
 }
 
 .course-review-description p {
@@ -401,20 +388,20 @@
 .see-more {
     display: flex;
     justify-content: center;
-    padding: 20px 0 30px 0;
+    padding: 1.25rem 0 1.88rem 0;
     margin-top: 1rem;
 }
 
 .see-more .see {
-    padding: 10px 30px;
-    border: 1px solid #375a60;
-    border-radius: 10px;
+    padding: 0.63rem 1.88rem;
+    border: 0.06rem solid #375a60;
+    border-radius: 0.63rem;
     font-size: 1.1em;
     font-weight: bold;
     color: #375a60;
     background-color: white;
-    border-bottom-width: 3px;
-    border-right-width: 2px;
+    border-bottom-width: 0.19rem;
+    border-right-width: 0.13rem;
     transform: scale(1);
     transition: 0.3s all ease;
 }
@@ -427,13 +414,11 @@
     cursor: pointer;
 }
 
-/* Tambahkan ini ke coursedetails.css */
-
+/* REVIEW SUBMISSION FORM */
 .submit-review-section {
-    /* Sudah ada style .card, bisa ditambahkan atau override jika perlu */
-    margin-top: 1.5rem; /* Sesuaikan jika sudah ada section Ulasan di atasnya */
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
-    background-color: #f9f9f9; /* Sedikit beda dari card utama */
+    background-color: #f9f9f9;
 }
 
 .submit-review-section h2 {
@@ -442,7 +427,7 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #efbf7e;
+    border-bottom: 0.13rem solid #efbf7e;
     display: inline-block;
 }
 
@@ -450,7 +435,7 @@
     margin-bottom: 1.2rem;
 }
 
-.submit-review-section label { /* Style untuk label Rating dan Komentar */
+.submit-review-section label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -459,54 +444,52 @@
 
 .star-rating-input {
     display: flex;
-    flex-direction: row-reverse; /* Bintang dari kanan ke kiri agar hovernya benar */
-    justify-content: flex-end; /* Mulai dari kanan */
-    font-size: 1.5em; /* Ukuran dasar untuk bintang */
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 1.5em;
 }
 
 .star-rating-input input[type="radio"] {
-    display: none; /* Sembunyikan radio button asli */
+    display: none;
 }
 
-.star-rating-input label { /* Bintang (karakter ★) */
-    color: #ccc;   /* Warna bintang belum dipilih */
+.star-rating-input label {
+    color: #ccc;
     cursor: pointer;
     padding: 0 0.1em;
-    font-size: 1.5em; /* Ukuran bintangnya */
+    font-size: 1.5em;
     transition: color 0.2s ease-in-out;
 }
 
-/* Saat radio button di-check atau label di-hover, warnai bintang ini dan sebelumnya */
-.star-rating-input input[type="radio"]:checked ~ label,
+.star-rating-input input[type="radio"]:checked~label,
 .star-rating-input label:hover,
-.star-rating-input label:hover ~ label {
-    color: #f5a623; /* Warna bintang terpilih/hover (misalnya, emas) */
+.star-rating-input label:hover~label {
+    color: #f5a623;
 }
 
 .submit-review-section textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 0.06rem solid #ccc;
+    border-radius: 0.31rem;
     font-size: 0.95em;
     box-sizing: border-box;
-    min-height: 100px;
+    min-height: 6.25rem;
     resize: vertical;
     font-family: 'Poppins', sans-serif;
 }
 
-/* Tombol Kirim Ulasan (bisa menggunakan style .button-primary jika ada) */
 .submit-review-section button.button-primary {
     background-color: #375a60;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    border-bottom: 2px solid #2c484d;
+    border-bottom: 0.13rem solid #2c484d;
 }
 
 .submit-review-section button.button-primary:hover {
@@ -517,23 +500,38 @@
     font-size: 0.9em;
     font-weight: 500;
 }
+
 #review-submission-message.success {
-    color: #28a745; /* Hijau untuk sukses */
+    color: #28a745;
 }
+
 #review-submission-message.error {
-    color: #dc3545; /* Merah untuk error */
+    color: #dc3545;
 }
 
-/* Pastikan .card punya style dasar yang baik jika belum */
 .card {
-  background: white;
-  border-radius: 10px; /* Atau 0.625rem */
-  padding: 1.25rem; /* Atau 1.5rem / 1.875rem */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Atau 0 0.25rem 0.9375rem */
+    background: white;
+    border-radius: 0.63rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.13rem 0.5rem rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* MEDIA QUERIES */
+
+/* Tablet Besar */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .detail-card-course,
+    .courseinformation-container,
+    .courseterms-container,
+    .coursemodule-container,
+    .coursereview-container {
+        max-width: 90%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .detailcardcourse {
         padding: 1rem;
     }
@@ -551,7 +549,7 @@
 
     .course-pict {
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75rem;
         margin-bottom: 1rem;
     }
 
@@ -579,7 +577,6 @@
     .coursereview-container>h1 {
         text-align: center;
         display: block;
-        /* Make h1 block for centering text */
     }
 
     .course-review-card {
@@ -597,9 +594,69 @@
     }
 }
 
-@media (max-width: 480px) {
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    .detailcardcourse {
+        padding: 1rem;
+    }
+
+    .detail-card-course {
+        padding: 1rem;
+        max-width: 95%;
+    }
+
     .course-upper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
+    }
+
+    .course-pict {
+        width: 100%;
+        max-width: 18.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .course-content .course-tittle,
+    .course-content .course-author,
+    .course-content .course-description {
+        text-align: center;
+    }
+
+    .course-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .courseinformation-container,
+    .courseterms-container,
+    .coursemodule-container,
+    .coursereview-container {
+        max-width: 95%;
+    }
+
+    .courseinformation-container h1,
+    .courseterms-container h1,
+    .coursemodule-container>h1,
+    .coursereview-container>h1 {
+        text-align: center;
+        display: block;
+        font-size: 1.3em;
+    }
+
+    .course-review-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .course-review-meta {
+        margin-bottom: 0.5rem;
+    }
+
+    .course-review-detail .course-star {
+        justify-content: center;
     }
 
     .course-content .course-tittle {
@@ -620,21 +677,14 @@
         font-size: 0.9em;
     }
 
-    .courseinformation-container h1,
-    .courseterms-container h1,
-    .coursemodule-container>h1,
-    .coursereview-container>h1 {
-        font-size: 1.3em;
-    }
-
     .course-module-item-button {
         font-size: 0.9rem;
-        padding: 12px 15px;
+        padding: 0.75rem 0.94rem;
     }
 
     .profile {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .course-review-meta h3 {

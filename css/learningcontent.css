@@ -1,42 +1,33 @@
-/* Inherits from style.css for header, footer, popups etc. */
-
 /* Main container for the learning page */
 .learning-page-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 2rem auto;
-  padding: 0 1rem; /* Padding horizontal untuk seluruh kontainer halaman */
-  box-sizing: border-box; /* Pastikan padding termasuk dalam max-width */
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* Header di dalam halaman learning content (berisi judul kursus & materi) */
+/* Header di dalam halaman learning content */
 .learning-header {
   position: static;
   background-color: #ffffff;
-  
-  /* Padding: 2rem atas/bawah, 1rem kiri/kanan */
-  /* padding-left: 1rem ini SANGAT PENTING agar teks tidak mepet kiri */
-  padding: 2rem 1rem; 
-  
-  min-height: 135px; /* Tambahan: tinggi minimal untuk kotak header. Sesuaikan nilainya (misal 80px, 100px, dll.) */
-                     /* Ini akan memberi 'ruang' vertikal. */
-
+  padding: 2rem 1rem;
+  min-height: 8.45rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  box-sizing: border-box; /* KRUSIAL: Pastikan padding termasuk dalam kalkulasi lebar/tinggi */
+  border-bottom: 0.05rem solid #e0e0e0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
 }
 
 #course-main-title {
   font-size: 1.6em;
   color: #375a60;
   margin-top: 0;
-  margin-bottom: 0.6rem; 
-  margin-left: 0;     /* Pastikan tidak ada margin yang menarik ke kiri */
-  padding-left: 0;    /* Pastikan tidak ada padding internal h1 yang menggeser teks */
+  margin-bottom: 0.6rem;
+  margin-left: 0;
+  padding-left: 0;
   line-height: 1.3;
-  box-sizing: border-box; /* Konsistensi */
-  /* width: auto; max-width: 100%; adalah default untuk block-level seperti h1 */
+  box-sizing: border-box;
 }
 
 #current-lesson-title {
@@ -45,29 +36,28 @@
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;     /* Pastikan tidak ada margin yang menarik ke kiri */
-  padding-left: 0;    /* Pastikan tidak ada padding internal h2 yang menggeser teks */
+  margin-left: 0;
+  padding-left: 0;
   line-height: 1.4;
-  box-sizing: border-box; /* Konsistensi */
-  /* width: auto; max-width: 100%; adalah default untuk block-level seperti h2 */
+  box-sizing: border-box;
 }
 
 /* Layout for video/content and sidebar */
 .coursecontent {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  box-sizing: border-box; /* Tambahkan untuk konsistensi */
+  gap: 1.25rem;
+  box-sizing: border-box;
 }
 
 .course-video-main {
   flex: 3;
-  min-width: 300px;
+  min-width: 18.75rem;
   background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Tambahkan untuk konsistensi */
+  padding: 0.95rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .video-player-wrapper {
@@ -76,7 +66,7 @@
   height: 0;
   overflow: hidden;
   background-color: #000;
-  border-radius: 6px;
+  border-radius: 0.35rem;
 }
 
 .video-player-wrapper iframe {
@@ -89,10 +79,10 @@
 }
 
 .lesson-description {
-  margin-top: 15px;
-  padding: 15px;
+  margin-top: 0.95rem;
+  padding: 0.95rem;
   background-color: #f9f9f9;
-  border-radius: 6px;
+  border-radius: 0.35rem;
   line-height: 1.7;
   color: #333;
 }
@@ -105,17 +95,17 @@
 .lesson-navigation-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  padding-top: 15px;
-  border-top: 1px solid #eee;
+  margin-top: 1.25rem;
+  padding-top: 0.95rem;
+  border-top: 0.05rem solid #eee;
 }
 
 .lesson-nav-btn {
   background-color: #375a60;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.35rem;
   cursor: pointer;
   font-size: 0.9em;
   font-weight: 500;
@@ -134,22 +124,22 @@
 /* Sidebar for module and lesson navigation */
 .content-container-sidebar {
   flex: 1;
-  min-width: 280px;
+  min-width: 17.5rem;
   background-color: #f8f9fa;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.95rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.05);
   height: fit-content;
-  box-sizing: border-box; /* Tambahkan untuk konsistensi */
+  box-sizing: border-box;
 }
 
 .content-container-sidebar h3 {
   font-size: 1.2em;
   color: #375a60;
   margin-top: 0;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0.95rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 0.05rem solid #e0e0e0;
 }
 
 .course-module-navigation {
@@ -160,15 +150,15 @@
   background-color: #e9ecef;
   color: #333;
   cursor: pointer;
-  padding: 12px 15px;
+  padding: 0.75rem 0.95rem;
   width: 100%;
   text-align: left;
   border: none;
   font-size: 0.95rem;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  margin-top: 8px;
-  border-radius: 4px;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,7 +169,7 @@
 }
 
 .course-module-item-button::after {
-  content: '▼'; /* Menggunakan simbol literal */
+  content: '▼';
   font-size: 0.7em;
   transition: transform 0.3s ease;
 }
@@ -195,7 +185,7 @@
 }
 
 .course-module-item-button.active::after {
-  color: #fff; /* Pastikan panah terlihat di background aktif */
+  color: #fff;
 }
 
 .course-module-item-content {
@@ -203,24 +193,24 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  padding: 0 15px; /* Padding horizontal saat tertutup */
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  padding: 0 0.95rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #e0e0e0;
+  border-bottom: 0.05rem solid #e0e0e0;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
-.course-module-item-button.active + .course-module-item-content {
-  padding: 5px 15px 5px 15px; /* Padding saat terbuka */
+.course-module-item-button.active+.course-module-item-content {
+  padding: 0.35rem 0.95rem 0.35rem 0.95rem;
 }
 
 .course-module-item-content a {
   display: block;
-  padding: 8px 10px 8px 15px;
+  padding: 0.5rem 0.65rem 0.5rem 0.95rem;
   color: #375a60;
   text-decoration: none;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 0.05rem solid #f0f0f0;
   font-size: 0.85em;
   transition: background-color 0.2s ease, color 0.2s ease;
   position: relative;
@@ -242,33 +232,105 @@
 }
 
 .course-module-item-content a::before {
-  content: '▶'; /* Menggunakan simbol literal */
-  margin-right: 8px;
+  content: '▶';
+  margin-right: 0.5rem;
   font-size: 0.8em;
   color: #aaa;
 }
 
 .course-module-item-content a.active-lesson::before {
-  color: #375a60; /* Warna ikon untuk materi aktif */
+  color: #375a60;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+/* MEDIA QUERIES */
+
+/* Tablet Besar */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .learning-page-container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .coursecontent {
-    flex-direction: column-reverse; /* Sidebar di atas video pada layar kecil */
+    flex-direction: column-reverse;
   }
 
   .course-video-main,
   .content-container-sidebar {
-    flex-basis: auto; /* Lebar penuh saat ditumpuk */
+    flex-basis: auto;
     width: 100%;
   }
 
-  .learning-header #course-main-title { /* Target spesifik untuk override jika perlu */
+  .learning-header #course-main-title {
     font-size: 1.4em;
   }
 
-  .learning-header #current-lesson-title { /* Target spesifik untuk override jika perlu */
+  .learning-header #current-lesson-title {
     font-size: 1.05em;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+  .coursecontent {
+    flex-direction: column-reverse;
+  }
+
+  .course-video-main,
+  .content-container-sidebar {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .learning-header #course-main-title {
+    font-size: 1.4em;
+  }
+
+  .learning-header #current-lesson-title {
+    font-size: 1.05em;
+  }
+
+  .learning-page-container {
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .learning-header {
+    padding: 1rem 0.75rem;
+    min-height: auto;
+  }
+
+  #course-main-title {
+    font-size: 1.3em;
+  }
+
+  #current-lesson-title {
+    font-size: 1em;
+  }
+
+  .course-video-main {
+    padding: 0.75rem;
+  }
+
+  .lesson-nav-btn {
+    padding: 0.5rem 0.95rem;
+    font-size: 0.85em;
+  }
+
+  .content-container-sidebar {
+    padding: 0.75rem;
+    min-width: auto;
+  }
+
+  .course-module-item-button {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .course-module-item-content a {
+    padding: 0.5rem 0.65rem 0.5rem 0.75rem;
+    font-size: 0.8em;
   }
 }

@@ -29,37 +29,3 @@
     display: flex;
     padding: 0.3rem;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown .masuk {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-    border-radius: 10px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
