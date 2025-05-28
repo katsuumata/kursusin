@@ -102,7 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.warn("Login failed: Email not found:", emailInput);
                 // Check if this email was the one just registered and stored in localStorage
-                const recentlyRegisteredUserJSON = localStorage.getItem("registeredUser"); // Ambil JSON string
+                const recentlyRegisteredUserJSON = localStorage.getItem("registeredUser");
+
                 if (recentlyRegisteredUserJSON) {
                     const recentlyRegisteredUser = JSON.parse(recentlyRegisteredUserJSON); // Parse JSON
 
