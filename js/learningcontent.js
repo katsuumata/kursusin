@@ -84,11 +84,69 @@ document.addEventListener('DOMContentLoaded', async function () {
             enrollmentUpdatedOrCreated = true;
             console.log("LearningContent: Membuat entri simulated_enrollment baru dengan progres 100% untuk kursus:", courseId);
         }
-        
+
         if (enrollmentUpdatedOrCreated) {
             localStorage.setItem(`simulated_enrollments_${userId}`, JSON.stringify(simulatedEnrollments));
         }
     }
+
+    // *** NEW FUNCTION: Fungsi untuk memperbarui progres kursus ***
+    async function updateProgress(courseId, userId) {
+        if (!userId || !courseId || !currentLessonData || !allLessonsForCourse || allLessonsForCourse.length === 0) {
+            console.warn("LearningContent: Data tidak lengkap untuk memperbarui progres.");
+            return;
+        }
+
+        const currentIndex = allLessonsForCourse.findIndex(l => l.lesson_id === currentLessonData.lesson_id && l.module_id === currentLessonData.module_id);
+        const totalLessons = allLessonsForCourse.length;
+
+        if (currentIndex === -1) {
+            console.warn("LearningContent: Materi saat ini tidak ditemukan, tidak dapat memperbarui progres.");
+            return;
+        }
+
+        // Hitung progres berdasarkan materi saat ini
+        let progressPercentage = Math.round(((currentIndex + 1) / totalLessons) * 100);
+
+        let simulatedEnrollmentsString = localStorage.getItem(`simulated_enrollments_${userId}`);
+        let simulatedEnrollments = [];
+        try {
+            simulatedEnrollments = simulatedEnrollmentsString ? JSON.parse(simulatedEnrollmentsString) : [];
+        } catch (e) {
+            console.error("LearningContent: Error memparsing simulated_enrollments saat memperbarui progres", e);
+            simulatedEnrollments = [];
+        }
+
+        const enrollmentIndex = simulatedEnrollments.findIndex(e => e.course_id === courseId && e.user_id === userId);
+
+        if (enrollmentIndex > -1) {
+            // Hanya update jika progres saat ini < 100% DAN progres baru lebih tinggi
+            if (simulatedEnrollments[enrollmentIndex].progress_percentage < 100 &&
+                simulatedEnrollments[enrollmentIndex].progress_percentage < progressPercentage) {
+                simulatedEnrollments[enrollmentIndex].progress_percentage = progressPercentage;
+                simulatedEnrollments[enrollmentIndex].completion_date = null; // Hapus tgl selesai jika belum 100%
+                localStorage.setItem(`simulated_enrollments_${userId}`, JSON.stringify(simulatedEnrollments));
+                console.log(`LearningContent: Progres diperbarui menjadi ${progressPercentage}% untuk kursus:`, courseId);
+            }
+        } else {
+            // Jika belum ada, buat entri baru (seharusnya jarang terjadi jika akses sudah ada)
+            const baseEnrollments = await fetchData('enrollments.json') || [];
+            const baseEnrollment = baseEnrollments.find(e => e.user_id === userId && e.course_id === courseId);
+
+            const newEnrollment = {
+                enrollment_id: baseEnrollment ? baseEnrollment.enrollment_id : `sim_prog_${userId}_${courseId}_${Date.now()}`,
+                user_id: userId,
+                course_id: courseId,
+                enrollment_date: baseEnrollment ? baseEnrollment.enrollment_date : new Date().toISOString(),
+                progress_percentage: progressPercentage,
+                completion_date: null
+            };
+            simulatedEnrollments.push(newEnrollment);
+            localStorage.setItem(`simulated_enrollments_${userId}`, JSON.stringify(simulatedEnrollments));
+            console.log(`LearningContent: Membuat entri simulated_enrollment baru dengan progres ${progressPercentage}% untuk kursus:`, courseId);
+        }
+    }
+
 
     // Fungsi untuk memperbarui tombol navigasi materi (Sebelumnya/Berikutnya/Selesai)
     function updateNavigationButtons() {
@@ -124,14 +182,17 @@ document.addEventListener('DOMContentLoaded', async function () {
             nextLessonBtn.onclick = async () => {
                 if (loggedInUser && loggedInUser.user_id && currentCourseData && currentCourseData.course_id) {
                     await markCourseAsCompleted(currentCourseData.course_id, loggedInUser.user_id);
+                    // *** MODIFICATION: Tampilkan popup sebelum redirect ***
+                    showPopup(`Selamat! Anda telah menyelesaikan kursus "${currentCourseData.title}".\nProgress Anda: 100%`, true);
+                    setTimeout(() => window.location.href = `coursedetails.html?id=${currentCourseData.course_id}`, 3000);
                     // Arahkan ke detail kursus setelah selesai
-                    window.location.href = `coursedetails.html?id=${currentCourseData.course_id}`;
+                    ;
                 } else {
                     console.error("LearningContent: Tidak bisa menandai kursus sebagai selesai. Data pengguna atau kursus tidak ada.");
                     if (currentCourseData && currentCourseData.course_id) {
-                         window.location.href = `coursedetails.html?id=${currentCourseData.course_id}`;
+                        window.location.href = `coursedetails.html?id=${currentCourseData.course_id}`;
                     } else {
-                         window.location.href = 'course.html'; // Fallback aman
+                        window.location.href = 'course.html'; // Fallback aman
                     }
                 }
             };
@@ -144,7 +205,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             };
         }
     }
-    
+
     // Fungsi untuk Menampilkan Konten Materi (Video/Teks)
     function displayLessonContent() {
         if (!currentLessonData) {
@@ -174,7 +235,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (currentLessonData.lesson_type === 'video' && currentLessonData.content_url) {
             if (videoPlayerIframe && videoPlayerIframe.parentElement) {
                 // Perbaikan URL YouTube: Asumsi content_url adalah Video ID
-                videoPlayerIframe.src = `https://www.youtube.com/embed/${currentLessonData.content_url}`;
+                videoPlayerIframe.src = `https://www.youtube.com/embed/${currentLessonData.content_url}`; // Menggunakan embed URL yang benar
                 videoPlayerIframe.style.display = 'block';
                 videoPlayerIframe.parentElement.style.display = 'block';
             }
@@ -258,7 +319,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         });
     }
-    
+
     // Fungsi untuk Memeriksa Akses Pengguna ke Kursus
     async function checkAccess(courseId) {
         const loggedInUserString = localStorage.getItem('loggedInUser');
@@ -310,7 +371,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 }
             } catch (e) { console.error("Error memparsing pendaftaran tersimulasi:", e); }
         }
-        
+
         if (typeof showPopup === 'function') {
             showPopup("Anda belum memiliki akses ke kursus ini.", false, "Anda akan diarahkan ke detail kursus.", true);
             setTimeout(() => window.location.href = `coursedetails.html?id=${courseId}`, 3000);
@@ -328,9 +389,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             console.error("LearningContent: Parameter URL tidak lengkap (courseId, moduleId, atau lessonId). Pastikan URL sudah benar.");
             if (courseMainTitleEl) courseMainTitleEl.textContent = "Error: Informasi Materi Tidak Lengkap";
             if (moduleNavListContainer) moduleNavListContainer.innerHTML = "<p>Parameter tidak lengkap. Tidak dapat memuat materi.</p>";
-            if (lessonTextContentEl) { 
-                lessonTextContentEl.innerHTML = "<p>Parameter URL tidak lengkap. Silakan kembali dan pilih materi dari halaman detail kursus.</p>"; 
-                lessonTextContentEl.style.display = 'block'; 
+            if (lessonTextContentEl) {
+                lessonTextContentEl.innerHTML = "<p>Parameter URL tidak lengkap. Silakan kembali dan pilih materi dari halaman detail kursus.</p>";
+                lessonTextContentEl.style.display = 'block';
             }
             if (videoPlayerIframe && videoPlayerIframe.parentElement) videoPlayerIframe.parentElement.style.display = 'none';
             updateNavigationButtons();
@@ -385,13 +446,18 @@ document.addEventListener('DOMContentLoaded', async function () {
         currentLessonData = allLessonsForCourse.find(l => l.lesson_id === params.lessonId && l.module_id === params.moduleId);
         currentModuleData = allModulesForCourse.find(m => m.module_id === params.moduleId);
 
+        // *** MODIFICATION: Panggil updateProgress setelah data dimuat ***
+        if (loggedInUser && loggedInUser.user_id && currentCourseData && currentLessonData && allLessonsForCourse.length > 0) {
+            await updateProgress(currentCourseData.course_id, loggedInUser.user_id);
+        }
+
         if (!currentLessonData) {
             console.warn(`LearningContent: Data materi spesifik tidak ditemukan untuk lessonId: ${params.lessonId} di moduleId: ${params.moduleId}.`);
             if (allLessonsForCourse.length > 0) {
                 console.warn("LearningContent: Mengarahkan ke materi pertama yang tersedia di kursus ini sebagai fallback.");
                 const firstLesson = allLessonsForCourse[0];
                 window.location.href = `learningcontent.html?courseId=${params.courseId}&moduleId=${firstLesson.module_id}&lessonId=${firstLesson.lesson_id}`;
-                return; 
+                return;
             } else {
                 console.error("LearningContent: Tidak ada materi sama sekali di kursus ini untuk ditampilkan.");
                 if (courseMainTitleEl && currentCourseData) courseMainTitleEl.textContent = currentCourseData.title || "Judul Kursus";
@@ -406,7 +472,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 return;
             }
         }
-        
+
         renderModuleNavigation();
         displayLessonContent();
     }

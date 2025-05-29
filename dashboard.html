@@ -80,6 +80,10 @@
         </div>
       </div>
 
+      <a href="#" class="card-link card" id="my-badges-link">
+        LENCANA SAYA
+      </a>
+
       <a href="#" class="card-link card" id="diskusi-link">
         DISKUSI <span class="coming-soon-badge">(Segera Hadir)</span>
       </a>
@@ -103,6 +107,12 @@
       </div>
       <div class="see-more" id="see-more-courses-container" style="display: none;">
         <button class="see" id="see-more-courses-button">Lihat Semua Pelatihan Saya</button>
+      </div>
+
+      <div class="badges-section" id="my-badges-section" style="display: none;">
+        <h2 class="section-title">Lencana Saya</h2>
+        <div class="badges-grid" id="userBadgesContainer">
+        </div>
       </div>
     </section>
   </main>
@@ -146,6 +156,24 @@
       <p id="popup-redirect-message" class="redirect-message" style="display: none;"></p>
       <div id="popup-loader" class="popup-loader" style="display: none;"></div>
       <button id="popup-ok-btn" style="display: none;">OK</button>
+    </div>
+  </div>
+
+  <div id="badgeModal" class="badge-modal">
+    <div class="badge-modal-content">
+      <span class="badge-modal-close">&times;</span>
+      <h2>Lencana Anda!</h2>
+      <div id="modalBadgesContainer" class="modal-badges-grid">
+      </div>
+    </div>
+  </div>
+
+  <div id="completedCoursesModal" class="completed-courses-modal">
+    <div class="completed-courses-modal-content">
+      <span class="completed-courses-modal-close">&times;</span>
+      <h2>Pelatihan yang Sudah Selesai</h2>
+      <ul id="completedCoursesList" class="completed-courses-list">
+      </ul>
     </div>
   </div>
 
