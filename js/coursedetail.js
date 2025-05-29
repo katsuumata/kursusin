@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 break;
             }
         }
-        
+
         mulaiBelajarButton.classList.remove('disabled');
         if (loggedInUser && loggedInUser.user_id) {
             mulaiBelajarButton.href = firstLessonLink;
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     async function renderReviews() {
         if (!reviewsListContainer || !currentCourseData) {
-            if(reviewsListContainer) reviewsListContainer.innerHTML = '<p>Memuat ulasan...</p>';
+            if (reviewsListContainer) reviewsListContainer.innerHTML = '<p>Memuat ulasan...</p>';
             return;
         }
         const courseId = currentCourseData.course_id;
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         });
         displayableReviews.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-        
+
         updateRatingDisplay(displayableReviews); // Update summary rating di kartu utama
 
         if (displayableReviews.length === 0) {
@@ -259,11 +259,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             reviewsListContainer.appendChild(reviewCard);
         });
     }
-    
+
     function renderCourseDetails(course, authorName, modulesForCourse) {
         if (!course) {
             if (detailCardContainer) detailCardContainer.innerHTML = "<p>Detail kursus tidak ditemukan.</p>";
-            if (mulaiBelajarButton) {mulaiBelajarButton.classList.add('disabled'); mulaiBelajarButton.textContent="Error";}
+            if (mulaiBelajarButton) { mulaiBelajarButton.classList.add('disabled'); mulaiBelajarButton.textContent = "Error"; }
             [courseInfoTextEl, courseRequirementsTextEl, modulesListContainer, reviewsListContainer, submitReviewContainer].forEach(el => {
                 if (el) { el.innerHTML = '<p>Informasi tidak tersedia.</p>'; if (el.parentElement && el.parentElement.tagName === 'SECTION') el.parentElement.style.display = 'none'; }
             });
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (courseAuthorEl) courseAuthorEl.textContent = `oleh ${authorName || 'Pengajar Ahli'}`;
         if (courseDescriptionEl) courseDescriptionEl.textContent = course.description_long || course.description_short || 'Deskripsi tidak tersedia.';
         if (participantCountEl) participantCountEl.textContent = (course.participant_count || 0).toLocaleString('id-ID');
-        
+
         if (courseInfoTextEl) courseInfoTextEl.textContent = course.information_details || 'Informasi detail tidak tersedia.';
         if (courseRequirementsTextEl) courseRequirementsTextEl.textContent = course.requirements || 'Tidak ada persyaratan khusus.';
 
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     if (reviewForm) {
-        reviewForm.addEventListener('submit', async function(event) {
+        reviewForm.addEventListener('submit', async function (event) {
             event.preventDefault();
             if (!loggedInUser || !loggedInUser.user_id || !currentCourseData || !currentCourseData.course_id) {
                 reviewSubmissionMessageEl.textContent = "Silakan login untuk memberi ulasan.";
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             reviewSubmissionMessageEl.textContent = message;
             reviewSubmissionMessageEl.className = 'success';
             reviewSubmissionMessageEl.style.display = 'block';
-            
+
             if (submitReviewButton) submitReviewButton.textContent = "Perbarui Ulasan"; // Tombol tetap "Perbarui"
             // Form tidak disembunyikan agar bisa edit lagi
 
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const courseId = getCourseIdFromURL();
         if (!courseId) {
             if (detailCardContainer) detailCardContainer.innerHTML = "<h1>ID Kursus tidak valid atau tidak ditemukan.</h1>";
-            if (mulaiBelajarButton) {mulaiBelajarButton.textContent = 'Error'; mulaiBelajarButton.classList.add('disabled');}
+            if (mulaiBelajarButton) { mulaiBelajarButton.textContent = 'Error'; mulaiBelajarButton.classList.add('disabled'); }
             return;
         }
 
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const currentCourse = allCourses.find(c => c.course_id === courseId);
         if (!currentCourse) {
             if (detailCardContainer) detailCardContainer.innerHTML = `<h1>Kursus dengan ID "${courseId}" tidak ditemukan.</h1>`;
-            if (mulaiBelajarButton) {mulaiBelajarButton.textContent = 'Kursus Tidak Ada'; mulaiBelajarButton.classList.add('disabled');}
+            if (mulaiBelajarButton) { mulaiBelajarButton.textContent = 'Kursus Tidak Ada'; mulaiBelajarButton.classList.add('disabled'); }
             return;
         }
         currentCourseData = currentCourse;
@@ -382,9 +382,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         const authorName = author ? author.name : 'Pengajar Ahli';
         const modulesForCourse = (allModules || []).filter(m => m.course_id === courseId).map(mod => ({
             ...mod,
-            lessons: (allLessons || []).filter(l => l.module_id === mod.module_id).sort((a,b) => (a.order || 0) - (b.order || 0))
-        })).sort((a,b) => (a.order || 0) - (b.order || 0));
-        
+            lessons: (allLessons || []).filter(l => l.module_id === mod.module_id).sort((a, b) => (a.order || 0) - (b.order || 0))
+        })).sort((a, b) => (a.order || 0) - (b.order || 0));
+
         renderCourseDetails(currentCourse, authorName, modulesForCourse);
         await updateMulaiButtonState(currentCourse.course_id);
 

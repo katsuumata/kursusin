@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("login-form"); // Updated ID
+    // --- Konstanta Global ---
     const JSON_USERS_PATH = './json/users.json';
 
-    // --- Helper: Fetch Users ---
+    // --- Seleksi Elemen DOM & Inisialisasi Awal ---
+    const form = document.getElementById("login-form");
+    const emailField = document.getElementById("email");
+    const rememberMeCheckbox = document.getElementById("remember");
+
+    // --- Fungsi Utilitas Pengambilan Data Pengguna ---
     async function fetchUsers() {
         try {
             const response = await fetch(JSON_USERS_PATH);
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`HTTP error! Status: ${response.status}`);
             }
             return await response.json();
         } catch (error) {
-            console.error("Could not fetch users.json for login:", error);
+            console.error("Tidak dapat mengambil users.json untuk login:", error);
             showPopup("Tidak dapat mengambil data pengguna. Silakan coba lagi nanti.", false);
-            return null; // Indicate failure to fetch
+            return null;
         }
     }
 
-    // --- Pre-fill email if remembered ---
+    // --- Logika Pengisian Email (Jika Diingat) ---
     const rememberedEmail = localStorage.getItem("rememberedEmail");
-    const emailField = document.getElementById("email");
-    const rememberMeCheckbox = document.getElementById("remember");
-
     if (rememberedEmail && emailField) {
         emailField.value = rememberedEmail;
         if (rememberMeCheckbox) {
@@ -29,12 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // --- Form Submit Logic ---
+    // --- Logika Submit Form Login ---
     if (form) {
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
-            console.log("Login form submitted.");
+            console.log("Form login dikirim.");
 
+            // Pengambilan Nilai dari Form
             const emailInputEl = document.getElementById("email");
             const passwordInputEl = document.getElementById("password");
             const rememberMeChecked = rememberMeCheckbox ? rememberMeCheckbox.checked : false;
@@ -42,36 +45,33 @@ document.addEventListener("DOMContentLoaded", () => {
             const emailInput = emailInputEl ? emailInputEl.value.trim() : "";
             const passwordInput = passwordInputEl ? passwordInputEl.value : "";
 
+            // Validasi Input Awal
             if (!emailInput || !passwordInput) {
                 showPopup("Mohon isi semua field (Email dan Kata Sandi)!", false);
                 return;
             }
 
-            // Fetch all users from users.json
+            // Proses Autentikasi Pengguna
             const allUsers = await fetchUsers();
 
             if (!allUsers) {
-                // Error already shown by fetchUsers
                 return;
             }
 
             const foundUser = allUsers.find(user => user.email === emailInput);
 
             if (foundUser) {
-                // SIMULATION: In a real app, the backend would compare the hashed input password 
-                // with the stored password_hash. Here, we compare with the plain 'password' field
-                // from users.json for simulation purposes.
-                if (passwordInput === foundUser.password) { // Using the plain 'password' field
-                    console.log("Login successful for:", foundUser.name);
+                // Pencocokan Pengguna dan Kata Sandi (Simulasi)
+                if (passwordInput === foundUser.password) {
+                    // Penanganan Login Berhasil
+                    console.log("Login berhasil untuk:", foundUser.name);
                     showPopup(`Selamat datang kembali, ${foundUser.name}! Anda berhasil login.`, true, "Mengalihkan ke dasbor...", true);
 
-                    // Store logged-in user information (excluding password)
                     const loggedInUserData = {
                         user_id: foundUser.user_id,
                         name: foundUser.name,
                         email: foundUser.email,
                         image_url: foundUser.image_url
-                        // Add other non-sensitive data if needed by other pages
                     };
                     localStorage.setItem("loggedInUser", JSON.stringify(loggedInUserData));
 
@@ -80,12 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         localStorage.removeItem("rememberedEmail");
                     }
-
-                    // Clear any temporarily stored registeredUser from registration flow
                     localStorage.removeItem("registeredUser");
 
                     setTimeout(() => {
-                        // Check for redirect URL from query params (e.g., after trying to access a protected page)
                         const urlParams = new URLSearchParams(window.location.search);
                         const redirectUrl = urlParams.get('redirect');
                         if (redirectUrl) {
@@ -96,22 +93,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, 2000);
 
                 } else {
-                    console.warn("Login failed: Incorrect password for email:", emailInput);
+                    // Penanganan Login Gagal (Password Salah)
+                    console.warn("Login gagal: Kata sandi salah untuk email:", emailInput);
                     showPopup("Email atau kata sandi salah.", false);
                 }
             } else {
-                console.warn("Login failed: Email not found:", emailInput);
-                // Check if this email was the one just registered and stored in localStorage
+                // Penanganan Login Gagal (Email Tidak Ditemukan)
+                console.warn("Login gagal: Email tidak ditemukan:", emailInput);
                 const recentlyRegisteredUserJSON = localStorage.getItem("registeredUser");
 
                 if (recentlyRegisteredUserJSON) {
-                    const recentlyRegisteredUser = JSON.parse(recentlyRegisteredUserJSON); // Parse JSON
-
-                    // UBAH INI: Bandingkan dengan password yang disimpan
-                    if (recentlyRegisteredUser && emailInput === recentlyRegisteredUser.email && passwordInput === recentlyRegisteredUser.password) { // <-- PERBAIKI INI
-                        // This case handles if users.json hasn't "updated" yet in our simulation
-                        // but the user just registered.
-                        console.log("Login successful for recently registered user (from localStorage):", recentlyRegisteredUser.nama);
+                    const recentlyRegisteredUser = JSON.parse(recentlyRegisteredUserJSON);
+                    // Pengecekan Pengguna yang Baru Terdaftar (dari localStorage)
+                    if (recentlyRegisteredUser && emailInput === recentlyRegisteredUser.email && passwordInput === recentlyRegisteredUser.password) {
+                        console.log("Login berhasil untuk pengguna yang baru terdaftar (dari localStorage):", recentlyRegisteredUser.nama);
                         showPopup(`Selamat datang, ${recentlyRegisteredUser.nama}! Anda berhasil login.`, true, "Mengalihkan ke dasbor...", true);
 
                         const loggedInUserData = {
@@ -135,10 +130,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         showPopup("Email atau kata sandi salah, atau akun tidak ditemukan.", false);
                     }
+                } else {
+                    showPopup("Email tidak ditemukan.", false);
                 }
             }
         });
     } else {
-        console.error("Login form with ID 'login-form' not found.");
+        // Penanganan jika Form Login Tidak Ditemukan
+        console.error("Form login dengan ID 'login-form' tidak ditemukan.");
     }
 });

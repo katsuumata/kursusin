@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     // --- Update UI Elements ---
     function populateFilterCategories() {
         if (!filterCategorySelect || !allCategories || allCategories.length === 0) return;
-        
-        filterCategorySelect.innerHTML = '<option value="">Semua Kategori</option>'; 
-        
+
+        filterCategorySelect.innerHTML = '<option value="">Semua Kategori</option>';
+
         allCategories.forEach(cat => {
             const option = document.createElement('option');
             option.value = cat.category_id;

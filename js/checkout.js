@@ -1,49 +1,39 @@
 // Function to go back in history, using showPopup if available
 function kembali() {
     if (typeof showPopup === 'function') {
-        console.log("Checkout Page: kembali() called. Attempting to show popup.");
         showPopup("Anda akan kembali ke halaman sebelumnya...", true, "Mengalihkan...", true);
         setTimeout(() => {
-            console.log("Checkout Page: kembali() - navigating back.");
             window.history.back();
         }, 1500);
     } else {
-        console.warn("Checkout Page: kembali() - showPopup function not found, navigating back directly.");
         window.history.back();
     }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Mendapatkan data keranjang dan informasi pengguna dari localStorage
     const storedCart = localStorage.getItem('selectedCart');
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-    console.log("Checkout Page: DOMContentLoaded. Reading 'selectedCart' from localStorage:", storedCart);
-    console.log("Checkout Page: LoggedInUser:", loggedInUser);
-
+    // --- Proses Inisialisasi dan Validasi Keranjang ---
     if (storedCart) {
         try {
             const cartData = JSON.parse(storedCart);
-            console.log("Checkout Page: 'selectedCart' data after parse:", cartData);
 
+            // Memvalidasi kelengkapan data keranjang
             if (cartData && typeof cartData.price === 'number' && typeof cartData.total === 'number' && cartData.id) {
-                console.log("Checkout Page: cartData is valid. Proceeding to populate summary.");
 
+                // Mengisi detail ringkasan pesanan
                 const planNameEl = document.getElementById('checkout-plan-name');
                 const planPriceEl = document.getElementById('checkout-plan-price');
                 const totalPriceEl = document.getElementById('checkout-total-price');
 
                 if (planNameEl) planNameEl.textContent = cartData.name || 'Nama Paket Tidak Tersedia';
-                else console.warn("Checkout Page: Element with ID 'checkout-plan-name' not found.");
-
                 if (planPriceEl) planPriceEl.textContent = formatCurrency(cartData.price);
-                else console.warn("Checkout Page: Element with ID 'checkout-plan-price' not found.");
+                if (totalPriceEl) totalPriceEl.textContent = formatCurrency(cartData.total);
+                else console.error("Halaman Checkout: Elemen dengan ID 'checkout-total-price' TIDAK DITEMUKAN!");
 
-                if (totalPriceEl) {
-                    totalPriceEl.textContent = formatCurrency(cartData.total);
-                } else {
-                    console.error("Checkout Page: Element with ID 'checkout-total-price' NOT FOUND!");
-                }
-
+                // Mengisi informasi pengguna jika sudah login
                 if (loggedInUser) {
                     const fullNameInput = document.getElementById('checkout-name');
                     const emailInput = document.getElementById('checkout-email');
@@ -51,17 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (emailInput && loggedInUser.email) emailInput.value = loggedInUser.email;
                 }
 
+                // --- Penanganan Tombol Checkout ---
                 const checkoutForm = document.getElementById('checkout-form');
                 const checkoutButton = document.querySelector('.checkout-button');
 
                 if (checkoutButton && checkoutForm) {
-                    console.log("Checkout Page: Checkout button and form found. Adding event listener.");
                     checkoutButton.addEventListener('click', async function (event) {
-                        console.log("Checkout Page: .checkout-button clicked.");
                         event.preventDefault();
 
+                        // Memeriksa status login pengguna
                         if (!loggedInUser || !loggedInUser.user_id) {
-                            console.warn("Checkout Page: User not logged in. Cannot proceed with checkout.");
                             if (typeof showPopup === 'function') {
                                 showPopup("Anda harus login untuk melakukan checkout.", false, "Mengalihkan ke halaman login...", true);
                             } else {
@@ -73,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             return;
                         }
 
+                        // Mendapatkan nilai dari formulir pembayaran
                         const fullNameEl = document.getElementById('checkout-name');
                         const emailEl = document.getElementById('checkout-email');
                         const phoneEl = document.getElementById('checkout-phone');
@@ -83,10 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         const phone = phoneEl ? phoneEl.value.trim() : "";
                         const paymentMethod = paymentMethodEl ? paymentMethodEl.value : "";
 
-                        console.log("Checkout Page: Form values - FullName:", `"${fullName}"`, "Email:", `"${email}"`, "Phone:", `"${phone}"`, "PaymentMethod:", `"${paymentMethod}"`);
-
+                        // Validasi input formulir
                         if (!fullName || !email || !phone || !paymentMethod) {
-                            console.warn("Checkout Page: Form validation failed. Missing fields.");
                             if (typeof showPopup === 'function') {
                                 showPopup("Harap lengkapi semua informasi pembayaran.", false);
                             } else {
@@ -95,8 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             return;
                         }
 
-                        console.log("Checkout Page: Form validation passed.");
-
+                        // --- Pembuatan Data Pesanan dan Transaksi (Simulasi) ---
                         const orderId = `ord_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
                         const transactionId = `trx_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
                         const currentDate = new Date().toISOString();
@@ -121,35 +108,26 @@ document.addEventListener('DOMContentLoaded', function () {
                             payment_details_id: `sim_pay_${transactionId}`
                         };
 
-                        console.log("Checkout Page: SIMULATING ORDER CREATION. Data that WOULD be saved to orders.json:", newOrder);
-                        console.log("Checkout Page: SIMULATING TRANSACTION CREATION. Data that WOULD be saved to transactions.json:", newTransaction);
-
-                        // Determine if the plan grants all-access
+                        // Menentukan apakah paket memberikan akses penuh
                         let grantsAllAccess = false;
                         if (newOrder.plan_id === "paket-6bln" || newOrder.plan_id === "paket-12bln") {
                             grantsAllAccess = true;
                         }
-                        // For "paket-3bln", it might grant access to specific courses or a limited set.
-                        // If it also grants all access, add it here. Otherwise, `grantsAllAccess` remains false.
 
+                        // Menyimpan status paket pengguna ke localStorage
                         localStorage.setItem('userPlanStatus', JSON.stringify({
                             planId: newOrder.plan_id,
                             active: true,
                             orderDate: newOrder.order_date,
                             orderId: newOrder.order_id,
-                            user_id: loggedInUser.user_id, // Ensure user_id is stored with plan status
-                            grantsAccessToAll: grantsAllAccess // Store all-access status
+                            user_id: loggedInUser.user_id,
+                            grantsAccessToAll: grantsAllAccess
                         }));
-                        console.log("Checkout Page: 'userPlanStatus' saved to localStorage:", localStorage.getItem('userPlanStatus'));
 
-                        // Simulate adding to enrollments.json
-                        // If grantsAllAccess is true, individual enrollments might not be strictly necessary for access control
-                        // but could be useful for tracking progress on specific courses the user starts.
+                        // --- Simulasi Pembuatan Pendaftaran Kursus ---
                         const enrollmentsToCreate = [];
                         if (grantsAllAccess) {
-                            // Potentially enroll in a few "starter" or "popular" courses automatically,
-                            // or let the user choose from the dashboard.
-                            // For now, let's simulate enrolling in a couple if it's an all-access plan.
+                            // Contoh: Otomatis mendaftarkan ke beberapa kursus awal untuk paket akses penuh
                             const exampleCoursesForAllAccess = ["course001", "course009"];
                             exampleCoursesForAllAccess.forEach(courseId => {
                                 enrollmentsToCreate.push({
@@ -162,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 });
                             });
                         } else if (newOrder.plan_id === "paket-3bln") {
-                            // Example: 3 month plan might give access to a specific set, e.g., first 3 courses
+                            // Contoh: Paket 3 bulan mungkin memberikan akses ke beberapa kursus tertentu
                             const coursesFor3MonthPlan = ["course001", "course002", "course003"];
                             coursesFor3MonthPlan.forEach(courseId => {
                                 enrollmentsToCreate.push({
@@ -175,36 +153,34 @@ document.addEventListener('DOMContentLoaded', function () {
                                 });
                             });
                         }
-                        console.log("Checkout Page: SIMULATING ENROLLMENTS. Data that WOULD be added/updated in enrollments.json:", enrollmentsToCreate);
-                        // In a real app, you'd POST newOrder, newTransaction, and enrollmentsToCreate to your backend.
 
-
+                        // --- Notifikasi dan Pengalihan Setelah Checkout ---
                         if (typeof showPopup === 'function') {
                             showPopup(
                                 "Checkout berhasil! Terima kasih atas pesanan Anda.",
                                 true,
-                                "Anda akan diarahkan ke dasbor dalam 5 detik.",
+                                "Anda akan diarahkan ke dashboard dalam 5 detik.",
                                 true
                             );
                         } else {
                             alert("Checkout berhasil! Terima kasih atas pesanan Anda.");
                         }
 
+                        // Membersihkan keranjang setelah checkout
                         localStorage.removeItem('selectedCart');
-                        console.log("Checkout Page: 'selectedCart' removed from localStorage.");
 
+                        // Mengalihkan ke halaman dashboard
                         setTimeout(function () {
-                            console.log("Checkout Page: Redirecting to dashboard.html");
                             window.location.href = "dashboard.html";
                         }, 5000);
                     });
                 } else {
-                    if (!checkoutForm) console.error("Checkout Page: Form dengan ID 'checkout-form' NOT FOUND!");
-                    if (!checkoutButton) console.error("Checkout Page: Tombol dengan class '.checkout-button' NOT FOUND!");
+                    if (!checkoutForm) console.error("Halaman Checkout: Formulir dengan ID 'checkout-form' TIDAK DITEMUKAN!");
+                    if (!checkoutButton) console.error("Halaman Checkout: Tombol dengan class '.checkout-button' TIDAK DITEMUKAN!");
                 }
 
             } else {
-                console.error("Checkout Page: Data keranjang dari localStorage tidak valid atau field penting hilang. CartData:", cartData);
+                // Menangani data keranjang yang tidak valid
                 if (typeof showPopup === 'function') {
                     showPopup("Data keranjang tidak valid.", false, "Silakan pilih ulang paket dari halaman harga.", true);
                 } else {
@@ -215,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }, 3000);
             }
         } catch (error) {
-            console.error("Checkout Page: Gagal memproses data keranjang dari localStorage:", error);
+            // Menangani kesalahan saat memproses data keranjang
             if (typeof showPopup === 'function') {
                 showPopup("Terjadi kesalahan saat memuat detail pesanan.", false, "Silakan coba lagi dari halaman harga.", true);
             } else {
@@ -227,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 3000);
         }
     } else {
-        console.warn("Checkout Page: Keranjang kosong di localStorage. Redirecting to pricing page...");
+        // Menangani keranjang yang kosong
         if (typeof showPopup === 'function') {
             showPopup("Keranjang Anda kosong.", false, "Silakan pilih paket terlebih dahulu.", true);
         } else {
@@ -239,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// Fungsi untuk memformat mata uang ke Rupiah
 function formatCurrency(amount) {
     if (typeof amount !== 'number' || isNaN(amount)) {
         return 'Rp -';

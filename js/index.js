@@ -174,14 +174,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!list || !prevButton || !nextButton) {
             console.warn(`One or more carousel elements (list, prevButton, or nextButton) missing within "${carouselContainerSelector}".`);
-            if(list) console.log("List element found:", list); else console.log("List element NOT found");
-            if(prevButton) console.log("Prev button found:", prevButton); else console.log("Prev button NOT found");
-            if(nextButton) console.log("Next button found:", nextButton); else console.log("Next button NOT found");
+            if (list) console.log("List element found:", list); else console.log("List element NOT found");
+            if (prevButton) console.log("Prev button found:", prevButton); else console.log("Prev button NOT found");
+            if (nextButton) console.log("Next button found:", nextButton); else console.log("Next button NOT found");
             return;
         }
-        
+
         console.log(`Elements for ${carouselContainerSelector}:`, { list, prevButton, nextButton });
-        
+
         // Memberi sedikit waktu agar item dirender sebelum cek scrollWidth
         setTimeout(() => {
             console.log(`For ${carouselContainerSelector} - List scrollWidth: ${list.scrollWidth}, List clientWidth: ${list.clientWidth}`);
@@ -194,12 +194,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const firstItem = list.querySelector('.course-item');
             if (!firstItem) {
                 console.warn(`No .course-item found in ${carouselContainerSelector} to calculate scrollAmount.`);
-                return 250; 
+                return 250;
             }
             const listStyle = getComputedStyle(list);
-            const itemWidth = firstItem.offsetWidth; 
-            const gap = parseFloat(listStyle.gap) || 0; 
-            
+            const itemWidth = firstItem.offsetWidth;
+            const gap = parseFloat(listStyle.gap) || 0;
+
             const calculatedScrollAmount = itemWidth + gap;
             console.log(`For ${carouselContainerSelector} - Scroll amount calculated: ${calculatedScrollAmount} (itemWidth: ${itemWidth}, gap: ${gap})`);
             return calculatedScrollAmount;
@@ -228,11 +228,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (bannerImage) {
         const prevBanner = document.querySelector('.banner-slideshow .prev');
         const nextBanner = document.querySelector('.banner-slideshow .next');
-        function showBanner(index) { 
+        function showBanner(index) {
             if (bannerSources.length > 0 && bannerSources[index]) {
                 bannerImage.src = bannerSources[index];
                 bannerImage.alt = `Banner ${index + 1}`;
-            } else if (bannerSources.length > 0) { 
+            } else if (bannerSources.length > 0) {
                 bannerImage.src = bannerSources[0];
                 bannerImage.alt = `Banner 1`;
             }
@@ -243,17 +243,17 @@ document.addEventListener('DOMContentLoaded', function () {
             this.alt = 'Banner promosi tidak tersedia';
         };
         if (prevBanner && nextBanner && bannerSources.length > 0) {
-             prevBanner.addEventListener('click', (e) => { 
+            prevBanner.addEventListener('click', (e) => {
                 e.preventDefault();
                 currentBannerIndex = (currentBannerIndex - 1 + bannerSources.length) % bannerSources.length;
                 showBanner(currentBannerIndex);
             });
-             nextBanner.addEventListener('click', (e) => { 
+            nextBanner.addEventListener('click', (e) => {
                 e.preventDefault();
                 currentBannerIndex = (currentBannerIndex + 1) % bannerSources.length;
                 showBanner(currentBannerIndex);
             });
-             showBanner(0);
+            showBanner(0);
         } else if (bannerSources.length === 0) {
             console.warn("No banner sources defined for slideshow.");
             bannerImage.src = 'https://placehold.co/1020x300/EAEAEA/B0B0B0?text=Selamat+Datang';

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
+    // --- Variabel Global & Selektor DOM ---
     const JSON_BASE_PATH = './json/';
 
-    // DOM Elements
     const profileAvatarEl = document.getElementById('profile-avatar');
     const profileNameEl = document.getElementById('profile-name');
     const profileEmailEl = document.getElementById('profile-email');
@@ -19,30 +19,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     const seeMoreCoursesButton = document.getElementById('see-more-courses-button');
     const upgradePlanLink = document.getElementById('upgrade-plan-link');
 
-    // Script-level variables for data
     let loggedInUser = null;
     let allCoursesData = [];
     let allUsersData = [];
     let userEnrollmentsData = [];
-    let allModulesForCourse = []; // Stores all modules with their lessons, pre-sorted
-    let enrolledCoursesDetailsGlobal = []; // Stores processed details of user's enrolled courses
+    let allModulesForCourse = [];
+    let enrolledCoursesDetailsGlobal = [];
 
     const coursesToShowInitially = 6;
 
+    // --- Fungsi Utilitas Pengambilan Data ---
     async function fetchData(fileName) {
         try {
             const response = await fetch(`${JSON_BASE_PATH}${fileName}`);
             if (!response.ok) {
-                console.error(`HTTP error! status: ${response.status} for ${fileName}`);
+                console.error(`HTTP error! Status: ${response.status} untuk ${fileName}`);
                 return [];
             }
             return await response.json();
         } catch (error) {
-            console.error(`Could not fetch or parse ${fileName}:`, error);
+            console.error(`Tidak dapat mengambil atau mem-parsing ${fileName}:`, error);
             return [];
         }
     }
 
+    // --- Fungsi Logika Utama Dashboard ---
+
+    // Fungsi untuk Memeriksa Status Langganan Pengguna
     async function checkUserSubscriptionStatus(userId) {
         if (!userId) return false;
         const userPlanStatusString = localStorage.getItem('userPlanStatus');
@@ -50,24 +53,24 @@ document.addEventListener("DOMContentLoaded", async function () {
             try {
                 const userPlanStatus = JSON.parse(userPlanStatusString);
                 if (userPlanStatus && userPlanStatus.active === true && userPlanStatus.user_id === userId) {
-                    console.log("Dashboard: Active plan found in localStorage for user:", userId, "Plan ID:", userPlanStatus.planId);
+                    console.log("Dashboard: Paket aktif ditemukan di localStorage untuk pengguna:", userId, "ID Paket:", userPlanStatus.planId);
                     return true;
                 }
             } catch (e) {
-                console.error("Dashboard: Error parsing userPlanStatus from localStorage", e);
+                console.error("Dashboard: Error memparsing userPlanStatus dari localStorage", e);
             }
         }
-        console.log("Dashboard: No active plan in localStorage or mismatch. Checking orders.json for user:", userId);
+        console.log("Dashboard: Tidak ada paket aktif di localStorage atau tidak cocok. Memeriksa orders.json untuk pengguna:", userId);
         const orders = await fetchData('orders.json');
         const transactions = await fetchData('transactions.json');
         const userOrder = orders.find(order => order.user_id === userId && order.status === 'completed');
         if (!userOrder) {
-            console.log("Dashboard: No completed orders found for user:", userId);
+            console.log("Dashboard: Tidak ada pesanan selesai yang ditemukan untuk pengguna:", userId);
             return false;
         }
         const successfulTransaction = transactions.find(t => t.order_id === userOrder.order_id && t.status === 'success');
         if (successfulTransaction) {
-            console.log("Dashboard: Active subscription/payment confirmed via orders.json for user:", userId, "Order ID:", userOrder.order_id);
+            console.log("Dashboard: Langganan/pembayaran aktif dikonfirmasi melalui orders.json untuk pengguna:", userId, "ID Pesanan:", userOrder.order_id);
             localStorage.setItem('userPlanStatus', JSON.stringify({
                 planId: userOrder.plan_id,
                 active: true,
@@ -77,10 +80,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             }));
             return true;
         }
-        console.log("Dashboard: No successful transaction found for completed order:", userOrder.order_id);
+        console.log("Dashboard: Tidak ada transaksi berhasil yang ditemukan untuk pesanan selesai:", userOrder.order_id);
         return false;
     }
 
+    // Fungsi untuk Mengisi Profil Pengguna di Sidebar
     function populateUserProfile() {
         if (loggedInUser) {
             if (profileAvatarEl) {
@@ -94,6 +98,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
+    // Fungsi untuk Mengisi Data Performa di Sidebar
     function populatePerformance() {
         const completedCoursesCount = userEnrollmentsData.filter(e => e.progress_percentage === 100).length;
         const totalEnrolledCount = userEnrollmentsData.length;
@@ -119,9 +124,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
+    // Fungsi untuk Menampilkan Daftar Kursus Pengguna
     function renderUserCourses(showAll = false) {
         if (!courseContainer) {
-            console.error("Dashboard: courseContainer element not found.");
+            console.error("Dashboard: Elemen courseContainer tidak ditemukan.");
             return;
         }
         courseContainer.innerHTML = '';
@@ -155,16 +161,13 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <p class="progress-text">Progress: ${progress}%</p>
                 </div>
             `;
-            
-            // === PERUBAHAN LOGIKA KLIK KARTU ===
+
             card.addEventListener('click', () => {
                 if (course.course_id) {
-                    // Selalu arahkan ke halaman detail kursus
                     window.location.href = `coursedetails.html?id=${course.course_id}`;
                 }
             });
-            // === AKHIR PERUBAHAN LOGIKA KLIK KARTU ===
-            
+
             courseContainer.appendChild(card);
         });
 
@@ -177,18 +180,19 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
+    // --- Fungsi Inisialisasi Utama Halaman Dashboard ---
     async function initDashboard() {
         const loggedInUserString = localStorage.getItem("loggedInUser");
         if (!loggedInUserString) {
-            console.warn("Dashboard: No loggedInUser found. Redirecting to login.");
+            console.warn("Dashboard: Tidak ada loggedInUser yang ditemukan. Mengalihkan ke halaman login.");
             window.location.href = "login.html?redirect=dashboard.html";
             return;
         }
         try {
             loggedInUser = JSON.parse(loggedInUserString);
-            if (!loggedInUser || !loggedInUser.user_id) throw new Error("Invalid user data in localStorage");
+            if (!loggedInUser || !loggedInUser.user_id) throw new Error("Data pengguna tidak valid di localStorage");
         } catch (e) {
-            console.error("Dashboard: Error parsing loggedInUser from localStorage. Redirecting to login.", e);
+            console.error("Dashboard: Error memparsing loggedInUser dari localStorage. Mengalihkan ke halaman login.", e);
             localStorage.removeItem("loggedInUser");
             window.location.href = "login.html?redirect=dashboard.html";
             return;
@@ -215,7 +219,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             if (pelatihanSelesaiCircle) pelatihanSelesaiCircle.style.setProperty('--value', 0);
             if (pelatihanAktifCountText) pelatihanAktifCountText.textContent = "0";
             if (pelatihanAktifCircle) pelatihanAktifCircle.style.setProperty('--value', 0);
-            
+
             if (seeMoreCoursesContainer) seeMoreCoursesContainer.style.display = 'none';
             return;
         }
@@ -233,7 +237,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         allCoursesData = courses || [];
         allUsersData = users || [];
-        
+
         allModulesForCourse = (modules || []).map(mod => ({
             ...mod,
             lessons: (lessons || []).filter(l => l.module_id === mod.module_id).sort((a, b) => (a.order || 0) - (b.order || 0))
@@ -246,11 +250,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                 simulatedEnrollments = JSON.parse(simulatedEnrollmentsString);
                 if (!Array.isArray(simulatedEnrollments)) simulatedEnrollments = [];
             } catch (e) {
-                console.error("Dashboard: Error parsing simulated_enrollments from localStorage", e);
+                console.error("Dashboard: Error memparsing simulated_enrollments dari localStorage", e);
                 simulatedEnrollments = [];
             }
         }
-        
+
         const baseUserEnrollments = (baseEnrollments || []).filter(e => e.user_id === loggedInUser.user_id);
         const combinedEnrollments = [...baseUserEnrollments];
 
@@ -270,11 +274,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         renderUserCourses(false);
 
         if (seeMoreCoursesButton) {
-            seeMoreCoursesButton.addEventListener('click', function() {
+            seeMoreCoursesButton.addEventListener('click', function () {
                 renderUserCourses(true);
             });
         }
     }
 
+    // --- Inisialisasi Dashboard ---
     initDashboard();
 });

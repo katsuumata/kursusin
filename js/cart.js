@@ -1,52 +1,51 @@
-// Function to go back in history, potentially with a popup
+// Fungsi Navigasi Tambahan
 function kembali() {
-    // Assuming showPopup is globally available from global.js
     if (typeof showPopup === 'function') {
         showPopup("Anda akan kembali ke halaman sebelumnya...", true, "", true);
         setTimeout(() => {
             window.history.back();
-        }, 1500); // Reduced timeout for quicker navigation
+        }, 1500);
     } else {
-        window.history.back(); // Fallback if showPopup is not defined
+        window.history.back();
     }
 }
 
+// Event Listener Utama
 document.addEventListener('DOMContentLoaded', async function () {
-    // Function to fetch pricing plans data from plans.json
+
+    // --- Pengambilan dan Validasi Data Paket Harga ---
     async function fetchCartPricingPlans() {
         try {
-            // Assuming plans.json is in a 'data' subdirectory relative to the HTML file
-            const response = await fetch('./json/plans.json'); // Corrected path from user's latest code
+            const response = await fetch('./json/plans.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const plans = await response.json();
             return plans;
         } catch (error) {
-            console.error("Could not fetch pricing plans for cart:", error);
+            console.error("Tidak dapat mengambil data paket harga untuk keranjang:", error);
             const cartTableBody = document.querySelector('.cart-table tbody');
             if (cartTableBody) {
                 cartTableBody.innerHTML = '<tr><td colspan="5" class="empty-cart-message error-message">Maaf, terjadi kesalahan saat memuat data paket.</td></tr>';
             }
-            // Disable checkout if plans can't be loaded
             const checkoutButton = document.querySelector('.checkout-button');
             if (checkoutButton) {
                 checkoutButton.disabled = true;
-                // CSS class 'disabled' should handle styling for opacity and cursor
                 checkoutButton.classList.add('disabled');
             }
-            return []; // Return an empty array to prevent further errors
+            return [];
         }
     }
 
-    // Fetch the pricing plans data
     const pricingPlansData = await fetchCartPricingPlans();
 
+    // --- Seleksi Elemen DOM Utama untuk Keranjang ---
     const cartTableBody = document.querySelector('.cart-table tbody');
     const cartSubtotalElement = document.getElementById('cart-subtotal');
     const cartTotalElement = document.getElementById('cart-total');
     const checkoutButton = document.querySelector('.checkout-button');
 
+    // --- Fungsi Utilitas ---
     function formatCurrency(amount) {
         if (typeof amount !== 'number' || isNaN(amount)) {
             return 'Rp -';
@@ -54,15 +53,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         return 'Rp ' + amount.toLocaleString('id-ID');
     }
 
+    // --- Logika Utama Pengelolaan Keranjang Belanja ---
+    // Fungsi untuk menambahkan paket ke tampilan keranjang
     function addPlanToCart(plan) {
         if (!cartTableBody || !plan) {
-            console.error("Cart table body or plan data is missing for addPlanToCart.");
+            console.error("Elemen tabel keranjang atau data paket tidak ditemukan untuk fungsi addPlanToCart.");
             if (cartTableBody) {
                 cartTableBody.innerHTML = '<tr><td colspan="5" class="empty-cart-message">Detail paket tidak ditemukan.</td></tr>';
             }
             return;
         }
-        cartTableBody.innerHTML = ''; // Clear any previous message like "cart empty"
+        cartTableBody.innerHTML = '';
 
         const itemRow = document.createElement('tr');
         itemRow.classList.add('cart-item');
@@ -72,9 +73,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         const productCell = document.createElement('td');
         productCell.classList.add('product-details');
         const planIconSrc = plan.icon || 'https://placehold.co/60x60/E0E0E0/B0B0B0?text=Icon';
-        // Inline styles for image and input are removed. These should be in cart.css
-        // e.g., .product-details img { width:60px; height:auto; border-radius:5px; }
-        // e.g., .quantity-input { width:50px; text-align:center; background-color:#eee; border:1px solid #ccc; border-radius:4px; padding:5px; }
         productCell.innerHTML = `
             <div class="cart-item-info">
                 <img src="${planIconSrc}" alt="${plan.name || 'Paket'}" class="cart-item-icon" onerror="this.src='https://placehold.co/60x60/E0E0E0/B0B0B0?text=Icon'; this.alt='Ikon error';">
@@ -90,7 +88,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const quantityCell = document.createElement('td');
         quantityCell.classList.add('item-quantity-cell');
-        // Quantity is fixed to 1 and readonly as per current design
         quantityCell.innerHTML = `
             <input type="number" class="quantity-input" value="1" min="1" readonly>
         `;
@@ -98,20 +95,21 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const subtotalCell = document.createElement('td');
         subtotalCell.classList.add('item-subtotal');
-        subtotalCell.textContent = formatCurrency(plan.price); // Since quantity is 1
+        subtotalCell.textContent = formatCurrency(plan.price);
         itemRow.appendChild(subtotalCell);
 
         const removeCell = document.createElement('td');
         removeCell.classList.add('item-remove-cell');
-        removeCell.innerHTML = `<button class="remove-item-btn" aria-label="Remove ${plan.name || 'Paket'}">&times;</button>`;
+        removeCell.innerHTML = `<button class="remove-item-btn" aria-label="Hapus ${plan.name || 'Paket'}">&times;</button>`;
         itemRow.appendChild(removeCell);
 
         cartTableBody.appendChild(itemRow);
     }
 
+    // Fungsi untuk memperbarui total harga di keranjang
     function updateCartTotals() {
         if (!cartTableBody || !cartSubtotalElement || !cartTotalElement) {
-            console.error("One or more cart total elements are missing.");
+            console.error("Satu atau lebih elemen total keranjang tidak ditemukan.");
             return;
         }
 
@@ -131,20 +129,21 @@ document.addEventListener('DOMContentLoaded', async function () {
         cartSubtotalElement.textContent = formatCurrency(total);
         cartTotalElement.textContent = formatCurrency(total);
 
-        if (checkoutButton) { // Ensure checkoutButton exists
+        if (checkoutButton) {
             if (itemRows.length === 0) {
                 cartTableBody.innerHTML = '<tr><td colspan="5" class="empty-cart-message">Keranjang Anda kosong. <a href="pricing.html"><br>Silakan pilih paket terlebih dahulu</a></td></tr>';
                 checkoutButton.disabled = true;
-                checkoutButton.classList.add('disabled'); // Add class for styling
-                checkoutButton.classList.remove('enabled'); // Optional: remove enabled class
+                checkoutButton.classList.add('disabled');
+                checkoutButton.classList.remove('enabled');
             } else {
                 checkoutButton.disabled = false;
-                checkoutButton.classList.remove('disabled'); // Remove class
-                checkoutButton.classList.add('enabled'); // Optional: add enabled class for specific styling
+                checkoutButton.classList.remove('disabled');
+                checkoutButton.classList.add('enabled');
             }
         }
     }
 
+    // Fungsi untuk menghapus item dari keranjang
     function removeItemFromCart(event) {
         const button = event.target;
         const itemRow = button.closest('tr.cart-item');
@@ -152,9 +151,13 @@ document.addEventListener('DOMContentLoaded', async function () {
             itemRow.remove();
             localStorage.removeItem('selectedCart');
             updateCartTotals();
+            if (typeof showPopup === 'function') {
+                showPopup("Paket telah dihapus dari keranjang.", true);
+            }
         }
     }
 
+    // Menambahkan event listener untuk tombol hapus item
     if (cartTableBody) {
         cartTableBody.addEventListener('click', function (event) {
             if (event.target.classList.contains('remove-item-btn')) {
@@ -163,6 +166,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     }
 
+    // Fungsi untuk menyimpan data keranjang ke Local Storage
     function saveCartToStorage(plan) {
         if (!plan || typeof plan !== 'object' || !plan.id) {
             localStorage.removeItem('selectedCart');
@@ -179,33 +183,46 @@ document.addEventListener('DOMContentLoaded', async function () {
         localStorage.setItem('selectedCart', JSON.stringify(cartData));
     }
 
+    // --- Inisialisasi Keranjang Belanja ---
+    // Memeriksa apakah ada parameter 'planId' di URL atau data keranjang di Local Storage
+
     const urlParams = new URLSearchParams(window.location.search);
-    const selectedPlanId = urlParams.get('planId');
+    const selectedPlanIdFromUrl = urlParams.get('planId');
     let selectedPlan = null;
 
-    if (selectedPlanId && pricingPlansData.length > 0) {
-        selectedPlan = pricingPlansData.find(plan => plan.id === selectedPlanId);
-    }
-
-    if (selectedPlan) {
-        addPlanToCart(selectedPlan);
-        saveCartToStorage(selectedPlan);
+    if (selectedPlanIdFromUrl && pricingPlansData.length > 0) {
+        selectedPlan = pricingPlansData.find(plan => plan.id === selectedPlanIdFromUrl);
+        if (selectedPlan) {
+            // Jika ada planId di URL dan valid, gunakan itu dan simpan/update local storage
+            addPlanToCart(selectedPlan);
+            saveCartToStorage(selectedPlan);
+        } else {
+            // Jika planId di URL tidak valid, hapus data keranjang yang mungkin tersimpan
+            localStorage.removeItem('selectedCart');
+        }
     } else {
+        // Jika tidak ada planId di URL, coba muat dari local storage
         const storedCartData = localStorage.getItem('selectedCart');
         if (storedCartData) {
             try {
                 const parsedCartData = JSON.parse(storedCartData);
-                if (pricingPlansData.length > 0) { // Ensure pricingPlansData is loaded
+                if (pricingPlansData.length > 0) {
                     selectedPlan = pricingPlansData.find(plan => plan.id === parsedCartData.id);
                     if (selectedPlan) {
-                        addPlanToCart(selectedPlan);
-                        // No need to save again if it's already from localStorage and valid
+                        // Pastikan harga dan detail lainnya sesuai dengan data terbaru dari plans.json
+                        if (selectedPlan.price === parsedCartData.price && selectedPlan.name === parsedCartData.name) {
+                            addPlanToCart(selectedPlan);
+                        } else {
+                            console.warn("Data paket di Local Storage berbeda dengan data terbaru. Menggunakan data terbaru.");
+                            addPlanToCart(selectedPlan); // Tampilkan data terbaru
+                            saveCartToStorage(selectedPlan); // Update Local Storage
+                        }
                     } else {
                         localStorage.removeItem('selectedCart');
                     }
                 }
             } catch (e) {
-                console.error("Error parsing stored cart data:", e);
+                console.error("Error memuat data keranjang dari Local Storage:", e);
                 localStorage.removeItem('selectedCart');
             }
         }

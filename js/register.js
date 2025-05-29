@@ -1,45 +1,85 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // --- Konfigurasi Awal dan Elemen DOM ---
     const form = document.getElementById("register-form");
-    const JSON_USERS_PATH = './json/users.json'; // Path to your users data
+    const JSON_USERS_PATH = './json/users.json';
 
-    // --- Helper: Fetch Existing Users ---
+    // --- Fungsi Pembantu: Mengambil Data Pengguna yang Ada ---
     async function fetchUsers() {
         try {
             const response = await fetch(JSON_USERS_PATH);
             if (!response.ok) {
+                // Menangani kasus jika users.json tidak ditemukan
                 if (response.status === 404) {
-                    console.warn("users.json not found. Starting with an empty user list for checks.");
                     return [];
                 }
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Terjadi kesalahan HTTP! Status: ${response.status}`);
             }
             return await response.json();
         } catch (error) {
-            console.error("Could not fetch users.json:", error);
-
+            // Menangani kesalahan saat mengambil data pengguna
             return [];
         }
     }
 
-    // --- Helper: Generate Unique User ID (Simple version for simulation) ---
+    // --- Fungsi Pembantu: Membuat ID Pengguna Unik ---
     function generateUserId(existingUsers) {
         let newIdNum = 1;
         if (existingUsers && existingUsers.length > 0) {
+            // Mencari ID numerik tertinggi dari pengguna yang sudah ada
             const maxIdNum = existingUsers.reduce((max, user) => {
                 const numPart = parseInt(user.user_id.replace(/[^0-9]/g, ''), 10);
                 return numPart > max ? numPart : max;
             }, 0);
             newIdNum = maxIdNum + 1;
         }
+        // Mengembalikan ID pengguna baru dengan format yang konsisten
         return `user${String(newIdNum).padStart(3, '0')}`;
     }
 
+    // --- Fungsi Validasi Email Kustom ---
+    function validateEmail(email) {
+        // Memastikan email tidak kosong
+        if (email.length === 0) {
+            return { valid: false, message: "Email tidak boleh kosong." };
+        }
 
+        // Memeriksa keberadaan '@'
+        const atIndex = email.indexOf('@');
+        if (atIndex === -1) {
+            return { valid: false, message: "Email harus mengandung karakter '@'." };
+        }
+
+        // Memeriksa keberadaan '.' setelah '@'
+        const dotIndex = email.indexOf('.', atIndex);
+        if (dotIndex === -1) {
+            return { valid: false, message: "Email tidak valid. Contoh: nama@domain.com" };
+        }
+
+        // Memastikan ada karakter sebelum '@', di antara '@' dan '.', dan setelah '.'
+        if (atIndex === 0 || dotIndex === atIndex + 1 || dotIndex === email.length - 1) {
+            return { valid: false, message: "Format email tidak valid. Periksa penulisan karakter." };
+        }
+
+        // Memastikan tidak ada spasi
+        if (email.includes(' ')) {
+            return { valid: false, message: "Email tidak boleh mengandung spasi." };
+        }
+
+        // Validasi domain
+        const domain = email.substring(atIndex);
+        const allowedDomains = ["@gmail.com", "@ymail.com", "@yahoo.com", "@binus.ac.id"];
+        if (!allowedDomains.includes(domain)) {
+            return { valid: false, message: "Domain email tidak diizinkan. Gunakan @gmail.com, @ymail.com, @yahoo.com, atau @binus.ac.id." };
+        }
+
+        return { valid: true, message: "" };
+    }
+
+    // --- Penanganan Pengiriman Formulir Pendaftaran ---
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
-        console.log("Register form submitted.");
 
-        // Ambil nilai input
+        // Mengambil nilai dari input formulir
         const namaInput = document.getElementById("nama-lengkap");
         const usiaInput = document.getElementById("usia");
         const genderRadio = document.querySelector('input[name="gender"]:checked');
@@ -56,67 +96,58 @@ document.addEventListener("DOMContentLoaded", function () {
         const konfirmasiPassword = konfirmasiPasswordInput ? konfirmasiPasswordInput.value : "";
         const termsChecked = termsCheckbox ? termsCheckbox.checked : false;
 
-        // Validasi
+        // --- Proses Validasi Input ---
         if (!nama || isNaN(usia) || !gender || !email || !password || !konfirmasiPassword) {
-            console.warn("Validation failed: All fields required.");
             showPopup("Semua kolom wajib diisi.", false);
             return;
         }
 
         if (usia < 17 || usia > 100) {
-            console.warn("Validation failed: Age out of range.");
             showPopup("Usia harus antara 17 sampai 100 tahun.", false);
             return;
         }
 
-        if (!validateEmail(email)) {
-            console.warn("Validation failed: Invalid email format.");
-            showPopup("Email tidak valid.", false);
+        const emailValidation = validateEmail(email);
+        if (!emailValidation.valid) {
+            showPopup(emailValidation.message, false);
             return;
         }
 
-        // Fetch existing users to check for email uniqueness
+        // Mengambil pengguna yang sudah ada untuk memeriksa keunikan email
         const existingUsers = await fetchUsers();
         if (existingUsers.find(user => user.email === email)) {
-            console.warn("Validation failed: Email already exists.");
             showPopup("Email ini sudah terdaftar. Silakan gunakan email lain.", false);
             return;
         }
 
         if (password.length < 6) {
-            console.warn("Validation failed: Password too short.");
             showPopup("Kata sandi harus minimal 6 karakter.", false);
             return;
         }
 
         if (password !== konfirmasiPassword) {
-            console.warn("Validation failed: Passwords do not match.");
             showPopup("Konfirmasi kata sandi tidak cocok.", false);
             return;
         }
 
         if (!termsChecked) {
-            console.warn("Validation failed: Terms not agreed.");
             showPopup("Anda harus menyetujui syarat dan ketentuan.", false);
             return;
         }
 
-        console.log("All client-side validations passed.");
-
+        // --- Pembuatan Data Pengguna Baru (Simulasi) ---
         const newUserId = generateUserId(existingUsers);
         const newUserForDb = {
             user_id: newUserId,
             name: nama,
             email: email,
-            password_hash: `simulated_hash_for_${password}`,
+            password_hash: `simulasi_hash_untuk_${password}`, // Simulasi hash kata sandi
             age: usia,
             gender: gender,
             image_url: "assets/user/default_profile_nav.png"
         };
 
-        console.log("New user data that WOULD be added to users.json:", newUserForDb);
-
-
+        // Data pengguna yang disimpan di localStorage untuk kemudahan login
         const userForLocalStorage = {
             user_id: newUserId,
             nama: nama,
@@ -124,20 +155,11 @@ document.addEventListener("DOMContentLoaded", function () {
             password: password,
         };
         localStorage.setItem("registeredUser", JSON.stringify(userForLocalStorage));
-        console.log("User data saved to localStorage for potential login prefill:", userForLocalStorage);
 
-
-        // Jika semua valid
+        // --- Notifikasi dan Pengalihan Halaman ---
         showPopup("Akun Anda berhasil dibuat!", true, "Mengalihkan ke halaman login...", true);
         setTimeout(() => {
-            console.log("Redirecting to login.html");
             window.location.href = "login.html";
         }, 3000);
     });
 });
-
-// Validasi email
-function validateEmail(email) {
-    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return pattern.test(email);
-}
