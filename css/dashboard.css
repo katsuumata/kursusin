@@ -409,12 +409,9 @@
 
 .completed-courses-list {
   list-style: decimal;
-  /* Gunakan nomor atau 'none' */
   padding-left: 20px;
-  /* Beri sedikit padding jika pakai nomor */
   margin: 0;
   max-height: 350px;
-  /* Batas tinggi, akan scroll jika lebih */
   overflow-y: auto;
 }
 
