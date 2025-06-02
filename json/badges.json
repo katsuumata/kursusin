@@ -3,102 +3,102 @@
         "badge_id": "badge01",
         "name": "Bapak Pembelajar",
         "description": "Menyelesaikan kursus pertama.",
-        "image_url": "assets/badge/pembelajar.png"
+        "image_url": "../assets/badge/pembelajar.png"
     },
     {
         "badge_id": "badge02",
         "name": "Bapak Romantis",
         "description": "Menyelesaikan kursus 'Romantisme Ala Bapak'.",
-        "image_url": "assets/badge/romantis.png"
+        "image_url": "../assets/badge/romantis.png"
     },
     {
         "badge_id": "badge03",
         "name": "Bapak Sehat",
         "description": "Menyelesaikan 2 kursus Kesehatan.",
-        "image_url": "assets/badge/sehat.png"
+        "image_url": "../assets/badge/sehat.png"
     },
     {
         "badge_id": "badge04",
         "name": "Bapak Mekanik",
         "description": "Menyelesaikan kursus Otomotif.",
-        "image_url": "assets/badge/mekanik.png"
+        "image_url": "../assets/badge/mekanik.png"
     },
     {
         "badge_id": "badge05",
         "name": "Master Pancing",
         "description": "Menyelesaikan kursus Mancing.",
-        "image_url": "assets/badge/mancing.png"
-        },
+        "image_url": "../assets/badge/mancing.png"
+    },
     {
         "badge_id": "badge06",
         "name": "Pakar Hati",
         "description": "Selamat! Kamu telah berhasil menaklukkan semua tantangan di dunia percintaan dan pertemanan.",
-        "image_url": "assets/kategori/hubungan.png"
+        "image_url": "../assets/kategori/hubungan.png"
     },
     {
         "badge_id": "badge07",
         "name": "Duta Hidup Sehat",
         "description": "Kamu telah menyelesaikan misi menerapkan gaya hidup sehat secara konsisten.",
-        "image_url": "assets/kategori/kesehatan.png"
+        "image_url": "../assets/kategori/kesehatan.png"
     },
     {
         "badge_id": "badge08",
         "name": "The Super Parent",
         "description": "Luar biasa! Kamu telah menguasai semua modul parenting untuk jadi orang tua idaman.",
-        "image_url": "assets/kategori/asuh_anak.png"
+        "image_url": "../assets/kategori/asuh_anak.png"
     },
     {
         "badge_id": "badge09",
         "name": "Sultan Gadget",
         "description": "Kamu berhasil menyelesaikan semua kuis dan menjadi yang paling update soal inovasi teknologi.",
-        "image_url": "assets/kategori/teknologi.png"
+        "image_url": "../assets/kategori/teknologi.png"
     },
     {
         "badge_id": "badge10",
         "name": "Juragan Finansial",
         "description": "Kamu sukses menyelesaikan tantangan menabung dan mengelola portofolio investasimu.",
-        "image_url": "assets/kategori/keuangan.png"
+        "image_url": "../assets/kategori/keuangan.png"
     },
     {
         "badge_id": "badge11",
         "name": "Anak Aspal",
         "description": "Mantap! Kamu telah menyelesaikan semua panduan perawatan dan modifikasi kendaraan.",
-        "image_url": "assets/kategori/otomotif.png"
+        "image_url": "../assets/kategori/otomotif.png"
     },
     {
         "badge_id": "badge12",
         "name": "Pawang Cuan",
         "description": "Selamat! Kamu telah berhasil membuat dan mempresentasikan rencana bisnismu dengan sempurna.",
-        "image_url": "assets/kategori/bisnis.png"
+        "image_url": "../assets/kategori/bisnis.png"
     },
     {
         "badge_id": "badge13",
         "name": "Jawara Santuy",
         "description": "Kamu telah menyelesaikan 10 proyek hobi yang berbeda dan membagikannya ke komunitas.",
-        "image_url": "assets/kategori/hobi.png"
+        "image_url": "../assets/kategori/hobi.png"
     },
     {
         "badge_id": "badge14",
         "name": "Home Sweet Home Hero",
         "description": "Kamu sukses menyelesaikan tantangan makeover ruangan dan menata rumah secara efisien.",
-        "image_url": "assets/kategori/rumah_tangga.png"
+        "image_url": "../assets/kategori/rumah_tangga.png"
     },
     {
         "badge_id": "badge15",
         "name": "Foodie Supreme",
         "description": "Kamu telah berhasil memasak 20 resep baru dan mendapatkan review bintang lima.",
-        "image_url": "assets/kategori/kuliner.png"
+        "image_url": "../assets/kategori/kuliner.png"
     },
     {
         "badge_id": "badge16",
         "name": "Ahli DIY",
         "description": "Kerja bagus! Kamu telah menyelesaikan semua modul perbaikan dasar di sekitar rumah.",
-        "image_url": "assets/kategori/tukang.png"
+        "image_url": "../assets/kategori/tukang.png"
     },
     {
         "badge_id": "badge17",
         "name": "Sang Juara",
         "description": "Kamu berhasil menyelesaikan program latihan dan mencapai target kebugaran pribadimu.",
-        "image_url": "assets/kategori/olahraga.png"
+        "image_url": "../assets/kategori/olahraga.png"
     }
 ]
