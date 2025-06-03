@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Rendering Functions ---
     function renderCategories(categories) {
-        // ... (fungsi renderCategories tetap sama) ...
         const container = document.getElementById('category-list-container');
         if (!container) {
             console.warn("Element with ID 'category-list-container' not found.");
@@ -59,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function renderCategoryCards(cards) {
-        // ... (fungsi renderCategoryCards tetap sama) ...
         const container = document.getElementById('category-card-container');
         if (!container) {
             console.warn("Element with ID 'category-card-container' not found.");
@@ -93,24 +91,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // MODIFIKASI: renderCourses sekarang akan merender SEMUA kursus yang diterima.
-    // Parameter maxItems tidak lagi digunakan untuk memotong data yang dirender.
     function renderCourses(courses, containerId, allUsersData) {
         const container = document.getElementById(containerId);
         if (!container) {
             console.warn(`Element with ID '${containerId}' not found.`);
             return;
         }
-        // Log berapa banyak item yang akan dirender ke DOM
-        console.log(`Rendering courses for ${containerId}. Total courses to render into DOM: ${courses ? courses.length : 0}`);
-
+        
         if (!courses || courses.length === 0) {
             container.innerHTML = '<p>Tidak ada pelatihan yang tersedia di bagian ini.</p>';
             return;
         }
-        container.innerHTML = ''; // Clear existing
+        container.innerHTML = ''; 
 
-        // Render SEMUA kursus dalam array 'courses'
         courses.forEach(course => {
             const courseDiv = document.createElement('div');
             courseDiv.className = 'course-item';
@@ -160,8 +153,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Slideshow/Carousel Logic ---
     function setupCarousel(carouselContainerSelector) {
-        // ... (fungsi setupCarousel tetap sama seperti sebelumnya dengan logging) ...
-        console.log(`Setting up carousel for: ${carouselContainerSelector}`);
         const section = document.querySelector(carouselContainerSelector);
         if (!section) {
             console.warn(`Carousel container "${carouselContainerSelector}" not found.`);
@@ -173,55 +164,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const nextButton = section.querySelector('.kekanan');
 
         if (!list || !prevButton || !nextButton) {
-            console.warn(`One or more carousel elements (list, prevButton, or nextButton) missing within "${carouselContainerSelector}".`);
-            if (list) console.log("List element found:", list); else console.log("List element NOT found");
-            if (prevButton) console.log("Prev button found:", prevButton); else console.log("Prev button NOT found");
-            if (nextButton) console.log("Next button found:", nextButton); else console.log("Next button NOT found");
             return;
         }
 
-        console.log(`Elements for ${carouselContainerSelector}:`, { list, prevButton, nextButton });
-
-        // Memberi sedikit waktu agar item dirender sebelum cek scrollWidth
-        setTimeout(() => {
-            console.log(`For ${carouselContainerSelector} - List scrollWidth: ${list.scrollWidth}, List clientWidth: ${list.clientWidth}`);
-            if (list.scrollWidth <= list.clientWidth) {
-                console.log(`Carousel at "${carouselContainerSelector}": No scrolling needed, all content fits or no content. Buttons may not visually do anything IF only few items rendered.`);
-            }
-        }, 100); // delay kecil
-
-        const scrollAmount = () => {
-            const firstItem = list.querySelector('.course-item');
-            if (!firstItem) {
-                console.warn(`No .course-item found in ${carouselContainerSelector} to calculate scrollAmount.`);
-                return 250;
-            }
-            const listStyle = getComputedStyle(list);
-            const itemWidth = firstItem.offsetWidth;
-            const gap = parseFloat(listStyle.gap) || 0;
-
-            const calculatedScrollAmount = itemWidth + gap;
-            console.log(`For ${carouselContainerSelector} - Scroll amount calculated: ${calculatedScrollAmount} (itemWidth: ${itemWidth}, gap: ${gap})`);
-            return calculatedScrollAmount;
-        };
-
         prevButton.addEventListener('click', (e) => {
             e.preventDefault();
-            const amount = scrollAmount();
-            console.log(`Prev button clicked for ${carouselContainerSelector}. Scrolling left by ${amount}`);
-            list.scrollBy({ left: -amount, behavior: 'smooth' });
+            const scrollAmount = list.clientWidth * 0.8;
+            list.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         });
 
         nextButton.addEventListener('click', (e) => {
             e.preventDefault();
-            const amount = scrollAmount();
-            console.log(`Next button clicked for ${carouselContainerSelector}. Scrolling right by ${amount}`);
-            list.scrollBy({ left: amount, behavior: 'smooth' });
+            const scrollAmount = list.clientWidth * 0.8;
+            list.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
-        console.log(`Event listeners attached for ${carouselContainerSelector}`);
     }
 
-    // ... (logika banner tetap sama) ...
+    // --- Banner Logic ---
     const bannerImage = document.getElementById('main-banner-image');
     const bannerSources = ["assets/banner/Banner-1.png", "assets/banner/Banner-2.png", "assets/banner/Banner-3.png"];
     let currentBannerIndex = 0;
@@ -264,18 +223,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Main Initialization ---
     async function initHomePage() {
-        console.log("Initializing homepage content...");
         const [categoriesData, coursesData, categoryCardsData, usersData] = await Promise.all([
             fetchData('categories.json'),
             fetchData('courses.json'),
             fetchData('category_cards.json'),
             fetchData('users.json')
         ]);
-
-        console.log("Fetched categories:", categoriesData ? categoriesData.length : 0);
-        console.log("Fetched courses:", coursesData ? coursesData.length : 0); // Akan ada 12
-        console.log("Fetched category cards:", categoryCardsData ? categoryCardsData.length : 0);
-        console.log("Fetched users:", usersData ? usersData.length : 0);
 
         renderCategories(categoriesData);
         renderCategoryCards(categoryCardsData);
@@ -285,17 +238,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const idB = parseInt((b.course_id || "").replace(/[^0-9]/g, ''), 10) || 0;
             return idB - idA;
         });
-        // MODIFIKASI: Hapus argumen ke-4 (maxItems) karena renderCourses akan render semua
+        
         renderCourses(sortedNewCourses, 'new-courses-list', usersData || []);
 
         const sortedPopularCourses = [...(coursesData || [])].sort((a, b) => (b.participant_count || 0) - (a.participant_count || 0));
-        // MODIFIKASI: Hapus argumen ke-4 (maxItems)
+        
         renderCourses(sortedPopularCourses, 'popular-courses-list', usersData || []);
 
+        // Panggil setupCarousel setelah data dirender
         setupCarousel('.pelatihan-baru');
         setupCarousel('.pelatihan-populer');
-
-        console.log("Homepage content initialization complete.");
     }
 
     initHomePage();

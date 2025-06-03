@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const productCell = document.createElement('td');
         productCell.classList.add('product-details');
+        // PENTING: Anda mungkin ingin menambahkan data-label di sini jika diperlukan di mobile
+        // productCell.setAttribute('data-label', 'Produk'); 
         const planIconSrc = plan.icon || 'https://placehold.co/60x60/E0E0E0/B0B0B0?text=Icon';
         productCell.innerHTML = `
             <div class="cart-item-info">
@@ -83,11 +85,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const priceCell = document.createElement('td');
         priceCell.classList.add('item-price');
+        priceCell.setAttribute('data-label', 'Harga'); // DATA-LABEL DITAMBAHKAN
         priceCell.textContent = formatCurrency(plan.price);
         itemRow.appendChild(priceCell);
 
         const quantityCell = document.createElement('td');
         quantityCell.classList.add('item-quantity-cell');
+        quantityCell.setAttribute('data-label', 'Jumlah'); // DATA-LABEL DITAMBAHKAN
         quantityCell.innerHTML = `
             <input type="number" class="quantity-input" value="1" min="1" readonly>
         `;
@@ -95,11 +99,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const subtotalCell = document.createElement('td');
         subtotalCell.classList.add('item-subtotal');
+        subtotalCell.setAttribute('data-label', 'Subtotal'); // DATA-LABEL DITAMBAHKAN
         subtotalCell.textContent = formatCurrency(plan.price);
         itemRow.appendChild(subtotalCell);
 
         const removeCell = document.createElement('td');
         removeCell.classList.add('item-remove-cell');
+        // Tidak perlu data-label untuk tombol hapus, karena biasanya hanya ikon
         removeCell.innerHTML = `<button class="remove-item-btn" aria-label="Hapus ${plan.name || 'Paket'}">&times;</button>`;
         itemRow.appendChild(removeCell);
 
@@ -117,7 +123,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         let total = 0;
 
         if (itemRows.length > 0) {
-            const planRow = itemRows[0];
+            const planRow = itemRows[0]; // Asumsi hanya satu item karena input quantity readonly
             const price = parseFloat(planRow.getAttribute('data-price'));
             if (!isNaN(price)) {
                 total = price;
@@ -169,7 +175,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Fungsi untuk menyimpan data keranjang ke Local Storage
     function saveCartToStorage(plan) {
         if (!plan || typeof plan !== 'object' || !plan.id) {
-            localStorage.removeItem('selectedCart');
+            localStorage.removeItem('selectedCart'); // Hapus jika plan tidak valid
             return;
         }
         const cartData = {
@@ -178,14 +184,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             price: plan.price,
             period: plan.period,
             icon: plan.icon,
-            total: plan.price
+            total: plan.price // Karena quantity diasumsikan 1
         };
         localStorage.setItem('selectedCart', JSON.stringify(cartData));
     }
 
     // --- Inisialisasi Keranjang Belanja ---
-    // Memeriksa apakah ada parameter 'planId' di URL atau data keranjang di Local Storage
-
     const urlParams = new URLSearchParams(window.location.search);
     const selectedPlanIdFromUrl = urlParams.get('planId');
     let selectedPlan = null;
@@ -193,33 +197,34 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (selectedPlanIdFromUrl && pricingPlansData.length > 0) {
         selectedPlan = pricingPlansData.find(plan => plan.id === selectedPlanIdFromUrl);
         if (selectedPlan) {
-            // Jika ada planId di URL dan valid, gunakan itu dan simpan/update local storage
             addPlanToCart(selectedPlan);
             saveCartToStorage(selectedPlan);
         } else {
-            // Jika planId di URL tidak valid, hapus data keranjang yang mungkin tersimpan
+            console.warn(`Plan dengan ID "${selectedPlanIdFromUrl}" dari URL tidak ditemukan di data paket.`);
             localStorage.removeItem('selectedCart');
         }
     } else {
-        // Jika tidak ada planId di URL, coba muat dari local storage
         const storedCartData = localStorage.getItem('selectedCart');
         if (storedCartData) {
             try {
                 const parsedCartData = JSON.parse(storedCartData);
-                if (pricingPlansData.length > 0) {
+                if (pricingPlansData.length > 0 && parsedCartData.id) { // Pastikan id ada di parsedCartData
                     selectedPlan = pricingPlansData.find(plan => plan.id === parsedCartData.id);
                     if (selectedPlan) {
-                        // Pastikan harga dan detail lainnya sesuai dengan data terbaru dari plans.json
+                        // Validasi data dari Local Storage dengan data terbaru dari plans.json
                         if (selectedPlan.price === parsedCartData.price && selectedPlan.name === parsedCartData.name) {
                             addPlanToCart(selectedPlan);
                         } else {
                             console.warn("Data paket di Local Storage berbeda dengan data terbaru. Menggunakan data terbaru.");
-                            addPlanToCart(selectedPlan); // Tampilkan data terbaru
-                            saveCartToStorage(selectedPlan); // Update Local Storage
+                            addPlanToCart(selectedPlan); 
+                            saveCartToStorage(selectedPlan); 
                         }
                     } else {
+                        console.warn(`Plan dengan ID "${parsedCartData.id}" dari Local Storage tidak ditemukan di data paket.`);
                         localStorage.removeItem('selectedCart');
                     }
+                } else {
+                     localStorage.removeItem('selectedCart'); // Jika tidak ada data paket atau id tidak ada
                 }
             } catch (e) {
                 console.error("Error memuat data keranjang dari Local Storage:", e);

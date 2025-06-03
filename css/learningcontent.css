@@ -85,6 +85,7 @@
   border-radius: 0.35rem;
   line-height: 1.7;
   color: #333;
+  white-space: pre-wrap;
 }
 
 .lesson-description h3 {
@@ -244,17 +245,17 @@
 
 /* MEDIA QUERIES */
 
-/* Tablet Besar */
+/* Tablet Besar (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .learning-page-container {
     padding: 0 1.5rem;
   }
 }
 
-/* Tablet */
+/* Tablet (481px - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .coursecontent {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Video di atas daftar materi */
   }
 
   .course-video-main,
@@ -263,33 +264,31 @@
     width: 100%;
   }
 
+  .learning-header {
+    padding: 1.5rem 1rem; /* Menambah tinggi kotak header */
+    min-height: 190px;
+  }
+
   .learning-header #course-main-title {
-    font-size: 1.4em;
+    font-size: 1.3em; /* Menyesuaikan ukuran font judul utama */
+    margin-bottom: 0.5rem;
   }
 
   .learning-header #current-lesson-title {
-    font-size: 1.05em;
+    font-size: 1em; /* Menyesuaikan ukuran font sub-judul (jika ada) */
   }
 }
 
-/* Smartphone */
+/* Smartphone (480px ke bawah) */
 @media screen and (max-width: 480px) {
   .coursecontent {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Video di atas daftar materi */
   }
 
   .course-video-main,
   .content-container-sidebar {
     flex-basis: auto;
     width: 100%;
-  }
-
-  .learning-header #course-main-title {
-    font-size: 1.4em;
-  }
-
-  .learning-header #current-lesson-title {
-    font-size: 1.05em;
   }
 
   .learning-page-container {
@@ -298,16 +297,17 @@
   }
 
   .learning-header {
-    padding: 1rem 0.75rem;
-    min-height: auto;
+    padding: 1rem 0.75rem; /* Menambah tinggi kotak header */
+    min-height: 190px;
   }
 
   #course-main-title {
-    font-size: 1.3em;
+    font-size: 1.3em; /* Menyesuaikan ukuran font judul utama */
+    margin-bottom: 0.5rem;
   }
 
   #current-lesson-title {
-    font-size: 1em;
+    font-size: 1em; /* Menyesuaikan ukuran font sub-judul (jika ada) */
   }
 
   .course-video-main {

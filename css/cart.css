@@ -1,8 +1,10 @@
-/* SECTION: CART HEADER & PROGRESS BAR */
+/* =================================================================
+   SECTION: CART HEADER & PROGRESS BAR
+================================================================= */
 .cart-header {
     background-image: linear-gradient(rgba(55, 90, 96, 0.9), rgba(55, 90, 96, 0.9)), url(../assets/banner/background.avif);
     color: white;
-    padding: 2rem 0;
+    padding: 2rem 1rem; /* Menambah padding horizontal */
     text-align: center;
     margin-bottom: 2.5rem;
 }
@@ -88,7 +90,9 @@
     background-color: #375a60;
 }
 
-/* SECTION: CART MAIN (TABLE & SUMMARY) */
+/* =================================================================
+   SECTION: CART MAIN (TABLE & SUMMARY)
+================================================================= */
 .cart-main {
     background-color: white;
     padding: 1.875rem;
@@ -143,9 +147,10 @@
     border-bottom: 0.0625rem solid #f1f1f1;
 }
 
-.cart-item:last-child td {
+.cart-table tr:last-child td { /* Menargetkan td di baris terakhir tbody */
     border-bottom: none;
 }
+
 
 .cart-item-info {
     display: flex;
@@ -157,6 +162,10 @@
     width: 60px;
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
+}
+.cart-item-name{
+    font-weight: 500;
 }
 
 .item-price,
@@ -252,12 +261,18 @@
     text-align: center;
     padding: 30px;
     font-size: 16px;
+    color: #555;
 }
 
 .empty-cart-message a {
     color: #375a60;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 500;
 }
+.empty-cart-message a:hover {
+    color: #efbf7e;
+}
+
 
 .cart-summary h2 {
     font-size: 1.4rem;
@@ -304,7 +319,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
     margin-top: 1.5625rem;
 }
 
@@ -322,7 +337,9 @@
     cursor: pointer;
 }
 
-/* SECTION: INFO */
+/* =================================================================
+   SECTION: INFO
+================================================================= */
 .info-section {
     background-color: #f0f0f0;
     padding: 2.5rem 0;
@@ -346,7 +363,7 @@
     max-width: 20rem;
 }
 
-.info-column img.info-icon {
+.info-column img { /* .info-icon sudah ada di file HTML Anda */
     margin-bottom: 1rem;
     max-width: 50px;
     height: auto;
@@ -366,8 +383,9 @@
     margin: 0;
 }
 
-
-/* MEDIA QUERIES - CART SPECIFIC */
+/* =================================================================
+   MEDIA QUERIES - CART SPECIFIC
+================================================================= */
 @media screen and (max-width:768px) {
 
     .cart-content-wrapper {
@@ -383,7 +401,7 @@
     }
 
     .cart-table thead {
-        display: none;
+        display: none; /* Sembunyikan header tabel asli */
     }
 
     .cart-table tbody,
@@ -394,7 +412,7 @@
         box-sizing: border-box;
     }
 
-    .cart-table tr {
+    .cart-table tr { /* Setiap baris menjadi seperti kartu */
         border: 0.0625rem solid #eee;
         border-radius: 0.3125rem;
         margin-bottom: 1rem;
@@ -402,33 +420,65 @@
     }
 
     .cart-table td {
-        border: none;
-        padding: 0.5rem 0;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 0.75rem 0.5rem;
         text-align: right;
         position: relative;
         clear: both;
-        padding-left: 50%;
+        padding-left: 45%; /* Memberi ruang untuk label di kiri */
+        min-height: 2.5rem; 
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; /* Mendorong konten (nilai) ke kanan */
+    }
+
+    .cart-table tr td:last-child { /* Hapus border untuk td terakhir di dalam card */
+        border-bottom: none;
     }
 
     .cart-table td:before {
-        content: attr(data-label);
+        content: attr(data-label); /* Ambil teks dari atribut data-label */
         position: absolute;
-        left: 0.625rem;
-        width: 45%;
-        padding-right: 0.625rem;
+        left: 0.75rem; /* Posisi label di kiri */
+        top: 50%;
+        transform: translateY(-50%); /* Pusatkan label secara vertikal */
+        width: 40%; /* Lebar untuk area label */
+        padding-right: 0.5rem;
         font-weight: 600;
-        color: #666;
+        color: #333;
         text-align: left;
-        white-space: nowrap;
+        font-size: 0.85em;
     }
 
+    /* Styling khusus untuk kolom detail produk */
     .cart-table td.product-details {
+        padding-left: 0.75rem;
+        justify-content: flex-start; /* Konten produk mulai dari kiri */
         text-align: left;
-        padding-left: 0;
+    }
+    .cart-table td.product-details:before {
+        content: ""; /* Atau "Produk:" jika ingin ada label eksplisit */
+    }
+    
+    /* Styling untuk sel jumlah (item-quantity-cell) */
+    .cart-table td.item-quantity-cell {
+        /* Mewarisi padding-left: 45% dan justify-content: flex-end dari .cart-table td umum,
+           sehingga input akan rata kanan setelah label */
     }
 
-    .cart-table td.product-details:before {
-        display: none;
+    .cart-table td.item-quantity-cell:before {
+        /* Label "Jumlah" akan diposisikan secara absolut seperti label lainnya oleh aturan umum .cart-table td:before */
+    }
+
+    .item-quantity-cell .quantity-input {
+        width: 50px; 
+        text-align: right; /* Angka di dalam input rata kanan */
+        background-color: #eee;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 8px; /* Padding di dalam input */
+        -moz-appearance: textfield;
+        /* margin-left: auto; Tidak diperlukan jika td sudah flex-end */
     }
 
     .cart-actions {
@@ -441,8 +491,7 @@
         gap: 0.625rem;
     }
 
-    .apply-coupon-btn,
-    .update-cart-btn {
+    .apply-coupon-btn { /* Tombol kupon jadi full width */
         width: 100%;
     }
 }

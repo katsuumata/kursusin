@@ -525,136 +525,224 @@
 
 /* MEDIA QUERIES */
 
-/* Tablet Besar */
+/* Tablet Besar (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .dashboard-container {
     grid-template-columns: 13.75rem 1fr;
+    padding-top: 1.5rem; /* Jarak atas untuk tablet besar */
   }
 
-  .progress-circle {
+  .sidebar .progress-circle {
     --size: 6.25rem;
     --thickness: 0.63rem;
   }
 
-  .circle-text strong {
+  .sidebar .circle-text strong {
     font-size: 1em;
   }
 
-  .circle-text p {
+  .sidebar .circle-text p {
     font-size: 0.65em;
   }
 }
 
-/* Tablet */
+/* Tablet (481px - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .dashboard-container {
-    grid-template-columns: 13.75rem 1fr;
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.25rem 1rem 1rem 1rem; /* UBAH: padding-top dikurangi drastis */
   }
 
-  .progress-circle {
-    --size: 6.25rem;
+  .main-content,
+  .sidebar {
+    display: contents; 
+  }
+  
+  #welcome-sertifikat-card { 
+    order: 1;
+    padding-top: 0.75rem; /* UBAH: Kurangi padding atas internal card welcome */
+    padding-bottom: 0.75rem; /* Sesuaikan padding bawah agar simetris */
+  }
+  .profile-card { order: 2; } 
+  .performa-card { order: 3; } 
+  #my-badges-link { order: 4; } 
+  #diskusi-link { order: 5; } 
+  #bantuan-link { order: 6; } 
+  #upgrade-plan-link { order: 7; }
+
+  #my-courses-title { 
+    order: 8;
+    margin-top: 1.5rem; 
+  }
+  #courseContainer { order: 9; }
+  #see-more-courses-container { order: 10; }
+  #my-badges-section { order: 11; }
+
+  /* Styling untuk card umum yang dipromosikan */
+  #welcome-sertifikat-card,
+  .profile-card, 
+  .performa-card, 
+  #my-badges-link, 
+  #diskusi-link, 
+  #bantuan-link, 
+  #upgrade-plan-link {
+    background: white; 
+    border-radius: 0.63rem;
+    /* padding atas & bawah diatur spesifik jika perlu, padding kiri kanan tetap */
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-shadow: 0 0.13rem 0.5rem rgba(0, 0, 0, 0.08);
+    width: 100%; 
+    box-sizing: border-box;
+    color: #375a60; 
+    text-decoration: none;
+    display: block; 
+    text-align: center; 
+    font-weight: 600; 
+  }
+  /* Kembalikan padding vertikal default untuk card lain jika tidak di-override oleh #welcome-sertifikat-card */
+    .profile-card, .performa-card, #my-badges-link, #diskusi-link, #bantuan-link, #upgrade-plan-link {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+
+  #my-badges-link {
+    background-color: gold !important; 
+    color: #375a60 !important; 
+  }
+  
+  #welcome-sertifikat-card strong { color: #333; }
+  #welcome-sertifikat-card p { color: #555; }
+
+  .profile-card { 
+    display: flex; 
+    align-items: center;
+    text-align: left; 
+    font-weight: normal; 
+    color: initial; 
+  }
+   .profile-card strong, .profile-card p { color: #333; }
+   .profile-card img.avatar { margin-right: 1rem; }
+
+  .performa-card .performa-charts { 
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem; 
+    justify-content: space-around;
+  }
+  .performa-card .progress-circle { 
+    --size: 6.25rem; 
     --thickness: 0.63rem;
   }
+   .performa-card .circle-text strong { font-size: 1em; color: #333; } 
+   .performa-card .circle-text p { font-size: 0.65em; color: #444; } 
 
-  .circle-text strong {
-    font-size: 1em;
+  #my-courses-title, 
+  #my-badges-section .section-title { 
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    font-size: 1.5em; 
+    color: #375a60;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.13rem solid #efbf7e;
+    display: inline-block; 
+    width: auto; 
+    font-weight: bold; 
+    text-align: left; 
   }
 
-  .circle-text p {
-    font-size: 0.65em;
-  }
-
-  .dashboard-container {
-    grid-template-columns: 1fr;
-  }
-
-  .sidebar {
-    order: 1;
-  }
-
-  .main-content {
-    order: 0;
-  }
-
-  .performa-charts {
-    gap: 1rem;
-  }
-
-  .course-grid {
+   #courseContainer, 
+   #see-more-courses-container,
+   #my-badges-section .badges-grid { 
+    background: none; 
+    box-shadow: none;
+    padding: 0;
+   }
+  #courseContainer { 
+    display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+    gap: 1.5rem; 
   }
 }
 
-/* Smartphone */
+/* Smartphone (480px ke bawah) */
 @media screen and (max-width: 480px) {
   .dashboard-container {
-    grid-template-columns: 13.75rem 1fr;
+    display: flex; 
+    flex-direction: column;
+    padding: 0.25rem 0.5rem 1rem 0.5rem; /* UBAH: padding-top sangat dikurangi */
+    gap: 1rem; 
   }
 
-  .progress-circle {
-    --size: 6.25rem;
-    --thickness: 0.63rem;
-  }
-
-  .circle-text strong {
-    font-size: 1em;
-  }
-
-  .circle-text p {
-    font-size: 0.65em;
-  }
-
-  .dashboard-container {
-    grid-template-columns: 1fr;
-  }
-
+  .main-content,
   .sidebar {
+    display: contents;
+  }
+
+  #welcome-sertifikat-card { 
     order: 1;
+    padding-top: 0.75rem; /* UBAH: Kurangi padding atas internal card welcome */
+    padding-bottom: 0.75rem; /* Sesuaikan padding bawah agar simetris */
   }
+  .profile-card { order: 2; }
+  .performa-card { order: 3; }
+  #my-badges-link { order: 4; }
+  #diskusi-link { order: 5; }
+  #bantuan-link { order: 6; }
+  #upgrade-plan-link { order: 7; }
 
-  .main-content {
-    order: 0;
+  #my-courses-title { 
+    order: 8;
+    margin-top: 1.5rem; 
   }
+  #courseContainer { order: 9; }
+  #see-more-courses-container { order: 10; }
+  #my-badges-section { order: 11; }
 
-  .performa-charts {
-    gap: 1rem;
+  /* Padding default untuk card lain di smartphone */
+  .profile-card,
+  .performa-card,
+  #my-badges-link,
+  #diskusi-link,
+  #bantuan-link,
+  #upgrade-plan-link {
+    padding: 1rem; 
   }
-
-  .course-grid {
-    grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
-  }
-
-  .profile-card {
+  
+  .profile-card { 
     flex-direction: column;
     text-align: center;
   }
+   .profile-card img.avatar {
+     margin-right: 0; 
+     margin-bottom: 0.5rem;
+   }
 
-  .performa-charts {
-    flex-direction: column;
-    gap: 1.5rem;
+  .performa-card .performa-charts { 
+    gap: 0.75rem;         
+  }
+  .performa-card .progress-circle { 
+    --size: 5.5rem;     
+    --thickness: 0.6rem;  
+  }
+  .performa-card .circle-text strong { font-size: 0.8em; } 
+  .performa-card .circle-text p { font-size: 0.55em; } 
+
+  #courseContainer { 
+    grid-template-columns: 1fr; 
   }
 
-  .progress-circle {
-    --size: 6.88rem;
-  }
-
-  .course-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .main-content .card {
-    padding: 1rem;
-  }
-
-  .main-content .card strong {
-    font-size: 1em;
-  }
-
-  .main-content .card p {
-    font-size: 0.85em;
-  }
-
-  .section-title {
+  #my-courses-title,
+  #my-badges-section .section-title {
     font-size: 1.3em;
+  }
+
+  .see { 
+    padding: 0.5rem 1.5rem;
+    font-size: 1em;
   }
 }

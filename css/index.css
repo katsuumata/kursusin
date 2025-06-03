@@ -1,4 +1,6 @@
-/* SECTION 1A : BANNER-SLIDESHOW */
+/* =================================================================
+   SECTION 1A : BANNER-SLIDESHOW
+================================================================= */
 .part-top {
     margin-top: 3.75rem;
 }
@@ -57,7 +59,9 @@
     transition: 0.3s all ease;
 }
 
-/* SECTION 1B : ADS */
+/* =================================================================
+   SECTION 1B : ADS
+================================================================= */
 .ads {
     width: 100%;
     margin: 3.13rem auto;
@@ -100,7 +104,9 @@
     margin: 0;
 }
 
-/* SECTION 2 : APA ITU? */
+/* =================================================================
+   SECTION 2 : APA ITU?
+================================================================= */
 .part-info {
     width: 100%;
     background-color: #375a60;
@@ -162,7 +168,9 @@
     display: block;
 }
 
-/* SECTION 3A CATEGORY-ICON */
+/* =================================================================
+   SECTION 3A CATEGORY-ICON
+================================================================= */
 .category {
     padding: 1.25rem;
 }
@@ -236,7 +244,9 @@
     font-weight: 500;
 }
 
-/* SECTION 3B CATEGORY-CARD */
+/* =================================================================
+   SECTION 3B CATEGORY-CARD
+================================================================= */
 .category-card {
     display: flex;
     justify-content: center;
@@ -310,7 +320,9 @@
     transform: translateX(0.31rem);
 }
 
-/* SECTION 4 & 5 LIST COURSE (Carousels) */
+/* =================================================================
+   SECTION 4 & 5 LIST COURSE (Carousels)
+================================================================= */
 .pelatihan-baru,
 .pelatihan-populer {
     padding: 1.25rem 0;
@@ -469,12 +481,14 @@
     color: white;
 }
 
-/* MEDIA QUERIES */
 
-/* Tablet Besar */
+/* =================================================================
+   MEDIA QUERIES
+================================================================= */
+
+/* Tablet Besar (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-    /* BANNER */
     .part-top {
         margin-top: 1.88rem;
     }
@@ -495,7 +509,6 @@
         line-height: 1.25rem;
     }
 
-    /* ADS */
     .ads {
         margin: 1.88rem 0.63rem;
         gap: 1.25rem;
@@ -527,7 +540,6 @@
         font-size: 0.85em;
     }
 
-    /* APA ITU? */
     .part-info {
         padding: 3.13rem 1.25rem;
         gap: 2em;
@@ -541,7 +553,6 @@
         padding: 0 1.25rem;
     }
 
-    /* CATEGORY-ICON */
     .category-list {
         grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
         gap: 1.5em;
@@ -560,7 +571,6 @@
         font-size: 0.8em;
     }
 
-    /* CATEGORY - CARD */
     .category-card {
         padding: 1.88rem 0.94rem;
     }
@@ -582,321 +592,69 @@
         width: auto;
     }
 
-    /* LIST COURSE */
     .course-item {
         width: 13.75rem;
     }
 }
 
-/* Tablet */
+/* Tablet (481px - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
-    /* Rules from 992px that also apply to this range */
-    .part-top {
-        margin-top: 1.88rem;
-    }
-
-    .banner {
-        padding: 0 0.63rem;
-    }
-
-    .banner img {
-        border-radius: 0.31rem;
-    }
-
-    .banner-slideshow .prev,
-    .banner-slideshow .next {
-        padding: 0.63rem;
-        width: 1.25rem;
-        height: 1.25rem;
-        line-height: 1.25rem;
+    .category-item {
+        text-align: center;
     }
 
     .ads {
-        margin: 1.88rem 0.63rem;
-        gap: 1.25rem;
+        margin: 1.88rem 0;
+        padding: 0 1rem;
+        background-color: transparent;
         flex-direction: column;
         align-items: center;
-    }
-
-    .ads-content {
-        gap: 1rem;
-        width: 100%;
-        max-width: 25rem;
-        justify-content: center;
-    }
-
-    .ads-icon img {
-        width: 5rem;
-    }
-
-    .ads-text {
-        max-width: none;
-        text-align: left;
-    }
-
-    .ads-text h4 {
-        font-size: 1.1em;
-    }
-
-    .ads-text p {
-        font-size: 0.85em;
+        gap: 1.25rem;
     }
 
     .part-info {
-        padding: 3.13rem 1.25rem;
+        width: 90%;
+        margin: 1.5rem auto;
+        padding: 3.13rem 1rem;
         gap: 2em;
+        border-radius: 0.63rem;
     }
 
-    .info img {
-        border-width: 0.13rem;
-    }
-
-    .what-is {
-        padding: 0 1.25rem;
-    }
-
-    .category-list {
-        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-        gap: 1.5em;
-    }
-
-    .category-img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .category-img img {
-        width: 2.81rem;
-    }
-
-    .category-text p {
-        font-size: 0.8em;
-    }
-
-    .category-card {
-        padding: 1.88rem 0.94rem;
-    }
-
-    .cat-card-content {
-        flex-direction: column;
-        height: auto;
-        max-width: 18.75rem;
-        margin: 0 auto;
-    }
-
-    .cat-card-pict img {
-        width: 100%;
-        height: 9.38rem;
-        border-radius: 0.63rem 0.63rem 0 0;
-    }
-
-    .cat-card-text {
-        width: auto;
-    }
-
-    .course-item {
-        width: 13.75rem;
-    }
-
-    /* Rules specific to 768px and below (merged) */
     .list-new-course {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15.63rem, 1fr));
-        gap: 1.25rem;
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
         width: 100%;
-        padding: 0 0.94rem;
-        box-sizing: border-box;
-        overflow-x: hidden;
+        padding: 1.25rem 1rem;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .list-new-course::-webkit-scrollbar {
+        display: none;
     }
 
     .course-new .kekiri,
     .course-new .kekanan {
-        display: none;
+        display: flex;
     }
 
     .course-item {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .course-pict img {
-        min-width: auto;
-        width: 100%;
-    }
-
-    .course-content {
-        padding: 0.94rem;
-        font-size: 1rem;
-    }
-
-    .course-star img {
-        width: 1rem;
-    }
-
-    .responsive {
-        display: none;
+        width: 80%;
+        max-width: 280px;
+        flex-shrink: 0;
     }
 }
 
-/* Smartphone */
+/* Smartphone (480px ke bawah) */
 @media screen and (max-width: 480px) {
 
-    /* Rules from 992px that also apply to this range */
     .part-top {
-        margin-top: 1.88rem;
+        margin-top: 0.94rem;
     }
 
     .banner {
-        padding: 0 0.63rem;
-    }
-
-    .banner img {
-        border-radius: 0.31rem;
-    }
-
-    .banner-slideshow .prev,
-    .banner-slideshow .next {
-        padding: 0.63rem;
-        width: 1.25rem;
-        height: 1.25rem;
-        line-height: 1.25rem;
-    }
-
-    .ads {
-        margin: 1.88rem 0.63rem;
-        gap: 1.25rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ads-content {
-        gap: 1rem;
-        width: 100%;
-        max-width: 25rem;
-        justify-content: center;
-    }
-
-    .ads-icon img {
-        width: 5rem;
-    }
-
-    .ads-text {
-        max-width: none;
-        text-align: left;
-    }
-
-    .ads-text h4 {
-        font-size: 1.1em;
-    }
-
-    .ads-text p {
-        font-size: 0.85em;
-    }
-
-    .part-info {
-        padding: 3.13rem 1.25rem;
-        gap: 2em;
-    }
-
-    .info img {
-        border-width: 0.13rem;
-    }
-
-    .what-is {
-        padding: 0 1.25rem;
-    }
-
-    .category-list {
-        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-        gap: 1.5em;
-    }
-
-    .category-img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .category-img img {
-        width: 2.81rem;
-    }
-
-    .category-text p {
-        font-size: 0.8em;
-    }
-
-    .category-card {
-        padding: 1.88rem 0.94rem;
-    }
-
-    .cat-card-content {
-        flex-direction: column;
-        height: auto;
-        max-width: 18.75rem;
-        margin: 0 auto;
-    }
-
-    .cat-card-pict img {
-        width: 100%;
-        height: 9.38rem;
-        border-radius: 0.63rem 0.63rem 0 0;
-    }
-
-    .cat-card-text {
-        width: auto;
-    }
-
-    .course-item {
-        width: 13.75rem;
-        /* This will be overridden by 768px rules below, then potentially 480px specific rule */
-    }
-
-    /* Rules from 768px that also apply to this range */
-    .list-new-course {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15.63rem, 1fr));
-        /* Will be overridden by 480px specific rule */
-        gap: 1.25rem;
-        width: 100%;
-        padding: 0 0.94rem;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
-    .course-new .kekiri,
-    .course-new .kekanan {
-        display: none;
-    }
-
-    .course-item {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .course-pict img {
-        min-width: auto;
-        width: 100%;
-    }
-
-    .course-content {
-        padding: 0.94rem;
-        /* This will be overridden by 480px specific rule */
-        font-size: 1rem;
-        /* This will be overridden by 480px specific rule */
-    }
-
-    .course-star img {
-        width: 1rem;
-        /* This will be overridden by 480px specific rule */
-    }
-
-    .responsive {
-        display: none;
-    }
-
-    /* Rules specific to 480px and below */
-    .part-top {
-        margin-top: 0.94rem;
+        padding: 0;
     }
 
     .banner-slideshow .prev,
@@ -907,13 +665,17 @@
 
     .ads {
         margin: 1.25rem 0;
-        gap: 1rem;
+        padding: 0 1rem;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .ads-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
+        flex-direction: row;
+        text-align: left;
+        gap: 0.94rem;
     }
 
     .ads-icon img {
@@ -929,7 +691,10 @@
     }
 
     .part-info {
-        padding: 1.88rem 0.94rem;
+        width: 90%;
+        margin: 1.5rem auto;
+        padding: 1.88rem 1rem;
+        border-radius: 0.63rem;
     }
 
     .info img {
@@ -938,7 +703,8 @@
     }
 
     .what-is {
-        padding: 0 0.94rem;
+        padding: 0;
+        text-align: center;
     }
 
     .what-is h1 {
@@ -946,7 +712,7 @@
     }
 
     .what-is p {
-        font-size: 0.85em;
+        text-align: justify;
     }
 
     .category-tittle h1 {
@@ -960,17 +726,8 @@
         margin-top: 0.94rem;
     }
 
-    .category-img {
-        width: 3.75rem;
-        height: 3.75rem;
-    }
-
-    .category-img img {
-        width: 2.19rem;
-    }
-
-    .category-text p {
-        font-size: 0.7em;
+    .category-item {
+        text-align: center;
     }
 
     .cat-card-content {
@@ -986,15 +743,38 @@
     }
 
     .list-new-course {
-        grid-template-columns: 1fr;
-        padding: 0 0.63rem;
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        width: 100%;
+        padding: 1.25rem 1rem;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .list-new-course::-webkit-scrollbar {
+        display: none;
     }
 
+    .course-new .kekiri,
+    .course-new .kekanan {
+        display: flex;
+    }
+    
+    .course-item {
+        width: 80%;
+        max-width: 280px;
+        flex-shrink: 0;
+    }
+
+    .course-pict img {
+        min-width: auto;
+        width: 100%;
+    }
+    
     .course-content {
         padding: 0.94rem;
-        /* Re-asserting for clarity, though might be same as 768px */
         font-size: 1rem;
-        /* Re-asserting for clarity */
     }
 
     .course-star img {
